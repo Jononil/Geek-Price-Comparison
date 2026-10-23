@@ -84,4 +84,11 @@ public class Product {
 
     @TableField(exist = false)
     private List<ReviewArticle> articles;
+
+    /**
+     * 同品类兜底测评：仅当该产品没有专属测评时填充（最新 3 篇）。
+     * 前端必须用不同标题展示，避免被误读成这款产品的测评。
+     */
+    @TableField(exist = false)
+    private List<ReviewArticle> relatedArticles;
 }

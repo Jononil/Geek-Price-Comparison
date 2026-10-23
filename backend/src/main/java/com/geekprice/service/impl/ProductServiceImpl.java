@@ -111,6 +111,11 @@ public class ProductServiceImpl implements ProductService {
         if (product.getImages() == null || product.getImages().isEmpty()) {
             throw new BusinessException(ResultCode.NOT_FOUND.getCode(), "产品不存在或已下架");
         }
+        // 同品类兜底：该产品没有专属测评时，取同品类最新 3 篇。
+        // 前端用「同品类测评」标题展示，避免被误读成这款产品的测评。
+        if (product.getArticles() == null || product.getArticles().isEmpty()) {
+            product.setRelatedArticles(fillCategoryArticles(product.getCategoryId(), product.getId()));
+        }
         return product;
     }
 
@@ -235,6 +240,31 @@ public class ProductServiceImpl implements ProductService {
                 .eq(ReviewArticle::getStatus, 1)
                 .orderByDesc(ReviewArticle::getPublishTime)
                 .last("LIMIT 5"));
+    }
+
+    /**
+     * 同品类兜底测评：取同分类下其它产品的最新 3 篇已发布测评。
+     * 先把同类产品 id 查出来再 in，避免把字符串拼进 SQL。
+     */
+    private List<ReviewArticle> fillCategoryArticles(Long categoryId, Long excludeProductId) {
+        if (categoryId == null) {
+            return java.util.Collections.emptyList();
+        }
+        List<Long> siblingIds = productMapper.selectList(new LambdaQueryWrapper<Product>()
+                        .select(Product::getId)
+                        .eq(Product::getCategoryId, categoryId)
+                        .eq(Product::getStatus, 1)
+                        .ne(Product::getId, excludeProductId))
+                .stream().map(Product::getId).toList();
+        if (siblingIds.isEmpty()) {
+            return java.util.Collections.emptyList();
+        }
+        return reviewArticleMapper.selectList(new LambdaQueryWrapper<ReviewArticle>()
+                .eq(ReviewArticle::getStatus, 1)
+                .in(ReviewArticle::getProductId, siblingIds)
+                .orderByDesc(ReviewArticle::getPublishTime)
+                .orderByDesc(ReviewArticle::getId)
+                .last("LIMIT 3"));
     }
 
     private void fillBrandAndCategory(Product product) {

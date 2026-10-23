@@ -65,6 +65,10 @@ export interface Product {
   images?: string[]
   /** 图片署名信息（与 images 按 url 对应；后端只下发审核通过的图片） */
   imagesAttribution?: ImageAttribution[]
+  /** 该产品的专属测评（详情接口下发，最多 5 篇） */
+  articles?: ReviewArticle[]
+  /** 同品类兜底测评：仅当没有专属测评时下发（最多 3 篇），展示时须标注为同品类 */
+  relatedArticles?: ReviewArticle[]
 }
 
 /** 图片署名信息（用于展示作者/许可/来源） */

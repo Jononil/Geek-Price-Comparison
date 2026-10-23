@@ -92,6 +92,26 @@
         </div>
       </div>
 
+      <div v-if="shownArticles.length" class="articles-section">
+        <div class="articles-head">
+          <h2 class="section-title">{{ isFallbackArticles ? '同品类测评' : '相关测评' }}</h2>
+          <span v-if="isFallbackArticles" class="fallback-hint">
+            该产品暂无专属测评，以下为同品类内容
+          </span>
+        </div>
+        <div class="article-list">
+          <router-link
+            v-for="a in shownArticles"
+            :key="a.id"
+            :to="`/articles/${a.id}`"
+            class="article-item"
+          >
+            <span class="a-title">{{ a.title }}</span>
+            <span class="a-meta">{{ a.author }}</span>
+          </router-link>
+        </div>
+      </div>
+
       <div class="reviews-section">
         <h2 class="section-title">用户评价</h2>
         <div class="review-form" v-if="userStore.token">
@@ -154,8 +174,15 @@ const currentAttribution = computed(() => {
   return list.find((a) => a.url === url) ?? list[0] ?? null
 })
 
-/** 规格可信度提示（verified/reference/template 统计） */
-const specTrustHint = computed(() => {
+/* ---------- 相关测评 / 同品类兜底 ---------- */
+const ownArticles = computed(() => product.value?.articles ?? [])
+const fallbackArticles = computed(() => product.value?.relatedArticles ?? [])
+/** 有专属测评优先用专属；没有才退回同品类 */
+const shownArticles = computed(() => (ownArticles.value.length ? ownArticles.value : fallbackArticles.value))
+/** 当前展示的是不是「同品类兜底」，决定标题文案 */
+const isFallbackArticles = computed(() => ownArticles.value.length === 0 && fallbackArticles.value.length > 0)
+
+/** 规格可信度提示（verified/reference/template 统计） */const specTrustHint = computed(() => {
   const specs = (product.value?.specs ?? []) as any[]
   const v = specs.filter((s) => s.verifyStatus === 'verified').length
   const r = specs.filter((s) => s.verifyStatus === 'reference').length
@@ -324,6 +351,39 @@ tr.lowest td { color: #f97316; font-weight: 700; }
 .chart { height: 180px; margin-top: 16px; }
 .pc-actions { display: flex; gap: 12px; margin-top: 16px; }
 .pc-actions .el-button { flex: 1; }
+
+/* 相关测评 / 同品类兜底 */
+.articles-section {
+  margin-top: 32px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 24px;
+}
+.articles-head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 4px; }
+.articles-head .section-title { margin-bottom: 0; }
+.fallback-hint {
+  font-size: 12.5px;
+  color: #b45309;
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: 7px;
+  padding: 3px 10px;
+}
+.article-list { display: flex; flex-direction: column; gap: 2px; margin-top: 12px; }
+.article-item {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  transition: background 0.15s;
+}
+.article-item:hover { background: #f8fafc; }
+.article-item .a-title { font-size: 14.5px; color: #1f2937; font-weight: 600; }
+.article-item:hover .a-title { color: var(--gp-brand, #4f46e5); }
+.article-item .a-meta { margin-left: auto; font-size: 12px; color: #9ca3af; white-space: nowrap; }
+
 .reviews-section { margin-top: 32px; background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; padding: 24px; }
 .review-form { display: flex; gap: 12px; align-items: center; margin-bottom: 20px; }
 .review-form .el-input { flex: 1; }
