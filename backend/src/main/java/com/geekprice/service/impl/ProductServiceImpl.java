@@ -50,7 +50,17 @@ public class ProductServiceImpl implements ProductService {
         wrapper.eq(Product::getStatus, 1);
 
         if (StringUtils.hasText(query.getKeyword())) {
-            wrapper.like(Product::getName, query.getKeyword());
+            String kw = query.getKeyword().trim();
+            // 除了商品名，也支持按品牌名搜索（如「苹果」「红米」）。
+            // 这里先查品牌 id 再拼 in 条件，避免把用户输入直接拼进 SQL。
+            List<Long> brandIds = brandMapper.selectList(
+                            new LambdaQueryWrapper<Brand>().like(Brand::getName, kw))
+                    .stream().map(Brand::getId).toList();
+            if (brandIds.isEmpty()) {
+                wrapper.like(Product::getName, kw);
+            } else {
+                wrapper.and(w -> w.like(Product::getName, kw).or().in(Product::getBrandId, brandIds));
+            }
         }
         if (query.getCategoryId() != null) {
             wrapper.eq(Product::getCategoryId, query.getCategoryId());
@@ -96,6 +106,11 @@ public class ProductServiceImpl implements ProductService {
             throw new BusinessException(ResultCode.NOT_FOUND.getCode(), "产品不存在或已下架");
         }
         fillProductForDetail(product);
+        // 与列表口径保持一致：没有「审核通过的真实图片」的商品同样视为不可见，
+        // 否则拿到 id 就能绕过审核门控直接访问。
+        if (product.getImages() == null || product.getImages().isEmpty()) {
+            throw new BusinessException(ResultCode.NOT_FOUND.getCode(), "产品不存在或已下架");
+        }
         return product;
     }
 
@@ -122,6 +137,10 @@ public class ProductServiceImpl implements ProductService {
                         "商品规格对比仅支持同一品类，当前商品分类不一致");
             }
             fillProductForDetail(p);
+            // 同 detail：没有合格图片的商品不参与对比，避免绕过审核门控
+            if (p.getImages() == null || p.getImages().isEmpty()) {
+                continue;
+            }
             result.add(p);
         }
         return result;

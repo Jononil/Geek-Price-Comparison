@@ -284,7 +284,8 @@ function pickCategory(id: number) {
 async function loadProducts() {
   loading.value = true
   try {
-    const params: Record<string, unknown> = { page: 1, pageSize: 12, sort: 'valueScore' }
+    // 后端单页最多 50 条；取满以便整类参与试算（手机类已有 24 款）
+    const params: Record<string, unknown> = { page: 1, pageSize: 50, sort: 'valueScore' }
     if (categoryId.value) params.categoryId = categoryId.value
     const res = await productApi.list(params)
     products.value = res.records ?? []

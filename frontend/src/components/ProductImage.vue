@@ -21,16 +21,12 @@
       </svg>
       <span class="pi-empty-text">暂无实拍图</span>
     </div>
-
-    <!-- 真实图片 + 系列参考图标识 -->
-    <span v-if="!showFallback && resolvedSrc && seriesTag" class="pi-badge pi-badge--series">系列参考图</span>
   </div>
 </template>
 
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
 import { pickProductImage, isPlaceholderImage } from '@/utils/image'
-import { isSeriesReferenceImage } from '@/utils/seriesReference'
 
 /**
  * 统一的产品图片展示组件
@@ -80,13 +76,6 @@ watch(
 
 function onError() { failed.value = true }
 function onLoad() { failed.value = false }
-
-/** 系列参考图标识：仅当命中 productId + 完整 URL 映射时显示 */
-const seriesTag = computed(() =>
-  !showFallback.value && props.productId != null
-    ? isSeriesReferenceImage(props.productId, resolvedSrc.value)
-    : false
-)
 </script>
 
 <style scoped>
@@ -138,24 +127,5 @@ const seriesTag = computed(() =>
   font-size: 12px;
   color: #9ca3af;
   letter-spacing: 1px;
-}
-.pi-badge {
-  position: absolute;
-  right: 6px;
-  top: 6px;
-  z-index: 2;
-  font-size: 10px;
-  line-height: 1;
-  padding: 4px 7px;
-  border-radius: 5px;
-  white-space: nowrap;
-  letter-spacing: 0.2px;
-  backdrop-filter: blur(2px);
-}
-.pi-badge--series {
-  background: rgba(255, 247, 237, 0.94);
-  color: #c2410c;
-  border: 1px solid #fed7aa;
-  font-weight: 600;
 }
 </style>

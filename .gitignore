@@ -3,6 +3,13 @@ node_modules/
 dist/
 target/
 
+# TypeScript 编译产物（vite.config.ts / vue-tsc 生成，非源码）
+frontend/vite.config.js
+frontend/vite.config.d.ts
+admin/vite.config.js
+admin/vite.config.d.ts
+*.tsbuildinfo
+
 # 本地开发临时文件
 .tmpbuild/
 logs/
