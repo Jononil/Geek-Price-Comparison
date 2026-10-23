@@ -1,0 +1,55 @@
+<view class="ad-page">
+  <gp-loading wx:if="{{state === 'loading'}}" text="加载测评中…" />
+  <gp-empty wx:elif="{{state === 'notfound'}}" text="测评不存在或已下架" />
+  <gp-error wx:elif="{{state === 'error'}}" bind:retry="onRetry" />
+
+  <block wx:else>
+    <view class="article gp-card">
+      <text class="title">{{article.title}}</text>
+      <view class="meta">
+        <text class="meta-item">👤 {{article.author}}</text>
+        <text class="meta-item">📅 {{article.publishTime}}</text>
+        <text class="meta-item">👁 {{article.views}} 阅读</text>
+        <view class="like-btn {{likedLocal ? 'liked' : ''}}" bindtap="onLike">👍 {{likesText}}</view>
+      </view>
+
+      <!-- 评分面板 -->
+      <view class="score-panel">
+        <view class="score-main-wrap">
+          <text class="score-main">{{scoreText}}</text>
+          <text class="score-unit">综合评分</text>
+        </view>
+        <view class="score-sub">
+          <view class="ss-item" wx:for="{{subScores}}" wx:key="label">
+            <text class="ss-label">{{item.label}}</text>
+            <text class="ss-value">{{item.value}}</text>
+          </view>
+        </view>
+      </view>
+
+      <!-- 优缺点 -->
+      <view class="pros-cons" wx:if="{{article.pros || article.cons}}">
+        <view class="pc-box pc-pros" wx:if="{{article.pros}}">
+          <text class="pc-title">优点</text>
+          <text class="pc-text">{{article.pros}}</text>
+        </view>
+        <view class="pc-box pc-cons" wx:if="{{article.cons}}">
+          <text class="pc-title">缺点</text>
+          <text class="pc-text">{{article.cons}}</text>
+        </view>
+      </view>
+
+      <!-- 正文（富文本） -->
+      <view class="content-wrap">
+        <rich-text class="content" nodes="{{contentNodes}}" />
+      </view>
+
+      <!-- 关联商品（productId 为 null 时隐藏——当前库全部为 null） -->
+      <view wx:if="{{hasProduct}}" class="product-entry" bindtap="onGoProduct">
+        <text>查看关联商品 ›</text>
+      </view>
+    </view>
+
+    <view class="footer-hint gp-data-hint">专业测评由平台编辑发布</view>
+  </block>
+</view>

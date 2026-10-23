@@ -1,0 +1,3 @@
+INSERT INTO products (name, brand_id, category_id, description, official_price, current_price, score, value_score, performance_score, user_rating, sales, heat, launch_date, status, is_recommend, is_hot, deleted)
+      SELECT 'AMD Ryzen 9 3900X', 19, 13, '系统新增：型号明确的数码产品（演示数据，价格为系统模拟）', 6128.00, 6128.00, 4.5, 80, 93, 4.5, 343, 772, '2024-06-01', 1, 0, 0, 0
+      FROM DUAL WHERE NOT EXISTS (SELECT 1 FROM products WHERE name='AMD Ryzen 9 3900X');

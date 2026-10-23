@@ -1,0 +1,3026 @@
+{
+  "meta": {
+    "purpose": "第三阶段：为仍缺图产品收集候选（EXACT_MATCH 优先，其次 SERIES_MATCH）。未写数据库。",
+    "generatedAt": "2026-10-08T04:18:43.256Z",
+    "scope": "deleted=0 产品 132 个；已有真实图 40 个（不重复处理）；本轮目标 92 个",
+    "levels": {
+      "EXACT_MATCH": "品牌+完整型号确认",
+      "SERIES_MATCH": "品牌+产品系列一致、产品类型一致，未确认具体型号",
+      "REJECT": "无法可靠确认"
+    },
+    "constraints": [
+      "品牌/系列/产品类型三者必须一致",
+      "禁止仅凭数字型号匹配",
+      "禁止跨代际/跨产品线/跨型号冒充",
+      "必须有开放许可（CC0/PD/CC BY/CC BY-SA）",
+      "只用 500px 缩略图",
+      "排除包装/对比/展台/人物/截图/裸片/配件"
+    ],
+    "stats": {
+      "targets": 92,
+      "exactMatch": 1,
+      "seriesMatch": 14,
+      "noReliableCandidate": 77
+    }
+  },
+  "exactMatch": [
+    {
+      "productId": 122,
+      "productName": "金士顿骇客神条 32GB",
+      "brand": "金士顿",
+      "category": "内存",
+      "fullModel": "骇客神条 32gb",
+      "seriesName": "Kingston FURY 系列",
+      "mustTokens": [
+        "kingston",
+        "fury"
+      ],
+      "queries": [
+        "Kingston FURY memory",
+        "Kingston Fury RAM",
+        "Kingston FURY Beast"
+      ],
+      "matchType": "EXACT_MATCH",
+      "candidateCount": 2,
+      "exactCount": 2,
+      "seriesCount": 0,
+      "poolSize": 54,
+      "rejectedCount": 52,
+      "best": {
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Kingston_FURY_Impact_DDR5_SO-DIMM_Laptop_Memory_32GB_Module_-_front_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Kingston_FURY_Impact_DDR5_SO-DIMM_Laptop_Memory_32GB_Module_-_front_view.jpg/500px-Kingston_FURY_Impact_DDR5_SO-DIMM_Laptop_Memory_32GB_Module_-_front_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:Kingston%20FURY%20Impact%20DDR5%20SO-DIMM%20Laptop%20Memory%2032GB%20Module%20-%20front%20view.jpg",
+        "title": "Kingston FURY Impact DDR5 SO-DIMM Laptop Memory 32GB Module - front view.jpg",
+        "license": "CC BY-SA 4.0",
+        "creator": "ITEagle Europe - Sebastiaan Broekhoven",
+        "width": 2116,
+        "height": 2116,
+        "mime": "image/jpeg",
+        "matchType": "EXACT_MATCH",
+        "score": 115,
+        "reason": "标题含完整型号「骇客神条 32gb」且无变体/容量冲突（品牌+系列 kingston + fury 亦命中）",
+        "subjectNote": "Front view of a Kingston FURY Impact DDR5 SO-DIMM Laptop Memory 32GB Module.",
+        "categories": "Computer memory Kingston Technology Uploaded with OpenRefine DDR5 SDRAM",
+        "via": "Kingston FURY memory"
+      },
+      "allCandidates": [
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Kingston_FURY_Impact_DDR5_SO-DIMM_Laptop_Memory_32GB_Module_-_front_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Kingston_FURY_Impact_DDR5_SO-DIMM_Laptop_Memory_32GB_Module_-_front_view.jpg/500px-Kingston_FURY_Impact_DDR5_SO-DIMM_Laptop_Memory_32GB_Module_-_front_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:Kingston%20FURY%20Impact%20DDR5%20SO-DIMM%20Laptop%20Memory%2032GB%20Module%20-%20front%20view.jpg",
+          "title": "Kingston FURY Impact DDR5 SO-DIMM Laptop Memory 32GB Module - front view.jpg",
+          "license": "CC BY-SA 4.0",
+          "creator": "ITEagle Europe - Sebastiaan Broekhoven",
+          "matchType": "EXACT_MATCH",
+          "score": 115,
+          "reason": "标题含完整型号「骇客神条 32gb」且无变体/容量冲突（品牌+系列 kingston + fury 亦命中）",
+          "via": "Kingston FURY memory"
+        },
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Kingston_FURY_Impact_DDR5_SO-DIMM_Laptop_Memory_32GB_Module_-_rear_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Kingston_FURY_Impact_DDR5_SO-DIMM_Laptop_Memory_32GB_Module_-_rear_view.jpg/500px-Kingston_FURY_Impact_DDR5_SO-DIMM_Laptop_Memory_32GB_Module_-_rear_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:Kingston%20FURY%20Impact%20DDR5%20SO-DIMM%20Laptop%20Memory%2032GB%20Module%20-%20rear%20view.jpg",
+          "title": "Kingston FURY Impact DDR5 SO-DIMM Laptop Memory 32GB Module - rear view.jpg",
+          "license": "CC BY-SA 4.0",
+          "creator": "ITEagle Europe - Sebastiaan Broekhoven",
+          "matchType": "EXACT_MATCH",
+          "score": 115,
+          "reason": "标题含完整型号「骇客神条 32gb」且无变体/容量冲突（品牌+系列 kingston + fury 亦命中）",
+          "via": "Kingston FURY memory"
+        }
+      ]
+    }
+  ],
+  "seriesMatch": [
+    {
+      "productId": 5,
+      "productName": "小米 14 Ultra",
+      "brand": "小米",
+      "category": "手机",
+      "fullModel": "14 ultra",
+      "seriesName": "Xiaomi 14 系列",
+      "mustTokens": [
+        "xiaomi",
+        "14"
+      ],
+      "queries": [
+        "Xiaomi 14 smartphone",
+        "Xiaomi 14 Ultra",
+        "Xiaomi 14 phone"
+      ],
+      "matchType": "SERIES_MATCH",
+      "candidateCount": 1,
+      "exactCount": 0,
+      "seriesCount": 1,
+      "poolSize": 48,
+      "rejectedCount": 47,
+      "best": {
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/Xiaomi_14_%28July_10%2C_2026%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Xiaomi_14_%28July_10%2C_2026%29.jpg/500px-Xiaomi_14_%28July_10%2C_2026%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:Xiaomi%2014%20(July%2010%2C%202026).jpg",
+        "title": "Xiaomi 14 (July 10, 2026).jpg",
+        "license": "CC BY-SA 4.0",
+        "creator": "茅野ふたば",
+        "width": 3024,
+        "height": 4032,
+        "mime": "image/jpeg",
+        "matchType": "SERIES_MATCH",
+        "score": 75,
+        "reason": "品牌+系列一致（xiaomi + 14），产品类型为 phone；型号差异：标题缺「ultra」；缺型号关键锚点",
+        "subjectNote": "Xiaomi 14.",
+        "categories": "Taken with iPhone 11 Dongguan Self-published work Files with coordinates missing SDC location of creation Xiaomi 14 Front of smartphones Time 19:57",
+        "via": "Xiaomi 14 smartphone"
+      },
+      "allCandidates": [
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/Xiaomi_14_%28July_10%2C_2026%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Xiaomi_14_%28July_10%2C_2026%29.jpg/500px-Xiaomi_14_%28July_10%2C_2026%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:Xiaomi%2014%20(July%2010%2C%202026).jpg",
+          "title": "Xiaomi 14 (July 10, 2026).jpg",
+          "license": "CC BY-SA 4.0",
+          "creator": "茅野ふたば",
+          "matchType": "SERIES_MATCH",
+          "score": 75,
+          "reason": "品牌+系列一致（xiaomi + 14），产品类型为 phone；型号差异：标题缺「ultra」；缺型号关键锚点",
+          "via": "Xiaomi 14 smartphone"
+        }
+      ]
+    },
+    {
+      "productId": 8,
+      "productName": "vivo X100 Ultra",
+      "brand": "vivo",
+      "category": "手机",
+      "fullModel": "x100 ultra",
+      "seriesName": "vivo X100 系列",
+      "mustTokens": [
+        "vivo",
+        "x100"
+      ],
+      "queries": [
+        "Vivo X100",
+        "Vivo X100 smartphone"
+      ],
+      "matchType": "SERIES_MATCH",
+      "candidateCount": 3,
+      "exactCount": 0,
+      "seriesCount": 3,
+      "poolSize": 23,
+      "rejectedCount": 20,
+      "best": {
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/Vivo_X100_pic2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Vivo_X100_pic2.jpg/500px-Vivo_X100_pic2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:Vivo%20X100%20pic2.jpg",
+        "title": "Vivo X100 pic2.jpg",
+        "license": "CC BY-SA 4.0",
+        "creator": "Vis M",
+        "width": 12240,
+        "height": 16320,
+        "mime": "image/jpeg",
+        "matchType": "SERIES_MATCH",
+        "score": 75,
+        "reason": "品牌+系列一致（vivo + x100），产品类型为 phone；型号差异：标题缺「ultra」",
+        "subjectNote": "Vivo X100",
+        "categories": "Self-published work Photographs taken by Vis M Taken with Samsung Galaxy S23 Ultra Vivo X100 Front of smartphones",
+        "via": "Vivo X100"
+      },
+      "allCandidates": [
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/Vivo_X100_pic2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Vivo_X100_pic2.jpg/500px-Vivo_X100_pic2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:Vivo%20X100%20pic2.jpg",
+          "title": "Vivo X100 pic2.jpg",
+          "license": "CC BY-SA 4.0",
+          "creator": "Vis M",
+          "matchType": "SERIES_MATCH",
+          "score": 75,
+          "reason": "品牌+系列一致（vivo + x100），产品类型为 phone；型号差异：标题缺「ultra」",
+          "via": "Vivo X100"
+        },
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Vivo_X100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Vivo_X100.jpg/500px-Vivo_X100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:Vivo%20X100.jpg",
+          "title": "Vivo X100.jpg",
+          "license": "CC BY-SA 4.0",
+          "creator": "Vis M",
+          "matchType": "SERIES_MATCH",
+          "score": 75,
+          "reason": "品牌+系列一致（vivo + x100），产品类型为 phone；型号差异：标题缺「ultra」",
+          "via": "Vivo X100"
+        },
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Vivo_X100_pic3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Vivo_X100_pic3.jpg/500px-Vivo_X100_pic3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:Vivo%20X100%20pic3.jpg",
+          "title": "Vivo X100 pic3.jpg",
+          "license": "CC BY-SA 4.0",
+          "creator": "Vis M",
+          "matchType": "SERIES_MATCH",
+          "score": 75,
+          "reason": "品牌+系列一致（vivo + x100），产品类型为 phone；型号差异：标题缺「ultra」",
+          "via": "Vivo X100"
+        }
+      ]
+    },
+    {
+      "productId": 23,
+      "productName": "MacBook Air M3",
+      "brand": "苹果",
+      "category": "笔记本电脑",
+      "fullModel": "macbook air m3",
+      "seriesName": "Apple MacBook Air 系列",
+      "mustTokens": [
+        "macbook",
+        "air"
+      ],
+      "queries": [
+        "MacBook Air laptop",
+        "MacBook Air M3"
+      ],
+      "matchType": "SERIES_MATCH",
+      "candidateCount": 3,
+      "exactCount": 0,
+      "seriesCount": 3,
+      "poolSize": 40,
+      "rejectedCount": 37,
+      "best": {
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Macbook_Air.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Macbook_Air.jpg/500px-Macbook_Air.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:Macbook%20Air.jpg",
+        "title": "Macbook Air.jpg",
+        "license": "CC BY-SA 3.0",
+        "creator": "https://es.ifixit.com/User/524640/Sam+Lionheart",
+        "width": 4588,
+        "height": 3618,
+        "mime": "image/jpeg",
+        "matchType": "SERIES_MATCH",
+        "score": 80,
+        "reason": "品牌+系列一致（macbook + air），产品类型为 laptop；标题未出现完整型号",
+        "subjectNote": "Macbook Air",
+        "categories": "Laptop computers with white background MacBook Air (2nd generation (2010–2017), Tapered Unibody)",
+        "via": "MacBook Air laptop"
+      },
+      "allCandidates": [
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Macbook_Air.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Macbook_Air.jpg/500px-Macbook_Air.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:Macbook%20Air.jpg",
+          "title": "Macbook Air.jpg",
+          "license": "CC BY-SA 3.0",
+          "creator": "https://es.ifixit.com/User/524640/Sam+Lionheart",
+          "matchType": "SERIES_MATCH",
+          "score": 80,
+          "reason": "品牌+系列一致（macbook + air），产品类型为 laptop；标题未出现完整型号",
+          "via": "MacBook Air laptop"
+        },
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/17/MacBook_Air_Station%3B_May_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/MacBook_Air_Station%3B_May_2012.jpg/500px-MacBook_Air_Station%3B_May_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:MacBook%20Air%20Station%3B%20May%202012.jpg",
+          "title": "MacBook Air Station; May 2012.jpg",
+          "license": "CC BY 2.0",
+          "creator": "Matthew Pearce",
+          "matchType": "SERIES_MATCH",
+          "score": 80,
+          "reason": "品牌+系列一致（macbook + air），产品类型为 laptop；标题未出现完整型号",
+          "via": "MacBook Air laptop"
+        },
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Macbook_Air.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Macbook_Air.png/500px-Macbook_Air.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:Macbook%20Air.png",
+          "title": "Macbook Air.png",
+          "license": "Public domain",
+          "creator": "嘉傑",
+          "matchType": "SERIES_MATCH",
+          "score": 80,
+          "reason": "品牌+系列一致（macbook + air），产品类型为 laptop；标题未出现完整型号",
+          "via": "MacBook Air laptop"
+        }
+      ]
+    },
+    {
+      "productId": 44,
+      "productName": "AOC 27 4K",
+      "brand": "AOC",
+      "category": "显示器",
+      "fullModel": "27 4k",
+      "seriesName": "AOC 显示器系列",
+      "mustTokens": [
+        "aoc",
+        "monitor"
+      ],
+      "queries": [
+        "AOC monitor",
+        "AOC 27 inch monitor"
+      ],
+      "matchType": "SERIES_MATCH",
+      "candidateCount": 1,
+      "exactCount": 0,
+      "seriesCount": 1,
+      "poolSize": 40,
+      "rejectedCount": 39,
+      "best": {
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6b/AOC_27B2H_LCD_MONITOR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/AOC_27B2H_LCD_MONITOR.jpg/500px-AOC_27B2H_LCD_MONITOR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:AOC%2027B2H%20LCD%20MONITOR.jpg",
+        "title": "AOC 27B2H LCD MONITOR.jpg",
+        "license": "CC BY-SA 4.0",
+        "creator": "Dinkun Chen",
+        "width": 7436,
+        "height": 4299,
+        "mime": "image/jpeg",
+        "matchType": "SERIES_MATCH",
+        "score": 80,
+        "reason": "品牌+系列一致（aoc + monitor），产品类型为 monitor；标题未出现完整型号",
+        "subjectNote": "AOC 27B2H LCD MONITOR",
+        "categories": "Taken with Canon EOS R5 Yoshinoya restaurants in China Self-published work Files with coordinates missing SDC location of creation China photographs taken on 2024-12-24 Taken with Canon RF 24-70mm F2.8L IS USM AOC LCD monitors",
+        "via": "AOC monitor"
+      },
+      "allCandidates": [
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6b/AOC_27B2H_LCD_MONITOR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/AOC_27B2H_LCD_MONITOR.jpg/500px-AOC_27B2H_LCD_MONITOR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:AOC%2027B2H%20LCD%20MONITOR.jpg",
+          "title": "AOC 27B2H LCD MONITOR.jpg",
+          "license": "CC BY-SA 4.0",
+          "creator": "Dinkun Chen",
+          "matchType": "SERIES_MATCH",
+          "score": 80,
+          "reason": "品牌+系列一致（aoc + monitor），产品类型为 monitor；标题未出现完整型号",
+          "via": "AOC monitor"
+        }
+      ]
+    },
+    {
+      "productId": 45,
+      "productName": "明基 PD2705U",
+      "brand": "明基",
+      "category": "显示器",
+      "fullModel": "pd2705u",
+      "seriesName": "BenQ 专业显示器系列",
+      "mustTokens": [
+        "benq",
+        "monitor"
+      ],
+      "queries": [
+        "BenQ monitor",
+        "BenQ PD monitor"
+      ],
+      "matchType": "SERIES_MATCH",
+      "candidateCount": 2,
+      "exactCount": 0,
+      "seriesCount": 2,
+      "poolSize": 40,
+      "rejectedCount": 38,
+      "best": {
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/BENQ_MONITOR_%28%D0%96%D0%B8%D0%B4%D0%BA%D0%BE%D0%BA%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/BENQ_MONITOR_%28%D0%96%D0%B8%D0%B4%D0%BA%D0%BE%D0%BA%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%29.jpg/500px-BENQ_MONITOR_%28%D0%96%D0%B8%D0%B4%D0%BA%D0%BE%D0%BA%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:BENQ%20MONITOR%20(%D0%96%D0%B8%D0%B4%D0%BA%D0%BE%D0%BA%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9).jpg",
+        "title": "BENQ MONITOR (Жидкокристалический).jpg",
+        "license": "CC BY-SA 4.0",
+        "creator": "Petruhin",
+        "width": 3264,
+        "height": 2448,
+        "mime": "image/jpeg",
+        "matchType": "SERIES_MATCH",
+        "score": 80,
+        "reason": "品牌+系列一致（benq + monitor），产品类型为 monitor；标题未出现完整型号；缺型号关键锚点",
+        "subjectNote": "Монитор от Benq",
+        "categories": "Self-published work BenQ monitors",
+        "via": "BenQ monitor"
+      },
+      "allCandidates": [
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/BENQ_MONITOR_%28%D0%96%D0%B8%D0%B4%D0%BA%D0%BE%D0%BA%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/BENQ_MONITOR_%28%D0%96%D0%B8%D0%B4%D0%BA%D0%BE%D0%BA%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%29.jpg/500px-BENQ_MONITOR_%28%D0%96%D0%B8%D0%B4%D0%BA%D0%BE%D0%BA%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:BENQ%20MONITOR%20(%D0%96%D0%B8%D0%B4%D0%BA%D0%BE%D0%BA%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9).jpg",
+          "title": "BENQ MONITOR (Жидкокристалический).jpg",
+          "license": "CC BY-SA 4.0",
+          "creator": "Petruhin",
+          "matchType": "SERIES_MATCH",
+          "score": 80,
+          "reason": "品牌+系列一致（benq + monitor），产品类型为 monitor；标题未出现完整型号；缺型号关键锚点",
+          "via": "BenQ monitor"
+        },
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d0/BenQ_monitors_%28XL2420T_XL2410T%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/BenQ_monitors_%28XL2420T_XL2410T%29.jpg/500px-BenQ_monitors_%28XL2420T_XL2410T%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:BenQ%20monitors%20(XL2420T%20XL2410T).jpg",
+          "title": "BenQ monitors (XL2420T XL2410T).jpg",
+          "license": "CC BY 2.0",
+          "creator": "Laineema",
+          "matchType": "SERIES_MATCH",
+          "score": 80,
+          "reason": "品牌+系列一致（benq + monitor），产品类型为 monitor；标题未出现完整型号；缺型号关键锚点",
+          "via": "BenQ monitor"
+        }
+      ]
+    },
+    {
+      "productId": 48,
+      "productName": "Bose QC Ultra",
+      "brand": "Bose",
+      "category": "耳机",
+      "fullModel": "qc ultra",
+      "seriesName": "Bose QuietComfort 系列",
+      "mustTokens": [
+        "bose",
+        "quietcomfort"
+      ],
+      "queries": [
+        "Bose QuietComfort",
+        "Bose QuietComfort Ultra headphones"
+      ],
+      "matchType": "SERIES_MATCH",
+      "candidateCount": 7,
+      "exactCount": 0,
+      "seriesCount": 7,
+      "poolSize": 20,
+      "rejectedCount": 13,
+      "best": {
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/Bose_QuietComfort_Ultra_Earbuds_-_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Bose_QuietComfort_Ultra_Earbuds_-_3.jpg/500px-Bose_QuietComfort_Ultra_Earbuds_-_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:Bose%20QuietComfort%20Ultra%20Earbuds%20-%203.jpg",
+        "title": "Bose QuietComfort Ultra Earbuds - 3.jpg",
+        "license": "CC BY-SA 4.0",
+        "creator": "Kyu3",
+        "width": 1730,
+        "height": 1730,
+        "mime": "image/jpeg",
+        "matchType": "SERIES_MATCH",
+        "score": 80,
+        "reason": "品牌+系列一致（bose + quietcomfort），产品类型为 earbud；标题未出现完整型号",
+        "subjectNote": "店頭展示中のBose社の完全ワイヤレスイヤホン「QuietComfort Ultra Earbuds」。",
+        "categories": "Self-published work Nagoya photographs taken on 2023-10-07 Bose QuietComfort Ultra Earbuds",
+        "via": "Bose QuietComfort"
+      },
+      "allCandidates": [
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/Bose_QuietComfort_Ultra_Earbuds_-_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Bose_QuietComfort_Ultra_Earbuds_-_3.jpg/500px-Bose_QuietComfort_Ultra_Earbuds_-_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:Bose%20QuietComfort%20Ultra%20Earbuds%20-%203.jpg",
+          "title": "Bose QuietComfort Ultra Earbuds - 3.jpg",
+          "license": "CC BY-SA 4.0",
+          "creator": "Kyu3",
+          "matchType": "SERIES_MATCH",
+          "score": 80,
+          "reason": "品牌+系列一致（bose + quietcomfort），产品类型为 earbud；标题未出现完整型号",
+          "via": "Bose QuietComfort"
+        },
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Bose_QuietComfort_Ultra_Earbuds_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Bose_QuietComfort_Ultra_Earbuds_-_2.jpg/500px-Bose_QuietComfort_Ultra_Earbuds_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:Bose%20QuietComfort%20Ultra%20Earbuds%20-%202.jpg",
+          "title": "Bose QuietComfort Ultra Earbuds - 2.jpg",
+          "license": "CC BY-SA 4.0",
+          "creator": "Kyu3",
+          "matchType": "SERIES_MATCH",
+          "score": 80,
+          "reason": "品牌+系列一致（bose + quietcomfort），产品类型为 earbud；标题未出现完整型号",
+          "via": "Bose QuietComfort"
+        },
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/Bose_QuietComfort_Ultra_Earbuds_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Bose_QuietComfort_Ultra_Earbuds_-_1.jpg/500px-Bose_QuietComfort_Ultra_Earbuds_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:Bose%20QuietComfort%20Ultra%20Earbuds%20-%201.jpg",
+          "title": "Bose QuietComfort Ultra Earbuds - 1.jpg",
+          "license": "CC BY-SA 4.0",
+          "creator": "Kyu3",
+          "matchType": "SERIES_MATCH",
+          "score": 80,
+          "reason": "品牌+系列一致（bose + quietcomfort），产品类型为 earbud；标题未出现完整型号",
+          "via": "Bose QuietComfort"
+        },
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/Bose_QuietComfort_Ultra_Earbuds_-_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Bose_QuietComfort_Ultra_Earbuds_-_4.jpg/500px-Bose_QuietComfort_Ultra_Earbuds_-_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:Bose%20QuietComfort%20Ultra%20Earbuds%20-%204.jpg",
+          "title": "Bose QuietComfort Ultra Earbuds - 4.jpg",
+          "license": "CC BY-SA 4.0",
+          "creator": "Kyu3",
+          "matchType": "SERIES_MATCH",
+          "score": 80,
+          "reason": "品牌+系列一致（bose + quietcomfort），产品类型为 earbud；标题未出现完整型号",
+          "via": "Bose QuietComfort"
+        },
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/Bose_QuietComfort_Earbuds_II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Bose_QuietComfort_Earbuds_II.jpg/500px-Bose_QuietComfort_Earbuds_II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:Bose%20QuietComfort%20Earbuds%20II.jpg",
+          "title": "Bose QuietComfort Earbuds II.jpg",
+          "license": "CC BY-SA 4.0",
+          "creator": "KKPCW（Kyu3）",
+          "matchType": "SERIES_MATCH",
+          "score": 75,
+          "reason": "品牌+系列一致（bose + quietcomfort），产品类型为 earbud；型号差异：标题缺「ultra」；缺型号关键锚点",
+          "via": "Bose QuietComfort"
+        }
+      ]
+    },
+    {
+      "productId": 83,
+      "productName": "小米 Watch S3",
+      "brand": "小米",
+      "category": "智能手表",
+      "fullModel": "watch s3",
+      "seriesName": "Xiaomi Watch S 系列",
+      "mustTokens": [
+        "xiaomi",
+        "watch"
+      ],
+      "queries": [
+        "Xiaomi Watch",
+        "Xiaomi Watch S3"
+      ],
+      "matchType": "SERIES_MATCH",
+      "candidateCount": 2,
+      "exactCount": 0,
+      "seriesCount": 2,
+      "poolSize": 21,
+      "rejectedCount": 19,
+      "best": {
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/Xiaomi_Mi_Watch_Black.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Xiaomi_Mi_Watch_Black.jpg/500px-Xiaomi_Mi_Watch_Black.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:Xiaomi%20Mi%20Watch%20Black.jpg",
+        "title": "Xiaomi Mi Watch Black.jpg",
+        "license": "CC BY-SA 4.0",
+        "creator": "人工知能",
+        "width": 3120,
+        "height": 4160,
+        "mime": "image/jpeg",
+        "matchType": "SERIES_MATCH",
+        "score": 80,
+        "reason": "品牌+系列一致（xiaomi + watch），产品类型为 watch；标题未出现完整型号",
+        "subjectNote": "​展示在小米之家的小米手錶",
+        "categories": "GFDL Taken with Xiaomi Mi Note Pro License migration redundant Self-published work",
+        "via": "Xiaomi Watch"
+      },
+      "allCandidates": [
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/Xiaomi_Mi_Watch_Black.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Xiaomi_Mi_Watch_Black.jpg/500px-Xiaomi_Mi_Watch_Black.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:Xiaomi%20Mi%20Watch%20Black.jpg",
+          "title": "Xiaomi Mi Watch Black.jpg",
+          "license": "CC BY-SA 4.0",
+          "creator": "人工知能",
+          "matchType": "SERIES_MATCH",
+          "score": 80,
+          "reason": "品牌+系列一致（xiaomi + watch），产品类型为 watch；标题未出现完整型号",
+          "via": "Xiaomi Watch"
+        },
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Xiaomi_Watch_Pro_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Xiaomi_Watch_Pro_2.jpg/500px-Xiaomi_Watch_Pro_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:Xiaomi%20Watch%20Pro%202.jpg",
+          "title": "Xiaomi Watch Pro 2.jpg",
+          "license": "CC0",
+          "creator": "Milíkov1234",
+          "matchType": "SERIES_MATCH",
+          "score": 75,
+          "reason": "品牌+系列一致（xiaomi + watch），产品类型为 watch；型号差异：标题多出「pro」",
+          "via": "Xiaomi Watch"
+        }
+      ]
+    },
+    {
+      "productId": 96,
+      "productName": "RTX 4070 Super",
+      "brand": "英伟达",
+      "category": "显卡",
+      "fullModel": "rtx 4070 super",
+      "seriesName": "NVIDIA GeForce RTX 4070 系列",
+      "mustTokens": [
+        "geforce",
+        "4070"
+      ],
+      "queries": [
+        "GeForce RTX 4070",
+        "RTX 4070 graphics card"
+      ],
+      "matchType": "SERIES_MATCH",
+      "candidateCount": 6,
+      "exactCount": 0,
+      "seriesCount": 6,
+      "poolSize": 45,
+      "rejectedCount": 39,
+      "best": {
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/2023_Gigabyte_GeForce_RTX_4070_Aero_OC_12GB_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/2023_Gigabyte_GeForce_RTX_4070_Aero_OC_12GB_%283%29.jpg/500px-2023_Gigabyte_GeForce_RTX_4070_Aero_OC_12GB_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:2023%20Gigabyte%20GeForce%20RTX%204070%20Aero%20OC%2012GB%20(3).jpg",
+        "title": "2023 Gigabyte GeForce RTX 4070 Aero OC 12GB (3).jpg",
+        "license": "CC BY-SA 4.0",
+        "creator": "Jacek Halicki",
+        "width": 4536,
+        "height": 2822,
+        "mime": "image/jpeg",
+        "matchType": "SERIES_MATCH",
+        "score": 75,
+        "reason": "品牌+系列一致（geforce + 4070），产品类型为 geforce；型号差异：标题缺「super」",
+        "subjectNote": "Gigabyte GeForce RTX 4070 Aero OC 12GB",
+        "categories": "Self-published work Images by Jacek Halicki Wikigrant WG 2023-3 Gigabyte GeForce RTX 4070 Aero OC 12GB",
+        "via": "GeForce RTX 4070"
+      },
+      "allCandidates": [
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/2023_Gigabyte_GeForce_RTX_4070_Aero_OC_12GB_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/2023_Gigabyte_GeForce_RTX_4070_Aero_OC_12GB_%283%29.jpg/500px-2023_Gigabyte_GeForce_RTX_4070_Aero_OC_12GB_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:2023%20Gigabyte%20GeForce%20RTX%204070%20Aero%20OC%2012GB%20(3).jpg",
+          "title": "2023 Gigabyte GeForce RTX 4070 Aero OC 12GB (3).jpg",
+          "license": "CC BY-SA 4.0",
+          "creator": "Jacek Halicki",
+          "matchType": "SERIES_MATCH",
+          "score": 75,
+          "reason": "品牌+系列一致（geforce + 4070），产品类型为 geforce；型号差异：标题缺「super」",
+          "via": "GeForce RTX 4070"
+        },
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/2023_Gigabyte_GeForce_RTX_4070_Aero_OC_12GB_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/2023_Gigabyte_GeForce_RTX_4070_Aero_OC_12GB_%282%29.jpg/500px-2023_Gigabyte_GeForce_RTX_4070_Aero_OC_12GB_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:2023%20Gigabyte%20GeForce%20RTX%204070%20Aero%20OC%2012GB%20(2).jpg",
+          "title": "2023 Gigabyte GeForce RTX 4070 Aero OC 12GB (2).jpg",
+          "license": "CC BY-SA 4.0",
+          "creator": "Jacek Halicki",
+          "matchType": "SERIES_MATCH",
+          "score": 75,
+          "reason": "品牌+系列一致（geforce + 4070），产品类型为 geforce；型号差异：标题缺「super」",
+          "via": "GeForce RTX 4070"
+        },
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fd/2023_Gigabyte_GeForce_RTX_4070_Aero_OC_12GB_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/2023_Gigabyte_GeForce_RTX_4070_Aero_OC_12GB_%281%29.jpg/500px-2023_Gigabyte_GeForce_RTX_4070_Aero_OC_12GB_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:2023%20Gigabyte%20GeForce%20RTX%204070%20Aero%20OC%2012GB%20(1).jpg",
+          "title": "2023 Gigabyte GeForce RTX 4070 Aero OC 12GB (1).jpg",
+          "license": "CC BY-SA 4.0",
+          "creator": "Jacek Halicki",
+          "matchType": "SERIES_MATCH",
+          "score": 75,
+          "reason": "品牌+系列一致（geforce + 4070），产品类型为 geforce；型号差异：标题缺「super」",
+          "via": "GeForce RTX 4070"
+        },
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2d/2023_Gigabyte_GeForce_RTX_4070_Aero_OC_12GB_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/2023_Gigabyte_GeForce_RTX_4070_Aero_OC_12GB_%284%29.jpg/500px-2023_Gigabyte_GeForce_RTX_4070_Aero_OC_12GB_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:2023%20Gigabyte%20GeForce%20RTX%204070%20Aero%20OC%2012GB%20(4).jpg",
+          "title": "2023 Gigabyte GeForce RTX 4070 Aero OC 12GB (4).jpg",
+          "license": "CC BY-SA 4.0",
+          "creator": "Jacek Halicki",
+          "matchType": "SERIES_MATCH",
+          "score": 75,
+          "reason": "品牌+系列一致（geforce + 4070），产品类型为 geforce；型号差异：标题缺「super」",
+          "via": "GeForce RTX 4070"
+        },
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a6/2023_Gigabyte_GeForce_RTX_4070_Aero_OC_12GB_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/2023_Gigabyte_GeForce_RTX_4070_Aero_OC_12GB_%285%29.jpg/500px-2023_Gigabyte_GeForce_RTX_4070_Aero_OC_12GB_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:2023%20Gigabyte%20GeForce%20RTX%204070%20Aero%20OC%2012GB%20(5).jpg",
+          "title": "2023 Gigabyte GeForce RTX 4070 Aero OC 12GB (5).jpg",
+          "license": "CC BY-SA 4.0",
+          "creator": "Jacek Halicki",
+          "matchType": "SERIES_MATCH",
+          "score": 75,
+          "reason": "品牌+系列一致（geforce + 4070），产品类型为 geforce；型号差异：标题缺「super」",
+          "via": "GeForce RTX 4070"
+        }
+      ]
+    },
+    {
+      "productId": 114,
+      "productName": "三星 990 Pro 2TB",
+      "brand": "三星",
+      "category": "固态硬盘",
+      "fullModel": "990 pro 2tb",
+      "seriesName": "Samsung 990 PRO 系列",
+      "mustTokens": [
+        "samsung",
+        "990"
+      ],
+      "queries": [
+        "Samsung 990 PRO SSD",
+        "Samsung 990 Pro"
+      ],
+      "matchType": "SERIES_MATCH",
+      "candidateCount": 3,
+      "exactCount": 0,
+      "seriesCount": 3,
+      "poolSize": 20,
+      "rejectedCount": 17,
+      "best": {
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/SAMSUNG_M.2_NVMe_SSD_990_PRO_4TB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/SAMSUNG_M.2_NVMe_SSD_990_PRO_4TB.jpg/500px-SAMSUNG_M.2_NVMe_SSD_990_PRO_4TB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:SAMSUNG%20M.2%20NVMe%20SSD%20990%20PRO%204TB.jpg",
+        "title": "SAMSUNG M.2 NVMe SSD 990 PRO 4TB.jpg",
+        "license": "CC BY-SA 4.0",
+        "creator": "Dinkun Chen",
+        "width": 6478,
+        "height": 4357,
+        "mime": "image/jpeg",
+        "matchType": "SERIES_MATCH",
+        "score": 80,
+        "reason": "品牌+系列一致（samsung + 990），产品类型为 ssd；标题未出现完整型号；容量不同（2tb vs 4tb）",
+        "subjectNote": "SAMSUNG M.2 NVMe SSD 990 PRO 4TB",
+        "categories": "Taken with Canon EOS R5 Self-published work Files with coordinates missing SDC location of creation Samsung MZ-V9P4T0 Taken with Canon RF 24-70mm F2.8L IS USM 4 TB Solid-state drives",
+        "via": "Samsung 990 PRO SSD"
+      },
+      "allCandidates": [
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/SAMSUNG_M.2_NVMe_SSD_990_PRO_4TB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/SAMSUNG_M.2_NVMe_SSD_990_PRO_4TB.jpg/500px-SAMSUNG_M.2_NVMe_SSD_990_PRO_4TB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:SAMSUNG%20M.2%20NVMe%20SSD%20990%20PRO%204TB.jpg",
+          "title": "SAMSUNG M.2 NVMe SSD 990 PRO 4TB.jpg",
+          "license": "CC BY-SA 4.0",
+          "creator": "Dinkun Chen",
+          "matchType": "SERIES_MATCH",
+          "score": 80,
+          "reason": "品牌+系列一致（samsung + 990），产品类型为 ssd；标题未出现完整型号；容量不同（2tb vs 4tb）",
+          "via": "Samsung 990 PRO SSD"
+        },
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b8/SAMSUNG_M.2_NVMe_SSD_990_PRO_4TB_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/SAMSUNG_M.2_NVMe_SSD_990_PRO_4TB_%282%29.jpg/500px-SAMSUNG_M.2_NVMe_SSD_990_PRO_4TB_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:SAMSUNG%20M.2%20NVMe%20SSD%20990%20PRO%204TB%20(2).jpg",
+          "title": "SAMSUNG M.2 NVMe SSD 990 PRO 4TB (2).jpg",
+          "license": "CC BY-SA 4.0",
+          "creator": "Dinkun Chen",
+          "matchType": "SERIES_MATCH",
+          "score": 80,
+          "reason": "品牌+系列一致（samsung + 990），产品类型为 ssd；标题未出现完整型号；容量不同（2tb vs 4tb）",
+          "via": "Samsung 990 PRO SSD"
+        },
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Samsung_MZ-V9P4T0_%28Samsung_990_PRO_4TB%29_20250226_002.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Samsung_MZ-V9P4T0_%28Samsung_990_PRO_4TB%29_20250226_002.png/500px-Samsung_MZ-V9P4T0_%28Samsung_990_PRO_4TB%29_20250226_002.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:Samsung%20MZ-V9P4T0%20(Samsung%20990%20PRO%204TB)%2020250226%20002.png",
+          "title": "Samsung MZ-V9P4T0 (Samsung 990 PRO 4TB) 20250226 002.png",
+          "license": "CC BY 4.0",
+          "creator": "PantheraLeo1359531",
+          "matchType": "SERIES_MATCH",
+          "score": 80,
+          "reason": "品牌+系列一致（samsung + 990），产品类型为 ssd；标题未出现完整型号；容量不同（2tb vs 4tb）",
+          "via": "Samsung 990 PRO SSD"
+        }
+      ]
+    },
+    {
+      "productId": 123,
+      "productName": "海盗船复仇者 32GB",
+      "brand": "海盗船",
+      "category": "内存",
+      "fullModel": "复仇者 32gb",
+      "seriesName": "Corsair Vengeance 系列",
+      "mustTokens": [
+        "corsair",
+        "vengeance"
+      ],
+      "queries": [
+        "Corsair Vengeance RAM",
+        "Corsair Vengeance memory"
+      ],
+      "matchType": "SERIES_MATCH",
+      "candidateCount": 4,
+      "exactCount": 0,
+      "seriesCount": 4,
+      "poolSize": 35,
+      "rejectedCount": 31,
+      "best": {
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/2014_Corsair_Vengeance_4GB%2C_1600MHz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/2014_Corsair_Vengeance_4GB%2C_1600MHz.jpg/500px-2014_Corsair_Vengeance_4GB%2C_1600MHz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:2014%20Corsair%20Vengeance%204GB%2C%201600MHz.jpg",
+        "title": "2014 Corsair Vengeance 4GB, 1600MHz.jpg",
+        "license": "CC BY-SA 4.0",
+        "creator": "Jacek Halicki",
+        "width": 3006,
+        "height": 1266,
+        "mime": "image/jpeg",
+        "matchType": "SERIES_MATCH",
+        "score": 80,
+        "reason": "品牌+系列一致（corsair + vengeance），产品类型为 memory；标题未出现完整型号；容量不同（32gb vs 4gb）；缺型号关键锚点",
+        "subjectNote": "DDR3 memory Corsair Vengeance 4GB, 1600MHz",
+        "categories": "Taken with Nikon D5100 With trademark Self-published work Images by Jacek Halicki Files with coordinates missing SDC location of creation Corsair RAM DIMMs DIMM passive cooling DDR3 RAM DIMMs",
+        "via": "Corsair Vengeance RAM"
+      },
+      "allCandidates": [
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/2014_Corsair_Vengeance_4GB%2C_1600MHz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/2014_Corsair_Vengeance_4GB%2C_1600MHz.jpg/500px-2014_Corsair_Vengeance_4GB%2C_1600MHz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:2014%20Corsair%20Vengeance%204GB%2C%201600MHz.jpg",
+          "title": "2014 Corsair Vengeance 4GB, 1600MHz.jpg",
+          "license": "CC BY-SA 4.0",
+          "creator": "Jacek Halicki",
+          "matchType": "SERIES_MATCH",
+          "score": 80,
+          "reason": "品牌+系列一致（corsair + vengeance），产品类型为 memory；标题未出现完整型号；容量不同（32gb vs 4gb）；缺型号关键锚点",
+          "via": "Corsair Vengeance RAM"
+        },
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Corsair_Vengeance_16GB_%282x8GB%29_DDR3_1600_MHz_%28PC3_12800%29_Desktop_Memory_%28CMZ16GX3M2A1600C10%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Corsair_Vengeance_16GB_%282x8GB%29_DDR3_1600_MHz_%28PC3_12800%29_Desktop_Memory_%28CMZ16GX3M2A1600C10%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:Corsair%20Vengeance%2016GB%20(2x8GB)%20DDR3%201600%20MHz%20(PC3%2012800)%20Desktop%20Memory%20(CMZ16GX3M2A1600C10).jpg",
+          "title": "Corsair Vengeance 16GB (2x8GB) DDR3 1600 MHz (PC3 12800) Desktop Memory (CMZ16GX3M2A1600C10).jpg",
+          "license": "CC BY 2.0",
+          "creator": "osman.gucel",
+          "matchType": "SERIES_MATCH",
+          "score": 80,
+          "reason": "品牌+系列一致（corsair + vengeance），产品类型为 memory；标题未出现完整型号；容量不同（32gb vs 16gb,8gb）；缺型号关键锚点",
+          "via": "Corsair Vengeance RAM"
+        },
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/53/2023_Pami%C4%99ci_Corsair_Vengeance_RGB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/2023_Pami%C4%99ci_Corsair_Vengeance_RGB.jpg/500px-2023_Pami%C4%99ci_Corsair_Vengeance_RGB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:2023%20Pami%C4%99ci%20Corsair%20Vengeance%20RGB.jpg",
+          "title": "2023 Pamięci Corsair Vengeance RGB.jpg",
+          "license": "CC BY-SA 4.0",
+          "creator": "Jacek Halicki",
+          "matchType": "SERIES_MATCH",
+          "score": 80,
+          "reason": "品牌+系列一致（corsair + vengeance），产品类型为 memory；标题未出现完整型号；缺型号关键锚点",
+          "via": "Corsair Vengeance RAM"
+        },
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/62/Corsair_Vengeance_16GB_%288354711166%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Corsair_Vengeance_16GB_%288354711166%29.jpg/500px-Corsair_Vengeance_16GB_%288354711166%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:Corsair%20Vengeance%2016GB%20(8354711166).jpg",
+          "title": "Corsair Vengeance 16GB (8354711166).jpg",
+          "license": "CC BY 2.0",
+          "creator": "larsjuh",
+          "matchType": "SERIES_MATCH",
+          "score": 80,
+          "reason": "品牌+系列一致（corsair + vengeance），产品类型为 memory；标题未出现完整型号；容量不同（32gb vs 16gb）；缺型号关键锚点",
+          "via": "Corsair Vengeance RAM"
+        }
+      ]
+    },
+    {
+      "productId": 125,
+      "productName": "英睿达 32GB",
+      "brand": "英睿达",
+      "category": "内存",
+      "fullModel": "32gb",
+      "seriesName": "Crucial 内存系列",
+      "mustTokens": [
+        "crucial",
+        "memory"
+      ],
+      "queries": [
+        "Crucial memory module",
+        "Crucial RAM DDR5"
+      ],
+      "matchType": "SERIES_MATCH",
+      "candidateCount": 2,
+      "exactCount": 0,
+      "seriesCount": 2,
+      "poolSize": 24,
+      "rejectedCount": 22,
+      "best": {
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/21/Crucial_1gb_SDRAM_PC133_DIMM_Memory_Module.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Crucial_1gb_SDRAM_PC133_DIMM_Memory_Module.jpg/500px-Crucial_1gb_SDRAM_PC133_DIMM_Memory_Module.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:Crucial%201gb%20SDRAM%20PC133%20DIMM%20Memory%20Module.jpg",
+        "title": "Crucial 1gb SDRAM PC133 DIMM Memory Module.jpg",
+        "license": "CC BY-SA 2.0",
+        "creator": "Matt Kieffer",
+        "width": 800,
+        "height": 800,
+        "mime": "image/jpeg",
+        "matchType": "SERIES_MATCH",
+        "score": 80,
+        "reason": "品牌+系列一致（crucial + memory），产品类型为 memory；标题未出现完整型号；容量不同（32gb vs 1gb）；缺型号关键锚点",
+        "subjectNote": "Crucial 1 GB SDRAM PC133 DIMM Memory Module",
+        "categories": "Flickr images reviewed by FlickreviewR 2 Files with coordinates missing SDC location of creation (51° N, 1° W) Crucial Technology RAM DIMMs SDR RAM DIMMs",
+        "via": "Crucial memory module"
+      },
+      "allCandidates": [
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/21/Crucial_1gb_SDRAM_PC133_DIMM_Memory_Module.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Crucial_1gb_SDRAM_PC133_DIMM_Memory_Module.jpg/500px-Crucial_1gb_SDRAM_PC133_DIMM_Memory_Module.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:Crucial%201gb%20SDRAM%20PC133%20DIMM%20Memory%20Module.jpg",
+          "title": "Crucial 1gb SDRAM PC133 DIMM Memory Module.jpg",
+          "license": "CC BY-SA 2.0",
+          "creator": "Matt Kieffer",
+          "matchType": "SERIES_MATCH",
+          "score": 80,
+          "reason": "品牌+系列一致（crucial + memory），产品类型为 memory；标题未出现完整型号；容量不同（32gb vs 1gb）；缺型号关键锚点",
+          "via": "Crucial memory module"
+        },
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Assorted_DDR3_desktop_memory_modules_%28Crucial_Ballistix%2C_Crucial%2C_Lenovo_and_Ramaxel%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Assorted_DDR3_desktop_memory_modules_%28Crucial_Ballistix%2C_Crucial%2C_Lenovo_and_Ramaxel%29.jpg/500px-Assorted_DDR3_desktop_memory_modules_%28Crucial_Ballistix%2C_Crucial%2C_Lenovo_and_Ramaxel%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:Assorted%20DDR3%20desktop%20memory%20modules%20(Crucial%20Ballistix%2C%20Crucial%2C%20Lenovo%20and%20Ramaxel).jpg",
+          "title": "Assorted DDR3 desktop memory modules (Crucial Ballistix, Crucial, Lenovo and Ramaxel).jpg",
+          "license": "CC BY-SA 4.0",
+          "creator": "ITEagle Europe - Sebastiaan Broekhoven",
+          "matchType": "SERIES_MATCH",
+          "score": 80,
+          "reason": "品牌+系列一致（crucial + memory），产品类型为 memory；标题未出现完整型号；缺型号关键锚点",
+          "via": "Crucial memory module"
+        }
+      ]
+    },
+    {
+      "productId": 129,
+      "productName": "TP-Link XDR6080",
+      "brand": "TP-Link",
+      "category": "路由器",
+      "fullModel": "xdr6080",
+      "seriesName": "TP-Link 路由器系列",
+      "mustTokens": [
+        "tp-link",
+        "router"
+      ],
+      "queries": [
+        "TP-Link router",
+        "TP-Link Archer router"
+      ],
+      "matchType": "SERIES_MATCH",
+      "candidateCount": 16,
+      "exactCount": 0,
+      "seriesCount": 16,
+      "poolSize": 38,
+      "rejectedCount": 22,
+      "best": {
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Router_TP-LINK.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Router_TP-LINK.jpg/500px-Router_TP-LINK.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:Router%20TP-LINK.jpg",
+        "title": "Router TP-LINK.jpg",
+        "license": "CC BY-SA 3.0",
+        "creator": "PLKristof",
+        "width": 1893,
+        "height": 1869,
+        "mime": "image/jpeg",
+        "matchType": "SERIES_MATCH",
+        "score": 80,
+        "reason": "品牌+系列一致（tp-link + router），产品类型为 router；标题未出现完整型号；缺型号关键锚点",
+        "subjectNote": "Access Point Client Router - TP-LINK TL-WR543G",
+        "categories": "Self-published work Files with coordinates missing SDC location of creation Taken with Nokia 500 TP-Link Wi-Fi routers and access points",
+        "via": "TP-Link router"
+      },
+      "allCandidates": [
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Router_TP-LINK.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Router_TP-LINK.jpg/500px-Router_TP-LINK.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:Router%20TP-LINK.jpg",
+          "title": "Router TP-LINK.jpg",
+          "license": "CC BY-SA 3.0",
+          "creator": "PLKristof",
+          "matchType": "SERIES_MATCH",
+          "score": 80,
+          "reason": "品牌+系列一致（tp-link + router），产品类型为 router；标题未出现完整型号；缺型号关键锚点",
+          "via": "TP-Link router"
+        },
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a8/TP-Link_AX1500_Wi-Fi_6_Router_Specs.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/TP-Link_AX1500_Wi-Fi_6_Router_Specs.jpg/500px-TP-Link_AX1500_Wi-Fi_6_Router_Specs.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:TP-Link%20AX1500%20Wi-Fi%206%20Router%20Specs.jpg",
+          "title": "TP-Link AX1500 Wi-Fi 6 Router Specs.jpg",
+          "license": "CC BY-SA 4.0",
+          "creator": "Abhi25t",
+          "matchType": "SERIES_MATCH",
+          "score": 80,
+          "reason": "品牌+系列一致（tp-link + router），产品类型为 router；标题未出现完整型号；缺型号关键锚点",
+          "via": "TP-Link router"
+        },
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/12/Tp_Link_AC1200_Mesh_Wi-Fi_router.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Tp_Link_AC1200_Mesh_Wi-Fi_router.jpg/500px-Tp_Link_AC1200_Mesh_Wi-Fi_router.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:Tp%20Link%20AC1200%20Mesh%20Wi-Fi%20router.jpg",
+          "title": "Tp Link AC1200 Mesh Wi-Fi router.jpg",
+          "license": "CC BY-SA 4.0",
+          "creator": "Atudu",
+          "matchType": "SERIES_MATCH",
+          "score": 80,
+          "reason": "品牌+系列一致（tp-link + router），产品类型为 router；标题未出现完整型号；缺型号关键锚点",
+          "via": "TP-Link router"
+        },
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/TP-Link_Wireless_N_Router_WR845N.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/TP-Link_Wireless_N_Router_WR845N.jpg/500px-TP-Link_Wireless_N_Router_WR845N.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:TP-Link%20Wireless%20N%20Router%20WR845N.jpg",
+          "title": "TP-Link Wireless N Router WR845N.jpg",
+          "license": "CC BY-SA 4.0",
+          "creator": "Kskhh",
+          "matchType": "SERIES_MATCH",
+          "score": 80,
+          "reason": "品牌+系列一致（tp-link + router），产品类型为 router；标题未出现完整型号；缺型号关键锚点",
+          "via": "TP-Link router"
+        },
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/TP-link_Archer_A6_Router_%28v4%29_-_Front_Side.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/TP-link_Archer_A6_Router_%28v4%29_-_Front_Side.jpg/500px-TP-link_Archer_A6_Router_%28v4%29_-_Front_Side.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:TP-link%20Archer%20A6%20Router%20(v4)%20-%20Front%20Side.jpg",
+          "title": "TP-link Archer A6 Router (v4) - Front Side.jpg",
+          "license": "CC BY-SA 4.0",
+          "creator": "Paowee",
+          "matchType": "SERIES_MATCH",
+          "score": 80,
+          "reason": "品牌+系列一致（tp-link + router），产品类型为 router；标题未出现完整型号；缺型号关键锚点",
+          "via": "TP-Link router"
+        }
+      ]
+    },
+    {
+      "productId": 130,
+      "productName": "华为 AX3 Pro",
+      "brand": "华为",
+      "category": "路由器",
+      "fullModel": "ax3 pro",
+      "seriesName": "Huawei 路由器系列",
+      "mustTokens": [
+        "huawei",
+        "router"
+      ],
+      "queries": [
+        "Huawei router",
+        "Huawei WiFi router"
+      ],
+      "matchType": "SERIES_MATCH",
+      "candidateCount": 6,
+      "exactCount": 0,
+      "seriesCount": 6,
+      "poolSize": 25,
+      "rejectedCount": 19,
+      "best": {
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/HUAWEI_Router_X3_Pro_%E2%80%93_Sunrise_Gold.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/HUAWEI_Router_X3_Pro_%E2%80%93_Sunrise_Gold.jpg/500px-HUAWEI_Router_X3_Pro_%E2%80%93_Sunrise_Gold.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:HUAWEI%20Router%20X3%20Pro%20%E2%80%93%20Sunrise%20Gold.jpg",
+        "title": "HUAWEI Router X3 Pro – Sunrise Gold.jpg",
+        "license": "CC BY 4.0",
+        "creator": "X-SHLIED",
+        "width": 4032,
+        "height": 3024,
+        "mime": "image/jpeg",
+        "matchType": "SERIES_MATCH",
+        "score": 80,
+        "reason": "品牌+系列一致（huawei + router），产品类型为 router；标题未出现完整型号",
+        "subjectNote": "​华为路由 X3 Pro 日照金山",
+        "categories": "Huawei Self-published work Files with coordinates missing SDC location of creation",
+        "via": "Huawei router"
+      },
+      "allCandidates": [
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/HUAWEI_Router_X3_Pro_%E2%80%93_Sunrise_Gold.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/HUAWEI_Router_X3_Pro_%E2%80%93_Sunrise_Gold.jpg/500px-HUAWEI_Router_X3_Pro_%E2%80%93_Sunrise_Gold.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:HUAWEI%20Router%20X3%20Pro%20%E2%80%93%20Sunrise%20Gold.jpg",
+          "title": "HUAWEI Router X3 Pro – Sunrise Gold.jpg",
+          "license": "CC BY 4.0",
+          "creator": "X-SHLIED",
+          "matchType": "SERIES_MATCH",
+          "score": 80,
+          "reason": "品牌+系列一致（huawei + router），产品类型为 router；标题未出现完整型号",
+          "via": "Huawei router"
+        },
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Router_mobilny_Huawei_E587u-2_w_skali_por%C3%B3wnawczej.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Router_mobilny_Huawei_E587u-2_w_skali_por%C3%B3wnawczej.jpg/500px-Router_mobilny_Huawei_E587u-2_w_skali_por%C3%B3wnawczej.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:Router%20mobilny%20Huawei%20E587u-2%20w%20skali%20por%C3%B3wnawczej.jpg",
+          "title": "Router mobilny Huawei E587u-2 w skali porównawczej.jpg",
+          "license": "CC0",
+          "creator": "WrS.tm.pl",
+          "matchType": "SERIES_MATCH",
+          "score": 75,
+          "reason": "品牌+系列一致（huawei + router），产品类型为 router；型号差异：标题缺「pro」；缺型号关键锚点",
+          "via": "Huawei router"
+        },
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Huawei_Wifi_Router_B610h-70a.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Huawei_Wifi_Router_B610h-70a.png/500px-Huawei_Wifi_Router_B610h-70a.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:Huawei%20Wifi%20Router%20B610h-70a.png",
+          "title": "Huawei Wifi Router B610h-70a.png",
+          "license": "CC BY-SA 4.0",
+          "creator": "Motokoka",
+          "matchType": "SERIES_MATCH",
+          "score": 75,
+          "reason": "品牌+系列一致（huawei + router），产品类型为 router；型号差异：标题缺「pro」；缺型号关键锚点",
+          "via": "Huawei router"
+        },
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Huawei-E5576-320-4G-Reise-Hotspot-LTE-Router.1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Huawei-E5576-320-4G-Reise-Hotspot-LTE-Router.1.jpg/500px-Huawei-E5576-320-4G-Reise-Hotspot-LTE-Router.1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:Huawei-E5576-320-4G-Reise-Hotspot-LTE-Router.1.jpg",
+          "title": "Huawei-E5576-320-4G-Reise-Hotspot-LTE-Router.1.jpg",
+          "license": "CC BY 4.0",
+          "creator": "www.digitalpush.net",
+          "matchType": "SERIES_MATCH",
+          "score": 75,
+          "reason": "品牌+系列一致（huawei + router），产品类型为 router；型号差异：标题缺「pro」；缺型号关键锚点",
+          "via": "Huawei router"
+        },
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Huawei-E5576-320-4G-Reise-Hotspot-LTE-Router.3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Huawei-E5576-320-4G-Reise-Hotspot-LTE-Router.3.jpg/500px-Huawei-E5576-320-4G-Reise-Hotspot-LTE-Router.3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:Huawei-E5576-320-4G-Reise-Hotspot-LTE-Router.3.jpg",
+          "title": "Huawei-E5576-320-4G-Reise-Hotspot-LTE-Router.3.jpg",
+          "license": "CC BY 4.0",
+          "creator": "www.digitalpush.net",
+          "matchType": "SERIES_MATCH",
+          "score": 75,
+          "reason": "品牌+系列一致（huawei + router），产品类型为 router；型号差异：标题缺「pro」；缺型号关键锚点",
+          "via": "Huawei router"
+        }
+      ]
+    },
+    {
+      "productId": 131,
+      "productName": "中兴 AX5400 Pro",
+      "brand": "中兴",
+      "category": "路由器",
+      "fullModel": "ax5400 pro",
+      "seriesName": "ZTE 路由器系列",
+      "mustTokens": [
+        "zte",
+        "router"
+      ],
+      "queries": [
+        "ZTE router",
+        "ZTE WiFi router"
+      ],
+      "matchType": "SERIES_MATCH",
+      "candidateCount": 2,
+      "exactCount": 0,
+      "seriesCount": 2,
+      "poolSize": 30,
+      "rejectedCount": 28,
+      "best": {
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/ZTE_WiFi_router4G.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/ZTE_WiFi_router4G.jpg/500px-ZTE_WiFi_router4G.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "commonsPage": "https://commons.wikimedia.org/wiki/File:ZTE%20WiFi%20router4G.jpg",
+        "title": "ZTE WiFi router4G.jpg",
+        "license": "CC BY-SA 4.0",
+        "creator": "LoveEuro123",
+        "width": 3120,
+        "height": 4160,
+        "mime": "image/jpeg",
+        "matchType": "SERIES_MATCH",
+        "score": 75,
+        "reason": "品牌+系列一致（zte + router），产品类型为 router；型号差异：标题缺「pro」；缺型号关键锚点",
+        "subjectNote": "A. Wi-Fi connection router",
+        "categories": "Wi-Fi routers and access points Self-published work",
+        "via": "ZTE router"
+      },
+      "allCandidates": [
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/ZTE_WiFi_router4G.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/ZTE_WiFi_router4G.jpg/500px-ZTE_WiFi_router4G.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:ZTE%20WiFi%20router4G.jpg",
+          "title": "ZTE WiFi router4G.jpg",
+          "license": "CC BY-SA 4.0",
+          "creator": "LoveEuro123",
+          "matchType": "SERIES_MATCH",
+          "score": 75,
+          "reason": "品牌+系列一致（zte + router），产品类型为 router；型号差异：标题缺「pro」；缺型号关键锚点",
+          "via": "ZTE router"
+        },
+        {
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b8/ZTE_WF826A_WiFi_Router_with_SIM_Card_slot.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/ZTE_WF826A_WiFi_Router_with_SIM_Card_slot.jpg/500px-ZTE_WF826A_WiFi_Router_with_SIM_Card_slot.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:ZTE%20WF826A%20WiFi%20Router%20with%20SIM%20Card%20slot.jpg",
+          "title": "ZTE WF826A WiFi Router with SIM Card slot.jpg",
+          "license": "CC BY-SA 4.0",
+          "creator": "Suyash Dwivedi",
+          "matchType": "SERIES_MATCH",
+          "score": 75,
+          "reason": "品牌+系列一致（zte + router），产品类型为 router；型号差异：标题缺「pro」；缺型号关键锚点",
+          "via": "ZTE router"
+        }
+      ]
+    }
+  ],
+  "noCandidate": [
+    {
+      "productId": 9,
+      "productName": "一加 12",
+      "brand": "一加",
+      "category": "手机",
+      "fullModel": "12",
+      "seriesName": "OnePlus 数字旗舰系列",
+      "mustTokens": [
+        "oneplus",
+        "12"
+      ],
+      "queries": [
+        "OnePlus 12 smartphone",
+        "OnePlus 12"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 43,
+      "rejectedCount": 43,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 12,
+      "productName": "Redmi K70 至尊版",
+      "brand": "小米",
+      "category": "手机",
+      "fullModel": "redmi k70 至尊版",
+      "seriesName": "Redmi K70 系列",
+      "mustTokens": [
+        "redmi",
+        "k70"
+      ],
+      "queries": [
+        "Redmi K70",
+        "Xiaomi Redmi K70 smartphone"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 20,
+      "rejectedCount": 20,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 17,
+      "productName": "联想小新 Pad Pro",
+      "brand": "联想",
+      "category": "平板电脑",
+      "fullModel": "小新 pad pro",
+      "seriesName": "Lenovo Xiaoxin/Tab 平板系列",
+      "mustTokens": [
+        "lenovo",
+        "pad"
+      ],
+      "queries": [
+        "Lenovo Xiaoxin Pad",
+        "Lenovo Tab tablet"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 20,
+      "rejectedCount": 20,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 19,
+      "productName": "vivo Pad 3 Pro",
+      "brand": "vivo",
+      "category": "平板电脑",
+      "fullModel": "pad 3 pro",
+      "seriesName": "vivo Pad 系列",
+      "mustTokens": [
+        "vivo",
+        "pad"
+      ],
+      "queries": [
+        "Vivo Pad tablet",
+        "Vivo Pad 3"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 38,
+      "rejectedCount": 38,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 20,
+      "productName": "OPPO Pad 3",
+      "brand": "OPPO",
+      "category": "平板电脑",
+      "fullModel": "pad 3",
+      "seriesName": "OPPO Pad 系列",
+      "mustTokens": [
+        "oppo",
+        "pad"
+      ],
+      "queries": [
+        "OPPO Pad tablet",
+        "Oppo Pad 3"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 40,
+      "rejectedCount": 40,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 21,
+      "productName": "联想拯救者 Y9000P",
+      "brand": "联想",
+      "category": "笔记本电脑",
+      "fullModel": "拯救者 y9000p",
+      "seriesName": "Lenovo Legion 系列",
+      "mustTokens": [
+        "lenovo",
+        "legion"
+      ],
+      "queries": [
+        "Lenovo Legion laptop",
+        "Lenovo Legion Y9000P"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 10,
+      "rejectedCount": 10,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 22,
+      "productName": "联想小新 Pro 16",
+      "brand": "联想",
+      "category": "笔记本电脑",
+      "fullModel": "小新 pro 16",
+      "seriesName": "Lenovo Xiaoxin 系列",
+      "mustTokens": [
+        "lenovo",
+        "xiaoxin"
+      ],
+      "queries": [
+        "Lenovo Xiaoxin laptop",
+        "Lenovo Xiaoxin Pro"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 0,
+      "rejectedCount": 0,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 25,
+      "productName": "华硕天选 5 Pro",
+      "brand": "华硕",
+      "category": "笔记本电脑",
+      "fullModel": "天选 5 pro",
+      "seriesName": "ASUS TUF Gaming 系列",
+      "mustTokens": [
+        "asus",
+        "tuf"
+      ],
+      "queries": [
+        "ASUS TUF Gaming laptop",
+        "ASUS TUF Gaming A16"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 21,
+      "rejectedCount": 21,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 26,
+      "productName": "戴尔 XPS 13",
+      "brand": "戴尔",
+      "category": "笔记本电脑",
+      "fullModel": "xps 13",
+      "seriesName": "Dell XPS 13 系列",
+      "mustTokens": [
+        "dell",
+        "xps"
+      ],
+      "queries": [
+        "Dell XPS 13 laptop",
+        "Dell XPS 13"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 40,
+      "rejectedCount": 40,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 27,
+      "productName": "惠普暗影精灵 10",
+      "brand": "惠普",
+      "category": "笔记本电脑",
+      "fullModel": "暗影精灵 10",
+      "seriesName": "HP OMEN 系列",
+      "mustTokens": [
+        "hp",
+        "omen"
+      ],
+      "queries": [
+        "HP OMEN laptop",
+        "HP Omen gaming laptop"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 5,
+      "rejectedCount": 5,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 28,
+      "productName": "ThinkBook 14+",
+      "brand": "联想",
+      "category": "笔记本电脑",
+      "fullModel": "thinkbook 14+",
+      "seriesName": "Lenovo ThinkBook 系列",
+      "mustTokens": [
+        "lenovo",
+        "thinkbook"
+      ],
+      "queries": [
+        "Lenovo ThinkBook laptop",
+        "Lenovo ThinkBook 14"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 12,
+      "rejectedCount": 12,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 30,
+      "productName": "微星绝影 14",
+      "brand": "微星",
+      "category": "笔记本电脑",
+      "fullModel": "绝影 14",
+      "seriesName": "MSI Stealth 系列",
+      "mustTokens": [
+        "msi",
+        "stealth"
+      ],
+      "queries": [
+        "MSI Stealth laptop",
+        "MSI Stealth 14"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 12,
+      "rejectedCount": 12,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 31,
+      "productName": "荣耀 MagicBook Pro",
+      "brand": "荣耀",
+      "category": "笔记本电脑",
+      "fullModel": "magicbook pro",
+      "seriesName": "Honor MagicBook 系列",
+      "mustTokens": [
+        "honor",
+        "magicbook"
+      ],
+      "queries": [
+        "Honor MagicBook laptop",
+        "Honor MagicBook Pro"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 26,
+      "rejectedCount": 26,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 32,
+      "productName": "机械革命翼龙 15 Pro",
+      "brand": "机械革命",
+      "category": "笔记本电脑",
+      "fullModel": "翼龙 15 pro",
+      "seriesName": "Mechrevo 游戏本系列",
+      "mustTokens": [
+        "mechrevo"
+      ],
+      "queries": [
+        "Mechrevo laptop",
+        "Mechrevo gaming laptop"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 0,
+      "rejectedCount": 0,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 33,
+      "productName": "联想拯救者刃 9000K",
+      "brand": "联想",
+      "category": "台式电脑",
+      "fullModel": "拯救者刃 9000k",
+      "seriesName": "Lenovo Legion 台式系列",
+      "mustTokens": [
+        "lenovo",
+        "legion"
+      ],
+      "queries": [
+        "Lenovo Legion desktop",
+        "Lenovo Legion tower"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 4,
+      "rejectedCount": 4,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 34,
+      "productName": "惠普暗影精灵台式机",
+      "brand": "惠普",
+      "category": "台式电脑",
+      "fullModel": "暗影精灵台式机",
+      "seriesName": "HP OMEN 台式系列",
+      "mustTokens": [
+        "hp",
+        "omen"
+      ],
+      "queries": [
+        "HP OMEN desktop",
+        "HP Omen gaming desktop"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 21,
+      "rejectedCount": 21,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 35,
+      "productName": "戴尔 XPS 台式机",
+      "brand": "戴尔",
+      "category": "台式电脑",
+      "fullModel": "xps 台式机",
+      "seriesName": "Dell XPS 台式系列",
+      "mustTokens": [
+        "dell",
+        "xps"
+      ],
+      "queries": [
+        "Dell XPS desktop",
+        "Dell XPS tower"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 24,
+      "rejectedCount": 24,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 36,
+      "productName": "微星海皇戟",
+      "brand": "微星",
+      "category": "台式电脑",
+      "fullModel": "海皇戟",
+      "seriesName": "MSI Trident 系列",
+      "mustTokens": [
+        "msi",
+        "trident"
+      ],
+      "queries": [
+        "MSI Trident desktop",
+        "MSI Trident gaming"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 18,
+      "rejectedCount": 18,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 37,
+      "productName": "华硕玩家国度",
+      "brand": "华硕",
+      "category": "台式电脑",
+      "fullModel": "玩家国度",
+      "seriesName": "ASUS ROG 系列",
+      "mustTokens": [
+        "asus",
+        "rog"
+      ],
+      "queries": [
+        "ASUS ROG desktop",
+        "ASUS ROG gaming computer"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 43,
+      "rejectedCount": 43,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 38,
+      "productName": "联想天逸 510",
+      "brand": "联想",
+      "category": "台式电脑",
+      "fullModel": "天逸 510",
+      "seriesName": "Lenovo 天逸/台式系列",
+      "mustTokens": [
+        "lenovo"
+      ],
+      "queries": [
+        "Lenovo desktop computer",
+        "Lenovo tower PC",
+        "Lenovo Tianyi desktop"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 23,
+      "rejectedCount": 23,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 39,
+      "productName": "LG 27GP95RP",
+      "brand": "LG",
+      "category": "显示器",
+      "fullModel": "27gp95rp",
+      "seriesName": "LG UltraGear 系列",
+      "mustTokens": [
+        "lg",
+        "ultragear"
+      ],
+      "queries": [
+        "LG UltraGear monitor",
+        "LG gaming monitor"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 22,
+      "rejectedCount": 22,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 40,
+      "productName": "三星玄龙骑士 G7",
+      "brand": "三星",
+      "category": "显示器",
+      "fullModel": "玄龙骑士 g7",
+      "seriesName": "Samsung Odyssey 系列",
+      "mustTokens": [
+        "samsung",
+        "odyssey"
+      ],
+      "queries": [
+        "Samsung Odyssey monitor",
+        "Samsung Odyssey G7"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 5,
+      "rejectedCount": 5,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 41,
+      "productName": "戴尔 U2723QE",
+      "brand": "戴尔",
+      "category": "显示器",
+      "fullModel": "u2723qe",
+      "seriesName": "Dell UltraSharp 系列",
+      "mustTokens": [
+        "dell",
+        "ultrasharp"
+      ],
+      "queries": [
+        "Dell UltraSharp monitor",
+        "Dell U2723"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 15,
+      "rejectedCount": 15,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 42,
+      "productName": "华硕 TUF VG27AQ",
+      "brand": "华硕",
+      "category": "显示器",
+      "fullModel": "tuf vg27aq",
+      "seriesName": "ASUS TUF Gaming 显示器系列",
+      "mustTokens": [
+        "asus",
+        "tuf"
+      ],
+      "queries": [
+        "ASUS TUF Gaming monitor",
+        "ASUS TUF VG27"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 4,
+      "rejectedCount": 4,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 43,
+      "productName": "小米 27 4K",
+      "brand": "小米",
+      "category": "显示器",
+      "fullModel": "27 4k",
+      "seriesName": "Xiaomi 显示器系列",
+      "mustTokens": [
+        "xiaomi",
+        "monitor"
+      ],
+      "queries": [
+        "Xiaomi monitor",
+        "Xiaomi 4K monitor"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 14,
+      "rejectedCount": 14,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 46,
+      "productName": "泰坦军团 P27A6V",
+      "brand": "泰坦军团",
+      "category": "显示器",
+      "fullModel": "p27a6v",
+      "seriesName": "Titan Army 显示器系列",
+      "mustTokens": [
+        "titan"
+      ],
+      "queries": [
+        "Titan Army monitor",
+        "Titan Army gaming monitor"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 38,
+      "rejectedCount": 38,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 47,
+      "productName": "索尼 WH-1000XM5",
+      "brand": "索尼",
+      "category": "耳机",
+      "fullModel": "wh 1000xm5",
+      "seriesName": "Sony WH-1000X 系列",
+      "mustTokens": [
+        "sony",
+        "wh-1000"
+      ],
+      "queries": [
+        "Sony WH-1000XM5",
+        "Sony WH-1000XM4 headphones",
+        "Sony WH-1000X"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 0,
+      "rejectedCount": 0,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 49,
+      "productName": "苹果 AirPods Pro 2",
+      "brand": "苹果",
+      "category": "耳机",
+      "fullModel": "airpods pro 2",
+      "seriesName": "Apple AirPods Pro 系列",
+      "mustTokens": [
+        "airpods",
+        "pro"
+      ],
+      "queries": [
+        "AirPods Pro",
+        "Apple AirPods Pro"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 26,
+      "rejectedCount": 26,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 50,
+      "productName": "森海塞尔 Momentum 4",
+      "brand": "森海塞尔",
+      "category": "耳机",
+      "fullModel": "momentum 4",
+      "seriesName": "Sennheiser Momentum 系列",
+      "mustTokens": [
+        "sennheiser",
+        "momentum"
+      ],
+      "queries": [
+        "Sennheiser Momentum",
+        "Sennheiser Momentum headphones"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 3,
+      "rejectedCount": 3,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 51,
+      "productName": "漫步者 NeoBuds Pro",
+      "brand": "漫步者",
+      "category": "耳机",
+      "fullModel": "neobuds pro",
+      "seriesName": "Edifier NeoBuds 系列",
+      "mustTokens": [
+        "edifier"
+      ],
+      "queries": [
+        "Edifier NeoBuds",
+        "Edifier wireless earbuds"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 17,
+      "rejectedCount": 17,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 52,
+      "productName": "华为 FreeBuds Pro 3",
+      "brand": "华为",
+      "category": "耳机",
+      "fullModel": "freebuds pro 3",
+      "seriesName": "Huawei FreeBuds 系列",
+      "mustTokens": [
+        "huawei",
+        "freebuds"
+      ],
+      "queries": [
+        "Huawei FreeBuds",
+        "Huawei FreeBuds Pro"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 5,
+      "rejectedCount": 5,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 53,
+      "productName": "小米 Buds 4 Pro",
+      "brand": "小米",
+      "category": "耳机",
+      "fullModel": "buds 4 pro",
+      "seriesName": "Xiaomi Buds 系列",
+      "mustTokens": [
+        "xiaomi",
+        "buds"
+      ],
+      "queries": [
+        "Xiaomi Buds",
+        "Xiaomi wireless earbuds"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 21,
+      "rejectedCount": 21,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 55,
+      "productName": "水月雨 Starfield 2",
+      "brand": "水月雨",
+      "category": "耳机",
+      "fullModel": "starfield 2",
+      "seriesName": "Moondrop Starfield 系列",
+      "mustTokens": [
+        "moondrop"
+      ],
+      "queries": [
+        "Moondrop earphone",
+        "Moondrop Starfield"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 0,
+      "rejectedCount": 0,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 56,
+      "productName": "铁三角 ATH-M50x",
+      "brand": "铁三角",
+      "category": "耳机",
+      "fullModel": "ath m50x",
+      "seriesName": "Audio-Technica ATH-M 系列",
+      "mustTokens": [
+        "audio-technica",
+        "ath"
+      ],
+      "queries": [
+        "Audio-Technica ATH-M50x",
+        "Audio-Technica ATH-M50",
+        "Audio-Technica headphones"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 20,
+      "rejectedCount": 20,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 57,
+      "productName": "Keychron Q1 Pro",
+      "brand": "Keychron",
+      "category": "键盘",
+      "fullModel": "q1 pro",
+      "seriesName": "Keychron Q 系列",
+      "mustTokens": [
+        "keychron"
+      ],
+      "queries": [
+        "Keychron keyboard",
+        "Keychron Q1"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 40,
+      "rejectedCount": 40,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 59,
+      "productName": "雷蛇黑寡妇 V4",
+      "brand": "雷蛇",
+      "category": "键盘",
+      "fullModel": "黑寡妇 v4",
+      "seriesName": "Razer BlackWidow 系列",
+      "mustTokens": [
+        "razer",
+        "blackwidow"
+      ],
+      "queries": [
+        "Razer BlackWidow keyboard",
+        "Razer BlackWidow"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 21,
+      "rejectedCount": 21,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 60,
+      "productName": "达尔优 A98",
+      "brand": "达尔优",
+      "category": "键盘",
+      "fullModel": "a98",
+      "seriesName": "Dareu A 系列键盘",
+      "mustTokens": [
+        "dareu"
+      ],
+      "queries": [
+        "Dareu keyboard",
+        "Dareu mechanical keyboard"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 0,
+      "rejectedCount": 0,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 61,
+      "productName": "珂芝 K75",
+      "brand": "珂芝",
+      "category": "键盘",
+      "fullModel": "k75",
+      "seriesName": "Kzzi K 系列键盘",
+      "mustTokens": [
+        "kzzi"
+      ],
+      "queries": [
+        "Kzzi keyboard",
+        "Kzzi K75"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 0,
+      "rejectedCount": 0,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 62,
+      "productName": "樱桃 MX 3.0S",
+      "brand": "樱桃",
+      "category": "键盘",
+      "fullModel": "mx 3.0s",
+      "seriesName": "Cherry MX 系列键盘",
+      "mustTokens": [
+        "cherry",
+        "mx"
+      ],
+      "queries": [
+        "Cherry MX keyboard",
+        "Cherry keyboard"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 37,
+      "rejectedCount": 37,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 63,
+      "productName": "狼蛛 F87",
+      "brand": "狼蛛",
+      "category": "键盘",
+      "fullModel": "f87",
+      "seriesName": "AULA 机械键盘系列",
+      "mustTokens": [
+        "aula"
+      ],
+      "queries": [
+        "AULA keyboard",
+        "AULA mechanical keyboard"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 13,
+      "rejectedCount": 13,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 64,
+      "productName": "海盗船 K70",
+      "brand": "海盗船",
+      "category": "键盘",
+      "fullModel": "k70",
+      "seriesName": "Corsair K70 系列",
+      "mustTokens": [
+        "corsair",
+        "k70"
+      ],
+      "queries": [
+        "Corsair K70 keyboard",
+        "Corsair K70 RGB"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 2,
+      "rejectedCount": 2,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 66,
+      "productName": "雷蛇毒蝰 V3 Pro",
+      "brand": "雷蛇",
+      "category": "鼠标",
+      "fullModel": "毒蝰 v3 pro",
+      "seriesName": "Razer Viper 系列",
+      "mustTokens": [
+        "razer",
+        "viper"
+      ],
+      "queries": [
+        "Razer Viper mouse",
+        "Razer Viper V3"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 12,
+      "rejectedCount": 12,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 68,
+      "productName": "达尔优 A950",
+      "brand": "达尔优",
+      "category": "鼠标",
+      "fullModel": "a950",
+      "seriesName": "Dareu A 系列鼠标",
+      "mustTokens": [
+        "dareu"
+      ],
+      "queries": [
+        "Dareu mouse",
+        "Dareu gaming mouse"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 2,
+      "rejectedCount": 2,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 69,
+      "productName": "雷柏 VT9",
+      "brand": "雷柏",
+      "category": "鼠标",
+      "fullModel": "vt9",
+      "seriesName": "Rapoo 鼠标系列",
+      "mustTokens": [
+        "rapoo"
+      ],
+      "queries": [
+        "Rapoo mouse",
+        "Rapoo gaming mouse"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 6,
+      "rejectedCount": 6,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 70,
+      "productName": "卓威 EC2-CW",
+      "brand": "卓威",
+      "category": "鼠标",
+      "fullModel": "ec2 cw",
+      "seriesName": "ZOWIE EC 系列",
+      "mustTokens": [
+        "zowie",
+        "ec"
+      ],
+      "queries": [
+        "ZOWIE EC mouse",
+        "Zowie EC2"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 1,
+      "rejectedCount": 1,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 71,
+      "productName": "多彩 M800",
+      "brand": "多彩",
+      "category": "鼠标",
+      "fullModel": "m800",
+      "seriesName": "Delux 鼠标系列",
+      "mustTokens": [
+        "delux"
+      ],
+      "queries": [
+        "Delux mouse",
+        "Delux gaming mouse"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 9,
+      "rejectedCount": 9,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 72,
+      "productName": "海盗船 Sabre",
+      "brand": "海盗船",
+      "category": "鼠标",
+      "fullModel": "sabre",
+      "seriesName": "Corsair Sabre 系列",
+      "mustTokens": [
+        "corsair",
+        "sabre"
+      ],
+      "queries": [
+        "Corsair Sabre mouse",
+        "Corsair gaming mouse"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 21,
+      "rejectedCount": 21,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 75,
+      "productName": "尼康 Z6 III",
+      "brand": "尼康",
+      "category": "相机",
+      "fullModel": "z6 iii",
+      "seriesName": "Nikon Z6 系列",
+      "mustTokens": [
+        "nikon",
+        "z6"
+      ],
+      "queries": [
+        "Nikon Z6 III",
+        "Nikon Z6 camera"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 39,
+      "rejectedCount": 39,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 82,
+      "productName": "华为 Watch GT 4",
+      "brand": "华为",
+      "category": "智能手表",
+      "fullModel": "watch gt 4",
+      "seriesName": "Huawei Watch GT 系列",
+      "mustTokens": [
+        "huawei",
+        "watch gt"
+      ],
+      "queries": [
+        "Huawei Watch GT",
+        "Huawei Watch GT 4"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 11,
+      "rejectedCount": 11,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 86,
+      "productName": "OPPO Watch 4 Pro",
+      "brand": "OPPO",
+      "category": "智能手表",
+      "fullModel": "watch 4 pro",
+      "seriesName": "OPPO Watch 系列",
+      "mustTokens": [
+        "oppo",
+        "watch"
+      ],
+      "queries": [
+        "OPPO Watch",
+        "Oppo Watch 4 Pro"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 38,
+      "rejectedCount": 38,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 87,
+      "productName": "华为 Watch Ultimate",
+      "brand": "华为",
+      "category": "智能手表",
+      "fullModel": "watch ultimate",
+      "seriesName": "Huawei Watch Ultimate 系列",
+      "mustTokens": [
+        "huawei",
+        "ultimate"
+      ],
+      "queries": [
+        "Huawei Watch Ultimate",
+        "Huawei Watch Ultimate smartwatch"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 0,
+      "rejectedCount": 0,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 90,
+      "productName": "索尼 PS5",
+      "brand": "索尼",
+      "category": "游戏机",
+      "fullModel": "ps5",
+      "seriesName": "Sony PlayStation 5 系列",
+      "mustTokens": [
+        "playstation",
+        "ps5"
+      ],
+      "queries": [
+        "PlayStation 5 console",
+        "PS5 console"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 39,
+      "rejectedCount": 39,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 92,
+      "productName": "Steam Deck OLED",
+      "brand": "Valve",
+      "category": "游戏机",
+      "fullModel": "steam deck oled",
+      "seriesName": "Valve Steam Deck 系列",
+      "mustTokens": [
+        "steam deck"
+      ],
+      "queries": [
+        "Steam Deck",
+        "Valve Steam Deck"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 29,
+      "rejectedCount": 29,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 98,
+      "productName": "RTX 4090",
+      "brand": "英伟达",
+      "category": "显卡",
+      "fullModel": "rtx 4090",
+      "seriesName": "NVIDIA GeForce RTX 4090 系列",
+      "mustTokens": [
+        "geforce",
+        "4090"
+      ],
+      "queries": [
+        "GeForce RTX 4090",
+        "RTX 4090 graphics card"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 32,
+      "rejectedCount": 32,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 99,
+      "productName": "RX 7800 XT",
+      "brand": "AMD",
+      "category": "显卡",
+      "fullModel": "rx 7800 xt",
+      "seriesName": "AMD Radeon RX 7800 系列",
+      "mustTokens": [
+        "radeon",
+        "7800"
+      ],
+      "queries": [
+        "Radeon RX 7800 XT",
+        "AMD Radeon RX 7800"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 0,
+      "rejectedCount": 0,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 101,
+      "productName": "RTX 4060 Ti",
+      "brand": "英伟达",
+      "category": "显卡",
+      "fullModel": "rtx 4060 ti",
+      "seriesName": "NVIDIA GeForce RTX 4060 系列",
+      "mustTokens": [
+        "geforce",
+        "4060"
+      ],
+      "queries": [
+        "GeForce RTX 4060 Ti",
+        "RTX 4060 graphics card"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 45,
+      "rejectedCount": 45,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 102,
+      "productName": "RX 7600",
+      "brand": "AMD",
+      "category": "显卡",
+      "fullModel": "rx 7600",
+      "seriesName": "AMD Radeon RX 7600 系列",
+      "mustTokens": [
+        "radeon",
+        "7600"
+      ],
+      "queries": [
+        "Radeon RX 7600",
+        "AMD Radeon RX 7600"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 0,
+      "rejectedCount": 0,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 103,
+      "productName": "七彩虹 RTX 4070",
+      "brand": "七彩虹",
+      "category": "显卡",
+      "fullModel": "rtx 4070",
+      "seriesName": "Colorful RTX 4070 系列",
+      "mustTokens": [
+        "colorful",
+        "4070"
+      ],
+      "queries": [
+        "Colorful RTX 4070",
+        "Colorful graphics card"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 20,
+      "rejectedCount": 20,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 104,
+      "productName": "微星 RTX 4060",
+      "brand": "微星",
+      "category": "显卡",
+      "fullModel": "rtx 4060",
+      "seriesName": "MSI GeForce RTX 4060 系列",
+      "mustTokens": [
+        "msi",
+        "4060"
+      ],
+      "queries": [
+        "MSI GeForce RTX 4060",
+        "MSI RTX 4060 graphics card"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 1,
+      "rejectedCount": 1,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 108,
+      "productName": "锐龙 7 7800X3D",
+      "brand": "AMD",
+      "category": "CPU",
+      "fullModel": "7 7800x3d",
+      "seriesName": "AMD Ryzen 7 7800X3D 系列",
+      "mustTokens": [
+        "ryzen",
+        "7800x3d"
+      ],
+      "queries": [
+        "Ryzen 7 7800X3D",
+        "AMD Ryzen 7800X3D"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 31,
+      "rejectedCount": 31,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 109,
+      "productName": "锐龙 5 7600",
+      "brand": "AMD",
+      "category": "CPU",
+      "fullModel": "5 7600",
+      "seriesName": "AMD Ryzen 5 7600 系列",
+      "mustTokens": [
+        "ryzen",
+        "7600"
+      ],
+      "queries": [
+        "Ryzen 5 7600",
+        "AMD Ryzen 5 7600"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 27,
+      "rejectedCount": 27,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 110,
+      "productName": "锐龙 9 7950X",
+      "brand": "AMD",
+      "category": "CPU",
+      "fullModel": "9 7950x",
+      "seriesName": "AMD Ryzen 9 7950X 系列",
+      "mustTokens": [
+        "ryzen",
+        "7950"
+      ],
+      "queries": [
+        "Ryzen 9 7950X",
+        "AMD Ryzen 9 7950X"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 17,
+      "rejectedCount": 17,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 111,
+      "productName": "i5-12400F",
+      "brand": "Intel",
+      "category": "CPU",
+      "fullModel": "i5 12400f",
+      "seriesName": "Intel Core i5-12400 系列",
+      "mustTokens": [
+        "intel",
+        "12400"
+      ],
+      "queries": [
+        "Intel Core i5-12400F",
+        "Intel i5-12400"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 39,
+      "rejectedCount": 39,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 112,
+      "productName": "锐龙 7 7700",
+      "brand": "AMD",
+      "category": "CPU",
+      "fullModel": "7 7700",
+      "seriesName": "AMD Ryzen 7 7700 系列",
+      "mustTokens": [
+        "ryzen",
+        "7700"
+      ],
+      "queries": [
+        "Ryzen 7 7700",
+        "AMD Ryzen 7 7700"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 26,
+      "rejectedCount": 26,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 113,
+      "productName": "致态 TiPlus7100 2TB",
+      "brand": "致态",
+      "category": "固态硬盘",
+      "fullModel": "tiplus7100 2tb",
+      "seriesName": "ZhiTai TiPlus7100 系列",
+      "mustTokens": [
+        "zhitai",
+        "tiplus"
+      ],
+      "queries": [
+        "ZhiTai SSD",
+        "ZhiTai TiPlus7100"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 5,
+      "rejectedCount": 5,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 115,
+      "productName": "西数 SN850X 2TB",
+      "brand": "西数",
+      "category": "固态硬盘",
+      "fullModel": "sn850x 2tb",
+      "seriesName": "WD Black SN850X 系列",
+      "mustTokens": [
+        "wd_black",
+        "sn850"
+      ],
+      "queries": [
+        "WD Black SN850X",
+        "WD Black SSD"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 20,
+      "rejectedCount": 20,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 116,
+      "productName": "铠侠 RC20 1TB",
+      "brand": "铠侠",
+      "category": "固态硬盘",
+      "fullModel": "rc20 1tb",
+      "seriesName": "Kioxia RC20 系列",
+      "mustTokens": [
+        "kioxia",
+        "rc20"
+      ],
+      "queries": [
+        "Kioxia RC20 SSD",
+        "Kioxia SSD RC20"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 0,
+      "rejectedCount": 0,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 117,
+      "productName": "致态 TiPlus5000 1TB",
+      "brand": "致态",
+      "category": "固态硬盘",
+      "fullModel": "tiplus5000 1tb",
+      "seriesName": "ZhiTai TiPlus5000 系列",
+      "mustTokens": [
+        "zhitai",
+        "tiplus"
+      ],
+      "queries": [
+        "ZhiTai SSD",
+        "ZhiTai TiPlus5000"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 5,
+      "rejectedCount": 5,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 118,
+      "productName": "金士顿 KC3000 1TB",
+      "brand": "金士顿",
+      "category": "固态硬盘",
+      "fullModel": "kc3000 1tb",
+      "seriesName": "Kingston KC3000 系列",
+      "mustTokens": [
+        "kingston",
+        "kc3000"
+      ],
+      "queries": [
+        "Kingston KC3000 SSD",
+        "Kingston KC3000"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 1,
+      "rejectedCount": 1,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 119,
+      "productName": "海康威视 C2000 Pro",
+      "brand": "海康威视",
+      "category": "固态硬盘",
+      "fullModel": "c2000 pro",
+      "seriesName": "Hikvision C2000 系列",
+      "mustTokens": [
+        "hikvision",
+        "c2000"
+      ],
+      "queries": [
+        "Hikvision C2000 SSD",
+        "Hikvision SSD"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 3,
+      "rejectedCount": 3,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 120,
+      "productName": "宏碁掠夺者 GM7",
+      "brand": "宏碁",
+      "category": "固态硬盘",
+      "fullModel": "掠夺者 gm7",
+      "seriesName": "Acer Predator GM7 系列",
+      "mustTokens": [
+        "predator",
+        "gm7"
+      ],
+      "queries": [
+        "Acer Predator GM7 SSD",
+        "Acer Predator SSD"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 1,
+      "rejectedCount": 1,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 121,
+      "productName": "芝奇幻光戟 32GB",
+      "brand": "芝奇",
+      "category": "内存",
+      "fullModel": "幻光戟 32gb",
+      "seriesName": "G.Skill Trident Z 系列",
+      "mustTokens": [
+        "g.skill",
+        "trident"
+      ],
+      "queries": [
+        "G.Skill Trident Z",
+        "G.Skill Trident Z RAM"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 34,
+      "rejectedCount": 34,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 124,
+      "productName": "威刚 XPG 32GB",
+      "brand": "威刚",
+      "category": "内存",
+      "fullModel": "xpg 32gb",
+      "seriesName": "ADATA XPG 系列",
+      "mustTokens": [
+        "adata",
+        "xpg"
+      ],
+      "queries": [
+        "ADATA XPG memory",
+        "ADATA XPG RAM"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 2,
+      "rejectedCount": 2,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 126,
+      "productName": "光威 32GB",
+      "brand": "光威",
+      "category": "内存",
+      "fullModel": "32gb",
+      "seriesName": "Gloway 内存系列",
+      "mustTokens": [
+        "gloway"
+      ],
+      "queries": [
+        "Gloway memory",
+        "Gloway RAM"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 2,
+      "rejectedCount": 2,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 127,
+      "productName": "华硕 RT-AX86U Pro",
+      "brand": "华硕",
+      "category": "路由器",
+      "fullModel": "rt ax86u pro",
+      "seriesName": "ASUS RT-AX86U 系列",
+      "mustTokens": [
+        "asus",
+        "rt-ax86"
+      ],
+      "queries": [
+        "ASUS RT-AX86U router",
+        "ASUS RT-AX86U"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 0,
+      "rejectedCount": 0,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 128,
+      "productName": "小米 AX9000",
+      "brand": "小米",
+      "category": "路由器",
+      "fullModel": "ax9000",
+      "seriesName": "Xiaomi AX 路由器系列",
+      "mustTokens": [
+        "xiaomi",
+        "router"
+      ],
+      "queries": [
+        "Xiaomi router",
+        "Xiaomi AX9000"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 20,
+      "rejectedCount": 20,
+      "best": null,
+      "allCandidates": []
+    },
+    {
+      "productId": 132,
+      "productName": "华硕 RT-AX88U Pro",
+      "brand": "华硕",
+      "category": "路由器",
+      "fullModel": "rt ax88u pro",
+      "seriesName": "ASUS RT-AX88U 系列",
+      "mustTokens": [
+        "asus",
+        "rt-ax88"
+      ],
+      "queries": [
+        "ASUS RT-AX88U router",
+        "ASUS RT-AX88U"
+      ],
+      "matchType": "REJECT",
+      "candidateCount": 0,
+      "exactCount": 0,
+      "seriesCount": 0,
+      "poolSize": 0,
+      "rejectedCount": 0,
+      "best": null,
+      "allCandidates": []
+    }
+  ]
+}

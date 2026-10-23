@@ -1,0 +1,1 @@
+SELECT COUNT(*) FROM product_specs WHERE product_id=45545;

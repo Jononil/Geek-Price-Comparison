@@ -1,0 +1,169 @@
+{
+  "genAt": "2026-10-10T15:36:29.600Z",
+  "tally": {
+    "EXISTING_VALID": 47,
+    "REVIEW_REQUIRED": 12,
+    "NEW_HIGH_CONFIDENCE": 2,
+    "NO_QUALIFIED_IMAGE": 69,
+    "SOURCE_UNVERIFIED": 1,
+    "MODEL_UNCERTAIN": 1
+  },
+  "total": 132,
+  "candCount": 259,
+  "showNow": 47,
+  "showAfter": 49,
+  "ratioNow": "35.6",
+  "ratioAfter": "37.1",
+  "catStats": {
+    "手机": {
+      "total": 12,
+      "existing": 8,
+      "high": 1,
+      "review": 3,
+      "uncertain": 0,
+      "sourceUnverified": 0,
+      "none": 0
+    },
+    "平板电脑": {
+      "total": 8,
+      "existing": 5,
+      "high": 0,
+      "review": 1,
+      "uncertain": 0,
+      "sourceUnverified": 0,
+      "none": 2
+    },
+    "笔记本电脑": {
+      "total": 12,
+      "existing": 3,
+      "high": 0,
+      "review": 4,
+      "uncertain": 0,
+      "sourceUnverified": 0,
+      "none": 5
+    },
+    "台式电脑": {
+      "total": 6,
+      "existing": 0,
+      "high": 0,
+      "review": 0,
+      "uncertain": 0,
+      "sourceUnverified": 0,
+      "none": 6
+    },
+    "显示器": {
+      "total": 8,
+      "existing": 0,
+      "high": 0,
+      "review": 0,
+      "uncertain": 0,
+      "sourceUnverified": 0,
+      "none": 8
+    },
+    "耳机": {
+      "total": 10,
+      "existing": 2,
+      "high": 1,
+      "review": 0,
+      "uncertain": 0,
+      "sourceUnverified": 0,
+      "none": 7
+    },
+    "键盘": {
+      "total": 8,
+      "existing": 1,
+      "high": 0,
+      "review": 0,
+      "uncertain": 0,
+      "sourceUnverified": 0,
+      "none": 7
+    },
+    "鼠标": {
+      "total": 8,
+      "existing": 2,
+      "high": 0,
+      "review": 1,
+      "uncertain": 0,
+      "sourceUnverified": 0,
+      "none": 5
+    },
+    "相机": {
+      "total": 8,
+      "existing": 7,
+      "high": 0,
+      "review": 1,
+      "uncertain": 0,
+      "sourceUnverified": 0,
+      "none": 0
+    },
+    "智能手表": {
+      "total": 8,
+      "existing": 5,
+      "high": 0,
+      "review": 1,
+      "uncertain": 0,
+      "sourceUnverified": 0,
+      "none": 2
+    },
+    "游戏机": {
+      "total": 6,
+      "existing": 4,
+      "high": 0,
+      "review": 1,
+      "uncertain": 0,
+      "sourceUnverified": 0,
+      "none": 1
+    },
+    "显卡": {
+      "total": 10,
+      "existing": 3,
+      "high": 0,
+      "review": 0,
+      "uncertain": 0,
+      "sourceUnverified": 0,
+      "none": 7
+    },
+    "CPU": {
+      "total": 8,
+      "existing": 3,
+      "high": 0,
+      "review": 0,
+      "uncertain": 0,
+      "sourceUnverified": 1,
+      "none": 4
+    },
+    "固态硬盘": {
+      "total": 8,
+      "existing": 0,
+      "high": 0,
+      "review": 0,
+      "uncertain": 0,
+      "sourceUnverified": 0,
+      "none": 8
+    },
+    "内存": {
+      "total": 6,
+      "existing": 1,
+      "high": 0,
+      "review": 0,
+      "uncertain": 1,
+      "sourceUnverified": 0,
+      "none": 4
+    },
+    "路由器": {
+      "total": 6,
+      "existing": 3,
+      "high": 0,
+      "review": 0,
+      "uncertain": 0,
+      "sourceUnverified": 0,
+      "none": 3
+    }
+  },
+  "dbBaseline": {
+    "products": 132,
+    "product_images": 179,
+    "realImages": 47,
+    "tables": 25
+  }
+}

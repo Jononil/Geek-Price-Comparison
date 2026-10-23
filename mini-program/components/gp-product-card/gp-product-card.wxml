@@ -1,0 +1,47 @@
+<view class="card" bindtap="onTapCard">
+  <view class="image-wrap">
+    <!-- 有合格图：只展示后端下发的审核通过图片 -->
+    <image
+      wx:if="{{displayUrl}}"
+      class="img"
+      src="{{displayUrl}}"
+      mode="aspectFit"
+      lazy-load
+      binderror="onImgError"
+    />
+    <!-- 空态：无合格图/加载失败 → 通用缺图空态（不放任何占位图） -->
+    <gp-no-image wx:else />
+
+    <!-- 系列参考图标识 -->
+    <text wx:if="{{displayUrl && seriesRef}}" class="badge badge-series">系列参考图</text>
+    <!-- 高性价比 / 降价 标签（tags 由后端下发，预计算避免 WXML 函数调用） -->
+    <view class="tags">
+      <text wx:if="{{highValue}}" class="tag tag-value">高性价比</text>
+      <text wx:if="{{hasDiscountTag}}" class="tag tag-discount">降价</text>
+    </view>
+    <!-- 图片署名入口 -->
+    <view wx:if="{{displayUrl}}" class="info-btn" catchtap="onTapInfo">ⓘ</view>
+  </view>
+
+  <view class="info">
+    <text class="name">{{product.name}}</text>
+    <text class="brand">{{product.brandName}} · {{product.categoryName}}</text>
+    <view class="meta">
+      <text wx:if="{{valueMissing}}" class="value-dim">性价比 数据不足</text>
+      <text wx:else class="value">性价比 {{product.valueScore}}</text>
+      <text class="rating">评分 {{product.userRating}}</text>
+    </view>
+    <view class="price-row">
+      <text class="price-label">当前最低 <text class="data-hint">(模拟)</text></text>
+      <text class="price">¥{{priceText}}</text>
+    </view>
+  </view>
+
+  <view class="actions">
+    <button
+      class="act-btn gp-btn-ghost gp-btn-sm {{inCompare ? 'act-btn-on' : ''}}"
+      catchtap="onTapCompare"
+    >{{inCompare ? '已在对比' : '加入对比'}}</button>
+    <button class="act-btn gp-btn-primary gp-btn-sm" catchtap="onTapCard">查看详情</button>
+  </view>
+</view>

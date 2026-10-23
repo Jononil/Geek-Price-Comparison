@@ -1,0 +1,1 @@
+SELECT current_price FROM products WHERE id=45545;

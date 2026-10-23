@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>极客比价 · 2026 双十一高性价比数码速览</title>
+<style>
+  :root{
+    --bg:#f5f7fa; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb;
+    --card:#ffffff; --brand:#4f46e5; --brand-soft:#eef2ff; --cyan:#0891b2;
+    --ok:#15803d; --ok-soft:#ecfdf5; --warn:#b45309; --warn-soft:#fffbeb;
+    --shadow:0 1px 2px rgba(16,24,40,.06), 0 8px 24px -12px rgba(16,24,40,.18);
+    --radius:16px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter','PingFang SC','Hiragino Sans GB','Microsoft YaHei',system-ui,sans-serif;
+    background:var(--bg); color:var(--ink); -webkit-font-smoothing:antialiased;
+    line-height:1.6;
+  }
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+
+  /* ---------- top bar ---------- */
+  .topbar{
+    position:sticky;top:0;z-index:50;background:rgba(255,255,255,.82);
+    backdrop-filter:blur(12px);border-bottom:1px solid var(--line);
+  }
+  .topbar .wrap{display:flex;align-items:center;gap:20px;height:60px}
+  .logo{display:flex;align-items:center;gap:9px;font-weight:800;letter-spacing:-.01em;font-size:16px}
+  .logo .dot{
+    width:26px;height:26px;border-radius:8px;display:grid;place-items:center;color:#fff;font-size:13px;
+    background:linear-gradient(135deg,#4f46e5,#0891b2);box-shadow:0 4px 10px -4px rgba(79,70,229,.8)
+  }
+  .logo small{font-weight:600;color:var(--muted);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+  .nav{display:flex;gap:4px;margin-left:auto;overflow:auto}
+  .nav a{
+    font-size:13.5px;color:var(--muted);padding:7px 12px;border-radius:9px;white-space:nowrap;font-weight:500;
+  }
+  .nav a:hover{background:var(--brand-soft);color:var(--brand)}
+
+  /* ---------- hero ---------- */
+  .hero{
+    background:
+      radial-gradient(900px 420px at 12% -10%, rgba(79,70,229,.42), transparent 62%),
+      radial-gradient(760px 420px at 88% 6%, rgba(8,145,178,.34), transparent 60%),
+      linear-gradient(160deg,#0b1220 0%,#111c33 46%,#0e1729 100%);
+    color:#e8edf7;position:relative;overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;inset:0;pointer-events:none;opacity:.35;
+    background-image:linear-gradient(rgba(255,255,255,.055) 1px,transparent 1px),
+                     linear-gradient(90deg,rgba(255,255,255,.055) 1px,transparent 1px);
+    background-size:46px 46px;
+    mask-image:radial-gradient(ellipse at 50% 0%,#000 20%,transparent 76%);
+  }
+  .hero .wrap{position:relative;z-index:1;padding:58px 24px 66px}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.14em;
+    text-transform:uppercase;color:#a5b4fc;border:1px solid rgba(165,180,252,.32);
+    background:rgba(165,180,252,.1);padding:6px 12px;border-radius:999px;font-weight:600
+  }
+  .hero h1{
+    font-size:clamp(28px,4.2vw,46px);line-height:1.16;letter-spacing:-.022em;
+    margin:18px 0 12px;font-weight:800;
+    background:linear-gradient(100deg,#ffffff 12%,#c7d2fe 58%,#67e8f9 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .hero p.lede{max-width:640px;color:#b9c4d8;font-size:15.5px}
+  .hero .meta{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px;font-size:12.5px;color:#8b9ab4}
+  .hero .meta span{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);padding:4px 10px;border-radius:999px}
+
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(212px,1fr));gap:14px;margin-top:34px}
+  .stat{
+    background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.12);
+    border-radius:14px;padding:16px 18px;backdrop-filter:blur(6px)
+  }
+  .stat .k{font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:#93a3bd;font-weight:600}
+  .stat .v{font-size:22px;font-weight:800;margin-top:6px;color:#fff;letter-spacing:-.015em}
+  .stat .v em{font-style:normal;font-size:13px;font-weight:600;color:#a5b4fc;margin-left:4px}
+  .stat .d{font-size:12.5px;color:#9aabc4;margin-top:4px}
+
+  /* ---------- sections ---------- */
+  section{padding:56px 0}
+  .sec-head{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+  .sec-head h2{font-size:23px;letter-spacing:-.02em;font-weight:800}
+  .sec-head .sub{font-size:13.5px;color:var(--muted);margin-left:auto}
+  .kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--brand);font-weight:700;margin-bottom:6px}
+
+  /* ---------- calculator ---------- */
+  .calc{
+    background:var(--card);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);
+    display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);overflow:hidden
+  }
+  .calc-form{padding:28px 26px}
+  .calc-out{
+    padding:28px 26px;background:linear-gradient(165deg,#f8faff,#f1f5ff 60%,#eef6ff);
+    border-left:1px solid var(--line)
+  }
+  .field{margin-bottom:16px}
+  .field label{display:block;font-size:12.5px;font-weight:700;color:#374151;margin-bottom:6px}
+  .field .hint{font-weight:500;color:var(--muted);font-size:11.5px;margin-left:4px}
+  input[type=number],select{
+    width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:11px;
+    font-size:14.5px;font-family:inherit;background:#fff;color:var(--ink);outline:none;transition:.16s
+  }
+  input[type=number]:focus,select:focus{border-color:var(--brand);box-shadow:0 0 0 4px rgba(79,70,229,.12)}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+
+  .out-row{display:flex;justify-content:space-between;align-items:baseline;padding:8px 0;font-size:13.5px;color:#4b5563}
+  .out-row b{font-variant-numeric:tabular-nums;color:#111827;font-weight:600}
+  .out-row.total{
+    border-top:1px dashed #c7d2fe;margin-top:10px;padding-top:16px;font-size:15px;color:#312e81;font-weight:700
+  }
+  .out-row.total b{font-size:30px;letter-spacing:-.02em;color:var(--brand);font-weight:800}
+  .save-badge{
+    display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-size:12.5px;font-weight:700;
+    background:var(--ok-soft);color:var(--ok);border:1px solid #bbf7d0;padding:6px 12px;border-radius:999px
+  }
+  .note{font-size:12px;color:var(--muted);margin-top:14px;line-height:1.55}
+
+  /* ---------- toolbar ---------- */
+  .toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:20px}
+  .chips{display:flex;gap:8px;flex-wrap:wrap}
+  .chip{
+    padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:#fff;
+    font-size:13px;font-weight:600;color:#4b5563;cursor:pointer;transition:.15s;font-family:inherit
+  }
+  .chip:hover{border-color:#c7d2fe;color:var(--brand)}
+  .chip.on{background:var(--brand);border-color:var(--brand);color:#fff;box-shadow:0 6px 16px -8px rgba(79,70,229,.9)}
+  .sortwrap{margin-left:auto;display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--muted)}
+  .sortwrap select{width:auto;padding:8px 11px;font-size:12.5px;border-radius:10px}
+
+  /* ---------- cards ---------- */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(324px,1fr));gap:16px}
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px;
+    box-shadow:var(--shadow);display:flex;flex-direction:column;gap:12px;
+    transition:transform .18s ease, box-shadow .18s ease, border-color .18s
+  }
+  .card:hover{transform:translateY(-3px);border-color:#c7d2fe;box-shadow:0 18px 40px -22px rgba(30,41,59,.4)}
+  .card-top{display:flex;align-items:center;gap:8px}
+  .tag{
+    font-size:11px;font-weight:700;letter-spacing:.06em;padding:4px 9px;border-radius:7px;
+    background:var(--brand-soft);color:#4338ca
+  }
+  .score{
+    margin-left:auto;font-size:11.5px;font-weight:800;color:#065f46;background:var(--ok-soft);
+    border:1px solid #bbf7d0;padding:3px 9px;border-radius:7px;white-space:nowrap
+  }
+  .card h3{font-size:16.5px;line-height:1.35;letter-spacing:-.01em;font-weight:700}
+  .price{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+  .price .now{font-size:27px;font-weight:800;letter-spacing:-.03em;color:#111827;font-variant-numeric:tabular-nums}
+  .price .now small{font-size:15px;font-weight:700;margin-right:1px}
+  .price .was{font-size:12.5px;color:#9ca3af;text-decoration:line-through}
+  .price .final{
+    font-size:12.5px;font-weight:800;color:var(--ok);background:var(--ok-soft);
+    border:1px solid #bbf7d0;border-radius:8px;padding:3px 9px
+  }
+  .price .final.est{color:var(--warn);background:var(--warn-soft);border-color:#fde68a;font-weight:700}
+  .grid-note{font-size:12px;color:var(--muted);margin-top:14px;line-height:1.6}
+  .specs{display:flex;flex-wrap:wrap;gap:6px}
+  .specs span{font-size:11.5px;color:#475569;background:#f1f5f9;border-radius:6px;padding:3px 8px;font-weight:500}
+  .why{font-size:13px;color:#4b5563;border-left:3px solid #e0e7ff;padding-left:10px}
+  .why b{color:#312e81}
+  .card-foot{
+    display:flex;align-items:center;gap:8px;margin-top:auto;padding-top:12px;border-top:1px solid #f1f5f9;
+    font-size:11.5px;color:var(--muted)
+  }
+  .card-foot a{margin-left:auto;color:var(--brand);font-weight:700;font-size:12px}
+  .card-foot a:hover{text-decoration:underline}
+  .bar{height:4px;border-radius:99px;background:#eef2ff;overflow:hidden}
+  .bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#4f46e5,#0891b2)}
+
+  /* ---------- timeline ---------- */
+  .timeline{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .tl{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
+  .tl h3{font-size:15px;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+  .tl h3 i{
+    width:22px;height:22px;border-radius:7px;display:grid;place-items:center;font-size:11px;
+    font-style:normal;color:#fff;font-weight:800
+  }
+  .tl.jd h3 i{background:#e1251b}
+  .tl.tb h3 i{background:#ff5000}
+  .tl ol{list-style:none;display:flex;flex-direction:column;gap:11px}
+  .tl li{display:grid;grid-template-columns:auto 1fr;gap:11px;font-size:13px;color:#4b5563}
+  .tl li .t{
+    font-size:11.5px;font-weight:800;color:#111827;background:#f1f5f9;border-radius:7px;
+    padding:3px 8px;white-space:nowrap;height:fit-content;font-variant-numeric:tabular-nums
+  }
+  .tl li b{color:#111827}
+
+  /* ---------- order / pitfalls ---------- */
+  .cols{display:grid;grid-template-columns:1.05fr .95fr;gap:16px}
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+  .panel h3{font-size:15.5px;margin-bottom:4px}
+  .panel .sub{font-size:12.5px;color:var(--muted);margin-bottom:16px}
+  .steps{counter-reset:s;display:flex;flex-direction:column;gap:10px}
+  .steps li{
+    counter-increment:s;list-style:none;display:grid;grid-template-columns:26px 1fr;gap:12px;
+    font-size:13.2px;color:#374151;align-items:start
+  }
+  .steps li::before{
+    content:counter(s);width:26px;height:26px;border-radius:50%;display:grid;place-items:center;
+    background:var(--brand-soft);color:var(--brand);font-weight:800;font-size:12.5px;border:1px solid #c7d2fe
+  }
+  .steps li b{color:#111827}
+  .checks{display:flex;flex-direction:column;gap:11px}
+  .checks li{
+    list-style:none;display:grid;grid-template-columns:20px 1fr;gap:10px;font-size:13.2px;color:#374151
+  }
+  .checks li::before{content:"✕";color:#dc2626;font-weight:800;font-size:12px;line-height:1.6}
+  .checks li b{color:#111827}
+
+  .callout{
+    margin-top:16px;background:var(--warn-soft);border:1px solid #fde68a;border-radius:12px;
+    padding:14px 16px;font-size:12.8px;color:#78350f;line-height:1.6
+  }
+  .callout b{color:#92400e}
+
+  /* ---------- sources ---------- */
+  .src-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+  .src{
+    background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;
+    font-size:12.8px;color:#4b5563;display:flex;flex-direction:column;gap:4px;transition:.15s
+  }
+  .src:hover{border-color:#c7d2fe;box-shadow:var(--shadow)}
+  .src b{color:#111827;font-size:13.2px;font-weight:700;line-height:1.45}
+  .src span{color:var(--muted);font-size:11.5px}
+  .disclaimer{
+    margin-top:20px;font-size:12.3px;color:var(--muted);line-height:1.7;
+    background:#fff;border:1px dashed var(--line);border-radius:12px;padding:16px 18px
+  }
+
+  footer{border-top:1px solid var(--line);padding:26px 0 40px;font-size:12.5px;color:var(--muted)}
+  footer .wrap{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  footer b{color:#374151}
+
+  .empty{grid-column:1/-1;text-align:center;color:var(--muted);font-size:13.5px;padding:40px 0}
+
+  @media (max-width:900px){
+    .calc,.cols,.timeline{grid-template-columns:1fr}
+    .calc-out{border-left:none;border-top:1px solid var(--line)}
+    .nav{display:none}
+    section{padding:44px 0}
+  }
+  @media (max-width:560px){
+    .grid{grid-template-columns:1fr}
+    .grid2{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <div class="logo">
+      <span class="dot">比</span>
+      <span>极客比价<br><small>GeekPrice</small></span>
+    </div>
+    <nav class="nav">
+      <a href="#calc">到手价计算器</a>
+      <a href="#deals">精选好价</a>
+      <a href="#timing">大促节奏</a>
+      <a href="#howto">省钱顺序</a>
+      <a href="#pitfalls">避坑</a>
+      <a href="#sources">数据来源</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="wrap">
+      <div class="eyebrow">2026 双十一 · 数码比价特辑</div>
+      <h1>高性价比数码，<br>先算到手价，再谈性价比</h1>
+      <p class="lede">
+        把「标价 → 红包 → 满减 → 品类券 → 15% 国补」的正确顺序算清楚，
+        同一台机器在 10 月和 11 月能差出四五百块。这一页汇总了当前值得盯的高性价比机型、
+        真实到手价与可复用的省钱规则。
+      </p>
+      <div class="meta">
+        <span>数据快照：2026-10-23</span>
+        <span>价格随大促波动，下单前以页面实付为准</span>
+        <span>国补政策有效期至 2026-12-31</span>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="k">数码国补</div>
+          <div class="v">15%<em>上限 500 元</em></div>
+          <div class="d">手机/平板/手表/眼镜，实付需 ≤ 6000 元</div>
+        </div>
+        <div class="stat">
+          <div class="k">家电 · 笔记本国补</div>
+          <div class="v">15%<em>上限 1500 元</em></div>
+          <div class="d">一/二级能效家电、台式机与笔记本</div>
+        </div>
+        <div class="stat">
+          <div class="k">京东开门红</div>
+          <div class="v">10/12<em>20:00 现货</em></div>
+          <div class="d">国补额度最充足，可叠 30 天价保</div>
+        </div>
+        <div class="stat">
+          <div class="k">淘宝预售</div>
+          <div class="v">10/15<em>20:00 起</em></div>
+          <div class="d">10/20 首波尾款，11/10 晚满减全开</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ CALCULATOR ============ -->
+  <section id="calc">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="kicker">Tool 01</div>
+          <h2>到手价计算器：先看清真实价格</h2>
+        </div>
+        <div class="sub">按 2026 双十一规则模拟，顺序错了补贴会缩水</div>
+      </div>
+
+      <div class="calc">
+        <div class="calc-form">
+          <div class="field">
+            <label for="p-price">商品标价（元）<span class="hint">大促页面上的「活动价」</span></label>
+            <input type="number" id="p-price" value="4999" min="0" step="1">
+          </div>
+
+          <div class="grid2">
+            <div class="field">
+              <label for="p-cat">品类档位</label>
+              <select id="p-cat">
+                <option value="digital">数码（手机/平板/耳机）</option>
+                <option value="appliance" selected>笔记本 / 家电</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="p-promo">平台满减</label>
+              <select id="p-promo">
+                <option value="jd" selected>京东数码 每满 200 减 20</option>
+                <option value="tb">淘宝 每满 200 减 30</option>
+                <option value="none">不计满减</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="p-coupon">红包 / 品类券（元）<span class="hint">结算前先抵扣</span></label>
+            <input type="number" id="p-coupon" value="100" min="0" step="1">
+          </div>
+
+          <p class="note">
+            国补按「平台优惠抵扣后的实付金额」× 15% 计算，且必须<b>单件单独下单</b>；
+            数码类若券后价超过 6000 元，则不参与补贴。
+          </p>
+        </div>
+
+        <div class="calc-out">
+          <div class="out-row"><span>活动标价</span><b id="o-price">¥4,999</b></div>
+          <div class="out-row"><span>红包 / 品类券</span><b id="o-coupon">− ¥100</b></div>
+          <div class="out-row"><span>跨店满减</span><b id="o-promo">− ¥480</b></div>
+          <div class="out-row"><span>国补（15%）</span><b id="o-subsidy">− ¥662</b></div>
+          <div class="out-row total"><span>到手价</span><b id="o-final">¥3,757</b></div>
+          <div class="save-badge" id="o-save">✓ 共省 ¥1,242 · 相当于 7.5 折</div>
+          <p class="note" id="o-hint">补贴已触顶：家电/笔记本单件上限 1500 元。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DEALS ============ -->
+  <section id="deals">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="kicker">Tool 02</div>
+          <h2>精选好价：12 款值得盯的高性价比产品</h2>
+        </div>
+        <div class="sub">推荐指数为编辑打分，非官方评分</div>
+      </div>
+
+      <div class="toolbar">
+        <div class="chips" id="chips">
+          <button class="chip on" data-cat="all">全部</button>
+          <button class="chip" data-cat="phone">手机</button>
+          <button class="chip" data-cat="laptop">笔记本</button>
+          <button class="chip" data-cat="tablet">平板</button>
+          <button class="chip" data-cat="monitor">显示器</button>
+          <button class="chip" data-cat="audio">耳机</button>
+          <button class="chip" data-cat="gear">存储与外设</button>
+        </div>
+        <div class="sortwrap">
+          <label for="sort">排序</label>
+          <select id="sort">
+            <option value="score">推荐指数</option>
+            <option value="price">价格从低到高</option>
+            <option value="save">折扣力度</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid" id="grid"></div>
+      <p class="grid-note">
+        「实际到手」为来源页面明确给出的成交价；「估算到手」＝ 参考价 × 85%（笔记本按 1500 元上限封顶），
+        仅用于横向比较，不代表最终结算价。显示器、键盘、固态硬盘属于配件，不参与数码国补，因此不显示补贴价。
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ TIMING ============ -->
+  <section id="timing">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="kicker">Tool 03</div>
+          <h2>大促节奏：什么时候下手最划算</h2>
+        </div>
+        <div class="sub">京东先现货、淘宝走预售，节点完全不同</div>
+      </div>
+
+      <div class="timeline">
+        <div class="tl jd">
+          <h3><i>J</i>京东 · 现货模式</h3>
+          <ol>
+            <li><span class="t">10/12 20:00</span><div><b>开门红现货爆发场</b>——全周期最优节点，国补额度足、库存全，适合家电与高端数码。</div></li>
+            <li><span class="t">10/13–11/09</span><div><b>品类轮动专场</b>——每天放出对应品类大额券，适合不着急、想蹲细分底价的人。</div></li>
+            <li><span class="t">11/10 20:00</span><div><b>终极冲刺</b>——价格加码，但热门地区国补额度可能已被消耗，存在无法核销风险。</div></li>
+            <li><span class="t">11/12–11/13</span><div><b>返场清仓</b>——力度回落，只适合小件捡漏。</div></li>
+          </ol>
+        </div>
+
+        <div class="tl tb">
+          <h3><i>T</i>淘宝 / 天猫 · 预售锁价</h3>
+          <ol>
+            <li><span class="t">10/15 20:00</span><div><b>预售开启</b>——分两波下定，锁价锁货，适合慢慢比价的款。</div></li>
+            <li><span class="t">10/20</span><div><b>首波尾款</b>——第一波定金收尾，跨店满减开始生效。</div></li>
+            <li><span class="t">11/10 晚</span><div><b>尾款集中支付</b>——跨店满减全部生效，全周期价格低点之一。</div></li>
+            <li><span class="t">11/11 24:00</span><div><b>活动结束</b>——之后回归日常价，返场不再有大额券。</div></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="callout">
+        <b>国补的现实约束：</b>政策有效期写到 2026-12-31，但各省额度独立分配、先核销先得，
+        热门区域往往在 11 月上旬就见底。所以「等最后一天更便宜」在数码国补上是伪命题——
+        额度没了，省下的那点券钱抵不过 15% 的补贴。刚需建议直接踩 10/12 开门红。
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW TO ============ -->
+  <section id="howto">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="kicker">Tool 04</div>
+          <h2>省钱顺序与避坑清单</h2>
+        </div>
+        <div class="sub">顺序颠倒 = 白送几百块</div>
+      </div>
+
+      <div class="cols">
+        <div class="panel">
+          <h3>正确叠加顺序</h3>
+          <p class="sub">国补永远在最后一步核算，前面优惠越多，基数越低</p>
+          <ol class="steps">
+            <li><div><b>平台红包 / 超级红包</b>——最先抵扣，不影响后续门槛。</div></li>
+            <li><div><b>跨店满减</b>——京东数码每满 200 减 20，淘宝每满 200 减 30，跨店凑单更划算。</div></li>
+            <li><div><b>品类券 / PLUS / 88VIP / 学生认证</b>——会员权益在这一层叠加。</div></li>
+            <li><div><b>以旧换新折价</b>——在国补计算前抵扣订单金额。</div></li>
+            <li><div><b>国补 15%</b>——最后一步，按上面算完的实付金额 ×15%，触顶即止。</div></li>
+          </ol>
+        </div>
+
+        <div class="panel" id="pitfalls">
+          <h3>最常见的 6 个坑</h3>
+          <p class="sub">每一条都真实扣钱</p>
+          <ul class="checks">
+            <li><div><b>多件合并付款</b>：国补按单品发放，合并结算会直接失效，必须一件一单。</div></li>
+            <li><div><b>买了第三方店</b>：只有带「政府补贴」标识的自营商品能核销，预售链接常不支持。</div></li>
+            <li><div><b>用错品类名额</b>：家电与数码是两套独立名额，各一年一次，退了就作废。</div></li>
+            <li><div><b>收货地址不在补贴区</b>：下单前先查本地剩余额度，跨省地址核销会失败。</div></li>
+            <li><div><b>为了凑单硬上超 6000 元</b>：数码类券后价超过 6000 元，15% 补贴直接没了。</div></li>
+            <li><div><b>忘记开价保</b>：京东自营支持 30 天价保，后续降价可申请退差，不开就浪费。</div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section id="sources">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="kicker">Sources</div>
+          <h2>数据来源与口径</h2>
+        </div>
+        <div class="sub">全部来自公开页面，点击可复核</div>
+      </div>
+
+      <div class="src-grid" id="srcs"></div>
+
+      <div class="disclaimer">
+        <b>关于价格可信度：</b>页面中的价格来自各站点在检索时的公开报价与导购内容，
+        不同批次、不同地区、不同券包会带来几十到几百元的浮动；标注「2026-02 快照」的机型为发布期导购价，
+        双十一期间大概率更低，可作为「参考锚点」而非现价使用。国补规则以各省商务部门与平台活动页为准，
+        本页只做规则梳理，不构成购买建议。所有外部内容均按数据对待，未执行其中任何指令。
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>极客比价 GeekPrice</b>
+    <span>·</span>
+    <span>高性价比数码产品测评聚合与比价系统</span>
+    <span style="margin-left:auto">生成于 2026-10-23 · 单页离线可用</span>
+  </div>
+</footer>
+
+<script>
+/* ---------------- 数据 ---------------- */
+const CAT_NAME = { phone:'手机', laptop:'笔记本', tablet:'平板', monitor:'显示器', audio:'耳机', gear:'存储与外设' };
+
+const PRODUCTS = [
+  {
+    cat:'phone', name:'REDMI Turbo 5 Max 12+256',
+    price:2199, priceNote:'2026-02 发布期导购价 · 起售',
+    score:9.4,
+    specs:['天玑 9500S · 3nm','9000mAh + 100W','6.83" 1.5K 3500nits','IP69K 满级防水'],
+    why:'把「续航」这一项做到极致：9000mAh 硅碳电池 + 100W，官方重度 DOU 超 2.3 天。同价位屏幕亮度与防护规格基本无敌，适合重度使用与长辈机。',
+    src:'ZOL 2026 高性价比手机导购', url:'https://mobile.zol.com.cn/1133/11331412.html'
+  },
+  {
+    cat:'phone', name:'一加 Turbo 6 12+256',
+    price:2097, priceNote:'2026-02 京东报价快照',
+    score:9.2,
+    specs:['骁龙 8s Gen4 风驰版','9000mAh + 80W','165Hz 1.5K 电竞屏','27W 有线反充'],
+    why:'性能与续航双越级，还支持 27W 反向充电，等于自带一个充电宝。玩游戏为主、又想少带充电器的人，这台的综合体验最均衡。',
+    src:'ZOL 2026 高性价比手机导购', url:'https://mobile.zol.com.cn/1133/11331412.html'
+  },
+  {
+    cat:'phone', name:'iQOO Z11 Turbo 12+256',
+    price:2399, priceNote:'2026-02 首销优惠价',
+    score:9.0,
+    specs:['骁龙 8 Gen5 + Q2 双芯','7600mAh + 100W','2 亿像素 HP5 主摄','6500mm² VC 均热板'],
+    why:'双芯 + 超大 VC，是这批里游戏帧率最稳的一台；2 亿像素主摄让它在「能打也能拍」上少了短板。预算 2000 出头想要全能，优先看它。',
+    src:'ZOL 2026 高性价比手机导购', url:'https://mobile.zol.com.cn/1133/11331412.html'
+  },
+  {
+    cat:'phone', name:'真我 Neo8 12+256',
+    price:2399, priceNote:'2026-02 京东报价快照',
+    score:8.8,
+    specs:['骁龙 8 Gen5','8000mAh + 80W','165Hz 三星 AMOLED','3.5× 潜望长焦'],
+    why:'同级少见的潜望长焦，影像不是凑数。跑分 358 万、散热面积大，适合既要性能又常拍远景的学生党。',
+    src:'ZOL 2026 高性价比手机导购', url:'https://mobile.zol.com.cn/1133/11331412.html'
+  },
+  {
+    cat:'laptop', name:'联想小新 Pro14 2026 锐龙版 32G+1T',
+    price:4999, priceNote:'2026 双十一轻薄本导购参考价',
+    score:9.1,
+    specs:['R7 H255','32G + 1T','2.8K 120Hz OLED','1.4kg 级'],
+    why:'5000 元价位给到 32G+1T 和 2.8K 120Hz OLED，是今年轻薄本里「配置单最不讲道理」的一档。叠加 15% 国补后实际落到 4300 元上下。',
+    src:'知乎 2026 双十一轻薄本选购指南', url:'https://zhuanlan.zhihu.com/p/720334209'
+  },
+  {
+    cat:'laptop', name:'联想小新 Pro14 酷睿版（高配）',
+    price:8999, final:7650, priceNote:'京东在售价 · 国补后 7650 元实例',
+    score:8.6,
+    specs:['酷睿 Ultra 高配','国补 −1349','官方参考 5099–8299','全国联保'],
+    why:'拿来当「国补力度样本」看：8999 → 7650，一台机器省出 1349 元，正好卡在 1500 元上限附近。预算够、又需要酷睿生态的人可对照。',
+    src:'ZOL：小新 Pro14 国补到手 7650 元', url:'https://nb.zol.com.cn/1238/12381567.html'
+  },
+  {
+    cat:'tablet', name:'小米平板 8 8+256',
+    price:2199, final:1869, priceNote:'京东活动价 → 实付 1869.15 元',
+    score:8.9,
+    specs:['11.2" 3.2K 护眼屏','骁龙平台 + 澎湃 OS','8+256','京东限时立减'],
+    why:'2199 的活动价实付直接到 1869，接近 85 折。3.2K 屏 + 8+256 的组合在 2000 元内属于「闭眼买」档，追剧、网课、轻办公都够。',
+    src:'ZOL：小米平板 8 京东到手 1869 元', url:'https://nb.zol.com.cn/1157/11579663.html'
+  },
+  {
+    cat:'monitor', name:'REDMI 显示器 G27Q 240Hz 2026 标准版',
+    price:799, priceNote:'2026-10-21 京东首发价 · 不高于 799',
+    score:9.5,
+    specs:['27" 2K 240Hz Fast IPS','2026 标准版','首发价 ≤799','电竞取向'],
+    why:'本页性价比之王：2K + 240Hz 的 Fast IPS 干到 799 元,是 10 月最新上架的新品首发价。八百块解决「高刷 + 高分」两件事，同价位几乎没有对手。',
+    src:'IT之家 / 什么值得买：G27Q 2026 首发 799', url:'https://www.smzdm.com/p/184044549/'
+  },
+  {
+    cat:'audio', name:'华为 FreeBuds 6i',
+    price:321, final:288, priceNote:'京东活动价 → 国补后 288 元',
+    score:8.7,
+    specs:['智慧动态降噪 3.0','平均降噪 27dB','最高 5kHz 降噪频宽','入耳式'],
+    why:'300 元档里降噪参数最实的一只：全频段平均 27dB、降噪频宽到 5kHz，比上代提升 100%。京东 321 再叠国补立减 32.1，到手 288。',
+    src:'ZOL：FreeBuds 6i 到手 288 元', url:'http://dcdv.zol.com.cn/1260/12602718.html'
+  },
+  {
+    cat:'gear', name:'雷柏 V500PRO 机械键盘',
+    price:89, priceNote:'2026-06 实测参考价',
+    score:8.4,
+    specs:['百元内','104 键全尺寸','入门轴体','办公/校园'],
+    why:'89 元的全尺寸机械键盘，属于「坏了也不心疼」的定位。宿舍、工位、备用机三场景通吃，是百元档最稳的入门选择。',
+    src:'B 站 2026 机械键盘实测（23 款）', url:'https://www.bilibili.com/video/BV1xc5s6SEGH/'
+  },
+  {
+    cat:'gear', name:'ATK A87 机械键盘',
+    price:177, priceNote:'2026-06 实测参考价',
+    score:8.6,
+    specs:['87 键 TKL','热插拔','三模','200 元内'],
+    why:'177 元给到热插拔 + 三模，改造空间和延迟表现都比同价位高一档。想一步到位又不想上 300+ 的人,这是甜点位。',
+    src:'B 站 2026 机械键盘实测（23 款）', url:'https://www.bilibili.com/video/BV1xc5s6SEGH/'
+  },
+  {
+    cat:'gear', name:'佰维 X570 PCIe 5.0 SSD',
+    price:1199, priceNote:'2026 双十一 SSD 导购参考价',
+    score:8.3,
+    specs:['PCIe 5.0 ×4','高速读写','1TB 级','2026 双十一价'],
+    why:'PCIe 5.0 的价格已经压到 1200 元档，和去年的 4.0 旗舰同价。新主板用户直接上 5.0 不亏,老平台则没必要为它换板。',
+    src:'B 站 2026 双十一固态硬盘推荐', url:'https://www.bilibili.com/video/BV16gJY6VE2V/'
+  }
+];
+
+const SOURCES = [
+  { t:'ZOL：2026 年超高性价比手机怎么选（一加/真我/iQOO/红米）', d:'2026-02-21 · 四款中端机详细参数与售价', u:'https://mobile.zol.com.cn/1133/11331412.html' },
+  { t:'凤凰网：2026 国补第四批 + 双十一叠加攻略', d:'国补 15% / 上限 500 与 1500 · 叠加顺序 · 避坑', u:'https://feng.ifeng.com/c/8x7MSpZWR0Q' },
+  { t:'知乎：2026 双十一笔记本选购指南（轻薄本 5500 档）', d:'小新 Pro14 等机型参考价 4999 / 5699', u:'https://zhuanlan.zhihu.com/p/720334209' },
+  { t:'什么值得买：REDMI G27Q 240Hz 2026 标准版首发 799 元', d:'2026-10-21 首发价不高于 799 元', u:'https://www.smzdm.com/p/184044549/' },
+  { t:'ZOL：小米平板 8 京东特惠，到手 1869 元', d:'活动价 2199 → 实付 1869.15', u:'https://nb.zol.com.cn/1157/11579663.html' },
+  { t:'ZOL：华为 FreeBuds 6i 降噪耳机 288 元', d:'京东 321，国补立减 32.1', u:'http://dcdv.zol.com.cn/1260/12602718.html' },
+  { t:'ZOL：联想小新 Pro14 国补后 7650 元', d:'原价 8999，部分地区国补 −1349', u:'https://nb.zol.com.cn/1238/12381567.html' },
+  { t:'B 站：2026 机械键盘实测 23 款（百元到千元）', d:'雷柏 V500PRO 89 元 / ATK A87 177 元 等参考价', u:'https://www.bilibili.com/video/BV1xc5s6SEGH/' },
+  { t:'B 站：2026 双十一固态硬盘推荐', d:'PCIe 5.0 机型价格带参考', u:'https://www.bilibili.com/video/BV16gJY6VE2V/' }
+];
+
+/* ---------------- 卡片渲染 ---------------- */
+const fmt = n => '¥' + Math.round(n).toLocaleString('en-US');
+const grid = document.getElementById('grid');
+let curCat = 'all';
+
+const SUBSIDY_CAT = { phone:1, tablet:1, audio:1, laptop:1 };
+
+function estimateOf(p){
+  if (p.final != null) return { value:p.final, est:false };
+  if (!SUBSIDY_CAT[p.cat]) return null;              // 显示器/外设不参与国补
+  const cap = p.cat === 'laptop' ? 1500 : 500;
+  return { value: Math.round(p.price - Math.min(p.price * 0.15, cap)), est:true };
+}
+
+function discountOf(p){
+  const e = estimateOf(p);
+  return e ? p.price - e.value : 0;
+}
+
+function render(){
+  const list = PRODUCTS.filter(p => curCat === 'all' || p.cat === curCat).slice();
+  const sort = document.getElementById('sort').value;
+  if (sort === 'price') list.sort((a,b) => a.price - b.price);
+  else if (sort === 'save') list.sort((a,b) => discountOf(b) - discountOf(a));
+  else list.sort((a,b) => b.score - a.score);
+
+  if (!list.length){ grid.innerHTML = '<div class="empty">这个分类暂时没有收录</div>'; return; }
+
+  grid.innerHTML = list.map(p => {
+    const e = estimateOf(p);
+    const badge = e
+      ? `<span class="final${e.est ? ' est' : ''}">${e.est ? '估算到手 ' : '实际到手 '}${fmt(e.value)}</span>`
+      : '';
+    return `
+    <article class="card">
+      <div class="card-top">
+        <span class="tag">${CAT_NAME[p.cat]}</span>
+        <span class="score">推荐 ${p.score}</span>
+      </div>
+      <h3>${p.name}</h3>
+      <div class="price">
+        <span class="now"><small>¥</small>${p.price.toLocaleString('en-US')}</span>
+        ${badge}
+      </div>
+      <div class="specs">${p.specs.map(s => `<span>${s}</span>`).join('')}</div>
+      <div class="why">${p.why}</div>
+      <div class="bar"><i style="width:${p.score*10}%"></i></div>
+      <div class="card-foot">
+        <span>${p.priceNote}</span>
+        <a href="${p.url}" target="_blank" rel="noopener">查看来源 ↗</a>
+      </div>
+    </article>`;
+  }).join('');
+}
+
+document.getElementById('chips').addEventListener('click', e => {
+  const b = e.target.closest('.chip');
+  if (!b) return;
+  document.querySelectorAll('.chip').forEach(c => c.classList.toggle('on', c === b));
+  curCat = b.dataset.cat;
+  render();
+});
+document.getElementById('sort').addEventListener('change', render);
+
+/* ---------------- 计算器 ---------------- */
+const $ = id => document.getElementById(id);
+
+function calc(){
+  const price  = Math.max(0, parseFloat($('p-price').value) || 0);
+  const coupon = Math.max(0, parseFloat($('p-coupon').value) || 0);
+  const cat    = $('p-cat').value;
+  const promo  = $('p-promo').value;
+
+  const base = Math.max(0, price - coupon);
+  const step = promo === 'jd' ? 20 : promo === 'tb' ? 30 : 0;
+  const promoOff = step ? Math.floor(base / 200) * step : 0;
+  const afterPromo = Math.max(0, base - promoOff);
+
+  const cap = cat === 'digital' ? 500 : 1500;
+  const eligible = cat === 'digital' ? afterPromo <= 6000 : true;
+  const subsidy = eligible ? Math.min(afterPromo * 0.15, cap) : 0;
+  const final = Math.max(0, afterPromo - subsidy);
+  const saved = price - final;
+
+  $('o-price').textContent   = fmt(price);
+  $('o-coupon').textContent  = '− ' + fmt(coupon);
+  $('o-promo').textContent   = '− ' + fmt(promoOff);
+  $('o-subsidy').textContent = '− ' + fmt(subsidy);
+  $('o-final').textContent   = fmt(final);
+
+  const zhe = price > 0 ? (final / price * 10) : 0;
+  $('o-save').textContent = `✓ 共省 ${fmt(saved)} · 相当于 ${zhe.toFixed(1)} 折`;
+
+  let hint;
+  if (!eligible) {
+    hint = '券后价已超 6000 元，数码类不再享受国补——此时可考虑降配或改用家电/笔记本档位。';
+  } else if (subsidy >= cap) {
+    hint = `补贴已触顶：${cat === 'digital' ? '数码' : '家电 / 笔记本'}单件上限 ${fmt(cap)} 元，再涨价也不会多补。`;
+  } else {
+    hint = '补贴按券后实付金额 ×15% 计算，仍有余量；继续叠券能同时压低到手价与补贴额，需权衡。';
+  }
+  $('o-hint').textContent = hint;
+}
+
+['p-price','p-coupon','p-cat','p-promo'].forEach(id => {
+  $(id).addEventListener('input', calc);
+  $(id).addEventListener('change', calc);
+});
+
+/* ---------------- 来源 ---------------- */
+document.getElementById('srcs').innerHTML = SOURCES.map(s => `
+  <a class="src" href="${s.u}" target="_blank" rel="noopener">
+    <b>${s.t}</b>
+    <span>${s.d}</span>
+  </a>`).join('');
+
+render();
+calc();
+</script>
+</body>
+</html>

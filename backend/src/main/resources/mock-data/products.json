@@ -1,0 +1,1002 @@
+[
+  {
+    "model": "iPhone 17 256GB",
+    "brand": "Apple",
+    "category": "手机",
+    "title": "Apple iPhone 17 256GB",
+    "description": "A19 Pro 芯片加持的年度旗舰，影像与续航全面提升。",
+    "officialPrice": 6499,
+    "sales": 152000,
+    "heat": 9800,
+    "rating": 4.8,
+    "performanceScore": 95,
+    "launchDate": "2025-09-20",
+    "specs": { "处理器": "A19 Pro", "内存": "8GB", "存储": "256GB", "屏幕": "6.3英寸 OLED 120Hz", "电池": "4000mAh", "摄像头": "4800万像素" },
+    "images": ["/images/products/iphone17.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100001", "title": "Apple iPhone 17 256GB 深空黑 5G手机", "price": 5999, "originalPrice": 6499, "shopName": "Apple产品京东自营旗舰店", "sku": "256GB 深空黑", "url": "https://item.jd.com/100001.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200001", "title": "Apple iPhone 17 256GB 国行正品", "price": 5899, "originalPrice": 6499, "shopName": "Apple官方旗舰店", "sku": "256GB 深空黑", "url": "https://item.taobao.com/item.htm?id=200001", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300001", "title": "Apple iPhone 17 256GB 官方旗舰", "price": 5999, "originalPrice": 6499, "shopName": "Apple天猫官方旗舰店", "sku": "256GB 深空黑", "url": "https://detail.tmall.com/item.htm?id=300001", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "iPhone 17 Pro 256GB",
+    "brand": "Apple",
+    "category": "手机",
+    "title": "Apple iPhone 17 Pro 256GB",
+    "description": "三摄系统与钛金属机身，专业影像旗舰。",
+    "officialPrice": 7999,
+    "sales": 98000,
+    "heat": 12500,
+    "rating": 4.9,
+    "performanceScore": 98,
+    "launchDate": "2025-09-20",
+    "specs": { "处理器": "A19 Pro", "内存": "8GB", "存储": "256GB", "屏幕": "6.3英寸 OLED 120Hz", "电池": "4200mAh", "摄像头": "4800万三摄" },
+    "images": ["/images/products/iphone17-pro.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100002", "title": "Apple iPhone 17 Pro 256GB 原色钛金属", "price": 7499, "originalPrice": 7999, "shopName": "Apple产品京东自营旗舰店", "sku": "256GB 原色钛金属", "url": "https://item.jd.com/100002.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200002", "title": "Apple iPhone 17 Pro 256GB 国行", "price": 7399, "originalPrice": 7999, "shopName": "Apple官方旗舰店", "sku": "256GB 原色钛金属", "url": "https://item.taobao.com/item.htm?id=200002", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300002", "title": "Apple iPhone 17 Pro 256GB 官方旗舰", "price": 7499, "originalPrice": 7999, "shopName": "Apple天猫官方旗舰店", "sku": "256GB 原色钛金属", "url": "https://detail.tmall.com/item.htm?id=300002", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "Mate 70 Pro 512GB",
+    "brand": "华为",
+    "category": "手机",
+    "title": "华为 Mate 70 Pro 512GB",
+    "description": "麒麟芯片回归之作，鸿蒙系统与影像全面进化。",
+    "officialPrice": 6999,
+    "sales": 210000,
+    "heat": 13200,
+    "rating": 4.8,
+    "performanceScore": 96,
+    "launchDate": "2024-11-26",
+    "specs": { "处理器": "麒麟9010", "内存": "12GB", "存储": "512GB", "屏幕": "6.9英寸 OLED", "电池": "5300mAh", "摄像头": "5000万像素" },
+    "images": ["/images/products/mate70-pro.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100003", "title": "华为 Mate 70 Pro 512GB 曜金黑", "price": 6499, "originalPrice": 6999, "shopName": "华为京东自营官方旗舰店", "sku": "512GB 曜金黑", "url": "https://item.jd.com/100003.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200003", "title": "华为 Mate 70 Pro 512GB 正品", "price": 6399, "originalPrice": 6999, "shopName": "华为官方旗舰店", "sku": "512GB 曜金黑", "url": "https://item.taobao.com/item.htm?id=200003", "stock": true, "promotionStatus": "满减" },
+      "tmall":  { "externalProductId": "TM-300003", "title": "华为 Mate 70 Pro 512GB 天猫旗舰", "price": 6499, "originalPrice": 6999, "shopName": "华为天猫官方旗舰店", "sku": "512GB 曜金黑", "url": "https://detail.tmall.com/item.htm?id=300003", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "15 Pro 512GB",
+    "brand": "小米",
+    "category": "手机",
+    "title": "小米 15 Pro 512GB",
+    "description": "骁龙8 Elite 与徕卡影像，高性能旗舰。",
+    "officialPrice": 5499,
+    "sales": 320000,
+    "heat": 14500,
+    "rating": 4.7,
+    "performanceScore": 93,
+    "launchDate": "2024-10-29",
+    "specs": { "处理器": "骁龙8 Elite", "内存": "12GB", "存储": "512GB", "屏幕": "6.73英寸 OLED", "电池": "6100mAh", "摄像头": "徕卡三摄" },
+    "images": ["/images/products/mi15-pro.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100004", "title": "小米 15 Pro 512GB 白色", "price": 4999, "originalPrice": 5499, "shopName": "小米京东自营旗舰店", "sku": "512GB 白色", "url": "https://item.jd.com/100004.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200004", "title": "小米 15 Pro 512GB 官方正品", "price": 4899, "originalPrice": 5499, "shopName": "小米官方旗舰店", "sku": "512GB 白色", "url": "https://item.taobao.com/item.htm?id=200004", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300004", "title": "小米 15 Pro 512GB 天猫官方", "price": 4999, "originalPrice": 5499, "shopName": "小米天猫官方旗舰店", "sku": "512GB 白色", "url": "https://detail.tmall.com/item.htm?id=300004", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "Redmi K80 256GB",
+    "brand": "小米",
+    "category": "手机",
+    "title": "小米 Redmi K80 256GB",
+    "description": "2K 直屏与超大电池，高性价比中端旗舰。",
+    "officialPrice": 2499,
+    "sales": 480000,
+    "heat": 15800,
+    "rating": 4.6,
+    "performanceScore": 88,
+    "launchDate": "2024-11-27",
+    "specs": { "处理器": "骁龙8 Gen3", "内存": "12GB", "存储": "256GB", "屏幕": "6.67英寸 2K", "电池": "6550mAh", "摄像头": "5000万像素" },
+    "images": ["/images/products/redmi-k80.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100005", "title": "Redmi K80 256GB 墨羽", "price": 2299, "originalPrice": 2499, "shopName": "小米京东自营旗舰店", "sku": "256GB 墨羽", "url": "https://item.jd.com/100005.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200005", "title": "Redmi K80 256GB 正品", "price": 2199, "originalPrice": 2499, "shopName": "小米官方旗舰店", "sku": "256GB 墨羽", "url": "https://item.taobao.com/item.htm?id=200005", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300005", "title": "Redmi K80 256GB 天猫", "price": 2299, "originalPrice": 2499, "shopName": "小米天猫官方旗舰店", "sku": "256GB 墨羽", "url": "https://detail.tmall.com/item.htm?id=300005", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "Find X8 256GB",
+    "brand": "OPPO",
+    "category": "手机",
+    "title": "OPPO Find X8 256GB",
+    "description": "天玑9400 与哈苏影像，轻薄旗舰。",
+    "officialPrice": 3999,
+    "sales": 180000,
+    "heat": 8900,
+    "rating": 4.6,
+    "performanceScore": 90,
+    "launchDate": "2024-10-24",
+    "specs": { "处理器": "天玑9400", "内存": "12GB", "存储": "256GB", "屏幕": "6.59英寸 OLED", "电池": "5630mAh", "摄像头": "5000万像素" },
+    "images": ["/images/products/find-x8.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100006", "title": "OPPO Find X8 256GB 星野黑", "price": 3699, "originalPrice": 3999, "shopName": "OPPO京东自营官方旗舰店", "sku": "256GB 星野黑", "url": "https://item.jd.com/100006.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200006", "title": "OPPO Find X8 256GB 正品", "price": 3599, "originalPrice": 3999, "shopName": "OPPO官方旗舰店", "sku": "256GB 星野黑", "url": "https://item.taobao.com/item.htm?id=200006", "stock": true, "promotionStatus": "满减" },
+      "tmall":  { "externalProductId": "TM-300006", "title": "OPPO Find X8 256GB 天猫", "price": 3699, "originalPrice": 3999, "shopName": "OPPO天猫官方旗舰店", "sku": "256GB 星野黑", "url": "https://detail.tmall.com/item.htm?id=300006", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "vivo X200 256GB",
+    "brand": "vivo",
+    "category": "手机",
+    "title": "vivo X200 256GB",
+    "description": "蔡司影像与超长续航，均衡旗舰。",
+    "officialPrice": 4299,
+    "sales": 165000,
+    "heat": 8200,
+    "rating": 4.7,
+    "performanceScore": 91,
+    "launchDate": "2024-10-14",
+    "specs": { "处理器": "天玑9400", "内存": "12GB", "存储": "256GB", "屏幕": "6.67英寸 OLED", "电池": "5800mAh", "摄像头": "蔡司三摄" },
+    "images": ["/images/products/vivo-x200.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100007", "title": "vivo X200 256GB 白月光", "price": 3999, "originalPrice": 4299, "shopName": "vivo京东自营旗舰店", "sku": "256GB 白月光", "url": "https://item.jd.com/100007.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200007", "title": "vivo X200 256GB 正品", "price": 3899, "originalPrice": 4299, "shopName": "vivo官方旗舰店", "sku": "256GB 白月光", "url": "https://item.taobao.com/item.htm?id=200007", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300007", "title": "vivo X200 256GB 天猫", "price": 3999, "originalPrice": 4299, "shopName": "vivo天猫官方旗舰店", "sku": "256GB 白月光", "url": "https://detail.tmall.com/item.htm?id=300007", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "Magic7 256GB",
+    "brand": "荣耀",
+    "category": "手机",
+    "title": "荣耀 Magic7 256GB",
+    "description": "护眼绿洲屏与 AI 能力，高端旗舰。",
+    "officialPrice": 4499,
+    "sales": 120000,
+    "heat": 7600,
+    "rating": 4.6,
+    "performanceScore": 90,
+    "launchDate": "2024-10-30",
+    "specs": { "处理器": "骁龙8 Elite", "内存": "12GB", "存储": "256GB", "屏幕": "6.78英寸 OLED", "电池": "5650mAh", "摄像头": "5000万像素" },
+    "images": ["/images/products/magic7.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100008", "title": "荣耀 Magic7 256GB 黑色", "price": 4199, "originalPrice": 4499, "shopName": "荣耀京东自营旗舰店", "sku": "256GB 黑色", "url": "https://item.jd.com/100008.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200008", "title": "荣耀 Magic7 256GB 正品", "price": 4099, "originalPrice": 4499, "shopName": "荣耀官方旗舰店", "sku": "256GB 黑色", "url": "https://item.taobao.com/item.htm?id=200008", "stock": true, "promotionStatus": "满减" },
+      "tmall":  { "externalProductId": "TM-300008", "title": "荣耀 Magic7 256GB 天猫", "price": 4199, "originalPrice": 4499, "shopName": "荣耀天猫官方旗舰店", "sku": "256GB 黑色", "url": "https://detail.tmall.com/item.htm?id=300008", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "Galaxy S25 Ultra 256GB",
+    "brand": "三星",
+    "category": "手机",
+    "title": "三星 Galaxy S25 Ultra 256GB",
+    "description": "2亿像素主摄与 S Pen，安卓机皇。",
+    "officialPrice": 9999,
+    "sales": 85000,
+    "heat": 9800,
+    "rating": 4.8,
+    "performanceScore": 97,
+    "launchDate": "2025-01-23",
+    "specs": { "处理器": "骁龙8 Elite", "内存": "12GB", "存储": "256GB", "屏幕": "6.9英寸 OLED", "电池": "5000mAh", "摄像头": "2亿像素" },
+    "images": ["/images/products/galaxy-s25-ultra.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100009", "title": "三星 Galaxy S25 Ultra 256GB 钛灰", "price": 8999, "originalPrice": 9999, "shopName": "三星京东自营旗舰店", "sku": "256GB 钛灰", "url": "https://item.jd.com/100009.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200009", "title": "三星 Galaxy S25 Ultra 256GB", "price": 8799, "originalPrice": 9999, "shopName": "三星官方旗舰店", "sku": "256GB 钛灰", "url": "https://item.taobao.com/item.htm?id=200009", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300009", "title": "三星 Galaxy S25 Ultra 256GB 天猫", "price": 8999, "originalPrice": 9999, "shopName": "三星天猫官方旗舰店", "sku": "256GB 钛灰", "url": "https://detail.tmall.com/item.htm?id=300009", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "iPad Pro 11 M4 256GB",
+    "brand": "Apple",
+    "category": "平板",
+    "title": "Apple iPad Pro 11 M4 256GB",
+    "description": "M4 芯片与 Ultra Retina XDR，最强生产力平板。",
+    "officialPrice": 8999,
+    "sales": 76000,
+    "heat": 7200,
+    "rating": 4.8,
+    "performanceScore": 96,
+    "launchDate": "2024-05-15",
+    "specs": { "处理器": "M4", "内存": "8GB", "存储": "256GB", "屏幕": "11英寸 Ultra Retina XDR", "电池": "31.29Wh", "系统": "iPadOS" },
+    "images": ["/images/products/ipad-pro-11.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100010", "title": "Apple iPad Pro 11 M4 256GB WiFi", "price": 8499, "originalPrice": 8999, "shopName": "Apple产品京东自营旗舰店", "sku": "256GB WiFi版", "url": "https://item.jd.com/100010.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200010", "title": "Apple iPad Pro 11 M4 256GB", "price": 8399, "originalPrice": 8999, "shopName": "Apple官方旗舰店", "sku": "256GB WiFi版", "url": "https://item.taobao.com/item.htm?id=200010", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300010", "title": "Apple iPad Pro 11 M4 256GB 天猫", "price": 8499, "originalPrice": 8999, "shopName": "Apple天猫官方旗舰店", "sku": "256GB WiFi版", "url": "https://detail.tmall.com/item.htm?id=300010", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "iPad Air 11 M4 128GB",
+    "brand": "Apple",
+    "category": "平板",
+    "title": "Apple iPad Air 11 M4 128GB",
+    "description": "轻薄全能，学生与轻办公首选。",
+    "officialPrice": 4599,
+    "sales": 110000,
+    "heat": 6400,
+    "rating": 4.7,
+    "performanceScore": 90,
+    "launchDate": "2024-05-15",
+    "specs": { "处理器": "M4", "内存": "8GB", "存储": "128GB", "屏幕": "11英寸 Liquid Retina", "电池": "28.93Wh", "系统": "iPadOS" },
+    "images": ["/images/products/ipad-air-11.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100011", "title": "Apple iPad Air 11 M4 128GB WiFi", "price": 4299, "originalPrice": 4599, "shopName": "Apple产品京东自营旗舰店", "sku": "128GB WiFi版", "url": "https://item.jd.com/100011.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200011", "title": "Apple iPad Air 11 M4 128GB", "price": 4199, "originalPrice": 4599, "shopName": "Apple官方旗舰店", "sku": "128GB WiFi版", "url": "https://item.taobao.com/item.htm?id=200011", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300011", "title": "Apple iPad Air 11 M4 128GB 天猫", "price": 4299, "originalPrice": 4599, "shopName": "Apple天猫官方旗舰店", "sku": "128GB WiFi版", "url": "https://detail.tmall.com/item.htm?id=300011", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "MatePad Pro 12.2",
+    "brand": "华为",
+    "category": "平板",
+    "title": "华为 MatePad Pro 12.2",
+    "description": "OLED 柔光屏与鸿蒙生态，创作生产力工具。",
+    "officialPrice": 4399,
+    "sales": 68000,
+    "heat": 5800,
+    "rating": 4.6,
+    "performanceScore": 89,
+    "launchDate": "2024-08-06",
+    "specs": { "处理器": "麒麟9010W", "内存": "12GB", "存储": "256GB", "屏幕": "12.2英寸 OLED", "电池": "10100mAh", "系统": "HarmonyOS" },
+    "images": ["/images/products/matepad-pro-122.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100012", "title": "华为 MatePad Pro 12.2 曜金黑", "price": 4099, "originalPrice": 4399, "shopName": "华为京东自营官方旗舰店", "sku": "256GB 曜金黑", "url": "https://item.jd.com/100012.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200012", "title": "华为 MatePad Pro 12.2 正品", "price": 3999, "originalPrice": 4399, "shopName": "华为官方旗舰店", "sku": "256GB 曜金黑", "url": "https://item.taobao.com/item.htm?id=200012", "stock": true, "promotionStatus": "满减" },
+      "tmall":  { "externalProductId": "TM-300012", "title": "华为 MatePad Pro 12.2 天猫", "price": 4099, "originalPrice": 4399, "shopName": "华为天猫官方旗舰店", "sku": "256GB 曜金黑", "url": "https://detail.tmall.com/item.htm?id=300012", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "Pad 7 Pro",
+    "brand": "小米",
+    "category": "平板",
+    "title": "小米平板 7 Pro",
+    "description": "3.2K 高刷屏与澎湃系统，高性价比平板。",
+    "officialPrice": 2699,
+    "sales": 95000,
+    "heat": 6100,
+    "rating": 4.5,
+    "performanceScore": 87,
+    "launchDate": "2024-08-20",
+    "specs": { "处理器": "骁龙8s Gen3", "内存": "8GB", "存储": "256GB", "屏幕": "11.2英寸 3.2K", "电池": "8600mAh", "系统": "HyperOS" },
+    "images": ["/images/products/mipad-7-pro.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100013", "title": "小米平板 7 Pro 8+256GB", "price": 2499, "originalPrice": 2699, "shopName": "小米京东自营旗舰店", "sku": "8+256GB", "url": "https://item.jd.com/100013.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200013", "title": "小米平板 7 Pro 正品", "price": 2399, "originalPrice": 2699, "shopName": "小米官方旗舰店", "sku": "8+256GB", "url": "https://item.taobao.com/item.htm?id=200013", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300013", "title": "小米平板 7 Pro 天猫", "price": 2499, "originalPrice": 2699, "shopName": "小米天猫官方旗舰店", "sku": "8+256GB", "url": "https://detail.tmall.com/item.htm?id=300013", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "MacBook Pro 14 M4",
+    "brand": "Apple",
+    "category": "笔记本电脑",
+    "title": "Apple MacBook Pro 14 M4 Pro",
+    "description": "M4 Pro 芯片与 XDR 屏，专业创作者工作站。",
+    "officialPrice": 12999,
+    "sales": 46000,
+    "heat": 7800,
+    "rating": 4.9,
+    "performanceScore": 97,
+    "launchDate": "2024-10-30",
+    "specs": { "CPU": "M4 Pro", "内存": "24GB", "硬盘": "1TB SSD", "屏幕": "14.2英寸 XDR", "显卡": "M4 Pro 20核", "重量": "1.55kg" },
+    "images": ["/images/products/macbook-pro-14-m4.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100014", "title": "Apple MacBook Pro 14 M4 Pro 深空黑", "price": 12499, "originalPrice": 12999, "shopName": "Apple产品京东自营旗舰店", "sku": "24GB+1TB 深空黑", "url": "https://item.jd.com/100014.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200014", "title": "Apple MacBook Pro 14 M4 Pro", "price": 12399, "originalPrice": 12999, "shopName": "Apple官方旗舰店", "sku": "24GB+1TB 深空黑", "url": "https://item.taobao.com/item.htm?id=200014", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300014", "title": "Apple MacBook Pro 14 M4 Pro 天猫", "price": 12499, "originalPrice": 12999, "shopName": "Apple天猫官方旗舰店", "sku": "24GB+1TB 深空黑", "url": "https://detail.tmall.com/item.htm?id=300014", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "MacBook Air 13 M4",
+    "brand": "Apple",
+    "category": "笔记本电脑",
+    "title": "Apple MacBook Air 13 M4",
+    "description": "轻薄长续航，日常办公与学习首选。",
+    "officialPrice": 7999,
+    "sales": 88000,
+    "heat": 6900,
+    "rating": 4.8,
+    "performanceScore": 93,
+    "launchDate": "2024-10-30",
+    "specs": { "CPU": "M4", "内存": "16GB", "硬盘": "512GB SSD", "屏幕": "13.6英寸 Liquid Retina", "显卡": "M4 10核", "重量": "1.24kg" },
+    "images": ["/images/products/macbook-air-13-m4.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100015", "title": "Apple MacBook Air 13 M4 午夜色", "price": 7599, "originalPrice": 7999, "shopName": "Apple产品京东自营旗舰店", "sku": "16GB+512GB 午夜色", "url": "https://item.jd.com/100015.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200015", "title": "Apple MacBook Air 13 M4", "price": 7499, "originalPrice": 7999, "shopName": "Apple官方旗舰店", "sku": "16GB+512GB 午夜色", "url": "https://item.taobao.com/item.htm?id=200015", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300015", "title": "Apple MacBook Air 13 M4 天猫", "price": 7599, "originalPrice": 7999, "shopName": "Apple天猫官方旗舰店", "sku": "16GB+512GB 午夜色", "url": "https://detail.tmall.com/item.htm?id=300015", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "Legion Y9000P",
+    "brand": "联想",
+    "category": "笔记本电脑",
+    "title": "联想拯救者 Y9000P",
+    "description": "电竞级高性能游戏本，240Hz 高刷电竞屏。",
+    "officialPrice": 10499,
+    "sales": 72000,
+    "heat": 8800,
+    "rating": 4.7,
+    "performanceScore": 95,
+    "launchDate": "2024-04-18",
+    "specs": { "CPU": "酷睿i9-14900HX", "内存": "32GB", "硬盘": "1TB SSD", "屏幕": "16英寸 2.5K 240Hz", "显卡": "RTX 4060", "重量": "2.4kg" },
+    "images": ["/images/products/legion-y9000p.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100016", "title": "联想拯救者 Y9000P 灰", "price": 9999, "originalPrice": 10499, "shopName": "联想京东自营官方旗舰店", "sku": "32GB+1TB 灰", "url": "https://item.jd.com/100016.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200016", "title": "联想拯救者 Y9000P 正品", "price": 9899, "originalPrice": 10499, "shopName": "联想官方旗舰店", "sku": "32GB+1TB 灰", "url": "https://item.taobao.com/item.htm?id=200016", "stock": true, "promotionStatus": "满减" },
+      "tmall":  { "externalProductId": "TM-300016", "title": "联想拯救者 Y9000P 天猫", "price": 9999, "originalPrice": 10499, "shopName": "联想天猫官方旗舰店", "sku": "32GB+1TB 灰", "url": "https://detail.tmall.com/item.htm?id=300016", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "Xiaoxin Pro 16",
+    "brand": "联想",
+    "category": "笔记本电脑",
+    "title": "联想小新 Pro 16",
+    "description": "大屏轻薄全能本，办公学习两相宜。",
+    "officialPrice": 5499,
+    "sales": 130000,
+    "heat": 7500,
+    "rating": 4.6,
+    "performanceScore": 89,
+    "launchDate": "2024-03-20",
+    "specs": { "CPU": "锐龙7 8845H", "内存": "32GB", "硬盘": "1TB SSD", "屏幕": "16英寸 2.5K 120Hz", "显卡": "集成显卡", "重量": "1.9kg" },
+    "images": ["/images/products/xiaoxin-pro-16.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100017", "title": "联想小新 Pro 16 银", "price": 5199, "originalPrice": 5499, "shopName": "联想京东自营官方旗舰店", "sku": "32GB+1TB 银", "url": "https://item.jd.com/100017.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200017", "title": "联想小新 Pro 16 正品", "price": 5099, "originalPrice": 5499, "shopName": "联想官方旗舰店", "sku": "32GB+1TB 银", "url": "https://item.taobao.com/item.htm?id=200017", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300017", "title": "联想小新 Pro 16 天猫", "price": 5199, "originalPrice": 5499, "shopName": "联想天猫官方旗舰店", "sku": "32GB+1TB 银", "url": "https://detail.tmall.com/item.htm?id=300017", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "TUF 5 Pro",
+    "brand": "ASUS",
+    "category": "笔记本电脑",
+    "title": "ASUS 天选5 Pro",
+    "description": "二次元风格高性能游戏本，畅玩 3A 大作。",
+    "officialPrice": 7499,
+    "sales": 56000,
+    "heat": 6400,
+    "rating": 4.6,
+    "performanceScore": 92,
+    "launchDate": "2024-03-15",
+    "specs": { "CPU": "酷睿i7-14650HX", "内存": "16GB", "硬盘": "1TB SSD", "屏幕": "16英寸 2.5K 165Hz", "显卡": "RTX 4060", "重量": "2.2kg" },
+    "images": ["/images/products/tuf-5-pro.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100018", "title": "ASUS 天选5 Pro 日蚀灰", "price": 7199, "originalPrice": 7499, "shopName": "ASUS京东自营旗舰店", "sku": "16GB+1TB 日蚀灰", "url": "https://item.jd.com/100018.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200018", "title": "ASUS 天选5 Pro 正品", "price": 7099, "originalPrice": 7499, "shopName": "ASUS官方旗舰店", "sku": "16GB+1TB 日蚀灰", "url": "https://item.taobao.com/item.htm?id=200018", "stock": true, "promotionStatus": "满减" },
+      "tmall":  { "externalProductId": "TM-300018", "title": "ASUS 天选5 Pro 天猫", "price": 7199, "originalPrice": 7499, "shopName": "ASUS天猫官方旗舰店", "sku": "16GB+1TB 日蚀灰", "url": "https://detail.tmall.com/item.htm?id=300018", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "Core i7-14700K",
+    "brand": "Intel",
+    "category": "CPU",
+    "title": "Intel 酷睿 i7-14700K 盒装",
+    "description": "20 核 28 线程高性能桌面处理器，游戏与生产力兼顾。",
+    "officialPrice": 3299,
+    "sales": 88000,
+    "heat": 9200,
+    "rating": 4.8,
+    "performanceScore": 95,
+    "launchDate": "2023-10-17",
+    "specs": { "核心": "20", "线程": "28", "主频": "3.4GHz", "制程": "Intel 7", "接口": "LGA1700", "TDP": "125W" },
+    "images": ["/images/products/i7-14700k.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100019", "title": "Intel 酷睿 i7-14700K 盒装", "price": 2899, "originalPrice": 3299, "shopName": "Intel京东自营旗舰店", "sku": "盒装", "url": "https://item.jd.com/100019.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200019", "title": "Intel i7-14700K 盒装正品", "price": 2799, "originalPrice": 3299, "shopName": "Intel官方旗舰店", "sku": "盒装", "url": "https://item.taobao.com/item.htm?id=200019", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300019", "title": "Intel i7-14700K 盒装天猫", "price": 2899, "originalPrice": 3299, "shopName": "Intel天猫官方旗舰店", "sku": "盒装", "url": "https://detail.tmall.com/item.htm?id=300019", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "Ryzen 7 7800X3D",
+    "brand": "AMD",
+    "category": "CPU",
+    "title": "AMD 锐龙 7 7800X3D 盒装",
+    "description": "3D V-Cache 游戏神 U，帧率表现顶级。",
+    "officialPrice": 2799,
+    "sales": 95000,
+    "heat": 10500,
+    "rating": 4.9,
+    "performanceScore": 96,
+    "launchDate": "2023-04-06",
+    "specs": { "核心": "8", "线程": "16", "主频": "4.2GHz", "制程": "5nm", "接口": "AM5", "TDP": "120W" },
+    "images": ["/images/products/r7-7800x3d.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100020", "title": "AMD 锐龙 7 7800X3D 盒装", "price": 2399, "originalPrice": 2799, "shopName": "AMD京东自营旗舰店", "sku": "盒装", "url": "https://item.jd.com/100020.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200020", "title": "AMD 7800X3D 盒装正品", "price": 2299, "originalPrice": 2799, "shopName": "AMD官方旗舰店", "sku": "盒装", "url": "https://item.taobao.com/item.htm?id=200020", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300020", "title": "AMD 7800X3D 盒装天猫", "price": 2399, "originalPrice": 2799, "shopName": "AMD天猫官方旗舰店", "sku": "盒装", "url": "https://detail.tmall.com/item.htm?id=300020", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "Core i5-14600K",
+    "brand": "Intel",
+    "category": "CPU",
+    "title": "Intel 酷睿 i5-14600K 盒装",
+    "description": "14 核 20 线程甜品级处理器，主流装机之选。",
+    "officialPrice": 2199,
+    "sales": 120000,
+    "heat": 8600,
+    "rating": 4.7,
+    "performanceScore": 91,
+    "launchDate": "2023-10-17",
+    "specs": { "核心": "14", "线程": "20", "主频": "3.5GHz", "制程": "Intel 7", "接口": "LGA1700", "TDP": "125W" },
+    "images": ["/images/products/i5-14600k.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100021", "title": "Intel 酷睿 i5-14600K 盒装", "price": 1899, "originalPrice": 2199, "shopName": "Intel京东自营旗舰店", "sku": "盒装", "url": "https://item.jd.com/100021.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200021", "title": "Intel i5-14600K 盒装正品", "price": 1799, "originalPrice": 2199, "shopName": "Intel官方旗舰店", "sku": "盒装", "url": "https://item.taobao.com/item.htm?id=200021", "stock": true, "promotionStatus": "满减" },
+      "tmall":  { "externalProductId": "TM-300021", "title": "Intel i5-14600K 盒装天猫", "price": 1899, "originalPrice": 2199, "shopName": "Intel天猫官方旗舰店", "sku": "盒装", "url": "https://detail.tmall.com/item.htm?id=300021", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "RTX 4070 Ti Super",
+    "brand": "NVIDIA",
+    "category": "显卡",
+    "title": "NVIDIA RTX 4070 Ti Super 16GB",
+    "description": "Ada Lovelace 架构，2K 高刷光追游戏显卡。",
+    "officialPrice": 6499,
+    "sales": 54000,
+    "heat": 9800,
+    "rating": 4.8,
+    "performanceScore": 95,
+    "launchDate": "2024-01-24",
+    "specs": { "显存": "16GB", "核心频率": "2610MHz", "显存位宽": "256bit", "接口": "PCIe 4.0", "功耗": "285W", "架构": "Ada Lovelace" },
+    "images": ["/images/products/rtx4070tis.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100022", "title": "NVIDIA RTX 4070 Ti Super 16GB", "price": 5999, "originalPrice": 6499, "shopName": "NVIDIA京东自营旗舰店", "sku": "16GB", "url": "https://item.jd.com/100022.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200022", "title": "RTX 4070 Ti Super 16GB 正品", "price": 5899, "originalPrice": 6499, "shopName": "NVIDIA官方旗舰店", "sku": "16GB", "url": "https://item.taobao.com/item.htm?id=200022", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300022", "title": "RTX 4070 Ti Super 16GB 天猫", "price": 5999, "originalPrice": 6499, "shopName": "NVIDIA天猫官方旗舰店", "sku": "16GB", "url": "https://detail.tmall.com/item.htm?id=300022", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "RTX 4080 Super",
+    "brand": "NVIDIA",
+    "category": "显卡",
+    "title": "NVIDIA RTX 4080 Super 16GB",
+    "description": "4K 高刷光追旗舰显卡，旗舰游戏体验。",
+    "officialPrice": 8099,
+    "sales": 36000,
+    "heat": 10800,
+    "rating": 4.9,
+    "performanceScore": 97,
+    "launchDate": "2024-01-31",
+    "specs": { "显存": "16GB", "核心频率": "2550MHz", "显存位宽": "256bit", "接口": "PCIe 4.0", "功耗": "320W", "架构": "Ada Lovelace" },
+    "images": ["/images/products/rtx4080s.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100023", "title": "NVIDIA RTX 4080 Super 16GB", "price": 7499, "originalPrice": 8099, "shopName": "NVIDIA京东自营旗舰店", "sku": "16GB", "url": "https://item.jd.com/100023.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200023", "title": "RTX 4080 Super 16GB 正品", "price": 7399, "originalPrice": 8099, "shopName": "NVIDIA官方旗舰店", "sku": "16GB", "url": "https://item.taobao.com/item.htm?id=200023", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300023", "title": "RTX 4080 Super 16GB 天猫", "price": 7499, "originalPrice": 8099, "shopName": "NVIDIA天猫官方旗舰店", "sku": "16GB", "url": "https://detail.tmall.com/item.htm?id=300023", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "RX 7800 XT",
+    "brand": "AMD",
+    "category": "显卡",
+    "title": "AMD Radeon RX 7800 XT 16GB",
+    "description": "RDNA 3 架构，高性价比 2K 游戏显卡。",
+    "officialPrice": 4099,
+    "sales": 41000,
+    "heat": 7200,
+    "rating": 4.7,
+    "performanceScore": 93,
+    "launchDate": "2023-09-06",
+    "specs": { "显存": "16GB", "核心频率": "2430MHz", "显存位宽": "256bit", "接口": "PCIe 4.0", "功耗": "263W", "架构": "RDNA 3" },
+    "images": ["/images/products/rx7800xt.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100024", "title": "AMD RX 7800 XT 16GB", "price": 3699, "originalPrice": 4099, "shopName": "AMD京东自营旗舰店", "sku": "16GB", "url": "https://item.jd.com/100024.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200024", "title": "AMD RX 7800 XT 16GB 正品", "price": 3599, "originalPrice": 4099, "shopName": "AMD官方旗舰店", "sku": "16GB", "url": "https://item.taobao.com/item.htm?id=200024", "stock": true, "promotionStatus": "满减" },
+      "tmall":  { "externalProductId": "TM-300024", "title": "AMD RX 7800 XT 16GB 天猫", "price": 3699, "originalPrice": 4099, "shopName": "AMD天猫官方旗舰店", "sku": "16GB", "url": "https://detail.tmall.com/item.htm?id=300024", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "Odyssey G8 32",
+    "brand": "三星",
+    "category": "显示器",
+    "title": "三星玄龙骑士 G8 32英寸 4K 240Hz",
+    "description": "4K 240Hz OLED 电竞显示器，极致响应速度。",
+    "officialPrice": 6999,
+    "sales": 21000,
+    "heat": 5400,
+    "rating": 4.7,
+    "performanceScore": 92,
+    "launchDate": "2024-03-01",
+    "specs": { "尺寸": "32英寸", "分辨率": "4K UHD", "刷新率": "240Hz", "面板": "OLED", "响应时间": "0.03ms", "接口": "HDMI2.1" },
+    "images": ["/images/products/odyssey-g8.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100025", "title": "三星玄龙骑士 G8 32寸 4K", "price": 6499, "originalPrice": 6999, "shopName": "三星京东自营旗舰店", "sku": "32英寸 4K", "url": "https://item.jd.com/100025.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200025", "title": "三星 G8 32寸 4K 正品", "price": 6399, "originalPrice": 6999, "shopName": "三星官方旗舰店", "sku": "32英寸 4K", "url": "https://item.taobao.com/item.htm?id=200025", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300025", "title": "三星 G8 32寸 4K 天猫", "price": 6499, "originalPrice": 6999, "shopName": "三星天猫官方旗舰店", "sku": "32英寸 4K", "url": "https://detail.tmall.com/item.htm?id=300025", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "Legion 27 2K",
+    "brand": "联想",
+    "category": "显示器",
+    "title": "联想拯救者 27英寸 2K 180Hz",
+    "description": "2K 180Hz 高刷电竞显示器，电竞入门优选。",
+    "officialPrice": 1999,
+    "sales": 38000,
+    "heat": 4800,
+    "rating": 4.6,
+    "performanceScore": 87,
+    "launchDate": "2024-06-10",
+    "specs": { "尺寸": "27英寸", "分辨率": "2K QHD", "刷新率": "180Hz", "面板": "IPS", "响应时间": "1ms", "接口": "DP1.4" },
+    "images": ["/images/products/legion-27.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100026", "title": "联想拯救者 27寸 2K 180Hz", "price": 1799, "originalPrice": 1999, "shopName": "联想京东自营官方旗舰店", "sku": "27英寸 2K", "url": "https://item.jd.com/100026.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200026", "title": "联想拯救者 27寸 2K 正品", "price": 1699, "originalPrice": 1999, "shopName": "联想官方旗舰店", "sku": "27英寸 2K", "url": "https://item.taobao.com/item.htm?id=200026", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300026", "title": "联想拯救者 27寸 2K 天猫", "price": 1799, "originalPrice": 1999, "shopName": "联想天猫官方旗舰店", "sku": "27英寸 2K", "url": "https://detail.tmall.com/item.htm?id=300026", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "PG27UQR",
+    "brand": "ASUS",
+    "category": "显示器",
+    "title": "ASUS ROG PG27UQR 27英寸 4K 160Hz",
+    "description": "Fast IPS 4K 电竞显示器，色彩与速度兼备。",
+    "officialPrice": 5999,
+    "sales": 19000,
+    "heat": 5200,
+    "rating": 4.7,
+    "performanceScore": 93,
+    "launchDate": "2024-02-20",
+    "specs": { "尺寸": "27英寸", "分辨率": "4K UHD", "刷新率": "160Hz", "面板": "Fast IPS", "响应时间": "1ms", "接口": "HDMI2.1" },
+    "images": ["/images/products/rog-pg27uqr.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100027", "title": "ROG PG27UQR 27寸 4K 160Hz", "price": 5599, "originalPrice": 5999, "shopName": "ASUS京东自营旗舰店", "sku": "27英寸 4K", "url": "https://item.jd.com/100027.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200027", "title": "ROG PG27UQR 4K 正品", "price": 5499, "originalPrice": 5999, "shopName": "ASUS官方旗舰店", "sku": "27英寸 4K", "url": "https://item.taobao.com/item.htm?id=200027", "stock": true, "promotionStatus": "满减" },
+      "tmall":  { "externalProductId": "TM-300027", "title": "ROG PG27UQR 4K 天猫", "price": 5599, "originalPrice": 5999, "shopName": "ASUS天猫官方旗舰店", "sku": "27英寸 4K", "url": "https://detail.tmall.com/item.htm?id=300027", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "AirPods Pro 3",
+    "brand": "Apple",
+    "category": "耳机",
+    "title": "Apple AirPods Pro 3",
+    "description": "主动降噪入耳式耳机，空间音频体验出色。",
+    "officialPrice": 1899,
+    "sales": 260000,
+    "heat": 8800,
+    "rating": 4.7,
+    "performanceScore": 90,
+    "launchDate": "2024-09-20",
+    "specs": { "类型": "入耳式", "降噪": "主动降噪", "续航": "8小时", "蓝牙": "5.4", "驱动单元": "10mm", "重量": "5.3g" },
+    "images": ["/images/products/airpods-pro-3.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100028", "title": "Apple AirPods Pro 3 白色", "price": 1699, "originalPrice": 1899, "shopName": "Apple产品京东自营旗舰店", "sku": "白色", "url": "https://item.jd.com/100028.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200028", "title": "Apple AirPods Pro 3 正品", "price": 1599, "originalPrice": 1899, "shopName": "Apple官方旗舰店", "sku": "白色", "url": "https://item.taobao.com/item.htm?id=200028", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300028", "title": "Apple AirPods Pro 3 天猫", "price": 1699, "originalPrice": 1899, "shopName": "Apple天猫官方旗舰店", "sku": "白色", "url": "https://detail.tmall.com/item.htm?id=300028", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "WH-1000XM6",
+    "brand": "Sony",
+    "category": "耳机",
+    "title": "Sony WH-1000XM6 头戴式降噪耳机",
+    "description": "行业标杆级降噪头戴耳机，音质与降噪俱佳。",
+    "officialPrice": 2899,
+    "sales": 78000,
+    "heat": 6700,
+    "rating": 4.8,
+    "performanceScore": 93,
+    "launchDate": "2024-06-15",
+    "specs": { "类型": "头戴式", "降噪": "主动降噪", "续航": "40小时", "蓝牙": "5.3", "驱动单元": "30mm", "重量": "250g" },
+    "images": ["/images/products/wh-1000xm6.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100029", "title": "Sony WH-1000XM6 黑色", "price": 2599, "originalPrice": 2899, "shopName": "Sony京东自营旗舰店", "sku": "黑色", "url": "https://item.jd.com/100029.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200029", "title": "Sony WH-1000XM6 正品", "price": 2499, "originalPrice": 2899, "shopName": "Sony官方旗舰店", "sku": "黑色", "url": "https://item.taobao.com/item.htm?id=200029", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300029", "title": "Sony WH-1000XM6 天猫", "price": 2599, "originalPrice": 2899, "shopName": "Sony天猫官方旗舰店", "sku": "黑色", "url": "https://detail.tmall.com/item.htm?id=300029", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "FreeBuds Pro 4",
+    "brand": "华为",
+    "category": "耳机",
+    "title": "华为 FreeBuds Pro 4",
+    "description": "智慧动态降噪，通话清晰的真无线耳机。",
+    "officialPrice": 1499,
+    "sales": 190000,
+    "heat": 7200,
+    "rating": 4.6,
+    "performanceScore": 89,
+    "launchDate": "2024-10-22",
+    "specs": { "类型": "入耳式", "降噪": "主动降噪", "续航": "7小时", "蓝牙": "5.4", "驱动单元": "11mm", "重量": "5.6g" },
+    "images": ["/images/products/freebuds-pro-4.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100030", "title": "华为 FreeBuds Pro 4 陶瓷白", "price": 1299, "originalPrice": 1499, "shopName": "华为京东自营官方旗舰店", "sku": "陶瓷白", "url": "https://item.jd.com/100030.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200030", "title": "华为 FreeBuds Pro 4 正品", "price": 1199, "originalPrice": 1499, "shopName": "华为官方旗舰店", "sku": "陶瓷白", "url": "https://item.taobao.com/item.htm?id=200030", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300030", "title": "华为 FreeBuds Pro 4 天猫", "price": 1299, "originalPrice": 1499, "shopName": "华为天猫官方旗舰店", "sku": "陶瓷白", "url": "https://detail.tmall.com/item.htm?id=300030", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "Bose QC Ultra",
+    "brand": "Bose",
+    "category": "耳机",
+    "title": "Bose QuietComfort Ultra 头戴式耳机",
+    "description": "顶级降噪与沉浸式空间音频，舒适佩戴。",
+    "officialPrice": 3299,
+    "sales": 52000,
+    "heat": 5900,
+    "rating": 4.8,
+    "performanceScore": 94,
+    "launchDate": "2024-02-15",
+    "specs": { "类型": "头戴式", "降噪": "主动降噪", "续航": "24小时", "蓝牙": "5.3", "驱动单元": "40mm", "重量": "250g" },
+    "images": ["/images/products/bose-qc-ultra.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100031", "title": "Bose QC Ultra 黑色", "price": 2999, "originalPrice": 3299, "shopName": "Bose京东自营旗舰店", "sku": "黑色", "url": "https://item.jd.com/100031.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200031", "title": "Bose QC Ultra 正品", "price": 2899, "originalPrice": 3299, "shopName": "Bose官方旗舰店", "sku": "黑色", "url": "https://item.taobao.com/item.htm?id=200031", "stock": true, "promotionStatus": "满减" },
+      "tmall":  { "externalProductId": "TM-300031", "title": "Bose QC Ultra 天猫", "price": 2999, "originalPrice": 3299, "shopName": "Bose天猫官方旗舰店", "sku": "黑色", "url": "https://detail.tmall.com/item.htm?id=300031", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "JBL Tune 770NC",
+    "brand": "JBL",
+    "category": "耳机",
+    "title": "JBL Tune 770NC 头戴式降噪耳机",
+    "description": "70 小时超长续航，高性价比降噪耳机。",
+    "officialPrice": 899,
+    "sales": 140000,
+    "heat": 5100,
+    "rating": 4.4,
+    "performanceScore": 84,
+    "launchDate": "2024-04-10",
+    "specs": { "类型": "头戴式", "降噪": "主动降噪", "续航": "70小时", "蓝牙": "5.3", "驱动单元": "40mm", "重量": "232g" },
+    "images": ["/images/products/jbl-tune-770nc.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100032", "title": "JBL Tune 770NC 蓝色", "price": 799, "originalPrice": 899, "shopName": "JBL京东自营旗舰店", "sku": "蓝色", "url": "https://item.jd.com/100032.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200032", "title": "JBL Tune 770NC 正品", "price": 749, "originalPrice": 899, "shopName": "JBL官方旗舰店", "sku": "蓝色", "url": "https://item.taobao.com/item.htm?id=200032", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300032", "title": "JBL Tune 770NC 天猫", "price": 799, "originalPrice": 899, "shopName": "JBL天猫官方旗舰店", "sku": "蓝色", "url": "https://detail.tmall.com/item.htm?id=300032", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "G Pro X",
+    "brand": "罗技",
+    "category": "键盘",
+    "title": "罗技 G Pro X 机械键盘",
+    "description": "87 键电竞机械键盘，热插拔轴体可换。",
+    "officialPrice": 899,
+    "sales": 88000,
+    "heat": 5600,
+    "rating": 4.6,
+    "performanceScore": 88,
+    "launchDate": "2023-11-01",
+    "specs": { "类型": "机械键盘", "轴体": "GX茶轴", "连接": "有线", "布局": "87键", "背光": "RGB", "重量": "830g" },
+    "images": ["/images/products/g-pro-x-kb.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100033", "title": "罗技 G Pro X 机械键盘", "price": 799, "originalPrice": 899, "shopName": "罗技京东自营旗舰店", "sku": "GX茶轴", "url": "https://item.jd.com/100033.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200033", "title": "罗技 G Pro X 键盘正品", "price": 769, "originalPrice": 899, "shopName": "罗技官方旗舰店", "sku": "GX茶轴", "url": "https://item.taobao.com/item.htm?id=200033", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300033", "title": "罗技 G Pro X 键盘天猫", "price": 799, "originalPrice": 899, "shopName": "罗技天猫官方旗舰店", "sku": "GX茶轴", "url": "https://detail.tmall.com/item.htm?id=300033", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "BlackWidow V4",
+    "brand": "雷蛇",
+    "category": "键盘",
+    "title": "雷蛇黑寡妇蜘蛛 V4 机械键盘",
+    "description": "全尺寸电竞机械键盘，Chroma 幻彩灯效。",
+    "officialPrice": 1299,
+    "sales": 46000,
+    "heat": 4900,
+    "rating": 4.7,
+    "performanceScore": 90,
+    "launchDate": "2024-03-01",
+    "specs": { "类型": "机械键盘", "轴体": "雷蛇橙轴", "连接": "有线", "布局": "104键", "背光": "Chroma RGB", "重量": "1100g" },
+    "images": ["/images/products/blackwidow-v4.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100034", "title": "雷蛇黑寡妇蜘蛛 V4", "price": 1199, "originalPrice": 1299, "shopName": "雷蛇京东自营旗舰店", "sku": "橙轴", "url": "https://item.jd.com/100034.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200034", "title": "雷蛇黑寡妇蜘蛛 V4 正品", "price": 1149, "originalPrice": 1299, "shopName": "雷蛇官方旗舰店", "sku": "橙轴", "url": "https://item.taobao.com/item.htm?id=200034", "stock": true, "promotionStatus": "满减" },
+      "tmall":  { "externalProductId": "TM-300034", "title": "雷蛇黑寡妇蜘蛛 V4 天猫", "price": 1199, "originalPrice": 1299, "shopName": "雷蛇天猫官方旗舰店", "sku": "橙轴", "url": "https://detail.tmall.com/item.htm?id=300034", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "MX Mechanical",
+    "brand": "罗技",
+    "category": "键盘",
+    "title": "罗技 MX Mechanical 无线机械键盘",
+    "description": "办公旗舰机械键盘，低噪茶轴多设备切换。",
+    "officialPrice": 1099,
+    "sales": 62000,
+    "heat": 4300,
+    "rating": 4.6,
+    "performanceScore": 86,
+    "launchDate": "2022-10-01",
+    "specs": { "类型": "机械键盘", "轴体": "茶轴", "连接": "无线双模", "布局": "84键", "背光": "白色", "重量": "828g" },
+    "images": ["/images/products/mx-mechanical.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100035", "title": "罗技 MX Mechanical 茶轴", "price": 949, "originalPrice": 1099, "shopName": "罗技京东自营旗舰店", "sku": "茶轴", "url": "https://item.jd.com/100035.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200035", "title": "罗技 MX Mechanical 正品", "price": 899, "originalPrice": 1099, "shopName": "罗技官方旗舰店", "sku": "茶轴", "url": "https://item.taobao.com/item.htm?id=200035", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300035", "title": "罗技 MX Mechanical 天猫", "price": 949, "originalPrice": 1099, "shopName": "罗技天猫官方旗舰店", "sku": "茶轴", "url": "https://detail.tmall.com/item.htm?id=300035", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "G Pro X Superlight 2",
+    "brand": "罗技",
+    "category": "鼠标",
+    "title": "罗技 G Pro X Superlight 2 无线鼠标",
+    "description": "60g 轻量电竞鼠标，HERO 2 传感器。",
+    "officialPrice": 1099,
+    "sales": 92000,
+    "heat": 5400,
+    "rating": 4.7,
+    "performanceScore": 90,
+    "launchDate": "2023-09-01",
+    "specs": { "传感器": "HERO 2", "DPI": "32000", "连接": "无线", "重量": "60g", "续航": "95小时", "按键": "5" },
+    "images": ["/images/products/superlight-2.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100036", "title": "罗技 G Pro X Superlight 2 黑", "price": 999, "originalPrice": 1099, "shopName": "罗技京东自营旗舰店", "sku": "黑色", "url": "https://item.jd.com/100036.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200036", "title": "罗技 Superlight 2 正品", "price": 949, "originalPrice": 1099, "shopName": "罗技官方旗舰店", "sku": "黑色", "url": "https://item.taobao.com/item.htm?id=200036", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300036", "title": "罗技 Superlight 2 天猫", "price": 999, "originalPrice": 1099, "shopName": "罗技天猫官方旗舰店", "sku": "黑色", "url": "https://detail.tmall.com/item.htm?id=300036", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "DeathAdder V3 Pro",
+    "brand": "雷蛇",
+    "category": "鼠标",
+    "title": "雷蛇蝰蛇 V3 Pro 无线鼠标",
+    "description": "63g 轻量化电竞鼠标，Focus Pro 30K 传感器。",
+    "officialPrice": 999,
+    "sales": 58000,
+    "heat": 4600,
+    "rating": 4.6,
+    "performanceScore": 89,
+    "launchDate": "2022-10-01",
+    "specs": { "传感器": "Focus Pro 30K", "DPI": "30000", "连接": "无线", "重量": "63g", "续航": "90小时", "按键": "5" },
+    "images": ["/images/products/deathadder-v3-pro.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100037", "title": "雷蛇蝰蛇 V3 Pro 黑色", "price": 899, "originalPrice": 999, "shopName": "雷蛇京东自营旗舰店", "sku": "黑色", "url": "https://item.jd.com/100037.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200037", "title": "雷蛇蝰蛇 V3 Pro 正品", "price": 849, "originalPrice": 999, "shopName": "雷蛇官方旗舰店", "sku": "黑色", "url": "https://item.taobao.com/item.htm?id=200037", "stock": true, "promotionStatus": "满减" },
+      "tmall":  { "externalProductId": "TM-300037", "title": "雷蛇蝰蛇 V3 Pro 天猫", "price": 899, "originalPrice": 999, "shopName": "雷蛇天猫官方旗舰店", "sku": "黑色", "url": "https://detail.tmall.com/item.htm?id=300037", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "MX Master 3S",
+    "brand": "罗技",
+    "category": "鼠标",
+    "title": "罗技 MX Master 3S 无线鼠标",
+    "description": "办公旗舰鼠标，静音按键多设备切换。",
+    "officialPrice": 799,
+    "sales": 110000,
+    "heat": 4200,
+    "rating": 4.7,
+    "performanceScore": 87,
+    "launchDate": "2022-06-01",
+    "specs": { "传感器": "Darkfield", "DPI": "8000", "连接": "无线双模", "重量": "141g", "续航": "70天", "按键": "7" },
+    "images": ["/images/products/mx-master-3s.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100038", "title": "罗技 MX Master 3S 石墨灰", "price": 699, "originalPrice": 799, "shopName": "罗技京东自营旗舰店", "sku": "石墨灰", "url": "https://item.jd.com/100038.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200038", "title": "罗技 MX Master 3S 正品", "price": 649, "originalPrice": 799, "shopName": "罗技官方旗舰店", "sku": "石墨灰", "url": "https://item.taobao.com/item.htm?id=200038", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300038", "title": "罗技 MX Master 3S 天猫", "price": 699, "originalPrice": 799, "shopName": "罗技天猫官方旗舰店", "sku": "石墨灰", "url": "https://detail.tmall.com/item.htm?id=300038", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "A7M4",
+    "brand": "Sony",
+    "category": "相机",
+    "title": "Sony A7M4 全画幅微单相机",
+    "description": "3300 万像素全画幅微单，视频照片全能。",
+    "officialPrice": 16999,
+    "sales": 23000,
+    "heat": 6100,
+    "rating": 4.8,
+    "performanceScore": 96,
+    "launchDate": "2021-10-21",
+    "specs": { "传感器": "全画幅 CMOS", "像素": "3300万", "连拍": "10张/秒", "视频": "4K60p", "对焦": "759点相位", "重量": "658g" },
+    "images": ["/images/products/a7m4.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100039", "title": "Sony A7M4 单机身", "price": 16499, "originalPrice": 16999, "shopName": "Sony京东自营旗舰店", "sku": "单机身", "url": "https://item.jd.com/100039.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200039", "title": "Sony A7M4 机身正品", "price": 16299, "originalPrice": 16999, "shopName": "Sony官方旗舰店", "sku": "单机身", "url": "https://item.taobao.com/item.htm?id=200039", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300039", "title": "Sony A7M4 机身天猫", "price": 16499, "originalPrice": 16999, "shopName": "Sony天猫官方旗舰店", "sku": "单机身", "url": "https://detail.tmall.com/item.htm?id=300039", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "EOS R8",
+    "brand": "佳能",
+    "category": "相机",
+    "title": "佳能 EOS R8 全画幅微单相机",
+    "description": "轻量全画幅微单，40 张/秒高速连拍。",
+    "officialPrice": 11999,
+    "sales": 18000,
+    "heat": 5200,
+    "rating": 4.8,
+    "performanceScore": 95,
+    "launchDate": "2023-02-08",
+    "specs": { "传感器": "全画幅 CMOS", "像素": "2420万", "连拍": "40张/秒", "视频": "4K60p", "对焦": "双核对焦", "重量": "461g" },
+    "images": ["/images/products/eos-r8.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100040", "title": "佳能 EOS R8 单机身", "price": 11499, "originalPrice": 11999, "shopName": "佳能京东自营旗舰店", "sku": "单机身", "url": "https://item.jd.com/100040.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200040", "title": "佳能 EOS R8 机身正品", "price": 11299, "originalPrice": 11999, "shopName": "佳能官方旗舰店", "sku": "单机身", "url": "https://item.taobao.com/item.htm?id=200040", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300040", "title": "佳能 EOS R8 机身天猫", "price": 11499, "originalPrice": 11999, "shopName": "佳能天猫官方旗舰店", "sku": "单机身", "url": "https://detail.tmall.com/item.htm?id=300040", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "ZV-E10",
+    "brand": "Sony",
+    "category": "相机",
+    "title": "Sony ZV-E10 Vlog相机",
+    "description": "轻便 Vlog 相机，翻转屏与美颜功能。",
+    "officialPrice": 4699,
+    "sales": 52000,
+    "heat": 4900,
+    "rating": 4.6,
+    "performanceScore": 88,
+    "launchDate": "2021-08-01",
+    "specs": { "传感器": "APS-C CMOS", "像素": "2420万", "连拍": "11张/秒", "视频": "4K30p", "对焦": "425点", "重量": "343g" },
+    "images": ["/images/products/zv-e10.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100041", "title": "Sony ZV-E10 套机", "price": 4399, "originalPrice": 4699, "shopName": "Sony京东自营旗舰店", "sku": "套机", "url": "https://item.jd.com/100041.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200041", "title": "Sony ZV-E10 套机正品", "price": 4299, "originalPrice": 4699, "shopName": "Sony官方旗舰店", "sku": "套机", "url": "https://item.taobao.com/item.htm?id=200041", "stock": true, "promotionStatus": "满减" },
+      "tmall":  { "externalProductId": "TM-300041", "title": "Sony ZV-E10 套机天猫", "price": 4399, "originalPrice": 4699, "shopName": "Sony天猫官方旗舰店", "sku": "套机", "url": "https://detail.tmall.com/item.htm?id=300041", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "Watch Series 10",
+    "brand": "Apple",
+    "category": "智能手表",
+    "title": "Apple Watch Series 10",
+    "description": "更薄更轻的旗舰智能手表，健康监测全面。",
+    "officialPrice": 2999,
+    "sales": 98000,
+    "heat": 6400,
+    "rating": 4.7,
+    "performanceScore": 90,
+    "launchDate": "2024-09-20",
+    "specs": { "屏幕": "1.89英寸 OLED", "续航": "18小时", "防水": "50米", "健康监测": "心率/血氧/心电图", "系统": "watchOS", "重量": "34.4g" },
+    "images": ["/images/products/watch-s10.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100042", "title": "Apple Watch Series 10 午夜色", "price": 2799, "originalPrice": 2999, "shopName": "Apple产品京东自营旗舰店", "sku": "午夜色 42mm", "url": "https://item.jd.com/100042.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200042", "title": "Apple Watch Series 10 正品", "price": 2699, "originalPrice": 2999, "shopName": "Apple官方旗舰店", "sku": "午夜色 42mm", "url": "https://item.taobao.com/item.htm?id=200042", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300042", "title": "Apple Watch Series 10 天猫", "price": 2799, "originalPrice": 2999, "shopName": "Apple天猫官方旗舰店", "sku": "午夜色 42mm", "url": "https://detail.tmall.com/item.htm?id=300042", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "Watch GT 5",
+    "brand": "华为",
+    "category": "智能手表",
+    "title": "华为 Watch GT 5",
+    "description": "14 天长续航智能手表，专业运动健康管理。",
+    "officialPrice": 1488,
+    "sales": 75000,
+    "heat": 5200,
+    "rating": 4.6,
+    "performanceScore": 86,
+    "launchDate": "2024-09-20",
+    "specs": { "屏幕": "1.43英寸 AMOLED", "续航": "14天", "防水": "5ATM", "健康监测": "心率/血氧/睡眠", "系统": "HarmonyOS", "重量": "52g" },
+    "images": ["/images/products/watch-gt5.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100043", "title": "华为 Watch GT 5 幻夜黑", "price": 1299, "originalPrice": 1488, "shopName": "华为京东自营官方旗舰店", "sku": "幻夜黑", "url": "https://item.jd.com/100043.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200043", "title": "华为 Watch GT 5 正品", "price": 1199, "originalPrice": 1488, "shopName": "华为官方旗舰店", "sku": "幻夜黑", "url": "https://item.taobao.com/item.htm?id=200043", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300043", "title": "华为 Watch GT 5 天猫", "price": 1299, "originalPrice": 1488, "shopName": "华为天猫官方旗舰店", "sku": "幻夜黑", "url": "https://detail.tmall.com/item.htm?id=300043", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "Watch S4",
+    "brand": "小米",
+    "category": "智能手表",
+    "title": "小米 Watch S4",
+    "description": "高性价比智能手表，长续航与运动监测。",
+    "officialPrice": 999,
+    "sales": 88000,
+    "heat": 4700,
+    "rating": 4.5,
+    "performanceScore": 84,
+    "launchDate": "2024-10-29",
+    "specs": { "屏幕": "1.43英寸 AMOLED", "续航": "15天", "防水": "5ATM", "健康监测": "心率/血氧", "系统": "HyperOS", "重量": "44.5g" },
+    "images": ["/images/products/watch-s4.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100044", "title": "小米 Watch S4 黑色", "price": 899, "originalPrice": 999, "shopName": "小米京东自营旗舰店", "sku": "黑色", "url": "https://item.jd.com/100044.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200044", "title": "小米 Watch S4 正品", "price": 849, "originalPrice": 999, "shopName": "小米官方旗舰店", "sku": "黑色", "url": "https://item.taobao.com/item.htm?id=200044", "stock": true, "promotionStatus": "满减" },
+      "tmall":  { "externalProductId": "TM-300044", "title": "小米 Watch S4 天猫", "price": 899, "originalPrice": 999, "shopName": "小米天猫官方旗舰店", "sku": "黑色", "url": "https://detail.tmall.com/item.htm?id=300044", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "T7 Shield 2TB",
+    "brand": "三星",
+    "category": "移动硬盘",
+    "title": "三星 T7 Shield 2TB 移动固态硬盘",
+    "description": "IP65 防护移动固态，1050MB/s 高速传输。",
+    "officialPrice": 1299,
+    "sales": 66000,
+    "heat": 3900,
+    "rating": 4.7,
+    "performanceScore": 88,
+    "launchDate": "2023-05-01",
+    "specs": { "容量": "2TB", "接口": "USB 3.2 Gen2", "读取速度": "1050MB/s", "写入速度": "1000MB/s", "尺寸": "88×59×13mm", "防护": "IP65" },
+    "images": ["/images/products/t7-shield-2tb.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100045", "title": "三星 T7 Shield 2TB 蓝色", "price": 1199, "originalPrice": 1299, "shopName": "三星京东自营旗舰店", "sku": "2TB 蓝色", "url": "https://item.jd.com/100045.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200045", "title": "三星 T7 Shield 2TB 正品", "price": 1149, "originalPrice": 1299, "shopName": "三星官方旗舰店", "sku": "2TB 蓝色", "url": "https://item.taobao.com/item.htm?id=200045", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300045", "title": "三星 T7 Shield 2TB 天猫", "price": 1199, "originalPrice": 1299, "shopName": "三星天猫官方旗舰店", "sku": "2TB 蓝色", "url": "https://detail.tmall.com/item.htm?id=300045", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "E61 1TB",
+    "brand": "闪迪",
+    "category": "移动硬盘",
+    "title": "闪迪 E61 1TB 移动固态硬盘",
+    "description": "三防移动固态，便携耐用高速传输。",
+    "officialPrice": 799,
+    "sales": 90000,
+    "heat": 4100,
+    "rating": 4.6,
+    "performanceScore": 86,
+    "launchDate": "2023-08-01",
+    "specs": { "容量": "1TB", "接口": "USB 3.2 Gen2", "读取速度": "1050MB/s", "写入速度": "1000MB/s", "尺寸": "100×52×9mm", "防护": "IP55" },
+    "images": ["/images/products/e61-1tb.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100046", "title": "闪迪 E61 1TB 黑色", "price": 699, "originalPrice": 799, "shopName": "闪迪京东自营旗舰店", "sku": "1TB 黑色", "url": "https://item.jd.com/100046.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200046", "title": "闪迪 E61 1TB 正品", "price": 649, "originalPrice": 799, "shopName": "闪迪官方旗舰店", "sku": "1TB 黑色", "url": "https://item.taobao.com/item.htm?id=200046", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300046", "title": "闪迪 E61 1TB 天猫", "price": 699, "originalPrice": 799, "shopName": "闪迪天猫官方旗舰店", "sku": "1TB 黑色", "url": "https://detail.tmall.com/item.htm?id=300046", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "Q6",
+    "brand": "华为",
+    "category": "路由器",
+    "title": "华为凌霄子母路由 Q6",
+    "description": "WiFi6 子母路由，全屋覆盖无缝漫游。",
+    "officialPrice": 699,
+    "sales": 72000,
+    "heat": 3600,
+    "rating": 4.5,
+    "performanceScore": 84,
+    "launchDate": "2023-05-01",
+    "specs": { "频段": "三频", "速率": "AX3000", "天线": "内置", "接口": "千兆网口×3", "覆盖": "160㎡", "协议": "WiFi6" },
+    "images": ["/images/products/q6-router.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100047", "title": "华为凌霄子母路由 Q6", "price": 599, "originalPrice": 699, "shopName": "华为京东自营官方旗舰店", "sku": "子母装", "url": "https://item.jd.com/100047.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200047", "title": "华为凌霄子母路由 Q6 正品", "price": 549, "originalPrice": 699, "shopName": "华为官方旗舰店", "sku": "子母装", "url": "https://item.taobao.com/item.htm?id=200047", "stock": true, "promotionStatus": "满减" },
+      "tmall":  { "externalProductId": "TM-300047", "title": "华为凌霄子母路由 Q6 天猫", "price": 599, "originalPrice": 699, "shopName": "华为天猫官方旗舰店", "sku": "子母装", "url": "https://detail.tmall.com/item.htm?id=300047", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "AX9000",
+    "brand": "小米",
+    "category": "路由器",
+    "title": "小米 AX9000 三频路由器",
+    "description": "三频 WiFi6 旗舰路由，12 根天线信号强劲。",
+    "officialPrice": 999,
+    "sales": 81000,
+    "heat": 4400,
+    "rating": 4.6,
+    "performanceScore": 87,
+    "launchDate": "2022-04-01",
+    "specs": { "频段": "三频", "速率": "AX9000", "天线": "外置12根", "接口": "2.5G+千兆", "覆盖": "200㎡", "协议": "WiFi6" },
+    "images": ["/images/products/ax9000.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100048", "title": "小米 AX9000 三频路由器", "price": 899, "originalPrice": 999, "shopName": "小米京东自营旗舰店", "sku": "单机", "url": "https://item.jd.com/100048.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200048", "title": "小米 AX9000 路由器正品", "price": 849, "originalPrice": 999, "shopName": "小米官方旗舰店", "sku": "单机", "url": "https://item.taobao.com/item.htm?id=200048", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300048", "title": "小米 AX9000 路由器天猫", "price": 899, "originalPrice": 999, "shopName": "小米天猫官方旗舰店", "sku": "单机", "url": "https://detail.tmall.com/item.htm?id=300048", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "PS5 Pro",
+    "brand": "Sony",
+    "category": "游戏设备",
+    "title": "Sony PS5 Pro 游戏主机",
+    "description": "性能升级版次世代主机，4K 高帧率畅玩。",
+    "officialPrice": 5999,
+    "sales": 67000,
+    "heat": 7300,
+    "rating": 4.8,
+    "performanceScore": 95,
+    "launchDate": "2024-11-07",
+    "specs": { "处理器": "定制Zen2", "内存": "16GB GDDR6", "存储": "2TB SSD", "输出": "8K", "手柄": "DualSense", "分辨率": "4K120" },
+    "images": ["/images/products/ps5-pro.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100049", "title": "Sony PS5 Pro 光驱版", "price": 5799, "originalPrice": 5999, "shopName": "Sony京东自营旗舰店", "sku": "光驱版", "url": "https://item.jd.com/100049.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200049", "title": "Sony PS5 Pro 光驱版正品", "price": 5699, "originalPrice": 5999, "shopName": "Sony官方旗舰店", "sku": "光驱版", "url": "https://item.taobao.com/item.htm?id=200049", "stock": true, "promotionStatus": "限时直降" },
+      "tmall":  { "externalProductId": "TM-300049", "title": "Sony PS5 Pro 光驱版天猫", "price": 5799, "originalPrice": 5999, "shopName": "Sony天猫官方旗舰店", "sku": "光驱版", "url": "https://detail.tmall.com/item.htm?id=300049", "stock": true, "promotionStatus": "官方直营" }
+    }
+  },
+  {
+    "model": "Switch OLED",
+    "brand": "任天堂",
+    "category": "游戏设备",
+    "title": "任天堂 Switch OLED 版",
+    "description": "OLED 屏掌机主机二合一，合家欢游戏首选。",
+    "officialPrice": 2499,
+    "sales": 150000,
+    "heat": 5500,
+    "rating": 4.7,
+    "performanceScore": 85,
+    "launchDate": "2021-10-08",
+    "specs": { "处理器": "定制Tegra", "内存": "4GB", "存储": "64GB", "输出": "1080p", "手柄": "Joy-Con", "分辨率": "720p" },
+    "images": ["/images/products/switch-oled.svg"],
+    "platforms": {
+      "jd":     { "externalProductId": "JD-100050", "title": "任天堂 Switch OLED 白色", "price": 2299, "originalPrice": 2499, "shopName": "任天堂京东自营旗舰店", "sku": "白色", "url": "https://item.jd.com/100050.html", "stock": true, "promotionStatus": "自营" },
+      "taobao": { "externalProductId": "TB-200050", "title": "任天堂 Switch OLED 正品", "price": 2199, "originalPrice": 2499, "shopName": "任天堂官方旗舰店", "sku": "白色", "url": "https://item.taobao.com/item.htm?id=200050", "stock": true, "promotionStatus": "满减" },
+      "tmall":  { "externalProductId": "TM-300050", "title": "任天堂 Switch OLED 天猫", "price": 2299, "originalPrice": 2499, "shopName": "任天堂天猫官方旗舰店", "sku": "白色", "url": "https://detail.tmall.com/item.htm?id=300050", "stock": true, "promotionStatus": "官方直营" }
+    }
+  }
+]

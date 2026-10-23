@@ -1,0 +1,1 @@
+SELECT audit_status, COUNT(*) FROM product_image_license GROUP BY audit_status ORDER BY audit_status;

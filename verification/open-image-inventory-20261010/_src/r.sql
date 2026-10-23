@@ -1,0 +1,1 @@
+SELECT DISTINCT product_id FROM product_images WHERE url NOT LIKE '%placehold.co%';

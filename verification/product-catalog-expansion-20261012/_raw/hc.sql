@@ -1,0 +1,1 @@
+SELECT COUNT(*) FROM price_history WHERE product_id=45545;

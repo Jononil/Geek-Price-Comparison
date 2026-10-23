@@ -1,0 +1,5 @@
+<view class="gp-error">
+  <text class="text">{{text}}</text>
+  <text class="sub">{{subText}}</text>
+  <button class="retry-btn gp-btn-ghost gp-btn-sm" bindtap="onRetry">{{retryText}}</button>
+</view>

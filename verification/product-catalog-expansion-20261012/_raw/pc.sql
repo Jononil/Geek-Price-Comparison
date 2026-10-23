@@ -1,0 +1,1 @@
+SELECT COUNT(*) FROM product_prices WHERE product_id=45545 AND deleted=0;

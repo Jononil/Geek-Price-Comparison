@@ -1,0 +1,140 @@
+<view class="cmp-page">
+  <!-- 空列表 -->
+  <block wx:if="{{state === 'empty'}}">
+    <gp-empty text="还没有添加对比产品" subText="从商品列表选择同类商品进行对比（最多 4 个）">
+      <button class="go-btn gp-btn-primary gp-btn-sm" bindtap="onGoList">去挑选产品</button>
+    </gp-empty>
+  </block>
+
+  <!-- 加载中 -->
+  <gp-loading wx:elif="{{state === 'loading'}}" text="加载对比数据…" />
+
+  <!-- 错误 -->
+  <gp-error wx:elif="{{state === 'error'}}" bind:retry="onRetry" />
+
+  <block wx:else>
+    <!-- 工具栏 -->
+    <view class="toolbar">
+      <view class="diff-toggle {{diffOnly ? 'diff-on' : ''}}" bindtap="onToggleDiff">
+        只看差异
+      </view>
+      <text class="tool-link" bindtap="onGoList">更换商品</text>
+      <text class="tool-link tool-danger" bindtap="onClear">清空对比</text>
+    </view>
+
+    <!-- ===== 概览卡片（横向滑动） ===== -->
+    <scroll-view class="ov-scroll" scroll-x>
+      <view class="ov-card" wx:for="{{overviews}}" wx:key="id">
+        <view class="ov-img-wrap">
+          <image wx:if="{{item.image}}" class="ov-img" src="{{item.image}}" mode="aspectFit" lazy-load />
+          <gp-no-image wx:else size="{{60}}" text="" />
+        </view>
+        <text class="ov-name">{{item.shortName}}</text>
+        <text class="ov-meta">{{item.brandName}} · {{item.categoryName}}</text>
+        <text class="ov-price">¥{{item.priceText}} <text class="ov-sim">(模拟)</text></text>
+        <view class="ov-badges">
+          <text wx:if="{{item.valueMissing}}" class="ov-badge ov-badge-dim">性价比 数据不足</text>
+          <text wx:else class="ov-badge ov-badge-value">性价比 {{item.valueText}}</text>
+          <text class="ov-badge ov-badge-dim">评分 {{item.ratingText}}</text>
+        </view>
+        <view class="ov-actions">
+          <text class="ov-link" data-id="{{item.id}}" bindtap="onGoDetail">详情</text>
+          <text class="ov-link ov-link-danger" data-id="{{item.id}}" bindtap="onRemove">移除</text>
+        </view>
+      </view>
+    </scroll-view>
+
+    <!-- ===== 价格与评分 ===== -->
+    <view class="block gp-card">
+      <view class="block-title">
+        价格与评分
+        <text class="sim-badge">模拟数据，非实时电商价格</text>
+      </view>
+      <scroll-view scroll-x class="table-scroll">
+        <view class="table" style="min-width: {{columns.length * 200 + 160}}rpx;">
+          <view class="tr tr-head">
+            <view class="td td-label">项目</view>
+            <view class="td td-col" wx:for="{{overviews}}" wx:key="id">{{item.shortName}}</view>
+          </view>
+          <view class="tr" wx:for="{{priceRows}}" wx:key="key" wx:for-item="row">
+            <view class="td td-label">{{row.label}}</view>
+            <view
+              class="td td-col {{row.values[item2] ? '' : 'td-dim'}}"
+              wx:for="{{columns}}"
+              wx:key="*this"
+              wx:for-item="item2"
+            >{{row.values[item2] || '数据不足'}}</view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+
+    <!-- ===== 核心规格对比 ===== -->
+    <view class="block gp-card">
+      <view class="block-title">核心规格对比</view>
+      <scroll-view scroll-x class="table-scroll">
+        <view class="table" style="min-width: {{columns.length * 200 + 160}}rpx;">
+          <view class="tr tr-head">
+            <view class="td td-label">参数</view>
+            <view class="td td-col" wx:for="{{overviews}}" wx:key="id">{{item.shortName}}</view>
+          </view>
+
+          <!-- 可信参数分组 -->
+          <block wx:for="{{showTrustedGroups}}" wx:key="name" wx:for-item="g">
+            <view class="tr tr-group">
+              <view class="td td-group" style="width: 100%;">
+                {{g.name}}
+                <text wx:if="{{g.trust === 'verified'}}" class="trust-tag trust-ok">已核验</text>
+                <text wx:else class="trust-tag">参考资料·未联网复核</text>
+              </view>
+            </view>
+            <view class="tr" wx:for="{{g.rows}}" wx:key="key" wx:for-item="row">
+              <view class="td td-label">{{row.label}}</view>
+              <view
+                class="td td-col {{row.values[item2] ? '' : 'td-dim'}}"
+                wx:for="{{columns}}"
+                wx:key="*this"
+                wx:for-item="item2"
+              >{{row.values[item2] || '暂无可靠数据'}}</view>
+            </view>
+          </block>
+
+          <!-- 未核验参数（模板数据，独立弱化分组——业务红线） -->
+          <block wx:if="{{showTemplateGroup.rows.length > 0}}">
+            <view class="tr tr-group tr-group-warn">
+              <view class="td td-group" style="width: 100%;">
+                未核验参数（模板数据，非官方规格）
+                <text class="trust-tag trust-warn">仅供参考</text>
+              </view>
+            </view>
+            <view class="tr tr-template" wx:for="{{showTemplateGroup.rows}}" wx:key="key" wx:for-item="row">
+              <view class="td td-label">{{row.label}}</view>
+              <view
+                class="td td-col {{row.values[item2] ? '' : 'td-dim'}}"
+                wx:for="{{columns}}"
+                wx:key="*this"
+                wx:for-item="item2"
+              >{{row.values[item2] || '暂无可靠数据'}}</view>
+            </view>
+          </block>
+
+          <!-- 无可比参数 -->
+          <view
+            wx:if="{{showTrustedGroups.length === 0 && showTemplateGroup.rows.length === 0}}"
+            class="tr"
+          >
+            <view class="td td-empty" style="width: 100%;">
+              数据不足，暂无法给出可靠对比结论
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+      <view class="legend">
+        <text>· 空值显示「暂无可靠数据」，不以 0 或默认值参与比较</text>
+      </view>
+      <view class="trust-summary gp-data-hint">{{trustSummary}}</view>
+    </view>
+
+    <view class="footer-hint gp-data-hint">平台报价与历史价格均为系统模拟数据，仅用于功能演示</view>
+  </block>
+</view>

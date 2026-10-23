@@ -1,0 +1,1 @@
+UPDATE products SET performance_score=NULL, value_score=NULL; SELECT CONCAT('已清空评分的商品=', ROW_COUNT());

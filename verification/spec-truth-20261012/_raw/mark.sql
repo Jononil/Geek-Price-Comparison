@@ -1,0 +1,1 @@
+UPDATE product_specs SET verify_status='template', source_type=COALESCE(source_type,'internal_knowledge') WHERE verify_status IS NULL OR verify_status='unverified' OR verify_status='';

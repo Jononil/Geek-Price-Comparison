@@ -1,0 +1,56 @@
+<view class="rv-page">
+  <!-- 发表评价 -->
+  <view class="post-card gp-card">
+    <block wx:if="{{isLoggedIn}}">
+      <view class="post-title">发表评价</view>
+      <view class="star-row">
+        <text
+          wx:for="{{[1,2,3,4,5]}}"
+          wx:key="*this"
+          class="star {{item <= star ? 'star-on' : ''}}"
+          data-value="{{item}}"
+          bindtap="onStarTap"
+        >★</text>
+        <text class="star-hint">{{star}} 星</text>
+      </view>
+      <textarea
+        class="post-input"
+        placeholder="说说你的使用体验…"
+        maxlength="500"
+        value="{{content}}"
+        bindinput="onContentInput"
+        adjust-position
+        show-confirm-bar="{{false}}"
+      />
+      <button class="post-btn gp-btn-primary {{submitting ? 'btn-disabled' : ''}}" bindtap="onSubmit" disabled="{{submitting}}">
+        {{submitting ? '提交中…' : '发表评价'}}
+      </button>
+    </block>
+    <view wx:else class="login-bar">
+      <text class="login-hint">登录后可发表评价</text>
+      <button class="login-btn gp-btn-primary" size="mini" bindtap="onGoLogin">去登录</button>
+    </view>
+  </view>
+
+  <!-- 列表 -->
+  <view class="list-card gp-card">
+    <view class="list-title">全部评价 <text class="total">({{total}})</text></view>
+    <gp-loading wx:if="{{state === 'loading'}}" />
+    <gp-error wx:elif="{{state === 'error'}}" bind:retry="onRetry" />
+    <gp-empty wx:elif="{{items.length === 0}}" text="暂无评价" />
+    <block wx:else>
+      <view class="review-item" wx:for="{{items}}" wx:key="id">
+        <view class="ri-head">
+          <text class="ri-user">{{item.nickname}}</text>
+          <text class="ri-star">{{item.star}} ★</text>
+          <text class="ri-time">{{item.createdAt}}</text>
+        </view>
+        <text class="ri-content">{{item.content}}</text>
+      </view>
+      <view class="load-more">
+        <gp-loading wx:if="{{loadingMore}}" text="加载中…" />
+        <text wx:elif="{{!hasMore}}" class="no-more">— 没有更多了 —</text>
+      </view>
+    </block>
+  </view>
+</view>

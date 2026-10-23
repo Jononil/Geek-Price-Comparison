@@ -1,0 +1,3 @@
+INSERT INTO product_images (product_id, url, sort)
+    SELECT 45545, 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/AMD_Ryzen_9_3900X_-_ISO_Back.jpg/500px-AMD_Ryzen_9_3900X_-_ISO_Back.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail', (SELECT COALESCE(MAX(sort),0)+1 FROM product_images WHERE product_id=45545) FROM DUAL
+    WHERE NOT EXISTS (SELECT 1 FROM product_images WHERE product_id=45545 AND url='https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/AMD_Ryzen_9_3900X_-_ISO_Back.jpg/500px-AMD_Ryzen_9_3900X_-_ISO_Back.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail');

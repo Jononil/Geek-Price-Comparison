@@ -1,0 +1,1 @@
+SELECT id FROM products WHERE deleted=0 AND name='MacBook Pro 14';

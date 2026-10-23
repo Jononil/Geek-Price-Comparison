@@ -1,0 +1,1 @@
+SELECT name FROM products WHERE deleted=0;

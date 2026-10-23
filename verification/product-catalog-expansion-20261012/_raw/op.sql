@@ -1,0 +1,1 @@
+SELECT official_price FROM products WHERE id=45545;

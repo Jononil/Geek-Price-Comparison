@@ -1,0 +1,146 @@
+[
+ {
+  "name": "Dell UltraSharp U2415",
+  "brand": "戴尔",
+  "model": "u2415",
+  "cat": "显示器",
+  "ok": false
+ },
+ {
+  "name": "Dell UltraSharp U2723QE",
+  "brand": "戴尔",
+  "model": "u2723qe",
+  "cat": "显示器",
+  "ok": false
+ },
+ {
+  "name": "LG 27UK850-W",
+  "brand": "LG",
+  "model": "27uk850",
+  "cat": "显示器",
+  "ok": false
+ },
+ {
+  "name": "Samsung Odyssey G7 27",
+  "brand": "三星",
+  "model": "odyssey g7",
+  "cat": "显示器",
+  "ok": false
+ },
+ {
+  "name": "BenQ EW3270U",
+  "brand": "明基",
+  "model": "ew3270u",
+  "cat": "显示器",
+  "ok": false
+ },
+ {
+  "name": "ASUS ProArt PA279CV",
+  "brand": "华硕",
+  "model": "pa279cv",
+  "cat": "显示器",
+  "ok": false
+ },
+ {
+  "name": "AOC 24G2",
+  "brand": "AOC",
+  "model": "24g2",
+  "cat": "显示器",
+  "ok": false
+ },
+ {
+  "name": "ASUS TUF VG27AQ",
+  "brand": "华硕",
+  "model": "vg27aq",
+  "cat": "显示器",
+  "ok": false
+ },
+ {
+  "name": "Dell P2419H",
+  "brand": "戴尔",
+  "model": "p2419h",
+  "cat": "显示器",
+  "ok": false
+ },
+ {
+  "name": "LG 27GP850-B",
+  "brand": "LG",
+  "model": "27gp850",
+  "cat": "显示器",
+  "ok": false
+ },
+ {
+  "name": "Apple Mac mini M2",
+  "brand": "苹果",
+  "model": "mac mini m2",
+  "cat": "台式电脑",
+  "ok": true,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Apple_MacBook_Pro_16%22_M2_Max_with_Drone.jpg/500px-Apple_MacBook_Pro_16%22_M2_Max_with_Drone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "license": "CC BY-SA 4.0",
+  "author": "SimonWaldherr",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Apple%20MacBook%20Pro%2016%22%20M2%20Max%20with%20Drone.jpg",
+  "title": "Apple MacBook Pro 16\" M2 Max with Drone.jpg"
+ },
+ {
+  "name": "Apple iMac 24 M1",
+  "brand": "苹果",
+  "model": "imac 24",
+  "cat": "台式电脑",
+  "ok": true,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Timeline_of_the_product_Apple_iMac.svg/500px-Timeline_of_the_product_Apple_iMac.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "license": "CC BY-SA 4.0",
+  "author": ".mw-parser-output .messagebox{margin:4px 0;width:auto;border-collapse:collapse;border:2px solid var(",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Timeline%20of%20the%20product%20Apple%20iMac.svg",
+  "title": "Timeline of the product Apple iMac.svg"
+ },
+ {
+  "name": "Dell OptiPlex 7090",
+  "brand": "戴尔",
+  "model": "optiplex 7090",
+  "cat": "台式电脑",
+  "ok": false
+ },
+ {
+  "name": "HP EliteDesk 800 G7",
+  "brand": "惠普",
+  "model": "elitedesk 800",
+  "cat": "台式电脑",
+  "ok": true,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/HP_EliteDesk_800_35_W_G2_mini_002.jpg/500px-HP_EliteDesk_800_35_W_G2_mini_002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "license": "CC BY-SA 4.0",
+  "author": "Miguel Durán, Museo8bits",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:HP%20EliteDesk%20800%2035%20W%20G2%20mini%20002.jpg",
+  "title": "HP EliteDesk 800 35 W G2 mini 002.jpg"
+ },
+ {
+  "name": "Lenovo ThinkCentre M70q",
+  "brand": "联想",
+  "model": "thinkcentre m70",
+  "cat": "台式电脑",
+  "ok": false
+ },
+ {
+  "name": "ASUS ExpertCenter D500",
+  "brand": "华硕",
+  "model": "expertcenter d500",
+  "cat": "台式电脑",
+  "ok": false
+ },
+ {
+  "name": "Dell XPS 8940",
+  "brand": "戴尔",
+  "model": "xps 8940",
+  "cat": "台式电脑",
+  "ok": false
+ },
+ {
+  "name": "HP Pavilion Gaming TG01",
+  "brand": "惠普",
+  "model": "pavilion gaming tg01",
+  "cat": "台式电脑",
+  "ok": false
+ }
+]

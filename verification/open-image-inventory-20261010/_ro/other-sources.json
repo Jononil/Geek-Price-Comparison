@@ -1,0 +1,24 @@
+{
+  "opfPoolBrands": 49,
+  "opfEntries": 229,
+  "opfHits": [
+    {
+      "productId": 49,
+      "productName": "苹果 AirPods Pro 2",
+      "opfName": "AirPods Pro",
+      "img": "https://images.openproductsfacts.org/images/products/019/019/924/7000/front_ar.4.400.jpg",
+      "mainStatus": "NEW_HIGH_CONFIDENCE"
+    },
+    {
+      "productId": 82,
+      "productName": "华为 Watch GT 4",
+      "opfName": "Huawei Watch GT",
+      "img": "https://images.openproductsfacts.org/images/products/590/104/426/2582/front_es.10.400.jpg",
+      "mainStatus": "REVIEW_REQUIRED"
+    }
+  ],
+  "openverse": {
+    "status": 0,
+    "error": "fetch failed"
+  }
+}

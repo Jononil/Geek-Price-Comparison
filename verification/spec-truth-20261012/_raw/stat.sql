@@ -1,0 +1,1 @@
+SELECT CONCAT('total=', COUNT(*), ' reference=', SUM(verify_status='reference'), ' template=', SUM(verify_status='template'), ' verified=', SUM(verify_status='verified'));

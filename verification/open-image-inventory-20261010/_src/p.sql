@@ -1,0 +1,1 @@
+SELECT id, name, brand_id, category_id FROM products WHERE deleted=0 ORDER BY id;

@@ -1,0 +1,42 @@
+<view class="fav-page">
+  <gp-loading wx:if="{{state === 'loading'}}" text="加载收藏中…" />
+  <gp-error wx:elif="{{state === 'error'}}" bind:retry="onRetry" />
+  <gp-empty wx:elif="{{items.length === 0}}" text="还没有收藏" subText="在商品详情或测评页点击收藏" />
+
+  <block wx:else>
+    <view class="fav-item gp-card" wx:for="{{items}}" wx:key="id">
+      <view
+        class="fi-main"
+        data-id="{{item.targetId}}"
+        data-type="{{item.targetType}}"
+        bindtap="onTapItem"
+      >
+        <view class="fi-img-wrap">
+          <image wx:if="{{item.image}}" class="fi-img" src="{{item.image}}" mode="aspectFit" lazy-load />
+          <gp-no-image wx:else size="{{48}}" text="" />
+        </view>
+        <view class="fi-info">
+          <text class="fi-name">{{item.name}}</text>
+          <text class="fi-meta">{{item.targetType === 1 ? '产品' : '测评'}} · {{item.createdAtText}}</text>
+          <view class="fi-bottom">
+            <text wx:if="{{item.targetType === 1}}" class="fi-price">{{item.priceText}}</text>
+            <text wx:if="{{item.targetType === 1 && !item.valueMissing}}" class="fi-value">性价比 {{item.valueText}}</text>
+            <text wx:elif="{{item.targetType === 1}}" class="fi-value-dim">性价比 数据不足</text>
+          </view>
+        </view>
+      </view>
+      <view
+        class="fi-remove"
+        data-id="{{item.id}}"
+        data-type="{{item.targetType}}"
+        data-target="{{item.targetId}}"
+        bindtap="onRemove"
+      >取消收藏</view>
+    </view>
+
+    <view class="load-more">
+      <gp-loading wx:if="{{loadingMore}}" text="加载中…" />
+      <text wx:elif="{{!hasMore}}" class="no-more">— 没有更多了 —</text>
+    </view>
+  </block>
+</view>

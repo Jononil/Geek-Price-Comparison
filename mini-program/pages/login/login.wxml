@@ -1,0 +1,29 @@
+<view class="login-page">
+  <view class="brand">
+    <text class="brand-name">极客比价</text>
+    <text class="brand-slogan">理性消费，专业比价</text>
+  </view>
+
+  <view class="form gp-card">
+    <input
+      class="input"
+      placeholder="用户名"
+      value="{{username}}"
+      bindinput="onUsernameInput"
+    />
+    <input
+      class="input"
+      placeholder="密码"
+      password
+      value="{{password}}"
+      bindinput="onPasswordInput"
+      bindconfirm="onLogin"
+    />
+    <button class="login-btn gp-btn-primary {{loading ? 'btn-disabled' : ''}}" bindtap="onLogin" disabled="{{loading}}">
+      {{loading ? '登录中…' : '登录'}}
+    </button>
+    <view class="switch" bindtap="onGoRegister">没有账号？立即注册</view>
+  </view>
+
+  <view class="footer-hint gp-data-hint">与 PC 端共用同一账号体系</view>
+</view>

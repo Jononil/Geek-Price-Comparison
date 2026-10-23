@@ -1,0 +1,59 @@
+<view class="mine-page">
+  <!-- 未登录 -->
+  <block wx:if="{{!isLoggedIn}}">
+    <view class="guest-card gp-card">
+      <view class="guest-avatar">极</view>
+      <text class="guest-title">未登录</text>
+      <text class="guest-sub">登录后可使用收藏、评价、浏览历史</text>
+      <button class="login-btn gp-btn-primary" bindtap="onGoLogin">登录 / 注册</button>
+    </view>
+  </block>
+
+  <!-- 已登录 -->
+  <block wx:else>
+    <view class="user-card gp-card">
+      <view class="avatar">{{user.nickname ? user.nickname[0] : '极'}}</view>
+      <view class="user-info">
+        <text class="nickname">{{user.nickname}}</text>
+        <text class="username">用户名：{{user.username}}</text>
+      </view>
+    </view>
+
+    <view class="info-card gp-card">
+      <view class="info-row"><text class="info-label">邮箱</text><text>{{user.email || '—'}}</text></view>
+      <view class="info-row"><text class="info-label">手机号</text><text>{{user.phone || '—'}}</text></view>
+      <view class="info-row"><text class="info-label">注册时间</text><text>{{user.createdAt}}</text></view>
+      <view class="info-row"><text class="info-label">角色</text><text>{{rolesText}}</text></view>
+    </view>
+
+    <!-- 功能入口 -->
+    <view class="menu-card gp-card">
+      <view class="menu-item" bindtap="onGoFavorites">
+        <text class="menu-name">我的收藏</text>
+        <text class="menu-arrow">›</text>
+      </view>
+      <view class="menu-item" bindtap="onGoHistory">
+        <text class="menu-name">浏览历史</text>
+        <text class="menu-arrow">›</text>
+      </view>
+      <view class="menu-item" bindtap="onTogglePwdForm">
+        <text class="menu-name">修改密码</text>
+        <text class="menu-arrow">{{showPwdForm ? '▾' : '›'}}</text>
+      </view>
+    </view>
+
+    <!-- 修改密码表单 -->
+    <view class="pwd-card gp-card" wx:if="{{showPwdForm}}">
+      <view class="pwd-title">修改密码</view>
+      <input class="pwd-input" password placeholder="旧密码" data-field="oldPassword" bindinput="onPwdInput" />
+      <input class="pwd-input" password placeholder="新密码（6-20 位）" data-field="newPassword" bindinput="onPwdInput" />
+      <input class="pwd-input" password placeholder="确认新密码" data-field="newPassword2" bindinput="onPwdInput" />
+      <button class="pwd-btn gp-btn-primary {{pwdSubmitting ? 'btn-disabled' : ''}}" bindtap="onChangePassword" disabled="{{pwdSubmitting}}">
+        {{pwdSubmitting ? '提交中…' : '确认修改'}}
+      </button>
+    </view>
+
+    <button class="logout-btn" bindtap="onLogout">退出登录</button>
+    <view class="note gp-data-hint">"我的测评/我的评论"功能现有系统未提供（无对应接口）</view>
+  </block>
+</view>

@@ -1,0 +1,1 @@
+SELECT GROUP_CONCAT(column_name) FROM information_schema.columns WHERE table_schema='geek_price' AND table_name='product_specs';

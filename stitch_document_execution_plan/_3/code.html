@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>极客比价 - 数码硬件智能比价与决策</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-fixed": "#00174b", "on-primary": "#ffffff", "on-secondary-container": "#5c2400", "primary-container": "#2563eb", "outline-variant": "#c3c6d7", "secondary-fixed": "#ffdbca", "on-error-container": "#93000a", "on-background": "#121c2a", "on-error": "#ffffff", "primary-fixed-dim": "#b4c5ff", "error": "#ba1a1a", "on-primary-fixed-variant": "#003ea8", "background": "#f8f9ff", "secondary": "#9d4300", "error-container": "#ffdad6", "on-secondary-fixed-variant": "#783200", "on-primary-container": "#eeefff", "tertiary-fixed": "#6ffbbe", "on-surface": "#121c2a", "surface-bright": "#f8f9ff", "on-secondary": "#ffffff", "surface-container-lowest": "#ffffff", "surface-container": "#e6eeff", "surface-container-highest": "#d9e3f6", "on-tertiary-fixed-variant": "#005236", "tertiary-container": "#007d55", "surface": "#f8f9ff", "secondary-container": "#fd761a", "surface-dim": "#d0dbed", "surface-variant": "#d9e3f6", "on-secondary-fixed": "#341100", "tertiary": "#006242", "surface-container-low": "#eff4ff", "inverse-primary": "#b4c5ff", "secondary-fixed-dim": "#ffb690", "surface-container-high": "#dee9fc", "primary": "#004ac6", "surface-tint": "#0053db", "on-tertiary-container": "#bdffdb", "primary-fixed": "#dbe1ff", "on-surface-variant": "#434655", "on-tertiary-fixed": "#002113", "inverse-surface": "#27313f", "inverse-on-surface": "#eaf1ff", "tertiary-fixed-dim": "#4edea3", "outline": "#737686", "on-tertiary": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-mobile": "1rem", "gutter-mobile": "0.75rem", "margin-desktop": "2rem", "unit-sm": "0.75rem", "unit-xs": "0.5rem", "unit-xl": "2rem", "unit-lg": "1.5rem", "unit-2xl": "3rem", "gutter-desktop": "1.5rem", "unit-2xs": "0.25rem", "unit-md": "1rem" }, "fontFamily": { "headline-lg": [ "Inter" ], "tag-label": [ "Inter" ], "label-numeric-md": [ "JetBrains Mono" ], "display-hero-mobile": [ "Inter" ], "display-hero": [ "Inter" ], "label-numeric-lg": [ "JetBrains Mono" ], "label-numeric-sm": [ "JetBrains Mono" ], "headline-md": [ "Inter" ], "headline-sm": [ "Inter" ], "body-sm": [ "Inter" ], "body-md": [ "Inter" ], "body-lg": [ "Inter" ] }, "fontSize": { "headline-lg": [ "24px", { "lineHeight": "32px", "fontWeight": "600" } ], "tag-label": [ "11px", { "lineHeight": "14px", "fontWeight": "500" } ], "label-numeric-md": [ "16px", { "lineHeight": "20px", "fontWeight": "600" } ], "display-hero-mobile": [ "28px", { "lineHeight": "36px", "fontWeight": "700" } ], "display-hero": [ "36px", { "lineHeight": "44px", "fontWeight": "700" } ], "label-numeric-lg": [ "24px", { "lineHeight": "28px", "fontWeight": "700" } ], "label-numeric-sm": [ "12px", { "lineHeight": "16px", "fontWeight": "500" } ], "headline-md": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ], "headline-sm": [ "16px", { "lineHeight": "24px", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ], "body-md": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "body-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ] } } } }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-[1440px] mx-auto px-margin-desktop flex items-center justify-between gap-gutter-desktop"><div class="flex items-center gap-unit-xl shrink-0"><div class="flex items-center gap-unit-sm"><img alt="极客比价 Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAi32u4yrB8yOiWgVnFvcM4e4SahBbt9KtIAhxTQQUiE6N4S8iNZ43hW_PZlls0r0aG75OF3kKnvh5qT1RCM89f-aW8xTYDH03wK3LHlfkeXgDyLL_HXQlxhjSAgkUq3djDporNRpOwY_yjLCUuKPA_6PwjCMVYPabEgnN_RmTOkLskO5NhzvSh8mQuYi3aydCpwGeRFwix0xftVP_rrIwAfIIzYb8pQoRjllNh8z3FhAst7U2k31hM6g"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">极客比价</span><span class="font-tag-label text-tag-label text-on-surface-variant leading-tight">数码硬件智能比价与决策</span></div></div><nav class="hidden xl:flex items-center gap-unit-xs" data-active-classes="bg-primary-container text-on-primary-container rounded-lg font-semibold"><a class="px-unit-sm py-unit-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg font-body-md text-body-md" data-path="home" href="#">首页</a><a class="px-unit-sm py-unit-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg font-body-md text-body-md" data-path="products-search" href="#">找产品</a><a aria-current="page" class="px-unit-sm py-unit-xs transition-colors bg-primary-container text-on-primary-container rounded-lg font-semibold" data-path="compare" href="#">产品对比</a><a class="px-unit-sm py-unit-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg font-body-md text-body-md" data-path="reviews" href="#">测评</a><a class="px-unit-sm py-unit-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg font-body-md text-body-md" data-path="rankings" href="#">排行榜</a></nav></div><div class="flex-1 max-w-xl mx-unit-md"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-unit-sm text-outline pointer-events-none text-[20px]">search</span><input class="w-full h-10 pl-10 pr-12 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" placeholder="搜索手机、笔记本、显卡、数码好物..." type="text"/><button class="absolute right-1 top-1 bottom-1 px-unit-xs bg-primary-container text-on-primary-container hover:bg-primary transition-colors rounded-lg flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[18px]">arrow_forward</span></button></div></div><div class="flex items-center gap-unit-md shrink-0"><button class="relative p-unit-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-secondary-container"></span></button><a class="flex items-center gap-unit-2xs px-unit-sm py-unit-xs rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-body-sm text-body-sm font-medium" data-path="compare" href="#"><span class="material-symbols-outlined text-primary-container text-[18px]">balance</span><span>对比</span><span class="font-label-numeric-sm text-label-numeric-sm px-unit-2xs rounded bg-surface-container-highest text-primary font-bold">3</span></a><div class="flex items-center gap-unit-2xs pl-unit-xs cursor-pointer group"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2xVl2CqawJHv3XS8k2dGGIfqMFBqK2mB4TMDW0mM0t0OZTnp22YYbfJV93VtllG7pU0twzPwr_SxuEGPLb7_LGiVKgR7Qi8Z1RChPGUVXOGdb8SVUlOpTCElxhxPVyAAsKprY44QSPooCzbG9S8F_E6CJESxYOVCJIHOLaVNUQFEBqAK4-CPMf3Isw-eF_rUdugJoEctUBXgb5ei7IbzWLD9-FNwNoh3PlWBMCe8_IwyH5K-e_a15dA"/><span class="material-symbols-outlined text-outline group-hover:text-on-surface transition-colors text-[18px]">expand_more</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="max-w-[1440px] w-full mx-auto px-margin-mobile md:px-margin-desktop py-unit-lg flex flex-col gap-unit-lg">
+<!-- Top Action & Meta Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-unit-md">
+<div class="flex flex-col gap-unit-2xs">
+<nav class="flex items-center gap-unit-xs font-body-sm text-body-sm text-outline">
+<a class="hover:text-primary transition-colors" href="#">首页</a>
+<span>/</span>
+<span class="text-on-surface font-medium">产品对比</span>
+</nav>
+<div class="flex items-baseline gap-unit-sm flex-wrap">
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">数码硬件全维度参数横评</h1>
+<span class="font-body-sm text-body-sm text-on-surface-variant bg-surface-container px-unit-xs py-0.5 rounded-full font-medium">
+            已选 3 款产品（最多支持 4 款）
+          </span>
+</div>
+</div>
+<div class="flex items-center gap-unit-sm flex-wrap">
+<label class="flex items-center gap-unit-xs px-unit-sm py-unit-xs bg-surface-container-lowest rounded-lg cursor-pointer select-none shadow-sm hover:bg-surface-container transition-colors">
+<input class="w-4 h-4 text-primary-container rounded border-0 bg-surface-container-high focus:ring-0 cursor-pointer" id="diffToggle" onchange="toggleDiffMode(this.checked)" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">只看差异项</span>
+</label>
+<button class="flex items-center gap-unit-2xs px-unit-md py-unit-xs bg-surface-container-lowest text-on-surface rounded-lg font-body-sm text-body-sm font-semibold shadow-sm hover:bg-surface-container transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">add</span>
+<span>添加更多对比产品</span>
+</button>
+<button class="relative group flex items-center gap-unit-2xs px-unit-md py-unit-xs bg-primary text-on-primary rounded-lg font-body-sm text-body-sm font-semibold shadow-[0_4px_16px_rgba(0,74,198,0.28)] hover:bg-primary-container transition-all" onclick="toggleAISummary()" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed animate-pulse">auto_awesome</span>
+<span>极客 AI 一键总结对比</span>
+</button>
+</div>
+</div>
+<!-- AI Summary Callout Panel -->
+<section class="w-full bg-gradient-to-r from-surface-container to-surface-container-low rounded-xl p-unit-lg shadow-sm relative overflow-hidden transition-all duration-300" id="aiSummaryPanel">
+<div class="absolute -right-8 -top-8 w-40 h-40 bg-primary-fixed/25 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-unit-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-unit-xs">
+<span class="material-symbols-outlined text-primary text-[24px]">psychology</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">极客比价 AI 智能决策结论</h2>
+<span class="font-tag-label text-tag-label text-primary bg-surface-container-highest px-unit-xs py-0.5 rounded font-mono">GeekEvaluator v4.2</span>
+</div>
+<span class="font-tag-label text-tag-label text-outline hidden sm:inline">基于 36 项核心指标综合加权</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-unit-md pt-unit-xs">
+<div class="bg-surface-container-lowest/80 p-unit-md rounded-lg shadow-sm flex flex-col gap-unit-2xs">
+<div class="flex items-center gap-unit-2xs text-primary font-semibold font-body-sm text-body-sm">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>性能与生态之选</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+<strong class="text-on-surface">iPhone 16 Pro</strong> 处理器绝对性能最强、视频拍摄独一档，适合 Apple 全家桶重度用户及内容创作者。
+            </p>
+</div>
+<div class="bg-surface-container-lowest/80 p-unit-md rounded-lg shadow-sm flex flex-col gap-unit-2xs relative">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-unit-2xs text-secondary-container font-semibold font-body-sm text-body-sm">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span>极致影像与性价比之选</span>
+</div>
+<span class="font-tag-label text-tag-label bg-secondary-fixed text-on-secondary-fixed font-bold px-unit-2xs rounded">强烈推荐</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+<strong class="text-on-surface">vivo X100 Ultra</strong> 搭载两亿像素蔡司潜望长焦，长焦望远与人像质感胜出，当前底价仅 ¥5,499，性价比评分高达 94 分，为综合性价比之王。
+            </p>
+</div>
+<div class="bg-surface-container-lowest/80 p-unit-md rounded-lg shadow-sm flex flex-col gap-unit-2xs">
+<div class="flex items-center gap-unit-2xs text-tertiary font-semibold font-body-sm text-body-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>综合全能手感之选</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+<strong class="text-on-surface">小米 14 Ultra</strong> 街拍与徕卡影调出色，全焦段一致性高，人机工程学重量调校均衡，适合街头摄影玩家。
+            </p>
+</div>
+</div>
+<div class="mt-unit-xs px-unit-md py-unit-xs bg-surface-container-highest/60 rounded-lg flex items-center gap-unit-xs text-on-surface font-body-sm text-body-sm">
+<span class="text-secondary-container font-bold">👉 选购建议:</span>
+<span>预算充足且使用 Mac / iPad 生态优选 iPhone 16 Pro；追求极致超长焦与顶级屏幕且注重到手性价比，首选 vivo X100 Ultra。</span>
+</div>
+</div>
+</section>
+<!-- Main Comparison Matrix Container -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-sm overflow-x-auto select-none">
+<div class="min-w-[960px] w-full flex flex-col">
+<!-- Sticky Product Headers -->
+<div class="sticky top-16 z-30 bg-surface-container-lowest shadow-[0_4px_12px_rgba(0,0,0,0.03)] grid grid-cols-12 gap-0">
+<div class="col-span-3 p-unit-md flex flex-col justify-between bg-surface-container-low/60">
+<div class="flex flex-col gap-unit-2xs">
+<span class="font-tag-label text-tag-label text-primary font-bold tracking-wider uppercase">DIMENSIONS &amp; SPECS</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">对比维度与核心参数</span>
+</div>
+<div class="flex items-center gap-unit-xs text-outline font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">sync_alt</span>
+<span>横向滑动查看全部参数</span>
+</div>
+</div>
+<!-- Product Card 1: iPhone 16 Pro -->
+<div class="col-span-3 p-unit-md flex flex-col gap-unit-sm bg-surface-container-lowest">
+<div class="flex items-start justify-between gap-unit-xs">
+<span class="font-tag-label text-tag-label px-unit-xs py-0.5 rounded bg-surface-container text-on-surface-variant font-medium">Apple</span>
+<button class="text-outline hover:text-error transition-colors p-0.5" title="移除此产品" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex gap-unit-sm items-center">
+<div class="w-16 h-16 rounded-lg bg-surface-container-low flex items-center justify-center p-unit-xs overflow-hidden shrink-0">
+<img class="w-full h-full object-contain" data-alt="Official Apple iPhone 16 Pro in sleek desert titanium chassis, elegant product studio showcase photography, clean shadow, minimal studio lighting with subtle cool reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbU-rLohfUkc2WDbpMpjVN0Y3rXi64BHNZSUmPqTAHJTMG-k5F8bWfqNUalnuL2RBpgqEA9R0CevPct5e5TK3qIR3HzI9lVbOkPfEiujLlYIQhjuMkcNTdvOQRsaSIlgO0u-wvcJ1QkMNZIwe8tKHciVtReV3usjKJxc7yDSHcfSS_6xULn8vjMFfO-HC0R4u1foqzZdG7edSVthbwNsA4qhqqZO7xumbDzfUHUyPaqg-A4rJmCvvy0A"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">iPhone 16 Pro</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">256GB 原色钛金属</span>
+<div class="flex items-baseline gap-unit-2xs mt-unit-2xs">
+<span class="font-tag-label text-tag-label text-on-surface font-semibold">¥</span>
+<span class="font-label-numeric-lg text-label-numeric-lg text-on-surface font-bold">7,199</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-unit-xs mt-auto pt-unit-xs">
+<button class="flex-1 py-1 px-unit-xs bg-primary text-on-primary rounded text-center font-body-sm text-body-sm font-semibold hover:bg-primary-container transition-colors" type="button">
+                查看详情
+              </button>
+<button class="p-1 px-unit-xs bg-surface-container hover:bg-surface-container-high text-on-surface-variant rounded transition-colors" title="关注降价" type="button">
+<span class="material-symbols-outlined text-[18px]">notifications</span>
+</button>
+</div>
+</div>
+<!-- Product Card 2: vivo X100 Ultra (Best Value Highlight) -->
+<div class="col-span-3 p-unit-md flex flex-col gap-unit-sm bg-secondary-fixed/15">
+<div class="flex items-start justify-between gap-unit-xs">
+<div class="flex items-center gap-unit-2xs">
+<span class="font-tag-label text-tag-label px-unit-xs py-0.5 rounded bg-secondary-container text-on-primary font-bold">全网最低价</span>
+<span class="font-tag-label text-tag-label px-unit-xs py-0.5 rounded bg-tertiary-container text-on-primary font-bold">性价比 94</span>
+</div>
+<button class="text-outline hover:text-error transition-colors p-0.5" title="移除此产品" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex gap-unit-sm items-center">
+<div class="w-16 h-16 rounded-lg bg-surface-container-lowest flex items-center justify-center p-unit-xs overflow-hidden shrink-0 shadow-sm">
+<img class="w-full h-full object-contain" data-alt="vivo X100 Ultra titanium flagship smartphone highlighting Zeiss circular camera island on pristine white background, commercial grade product studio photograph" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDebF7ixxJpOM5LxBMfzxHyvZYWDpDexzsfyLeXpvdNtOnIYRxL-7_x9XnoVtuRSYSpshkHVo0MIuPh_aSJWQMrCO_yTRIC4fJNpHjNRefQqwWG39QlBbY7xMsHt0rJFnUx6hJjWSeRhnf30b7vc1zyq8NmRDtcoQvibFDdzrTYiiZx_dO8VZnAAdcoE193wRKz6Mml_EOujo1k5DGbCMsz8v1uAKpcmJOEGARO5c-FKTZ2o9fUSaSpsQ"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">vivo X100 Ultra</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">16GB+512GB 钛色</span>
+<div class="flex items-baseline gap-unit-2xs mt-unit-2xs">
+<span class="font-tag-label text-tag-label text-secondary font-semibold">¥</span>
+<span class="font-label-numeric-lg text-label-numeric-lg text-secondary font-bold">5,499</span>
+<span class="font-tag-label text-tag-label text-secondary font-medium line-through">¥6,499</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-unit-xs mt-auto pt-unit-xs">
+<button class="flex-1 py-1 px-unit-xs bg-secondary-container text-on-primary rounded text-center font-body-sm text-body-sm font-semibold hover:opacity-95 transition-colors" type="button">
+                立即比价抢购
+              </button>
+<button class="p-1 px-unit-xs bg-surface-container hover:bg-surface-container-high text-on-surface-variant rounded transition-colors" title="关注降价" type="button">
+<span class="material-symbols-outlined text-[18px]">notifications</span>
+</button>
+</div>
+</div>
+<!-- Product Card 3: 小米 14 Ultra -->
+<div class="col-span-3 p-unit-md flex flex-col gap-unit-sm bg-surface-container-lowest">
+<div class="flex items-start justify-between gap-unit-xs">
+<span class="font-tag-label text-tag-label px-unit-xs py-0.5 rounded bg-surface-container text-on-surface-variant font-medium">Xiaomi 徕卡影像</span>
+<button class="text-outline hover:text-error transition-colors p-0.5" title="移除此产品" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex gap-unit-sm items-center">
+<div class="w-16 h-16 rounded-lg bg-surface-container-low flex items-center justify-center p-unit-xs overflow-hidden shrink-0">
+<img class="w-full h-full object-contain" data-alt="Xiaomi 14 Ultra flagship phone with massive round Leica camera bump in classic white vegan leather finish, high resolution hardware tech rendering" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlCt6ZKqnJlfiklRYoxCW8PRgdr_ZYVyxuMof3qE6TBkufpJ-GfMdwKqAHxHaBCbvvOWlaKKvH9JaIDtoEiv9kTT_vQfIfpgml9NlsvI0YuQ_GIc-IPGheKW6IMsU3TVMbnWgtVHWfd1lecfsZegZnU2GwWf8vLFtOqAIPLyeirzOzltFZCD8Xgci4lEEyMLsK7MlDFrCtbBVDVX0VW4nSXtu0UQW29n6ffytowb5Z_QDs568NbpxBDA"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">小米 14 Ultra</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">16GB+512GB 白色</span>
+<div class="flex items-baseline gap-unit-2xs mt-unit-2xs">
+<span class="font-tag-label text-tag-label text-on-surface font-semibold">¥</span>
+<span class="font-label-numeric-lg text-label-numeric-lg text-on-surface font-bold">5,799</span>
+<span class="font-tag-label text-tag-label text-outline line-through">¥6,499</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-unit-xs mt-auto pt-unit-xs">
+<button class="flex-1 py-1 px-unit-xs bg-primary text-on-primary rounded text-center font-body-sm text-body-sm font-semibold hover:bg-primary-container transition-colors" type="button">
+                查看详情
+              </button>
+<button class="p-1 px-unit-xs bg-surface-container hover:bg-surface-container-high text-on-surface-variant rounded transition-colors" title="关注降价" type="button">
+<span class="material-symbols-outlined text-[18px]">notifications</span>
+</button>
+</div>
+</div>
+</div>
+<!-- SECTION 1: 基本信息与价格 -->
+<div class="w-full flex flex-col">
+<div class="bg-surface-container px-unit-md py-unit-xs flex items-center gap-unit-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">sell</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">【基本信息与价格】</span>
+</div>
+<!-- Row: 当前全网最低价 -->
+<div class="spec-row grid grid-cols-12 items-center hover:bg-surface-container-low transition-colors" data-diff="true">
+<div class="col-span-3 p-unit-sm bg-surface-container-low/40 font-body-sm text-body-sm text-on-surface font-semibold">
+              当前全网最低价
+            </div>
+<div class="col-span-3 p-unit-sm font-label-numeric-md text-label-numeric-md text-on-surface">
+              ¥7,199 (Apple Store)
+            </div>
+<div class="col-span-3 p-unit-sm font-label-numeric-md text-label-numeric-md bg-secondary-fixed/30 text-secondary font-bold flex items-center justify-between">
+<span>¥5,499 (拼多多百亿补贴)</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+</div>
+<div class="col-span-3 p-unit-sm font-label-numeric-md text-label-numeric-md text-on-surface">
+              ¥5,799 (京东自营)
+            </div>
+</div>
+<!-- Row: 发布时间 -->
+<div class="spec-row grid grid-cols-12 items-center hover:bg-surface-container-low transition-colors" data-diff="true">
+<div class="col-span-3 p-unit-sm bg-surface-container-low/40 font-body-sm text-body-sm text-on-surface font-semibold">
+              发布时间
+            </div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface-variant">2024 年 9 月</div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface-variant">2024 年 5 月</div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface-variant">2024 年 2 月</div>
+</div>
+<!-- Row: 全网热度 -->
+<div class="spec-row grid grid-cols-12 items-center hover:bg-surface-container-low transition-colors" data-diff="true">
+<div class="col-span-3 p-unit-sm bg-surface-container-low/40 font-body-sm text-body-sm text-on-surface font-semibold">
+              全网热度指数
+            </div>
+<div class="col-span-3 p-unit-sm font-label-numeric-sm text-label-numeric-sm text-primary font-bold">98.4 万次关注</div>
+<div class="col-span-3 p-unit-sm font-label-numeric-sm text-label-numeric-sm text-on-surface-variant">72.6 万次关注</div>
+<div class="col-span-3 p-unit-sm font-label-numeric-sm text-label-numeric-sm text-on-surface-variant">81.1 万次关注</div>
+</div>
+<!-- Row: 综合硬件评分 -->
+<div class="spec-row grid grid-cols-12 items-center hover:bg-surface-container-low transition-colors" data-diff="true">
+<div class="col-span-3 p-unit-sm bg-surface-container-low/40 font-body-sm text-body-sm text-on-surface font-semibold">
+              综合硬件评分
+            </div>
+<div class="col-span-3 p-unit-sm font-label-numeric-md text-label-numeric-md text-on-surface">92.8 分</div>
+<div class="col-span-3 p-unit-sm font-label-numeric-md text-label-numeric-md bg-tertiary-fixed/30 text-tertiary font-bold flex items-center justify-between">
+<span>95.2 分</span>
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified</span>
+</div>
+<div class="col-span-3 p-unit-sm font-label-numeric-md text-label-numeric-md text-on-surface">93.9 分</div>
+</div>
+<!-- Row: 性价比指数 -->
+<div class="spec-row grid grid-cols-12 items-center hover:bg-surface-container-low transition-colors" data-diff="true">
+<div class="col-span-3 p-unit-sm bg-surface-container-low/40 font-body-sm text-body-sm text-on-surface font-semibold">
+              极客性价比指数
+            </div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface-variant">78 分 (溢价较高)</div>
+<div class="col-span-3 p-unit-sm font-label-numeric-md text-label-numeric-md bg-secondary-fixed/30 text-secondary font-bold flex items-center justify-between">
+<span>94 分 (史诗级性价比)</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">star</span>
+</div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface">86 分 (优良)</div>
+</div>
+</div>
+<!-- SECTION 2: 核心性能 -->
+<div class="w-full flex flex-col">
+<div class="bg-surface-container px-unit-md py-unit-xs flex items-center gap-unit-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">memory</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">【核心性能】</span>
+</div>
+<!-- Row: 处理器芯片 -->
+<div class="spec-row grid grid-cols-12 items-center hover:bg-surface-container-low transition-colors" data-diff="true">
+<div class="col-span-3 p-unit-sm bg-surface-container-low/40 font-body-sm text-body-sm text-on-surface font-semibold">
+              处理器芯片
+            </div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm font-bold text-primary">Apple A18 Pro</div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface">高通骁龙 8 Gen3</div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface">高通骁龙 8 Gen3</div>
+</div>
+<!-- Row: 制程工艺 -->
+<div class="spec-row grid grid-cols-12 items-center hover:bg-surface-container-low transition-colors" data-diff="true">
+<div class="col-span-3 p-unit-sm bg-surface-container-low/40 font-body-sm text-body-sm text-on-surface font-semibold">
+              半导体制程
+            </div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm bg-tertiary-fixed/30 text-tertiary font-bold flex items-center justify-between">
+<span>台积电第二代 3nm (N3E)</span>
+<span class="material-symbols-outlined text-tertiary text-[16px]">check</span>
+</div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface-variant">台积电 4nm (N4P)</div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface-variant">台积电 4nm (N4P)</div>
+</div>
+<!-- Row: AnTuTu 跑分 -->
+<div class="spec-row grid grid-cols-12 items-center hover:bg-surface-container-low transition-colors" data-diff="true">
+<div class="col-span-3 p-unit-sm bg-surface-container-low/40 font-body-sm text-body-sm text-on-surface font-semibold">
+              AnTuTu v10 综合跑分
+            </div>
+<div class="col-span-3 p-unit-sm font-label-numeric-sm text-label-numeric-sm text-on-surface-variant">约 1,820,000</div>
+<div class="col-span-3 p-unit-sm font-label-numeric-md text-label-numeric-md bg-tertiary-fixed/30 text-tertiary font-bold flex items-center justify-between">
+<span>2,185,420 分</span>
+<span class="material-symbols-outlined text-tertiary text-[16px]">check</span>
+</div>
+<div class="col-span-3 p-unit-sm font-label-numeric-sm text-label-numeric-sm text-on-surface">2,110,890 分</div>
+</div>
+<!-- Row: Geekbench 6 单核 / 多核 -->
+<div class="spec-row grid grid-cols-12 items-center hover:bg-surface-container-low transition-colors" data-diff="true">
+<div class="col-span-3 p-unit-sm bg-surface-container-low/40 font-body-sm text-body-sm text-on-surface font-semibold">
+              Geekbench 6 (单核 / 多核)
+            </div>
+<div class="col-span-3 p-unit-sm font-label-numeric-md text-label-numeric-md bg-tertiary-fixed/30 text-tertiary font-bold flex items-center justify-between">
+<span>3,420 / 8,450 (极强)</span>
+<span class="material-symbols-outlined text-tertiary text-[16px]">check</span>
+</div>
+<div class="col-span-3 p-unit-sm font-label-numeric-sm text-label-numeric-sm text-on-surface">2,280 / 7,120</div>
+<div class="col-span-3 p-unit-sm font-label-numeric-sm text-label-numeric-sm text-on-surface">2,210 / 6,990</div>
+</div>
+<!-- Row: 散热配置 -->
+<div class="spec-row grid grid-cols-12 items-center hover:bg-surface-container-low transition-colors" data-diff="true">
+<div class="col-span-3 p-unit-sm bg-surface-container-low/40 font-body-sm text-body-sm text-on-surface font-semibold">
+              散热系统配置
+            </div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface-variant">石墨烯基板传导</div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface">3D 双向均热板 (VC 4500mm²)</div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm bg-tertiary-fixed/30 text-tertiary font-bold flex items-center justify-between">
+<span>双向环形冷泵散热 (4000mm²)</span>
+<span class="material-symbols-outlined text-tertiary text-[16px]">check</span>
+</div>
+</div>
+</div>
+<!-- SECTION 3: 屏幕规格 -->
+<div class="w-full flex flex-col">
+<div class="bg-surface-container px-unit-md py-unit-xs flex items-center gap-unit-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">smartphone</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">【屏幕规格】</span>
+</div>
+<!-- Row: 屏幕尺寸与形态 -->
+<div class="spec-row grid grid-cols-12 items-center hover:bg-surface-container-low transition-colors" data-diff="true">
+<div class="col-span-3 p-unit-sm bg-surface-container-low/40 font-body-sm text-body-sm text-on-surface font-semibold">
+              屏幕尺寸与形态
+            </div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface">6.3 英寸 / 直屏超窄边</div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface">6.78 英寸 / 等深四微曲</div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface">6.73 英寸 / 全等深微曲</div>
+</div>
+<!-- Row: 分辨率与PPI -->
+<div class="spec-row grid grid-cols-12 items-center hover:bg-surface-container-low transition-colors" data-diff="true">
+<div class="col-span-3 p-unit-sm bg-surface-container-low/40 font-body-sm text-body-sm text-on-surface font-semibold">
+              分辨率与 PPI
+            </div>
+<div class="col-span-3 p-unit-sm font-label-numeric-sm text-label-numeric-sm text-on-surface">2622 × 1206 (460 PPI)</div>
+<div class="col-span-3 p-unit-sm font-label-numeric-md text-label-numeric-md bg-tertiary-fixed/30 text-tertiary font-bold flex items-center justify-between">
+<span>3200 × 1440 (517 PPI 三星E7)</span>
+<span class="material-symbols-outlined text-tertiary text-[16px]">check</span>
+</div>
+<div class="col-span-3 p-unit-sm font-label-numeric-sm text-label-numeric-sm text-on-surface">3200 × 1440 (522 PPI 华星C8)</div>
+</div>
+<!-- Row: 刷新率 -->
+<div class="spec-row grid grid-cols-12 items-center hover:bg-surface-container-low transition-colors" data-diff="false">
+<div class="col-span-3 p-unit-sm bg-surface-container-low/40 font-body-sm text-body-sm text-on-surface font-semibold">
+              动态刷新率
+            </div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface-variant">1-120Hz LTPO</div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface-variant">1-120Hz LTPO</div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface-variant">1-120Hz LTPO</div>
+</div>
+<!-- Row: 峰值亮度 -->
+<div class="spec-row grid grid-cols-12 items-center hover:bg-surface-container-low transition-colors" data-diff="true">
+<div class="col-span-3 p-unit-sm bg-surface-container-low/40 font-body-sm text-body-sm text-on-surface font-semibold">
+              局部峰值亮度
+            </div>
+<div class="col-span-3 p-unit-sm font-label-numeric-sm text-label-numeric-sm text-on-surface">2,000 nits</div>
+<div class="col-span-3 p-unit-sm font-label-numeric-md text-label-numeric-md bg-tertiary-fixed/30 text-tertiary font-bold flex items-center justify-between">
+<span>3,000 nits</span>
+<span class="material-symbols-outlined text-tertiary text-[16px]">check</span>
+</div>
+<div class="col-span-3 p-unit-sm font-label-numeric-sm text-label-numeric-sm text-on-surface">3,000 nits</div>
+</div>
+<!-- Row: 护眼调光 -->
+<div class="spec-row grid grid-cols-12 items-center hover:bg-surface-container-low transition-colors" data-diff="true">
+<div class="col-span-3 p-unit-sm bg-surface-container-low/40 font-body-sm text-body-sm text-on-surface font-semibold">
+              护眼调光方案
+            </div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-outline">480Hz 低频 PWM</div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm bg-tertiary-fixed/30 text-tertiary font-bold flex items-center justify-between">
+<span>1440Hz PWM + 全亮度高频调光</span>
+<span class="material-symbols-outlined text-tertiary text-[16px]">check</span>
+</div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface">1920Hz 高频 PWM + 类DC</div>
+</div>
+</div>
+<!-- SECTION 4: 影像系统 -->
+<div class="w-full flex flex-col">
+<div class="bg-surface-container px-unit-md py-unit-xs flex items-center gap-unit-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">photo_camera</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">【影像系统】</span>
+</div>
+<!-- Row: 主摄传感器与像素 -->
+<div class="spec-row grid grid-cols-12 items-center hover:bg-surface-container-low transition-colors" data-diff="true">
+<div class="col-span-3 p-unit-sm bg-surface-container-low/40 font-body-sm text-body-sm text-on-surface font-semibold">
+              主摄传感器 &amp; 底规
+            </div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface">4800万 (1/1.28" 融合式)</div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface">5000万 索尼 LYT-900 (一英寸大底)</div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm bg-tertiary-fixed/30 text-tertiary font-bold flex items-center justify-between">
+<span>5000万 LYT-900 (一英寸无级可变光圈)</span>
+<span class="material-symbols-outlined text-tertiary text-[16px]">check</span>
+</div>
+</div>
+<!-- Row: 潜望长焦倍率与像素 -->
+<div class="spec-row grid grid-cols-12 items-center hover:bg-surface-container-low transition-colors" data-diff="true">
+<div class="col-span-3 p-unit-sm bg-surface-container-low/40 font-body-sm text-body-sm text-on-surface font-semibold">
+              潜望长焦倍率 &amp; 规格
+            </div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface">1200万 5x 四重反射光学</div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm bg-secondary-fixed/30 text-secondary font-bold flex items-center justify-between">
+<span>2亿像素 85mm 蔡司APO长焦 (1/1.4" 超大底)</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">stars</span>
+</div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface">5000万 双长焦 (3.2x 直立 + 5x 潜望)</div>
+</div>
+<!-- Row: 防抖与镀膜 -->
+<div class="spec-row grid grid-cols-12 items-center hover:bg-surface-container-low transition-colors" data-diff="true">
+<div class="col-span-3 p-unit-sm bg-surface-container-low/40 font-body-sm text-body-sm text-on-surface font-semibold">
+              光学防抖 &amp; 镜片技术
+            </div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface">第二代传感器位移防抖</div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm bg-tertiary-fixed/30 text-tertiary font-bold flex items-center justify-between">
+<span>CIPA 4.5 级云台级防抖 + 蔡司T*镀膜</span>
+<span class="material-symbols-outlined text-tertiary text-[16px]">check</span>
+</div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface">OIS 光学防抖 + 徕卡 Summilux</div>
+</div>
+<!-- Row: 最高视频规格 -->
+<div class="spec-row grid grid-cols-12 items-center hover:bg-surface-container-low transition-colors" data-diff="true">
+<div class="col-span-3 p-unit-sm bg-surface-container-low/40 font-body-sm text-body-sm text-on-surface font-semibold">
+              最高视频录制规格
+            </div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm bg-tertiary-fixed/30 text-tertiary font-bold flex items-center justify-between">
+<span>4K 120fps 杜比视界 ProRes / 空间视频</span>
+<span class="material-symbols-outlined text-tertiary text-[16px]">check</span>
+</div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface">4K 120fps 杜比视界录制</div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface">8K 30fps / 4K 120fps 全焦段</div>
+</div>
+</div>
+<!-- SECTION 5: 续航与充电 -->
+<div class="w-full flex flex-col">
+<div class="bg-surface-container px-unit-md py-unit-xs flex items-center gap-unit-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">battery_charging_full</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">【续航与充电】</span>
+</div>
+<!-- Row: 电池容量 -->
+<div class="spec-row grid grid-cols-12 items-center hover:bg-surface-container-low transition-colors" data-diff="true">
+<div class="col-span-3 p-unit-sm bg-surface-container-low/40 font-body-sm text-body-sm text-on-surface font-semibold">
+              电池等效容量
+            </div>
+<div class="col-span-3 p-unit-sm font-label-numeric-sm text-label-numeric-sm text-outline">3,582 mAh</div>
+<div class="col-span-3 p-unit-sm font-label-numeric-md text-label-numeric-md bg-tertiary-fixed/30 text-tertiary font-bold flex items-center justify-between">
+<span>5,500 mAh (蓝海碳元负极)</span>
+<span class="material-symbols-outlined text-tertiary text-[16px]">check</span>
+</div>
+<div class="col-span-3 p-unit-sm font-label-numeric-sm text-label-numeric-sm text-on-surface">5,300 mAh (金沙江电池)</div>
+</div>
+<!-- Row: 有线快充功率 -->
+<div class="spec-row grid grid-cols-12 items-center hover:bg-surface-container-low transition-colors" data-diff="true">
+<div class="col-span-3 p-unit-sm bg-surface-container-low/40 font-body-sm text-body-sm text-on-surface font-semibold">
+              有线快充功率
+            </div>
+<div class="col-span-3 p-unit-sm font-label-numeric-sm text-label-numeric-sm text-outline">约 27W 有线</div>
+<div class="col-span-3 p-unit-sm font-label-numeric-sm text-label-numeric-sm text-on-surface">80W 超级双芯闪充</div>
+<div class="col-span-3 p-unit-sm font-label-numeric-md text-label-numeric-md bg-tertiary-fixed/30 text-tertiary font-bold flex items-center justify-between">
+<span>90W 小米澎湃有线快充</span>
+<span class="material-symbols-outlined text-tertiary text-[16px]">check</span>
+</div>
+</div>
+<!-- Row: 无线充功率 -->
+<div class="spec-row grid grid-cols-12 items-center hover:bg-surface-container-low transition-colors" data-diff="true">
+<div class="col-span-3 p-unit-sm bg-surface-container-low/40 font-body-sm text-body-sm text-on-surface font-semibold">
+              无线充电规格
+            </div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface">25W MagSafe</div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface">30W 无线闪充</div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm bg-tertiary-fixed/30 text-tertiary font-bold flex items-center justify-between">
+<span>80W 澎湃无线秒充</span>
+<span class="material-symbols-outlined text-tertiary text-[16px]">check</span>
+</div>
+</div>
+</div>
+<!-- SECTION 6: 机身与特性 -->
+<div class="w-full flex flex-col">
+<div class="bg-surface-container px-unit-md py-unit-xs flex items-center gap-unit-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">devices_other</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">【机身与特性】</span>
+</div>
+<!-- Row: 重量与手感 -->
+<div class="spec-row grid grid-cols-12 items-center hover:bg-surface-container-low transition-colors" data-diff="true">
+<div class="col-span-3 p-unit-sm bg-surface-container-low/40 font-body-sm text-body-sm text-on-surface font-semibold">
+              整机重量
+            </div>
+<div class="col-span-3 p-unit-sm font-label-numeric-md text-label-numeric-md bg-tertiary-fixed/30 text-tertiary font-bold flex items-center justify-between">
+<span>199g (轻巧黄金配重)</span>
+<span class="material-symbols-outlined text-tertiary text-[16px]">check</span>
+</div>
+<div class="col-span-3 p-unit-sm font-label-numeric-sm text-label-numeric-sm text-on-surface">229g</div>
+<div class="col-span-3 p-unit-sm font-label-numeric-sm text-label-numeric-sm text-on-surface">224g</div>
+</div>
+<!-- Row: 边框材质 -->
+<div class="spec-row grid grid-cols-12 items-center hover:bg-surface-container-low transition-colors" data-diff="true">
+<div class="col-span-3 p-unit-sm bg-surface-container-low/40 font-body-sm text-body-sm text-on-surface font-semibold">
+              中框机身材质
+            </div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface">5级钛金属中框 + 磨砂玻璃</div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface">航空铝中框 + AG磨砂玻璃</div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface">高强度铝合金 + 科技纳米皮</div>
+</div>
+<!-- Row: 防尘防水 -->
+<div class="spec-row grid grid-cols-12 items-center hover:bg-surface-container-low transition-colors" data-diff="false">
+<div class="col-span-3 p-unit-sm bg-surface-container-low/40 font-body-sm text-body-sm text-on-surface font-semibold">
+              防尘防水等级
+            </div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface">IP68 (6米深水)</div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface">IP68 &amp; IP69 (抗高压水枪)</div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface">IP68</div>
+</div>
+<!-- Row: 外设扩展 -->
+<div class="spec-row grid grid-cols-12 items-center hover:bg-surface-container-low transition-colors" data-diff="true">
+<div class="col-span-3 p-unit-sm bg-surface-container-low/40 font-body-sm text-body-sm text-on-surface font-semibold">
+              周边外设/接口
+            </div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface">Type-C (USB 3.2 Gen2 10Gbps) / 物理相机控制键</div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm text-on-surface">USB 3.2 Gen1 / 红外遥控 / 全功能NFC</div>
+<div class="col-span-3 p-unit-sm font-body-sm text-body-sm bg-tertiary-fixed/30 text-tertiary font-bold flex items-center justify-between">
+<span>USB 3.2 Gen2 / 专属专业影像手柄生态拓展</span>
+<span class="material-symbols-outlined text-tertiary text-[16px]">check</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Actions Sticky Bar for Quick Purchase -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-unit-md shadow-md flex flex-col md:flex-row items-center justify-between gap-unit-md">
+<div class="flex items-center gap-unit-md">
+<span class="material-symbols-outlined text-secondary-container text-[24px]">insights</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">发现心仪设备？极客价格监控中</span>
+<span class="font-body-sm text-body-sm text-outline">全网 15 分钟自动巡检，遇到新史低自动短信/App弹窗提醒</span>
+</div>
+</div>
+<div class="flex items-center gap-unit-sm w-full md:w-auto">
+<button class="flex-1 md:flex-none px-unit-lg py-unit-xs bg-surface-container hover:bg-surface-container-high text-on-surface rounded-lg font-body-sm text-body-sm font-semibold transition-colors" type="button">
+          导出对比报告 (PDF)
+        </button>
+<button class="flex-1 md:flex-none px-unit-lg py-unit-xs bg-primary text-on-primary rounded-lg font-body-sm text-body-sm font-semibold hover:bg-primary-container transition-colors shadow-sm" type="button">
+          去极客爆料榜逛逛
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function toggleAISummary() {
+    const panel = document.getElementById('aiSummaryPanel');
+    if (panel) {
+      panel.classList.toggle('hidden');
+      if (!panel.classList.contains('hidden')) {
+        panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    }
+  }
+
+  function toggleDiffMode(showDiffOnly) {
+    const rows = document.querySelectorAll('.spec-row');
+    rows.forEach(row => {
+      const isDiff = row.getAttribute('data-diff') === 'true';
+      if (showDiffOnly) {
+        if (!isDiff) {
+          row.classList.add('hidden');
+        }
+      } else {
+        row.classList.remove('hidden');
+      }
+    });
+  }
+</script></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_8px_rgba(0,0,0,0.02)] mt-unit-2xl"><div class="max-w-[1440px] mx-auto px-margin-desktop pt-unit-2xl pb-unit-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter-desktop mb-unit-2xl"><div class="lg:col-span-2 pr-unit-lg"><div class="flex items-center gap-unit-sm mb-unit-md"><img alt="极客比价 Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAi32u4yrB8yOiWgVnFvcM4e4SahBbt9KtIAhxTQQUiE6N4S8iNZ43hW_PZlls0r0aG75OF3kKnvh5qT1RCM89f-aW8xTYDH03wK3LHlfkeXgDyLL_HXQlxhjSAgkUq3djDporNRpOwY_yjLCUuKPA_6PwjCMVYPabEgnN_RmTOkLskO5NhzvSh8mQuYi3aydCpwGeRFwix0xftVP_rrIwAfIIzYb8pQoRjllNh8z3FhAst7U2k31hM6g"/><span class="font-headline-sm text-headline-sm text-on-surface font-bold">极客比价</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mb-unit-md leading-relaxed">面向硬核科技玩家与理性数码消费者的智能比价工具平台。提供全网实时价格走势监控、历史史低记录跟踪、硬件规格横向参数对标与性价比算法分析。</p><div class="flex items-center gap-unit-xs"><span class="px-unit-xs py-unit-2xs rounded bg-surface-container-low font-tag-label text-tag-label text-on-surface-variant">实时抓取</span><span class="px-unit-xs py-unit-2xs rounded bg-surface-container-low font-tag-label text-tag-label text-on-surface-variant">无商业倾斜</span><span class="px-unit-xs py-unit-2xs rounded bg-surface-container-low font-tag-label text-tag-label text-on-surface-variant">史低预警</span></div></div><div><h4 class="font-headline-sm text-headline-sm text-on-surface mb-unit-md font-semibold">热门分类</h4><ul class="space-y-unit-xs"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">手机数码 (Smartphones)</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">电脑办公 (Laptops &amp; PC)</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">摄影影视 (Cameras &amp; Audio)</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">智能穿戴 (Wearables)</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">核心组件 (GPU &amp; CPU)</li></ul></div><div><h4 class="font-headline-sm text-headline-sm text-on-surface mb-unit-md font-semibold">实时数据源</h4><p class="font-body-sm text-body-sm text-on-surface-variant mb-unit-sm leading-relaxed">权威对接全网主流电商交易数据源，高频采集与智能清洗校验：</p><div class="space-y-unit-2xs"><div class="flex items-center gap-unit-xs font-body-sm text-body-sm text-on-surface-variant"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>京东自营 / 旗舰店数据源</div><div class="flex items-center gap-unit-xs font-body-sm text-body-sm text-on-surface-variant"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>天猫 / 淘宝官方正品渠道</div><div class="flex items-center gap-unit-xs font-body-sm text-body-sm text-on-surface-variant"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>拼多多百亿补贴查验中心</div><div class="flex items-center gap-unit-xs font-body-sm text-body-sm text-on-surface-variant"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>苏宁易购 / 品牌官方商城</div></div></div><div><h4 class="font-headline-sm text-headline-sm text-on-surface mb-unit-md font-semibold">极客社区</h4><ul class="space-y-unit-xs"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">硬件基准测试跑分榜</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">历史价格走势 API 开放</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">极客好价爆料频道</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">关于我们 &amp; 免责声明</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">反馈建议与开发者日志</li></ul></div></div><div class="pt-unit-lg flex flex-col md:flex-row items-center justify-between gap-unit-sm text-on-surface-variant"><div class="flex items-center gap-unit-md font-body-sm text-body-sm"><span>© 2024 极客比价 GeekPrice. 保留所有权利。</span><span class="hidden md:inline">|</span><span class="hidden md:inline">浙ICP备202409827号-1</span></div><div class="flex items-center gap-unit-lg font-tag-label text-tag-label"><span>数据刷新周期: 15分钟</span><span>服务器延迟: 28ms</span><span>隐私政策</span><span>服务条款</span></div></div></div></footer></body></html>

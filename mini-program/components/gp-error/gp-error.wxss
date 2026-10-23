@@ -1,0 +1,20 @@
+.gp-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80rpx 32rpx;
+  gap: 12rpx;
+}
+.text {
+  font-size: 28rpx;
+  color: #6b7280;
+  font-weight: 600;
+}
+.sub {
+  font-size: 22rpx;
+  color: #9ca3af;
+  margin-bottom: 8rpx;
+}
+.retry-btn {
+  min-width: 200rpx;
+}

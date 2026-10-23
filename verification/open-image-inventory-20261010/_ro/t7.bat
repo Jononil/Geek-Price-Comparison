@@ -1,0 +1,2 @@
+@echo off
+"C:\Program Files\MySQL\MySQL Server 8.4\bin\mysql.exe" -h 127.0.0.1 -u root -p123456 --default-character-set=utf8mb4 -N -B geek_price < "E:/第三学期/Geek Price Comparison/verification/open-image-inventory-20261010/_ro/t7.sql" > "E:/第三学期/Geek Price Comparison/verification/open-image-inventory-20261010/_ro/t7.out" 2> "E:/第三学期/Geek Price Comparison/verification/open-image-inventory-20261010/_ro/t7.err"

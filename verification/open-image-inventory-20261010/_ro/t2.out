@@ -1,0 +1,20 @@
+id	bigint	NO	PRI	NULL	auto_increment
+name	varchar(200)	NO		NULL	
+brand_id	bigint	YES	MUL	NULL	
+category_id	bigint	YES	MUL	NULL	
+description	varchar(1000)	YES		NULL	
+official_price	decimal(12,2)	YES		NULL	
+current_price	decimal(12,2)	YES		NULL	
+score	decimal(5,1)	YES		0.0	
+value_score	int	YES	MUL	0	
+performance_score	int	YES		0	
+user_rating	decimal(3,1)	YES		0.0	
+sales	int	YES		0	
+heat	int	YES	MUL	0	
+launch_date	date	YES		NULL	
+status	tinyint	NO		1	
+is_recommend	tinyint	NO		0	
+is_hot	tinyint	NO		0	
+created_at	datetime	NO		CURRENT_TIMESTAMP	DEFAULT_GENERATED
+updated_at	datetime	NO		CURRENT_TIMESTAMP	DEFAULT_GENERATED on update CURRENT_TIMESTAMP
+deleted	tinyint	NO		0	

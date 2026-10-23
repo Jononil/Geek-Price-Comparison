@@ -1,0 +1,35 @@
+<view class="rec-page">
+  <view class="intro gp-data-hint">根据你的浏览、收藏、价格偏好和产品兴趣，为你推荐更适合的产品</view>
+
+  <gp-loading wx:if="{{state === 'loading'}}" text="生成推荐中…" />
+  <gp-error wx:elif="{{state === 'error'}}" bind:retry="onRetry" />
+  <gp-empty wx:elif="{{items.length === 0}}" text="暂无推荐" />
+
+  <view wx:else class="rec-grid">
+    <view
+      class="rec-card"
+      wx:for="{{items}}"
+      wx:key="productId"
+      data-id="{{item.productId}}"
+      bindtap="onTapItem"
+    >
+      <view class="rc-img-wrap">
+        <image wx:if="{{item.image}}" class="rc-img" src="{{item.image}}" mode="aspectFit" lazy-load />
+        <gp-no-image wx:else size="{{60}}" text="" />
+        <view class="rc-type">{{item.typeLabel}}</view>
+        <view class="rc-match">匹配度 {{item.scoreText}}</view>
+      </view>
+      <view class="rc-body">
+        <text class="rc-name">{{item.name}}</text>
+        <text class="rc-reason">{{item.reason}}</text>
+        <view class="rc-footer">
+          <text class="rc-price">¥{{item.priceText}} <text class="rc-sim">(模拟)</text></text>
+          <text wx:if="{{item.valueMissing}}" class="rc-value-dim">数据不足</text>
+          <text wx:else class="rc-value">性价比 {{item.valueText}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="footer-hint gp-data-hint">推荐结果由后端混合推荐算法生成</view>
+</view>

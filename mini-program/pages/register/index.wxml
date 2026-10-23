@@ -1,0 +1,14 @@
+<view class="reg-page">
+  <view class="reg-card gp-card">
+    <text class="reg-title">注册账号</text>
+    <input class="reg-input" placeholder="用户名（4-20 位）" data-field="username" bindinput="onFieldInput" />
+    <input class="reg-input" placeholder="昵称" data-field="nickname" bindinput="onFieldInput" />
+    <input class="reg-input" placeholder="邮箱（选填）" data-field="email" bindinput="onFieldInput" />
+    <input class="reg-input" password placeholder="密码（6-20 位）" data-field="password" bindinput="onFieldInput" />
+    <button class="reg-btn gp-btn-primary {{loading ? 'btn-disabled' : ''}}" bindtap="onRegister" disabled="{{loading}}">
+      {{loading ? '注册中…' : '注册'}}
+    </button>
+    <view class="switch" bindtap="onGoLogin">已有账号？去登录</view>
+  </view>
+  <view class="footer-hint gp-data-hint">与 PC 端共用同一账号体系</view>
+</view>

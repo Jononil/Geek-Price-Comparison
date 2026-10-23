@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ============================================================
+   设计令牌（源自 geek-price-2026 视觉方案）
+   ============================================================ */
+:root {
+  --gp-bg: #f5f7fa;
+  --gp-ink: #1f2937;
+  --gp-muted: #6b7280;
+  --gp-line: #e5e7eb;
+  --gp-card: #ffffff;
+  --gp-brand: #4f46e5;
+  --gp-brand-soft: #eef2ff;
+  --gp-cyan: #0891b2;
+  --gp-ok: #15803d;
+  --gp-ok-soft: #ecfdf5;
+  --gp-warn: #b45309;
+  --gp-warn-soft: #fffbeb;
+  --gp-shadow: 0 1px 2px rgba(16, 24, 40, 0.06), 0 8px 24px -12px rgba(16, 24, 40, 0.18);
+  --gp-radius: 16px;
+}
+
+body {
+  font-family: 'Inter', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  background: var(--gp-bg);
+  color: var(--gp-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+.page-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--gp-ink);
+  margin-bottom: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ============================================================
+   通用组件样式
+   ============================================================ */
+
+/* 深色 Hero */
+.gp-hero {
+  position: relative;
+  overflow: hidden;
+  color: #e8edf7;
+  background:
+    radial-gradient(900px 420px at 12% -10%, rgba(79, 70, 229, 0.42), transparent 62%),
+    radial-gradient(760px 420px at 88% 6%, rgba(8, 145, 178, 0.34), transparent 60%),
+    linear-gradient(160deg, #0b1220 0%, #111c33 46%, #0e1729 100%);
+}
+
+.gp-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.35;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.055) 1px, transparent 1px);
+  background-size: 46px 46px;
+  -webkit-mask-image: radial-gradient(ellipse at 50% 0%, #000 20%, transparent 76%);
+  mask-image: radial-gradient(ellipse at 50% 0%, #000 20%, transparent 76%);
+}
+
+.gp-hero__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 54px 24px 58px;
+}
+
+.gp-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #a5b4fc;
+  border: 1px solid rgba(165, 180, 252, 0.32);
+  background: rgba(165, 180, 252, 0.1);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.gp-hero h1 {
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.16;
+  letter-spacing: -0.022em;
+  margin: 18px 0 12px;
+  font-weight: 800;
+  background: linear-gradient(100deg, #ffffff 12%, #c7d2fe 58%, #67e8f9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gp-hero .gp-lede {
+  max-width: 620px;
+  color: #b9c4d8;
+  font-size: 15.5px;
+  line-height: 1.65;
+}
+
+/* 能力胶囊 */
+.gp-caps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 26px;
+}
+
+.gp-cap {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #cdd8ea;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 7px 13px;
+  border-radius: 999px;
+  backdrop-filter: blur(6px);
+}
+
+.gp-cap i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #67e8f9;
+  box-shadow: 0 0 0 3px rgba(103, 232, 249, 0.18);
+}
+
+/* 筛选 chips */
+.gp-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.gp-chip {
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--gp-line);
+  background: #fff;
+  color: #4b5563;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.gp-chip:hover {
+  border-color: #c7d2fe;
+  color: var(--gp-brand);
+}
+
+.gp-chip.is-on {
+  background: var(--gp-brand);
+  border-color: var(--gp-brand);
+  color: #fff;
+  box-shadow: 0 6px 16px -8px rgba(79, 70, 229, 0.9);
+}
+
+/* 通用面板 */
+.gp-panel {
+  background: var(--gp-card);
+  border: 1px solid var(--gp-line);
+  border-radius: var(--gp-radius);
+  box-shadow: var(--gp-shadow);
+  padding: 22px;
+}
+
+/* 区块标题 */
+.gp-kicker {
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gp-brand);
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.gp-sec-head {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.gp-sec-head h2 {
+  font-size: 22px;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+}
+
+.gp-sec-head .gp-sub {
+  font-size: 13.5px;
+  color: var(--gp-muted);
+  margin-left: auto;
+}
+
+/* 数值文本 */
+.gp-num {
+  font-variant-numeric: tabular-nums;
+}

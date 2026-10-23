@@ -1,0 +1,48 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: geek-price-backend
+  datasource:
+    url: jdbc:mysql://localhost:3306/geek_price?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: "123456"
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      timeout: 3000ms
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Shanghai
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+# 自定义配置：JWT
+jwt:
+  secret: geek-price-secret-key-please-change-in-production-2026
+  expiration: 86400000   # 24 小时，单位毫秒
+
+# Swagger
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    path: /swagger-ui.html
+
+# 数据同步定时任务配置（Step 9）
+product:
+  sync:
+    enabled: true            # 是否开启每日自动同步（false 时定时任务不执行）
+    cron: "0 0 3 * * ?"      # 每天凌晨 03:00 执行一次全平台同步

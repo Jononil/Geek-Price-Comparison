@@ -1,0 +1,150 @@
+.mine-page {
+  padding: 24rpx;
+  padding-bottom: calc(48rpx + env(safe-area-inset-bottom));
+}
+
+/* 未登录 */
+.guest-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14rpx;
+  padding: 60rpx 40rpx;
+}
+.guest-avatar {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  background: #eff4ff;
+  color: #2563eb;
+  font-size: 48rpx;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.guest-title {
+  font-size: 32rpx;
+  font-weight: 700;
+}
+.guest-sub {
+  font-size: 24rpx;
+  color: #9ca3af;
+}
+.login-btn {
+  margin-top: 20rpx;
+  width: 320rpx;
+}
+
+/* 用户卡 */
+.user-card {
+  display: flex;
+  align-items: center;
+  gap: 24rpx;
+}
+.avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 40rpx;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6rpx;
+}
+.nickname {
+  font-size: 34rpx;
+  font-weight: 700;
+}
+.username {
+  font-size: 24rpx;
+  color: #6b7280;
+}
+
+/* 资料 */
+.info-card {
+  margin-top: 24rpx;
+}
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #f1f5f9;
+  font-size: 26rpx;
+  color: #1f2937;
+}
+.info-row:last-child {
+  border-bottom: none;
+}
+.info-label {
+  color: #9ca3af;
+}
+
+/* 菜单 */
+.menu-card {
+  margin-top: 24rpx;
+  padding-top: 8rpx;
+  padding-bottom: 8rpx;
+}
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26rpx 0;
+  border-bottom: 1rpx solid #f1f5f9;
+}
+.menu-item:last-child {
+  border-bottom: none;
+}
+.menu-name {
+  font-size: 28rpx;
+  color: #1f2937;
+}
+.menu-arrow {
+  font-size: 32rpx;
+  color: #cbd5e1;
+}
+
+/* 修改密码 */
+.pwd-card {
+  margin-top: 24rpx;
+}
+.pwd-title {
+  font-size: 28rpx;
+  font-weight: 700;
+  margin-bottom: 20rpx;
+}
+.pwd-input {
+  height: 88rpx;
+  border: 1rpx solid #e5e7eb;
+  border-radius: 12rpx;
+  padding: 0 24rpx;
+  font-size: 26rpx;
+  margin-bottom: 20rpx;
+  background: #fafafa;
+}
+.pwd-btn {
+  margin-top: 8rpx;
+}
+
+/* 退出 */
+.logout-btn {
+  margin-top: 40rpx;
+  background: #ffffff;
+  color: #ef4444;
+  border: 1rpx solid #fecaca;
+  border-radius: 16rpx;
+  font-size: 28rpx;
+}
+.note {
+  text-align: center;
+  margin-top: 24rpx;
+}

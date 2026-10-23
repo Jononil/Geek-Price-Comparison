@@ -1,0 +1,38 @@
+<view class="rk-page">
+  <!-- tab 栏 -->
+  <view class="tab-bar">
+    <view
+      wx:for="{{tabs}}"
+      wx:key="key"
+      class="tab {{activeTab === item.key ? 'tab-active' : ''}}"
+      data-key="{{item.key}}"
+      bindtap="onTabTap"
+    >{{item.label}}</view>
+  </view>
+
+  <gp-loading wx:if="{{state === 'loading'}}" text="加载榜单中…" />
+  <gp-error wx:elif="{{state === 'error'}}" bind:retry="onRetry" />
+  <gp-empty wx:elif="{{items.length === 0}}" text="暂无榜单数据" />
+
+  <view wx:else class="rank-list gp-card">
+    <view class="rank-item" wx:for="{{items}}" wx:key="id" data-id="{{item.id}}" bindtap="onTapItem">
+      <text class="rank-num {{item.rank <= 3 ? 'rank-top' : ''}}">{{item.rank}}</text>
+      <view class="rank-img-wrap">
+        <image wx:if="{{item.image}}" class="rank-img" src="{{item.image}}" mode="aspectFit" lazy-load />
+        <gp-no-image wx:else size="{{48}}" text="" />
+      </view>
+      <view class="rank-info">
+        <text class="rank-name">{{item.name}}</text>
+        <text class="rank-meta">{{item.brandCategory}}</text>
+      </view>
+      <text wx:if="{{item.valueMissing}}" class="rank-value-dim">数据不足</text>
+      <text wx:else class="rank-value">性价比 {{item.valueText}}</text>
+      <view class="rank-price-wrap">
+        <text class="rank-price">¥{{item.priceText}}</text>
+        <text class="rank-sim">(模拟)</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="footer-hint gp-data-hint">榜单价格为系统模拟报价，非实时电商价格</view>
+</view>

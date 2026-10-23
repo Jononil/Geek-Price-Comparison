@@ -1,0 +1,1 @@
+SELECT COUNT(*) FROM product_image_license;

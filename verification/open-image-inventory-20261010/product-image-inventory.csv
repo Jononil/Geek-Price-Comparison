@@ -1,0 +1,133 @@
+﻿productId,productName,brand,category,normalizedModel,mainStatus,existingRealImages,searchPoolSize,candidateCount,autoAdopt,reason
+1,iPhone 16 Pro,苹果,手机,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+2,iPhone 15,苹果,手机,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+3,华为 Mate 60 Pro,华为,手机,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+4,华为 Pura 70 Pro,华为,手机,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+5,小米 14 Ultra,小米,手机,14 ultra,REVIEW_REQUIRED,0,40,5,false,该产品线中文名与海外名对应关系未经证实（历史审核结论）
+6,小米 14,小米,手机,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+7,OPPO Find X7 Ultra,OPPO,手机,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+8,vivo X100 Ultra,vivo,手机,x100 ultra,REVIEW_REQUIRED,0,21,5,false,变体差异:ultra
+9,一加 12,一加,手机,12,REVIEW_REQUIRED,0,40,5,false,型号含纯容量/纯数字，无法确认精确型号
+10,荣耀 Magic 6 Pro,荣耀,手机,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+11,三星 Galaxy S24,三星,手机,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+12,Redmi K70 至尊版,小米,手机,redmi k70 至尊版,NEW_HIGH_CONFIDENCE,0,2,2,false,标题「Redmi K70 至尊版 - 2024-09-27 01.jpg」含品牌与完整型号（含中文后缀），主体为手机本体
+13,iPad Pro M4,苹果,平板电脑,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+14,iPad Air M2,苹果,平板电脑,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+15,华为 MatePad Pro,华为,平板电脑,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+16,小米平板 7 Pro,小米,平板电脑,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+17,联想小新 Pad Pro,联想,平板电脑,Xiaoxin pad pro,NO_QUALIFIED_IMAGE,0,0,0,false,检索无任何候选
+18,三星 Galaxy Tab S9,三星,平板电脑,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+19,vivo Pad 3 Pro,vivo,平板电脑,pad 3 pro,REVIEW_REQUIRED,0,40,5,false,缺型号关键锚点
+20,OPPO Pad 3,OPPO,平板电脑,pad 3,NO_QUALIFIED_IMAGE,0,40,5,false,标题无品牌身份词（oppo）
+21,联想拯救者 Y9000P,联想,笔记本电脑,Legion y9000p,NO_QUALIFIED_IMAGE,0,0,0,false,检索无任何候选
+22,联想小新 Pro 16,联想,笔记本电脑,Xiaoxin pro 16,NO_QUALIFIED_IMAGE,0,1,1,false,标题无品牌身份词（lenovo/thinkbook/thinkpad/legion）
+23,MacBook Air M3,苹果,笔记本电脑,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+24,MacBook Pro 14,苹果,笔记本电脑,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+25,华硕天选 5 Pro,华硕,笔记本电脑,TUF Gaming 5 pro,REVIEW_REQUIRED,0,28,5,false,该产品线中文名与海外名对应关系未经证实（历史审核结论）
+26,戴尔 XPS 13,戴尔,笔记本电脑,xps 13,REVIEW_REQUIRED,0,20,5,false,候选「Dell XPS 13 9350 and 9300.jpg」为两台不同代 XPS 13 并排合影，主体不唯一；历史审核亦曾因「XPS 13 and 15」拒绝同类图
+27,惠普暗影精灵 10,惠普,笔记本电脑,OMEN 10,REVIEW_REQUIRED,0,39,5,false,标题未含完整型号
+28,ThinkBook 14+,联想,笔记本电脑,thinkbook 14+,NO_QUALIFIED_IMAGE,0,4,4,false,"主体不合格: screenshot_video,license_unreviewed,part_or_teardown"
+29,华为 MateBook 14,华为,笔记本电脑,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+30,微星绝影 14,微星,笔记本电脑,Stealth 14,NO_QUALIFIED_IMAGE,0,50,5,false,标题无品牌身份词（msi）
+31,荣耀 MagicBook Pro,荣耀,笔记本电脑,magicbook pro,REVIEW_REQUIRED,0,2,2,false,候选为「MagicBook Pro 14」，数据库商品名未带尺寸（14/16），系列级图不得直接认定为该型号
+32,机械革命翼龙 15 Pro,机械革命,笔记本电脑,翼龙 15 pro,NO_QUALIFIED_IMAGE,0,20,5,false,标题无品牌身份词（mechrevo）
+33,联想拯救者刃 9000K,联想,台式电脑,Legion刃 9000k,NO_QUALIFIED_IMAGE,0,0,0,false,检索无任何候选
+34,惠普暗影精灵台式机,惠普,台式电脑,OMEN台式机,NO_QUALIFIED_IMAGE,0,0,0,false,检索无任何候选
+35,戴尔 XPS 台式机,戴尔,台式电脑,xps 台式机,NO_QUALIFIED_IMAGE,0,0,0,false,检索无任何候选
+36,微星海皇戟,微星,台式电脑,Trident,NO_QUALIFIED_IMAGE,0,60,5,false,"最佳候选「Rückseite CPU-Sockel MSI Trident X」是机箱背部 CPU 插槽/内部结构，非产品本体；German ""Rückseite""=背面"
+37,华硕玩家国度,华硕,台式电脑,ROG,NO_QUALIFIED_IMAGE,0,41,5,false,候选「Asus ROG Laptop Keyboard.jpg」为笔记本键盘特写，而商品分类为台式电脑——产品类别冲突
+38,联想天逸 510,联想,台式电脑,天逸 510,NO_QUALIFIED_IMAGE,0,0,0,false,检索无任何候选
+39,LG 27GP95RP,LG,显示器,27gp95rp,NO_QUALIFIED_IMAGE,0,0,0,false,检索无任何候选
+40,三星玄龙骑士 G7,三星,显示器,Odyssey g7,NO_QUALIFIED_IMAGE,0,20,5,false,标题无品牌身份词（samsung）
+41,戴尔 U2723QE,戴尔,显示器,u2723qe,NO_QUALIFIED_IMAGE,0,0,0,false,检索无任何候选
+42,华硕 TUF VG27AQ,华硕,显示器,tuf vg27aq,NO_QUALIFIED_IMAGE,0,0,0,false,检索无任何候选
+43,小米 27 4K,小米,显示器,27 4k,NO_QUALIFIED_IMAGE,0,27,5,false,标题无品牌身份词（xiaomi/redmi）
+44,AOC 27 4K,AOC,显示器,27 4k,NO_QUALIFIED_IMAGE,0,40,5,false,标题无品牌身份词（aoc）
+45,明基 PD2705U,明基,显示器,pd2705u,NO_QUALIFIED_IMAGE,0,0,0,false,检索无任何候选
+46,泰坦军团 P27A6V,泰坦军团,显示器,p27a6v,NO_QUALIFIED_IMAGE,0,0,0,false,检索无任何候选
+47,索尼 WH-1000XM5,索尼,耳机,wh 1000xm5,NO_QUALIFIED_IMAGE,0,0,0,false,检索无任何候选
+48,Bose QC Ultra,Bose,耳机,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+49,苹果 AirPods Pro 2,苹果,耳机,airpods pro 2,NEW_HIGH_CONFIDENCE,0,22,5,false,标题「AirPods Pro 2.jpg」品牌+完整型号命中，单一耳机本体
+50,森海塞尔 Momentum 4,森海塞尔,耳机,momentum 4,NO_QUALIFIED_IMAGE,0,21,5,false,标题无品牌身份词（sennheiser）
+51,漫步者 NeoBuds Pro,漫步者,耳机,neobuds pro,NO_QUALIFIED_IMAGE,0,1,1,false,标题无品牌身份词（edifier）
+52,华为 FreeBuds Pro 3,华为,耳机,freebuds pro 3,NO_QUALIFIED_IMAGE,0,2,2,false,标题无品牌身份词（huawei）
+53,小米 Buds 4 Pro,小米,耳机,buds 4 pro,NO_QUALIFIED_IMAGE,0,22,5,false,标题无品牌身份词（xiaomi/redmi）
+54,三星 Galaxy Buds 2 Pro,三星,耳机,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+55,水月雨 Starfield 2,水月雨,耳机,starfield 2,NO_QUALIFIED_IMAGE,0,20,5,false,标题无品牌身份词（moondrop）
+56,铁三角 ATH-M50x,铁三角,耳机,ath m50x,NO_QUALIFIED_IMAGE,0,0,0,false,检索无任何候选
+57,Keychron Q1 Pro,Keychron,键盘,q1 pro,NO_QUALIFIED_IMAGE,0,20,5,false,标题无品牌身份词（keychron）
+58,罗技 MX Keys,罗技,键盘,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+59,雷蛇黑寡妇 V4,雷蛇,键盘,黑寡妇 v4,NO_QUALIFIED_IMAGE,0,0,0,false,检索无任何候选
+60,达尔优 A98,达尔优,键盘,a98,NO_QUALIFIED_IMAGE,0,20,5,false,标题无品牌身份词（dareu）
+61,珂芝 K75,珂芝,键盘,k75,NO_QUALIFIED_IMAGE,0,20,5,false,标题无品牌身份词（kzzi）
+62,樱桃 MX 3.0S,樱桃,键盘,mx 3.0s,NO_QUALIFIED_IMAGE,0,40,5,false,标题无品牌身份词（cherry）
+63,狼蛛 F87,狼蛛,键盘,f87,NO_QUALIFIED_IMAGE,0,2,2,false,标题无品牌身份词（aula）
+64,海盗船 K70,海盗船,键盘,k70,NO_QUALIFIED_IMAGE,0,0,0,false,检索无任何候选
+65,罗技 G Pro X Superlight 2,罗技,鼠标,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+66,雷蛇毒蝰 V3 Pro,雷蛇,鼠标,毒蝰 v3 pro,NO_QUALIFIED_IMAGE,0,0,0,false,检索无任何候选
+67,罗技 MX Master 3S,罗技,鼠标,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+68,达尔优 A950,达尔优,鼠标,a950,NO_QUALIFIED_IMAGE,0,20,5,false,标题无品牌身份词（dareu）
+69,雷柏 VT9,雷柏,鼠标,vt9,NO_QUALIFIED_IMAGE,0,20,5,false,标题无品牌身份词（rapoo）
+70,卓威 EC2-CW,卓威,鼠标,ec2 cw,NO_QUALIFIED_IMAGE,0,20,5,false,标题无品牌身份词（zowie）
+71,多彩 M800,多彩,鼠标,m800,NO_QUALIFIED_IMAGE,0,20,5,false,标题无品牌身份词（delux）
+72,海盗船 Sabre,海盗船,鼠标,sabre,REVIEW_REQUIRED,0,40,5,false,缺型号关键锚点
+73,索尼 A7 IV,索尼,相机,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+74,佳能 R6 Mark II,佳能,相机,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+75,尼康 Z6 III,尼康,相机,z6 iii,REVIEW_REQUIRED,0,29,5,false,标题未含完整型号
+76,富士 X-T5,富士,相机,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+77,大疆 Pocket 3,大疆,相机,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+78,索尼 ZV-E10,索尼,相机,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+79,佳能 EOS R50,佳能,相机,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+80,松下 S5 II,松下,相机,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+81,苹果 Watch Series 9,苹果,智能手表,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+82,华为 Watch GT 4,华为,智能手表,watch gt 4,REVIEW_REQUIRED,0,25,5,false,变体差异:pro
+83,小米 Watch S3,小米,智能手表,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+84,三星 Galaxy Watch 6,三星,智能手表,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+85,佳明 Forerunner 265,佳明,智能手表,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+86,OPPO Watch 4 Pro,OPPO,智能手表,watch 4 pro,NO_QUALIFIED_IMAGE,0,40,5,false,标题无品牌身份词（oppo）
+87,华为 Watch Ultimate,华为,智能手表,watch ultimate,NO_QUALIFIED_IMAGE,0,20,5,false,标题无品牌身份词（huawei）
+88,苹果 Watch Ultra 2,苹果,智能手表,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+89,任天堂 Switch OLED,任天堂,游戏机,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+90,索尼 PS5,索尼,游戏机,ps5,NO_QUALIFIED_IMAGE,0,0,0,false,检索无任何候选
+91,微软 Xbox Series X,微软,游戏机,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+92,Steam Deck OLED,Valve,游戏机,steam deck oled,REVIEW_REQUIRED,0,26,5,false,变体差异:oled
+93,任天堂 Switch Lite,任天堂,游戏机,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+94,ROG Ally,华硕,游戏机,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+95,RTX 4070 Ti Super,英伟达,显卡,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+96,RTX 4070 Super,英伟达,显卡,rtx 4070 super,NO_QUALIFIED_IMAGE,0,21,5,false,标题无品牌身份词（nvidia/geforce）
+97,RTX 4080 Super,英伟达,显卡,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+98,RTX 4090,英伟达,显卡,rtx 4090,NO_QUALIFIED_IMAGE,0,32,5,false,"主体不合格: packaging,screenshot_video,license_unreviewed"
+99,RX 7800 XT,AMD,显卡,rx 7800 xt,NO_QUALIFIED_IMAGE,0,17,5,false,标题无品牌身份词（amd/radeon/ryzen）
+100,RX 7900 XTX,AMD,显卡,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+101,RTX 4060 Ti,英伟达,显卡,rtx 4060 ti,NO_QUALIFIED_IMAGE,0,20,5,false,标题无品牌身份词（nvidia/geforce）
+102,RX 7600,AMD,显卡,rx 7600,NO_QUALIFIED_IMAGE,0,23,5,false,标题无品牌身份词（amd/radeon/ryzen）
+103,七彩虹 RTX 4070,七彩虹,显卡,rtx 4070,NO_QUALIFIED_IMAGE,0,20,5,false,标题无品牌身份词（colorful）
+104,微星 RTX 4060,微星,显卡,rtx 4060,NO_QUALIFIED_IMAGE,0,20,5,false,标题无品牌身份词（msi）
+105,i7-14700K,Intel,CPU,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+106,i5-14600K,Intel,CPU,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+107,i9-14900K,Intel,CPU,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+108,锐龙 7 7800X3D,AMD,CPU,7 7800x3d,NO_QUALIFIED_IMAGE,0,23,5,false,主体不合格: chip_die
+109,锐龙 5 7600,AMD,CPU,5 7600,SOURCE_UNVERIFIED,0,28,5,false,候选许可证字段为「FAL」（非开放许可），无法核验可商用性
+110,锐龙 9 7950X,AMD,CPU,9 7950x,NO_QUALIFIED_IMAGE,0,11,5,false,标题无品牌身份词（amd/radeon/ryzen）
+111,i5-12400F,Intel,CPU,i5 12400f,NO_QUALIFIED_IMAGE,0,21,5,false,主体不合格: chip_die
+112,锐龙 7 7700,AMD,CPU,7 7700,NO_QUALIFIED_IMAGE,0,40,5,false,"主体不合格: comparison,screenshot_video,license_unreviewed,internal_part"
+113,致态 TiPlus7100 2TB,致态,固态硬盘,tiplus7100 2tb,NO_QUALIFIED_IMAGE,0,0,0,false,检索无任何候选
+114,三星 990 Pro 2TB,三星,固态硬盘,990 pro 2tb,NO_QUALIFIED_IMAGE,0,11,5,false,标题无品牌身份词（samsung）
+115,西数 SN850X 2TB,西数,固态硬盘,sn850x 2tb,NO_QUALIFIED_IMAGE,0,0,0,false,检索无任何候选
+116,铠侠 RC20 1TB,铠侠,固态硬盘,rc20 1tb,NO_QUALIFIED_IMAGE,0,0,0,false,检索无任何候选
+117,致态 TiPlus5000 1TB,致态,固态硬盘,tiplus5000 1tb,NO_QUALIFIED_IMAGE,0,0,0,false,检索无任何候选
+118,金士顿 KC3000 1TB,金士顿,固态硬盘,kc3000 1tb,NO_QUALIFIED_IMAGE,0,0,0,false,检索无任何候选
+119,海康威视 C2000 Pro,海康威视,固态硬盘,c2000 pro,NO_QUALIFIED_IMAGE,0,14,5,false,标题无品牌身份词（hikvision）
+120,宏碁掠夺者 GM7,宏碁,固态硬盘,Predator gm7,NO_QUALIFIED_IMAGE,0,0,0,false,检索无任何候选
+121,芝奇幻光戟 32GB,芝奇,内存,Trident Z 32gb,NO_QUALIFIED_IMAGE,0,0,0,false,检索无任何候选
+122,金士顿骇客神条 32GB,金士顿,内存,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+123,海盗船复仇者 32GB,海盗船,内存,Vengeance 32gb,NO_QUALIFIED_IMAGE,0,7,5,false,标题无品牌身份词（corsair）
+124,威刚 XPG 32GB,威刚,内存,xpg 32gb,NO_QUALIFIED_IMAGE,0,0,0,false,检索无任何候选
+125,英睿达 32GB,英睿达,内存,32gb,MODEL_UNCERTAIN,0,9,5,false,商品名「英睿达 32GB」只有容量无型号，无法确认具体哪款；候选虽为 Crucial CT32G48C40S5，不能反推商品型号
+126,光威 32GB,光威,内存,32gb,NO_QUALIFIED_IMAGE,0,0,0,false,检索无任何候选
+127,华硕 RT-AX86U Pro,华硕,路由器,rt ax86u pro,NO_QUALIFIED_IMAGE,0,0,0,false,检索无任何候选
+128,小米 AX9000,小米,路由器,ax9000,NO_QUALIFIED_IMAGE,0,0,0,false,检索无任何候选
+129,TP-Link XDR6080,TP-Link,路由器,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+130,华为 AX3 Pro,华为,路由器,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+131,中兴 AX5400 Pro,中兴,路由器,,EXISTING_VALID,1,0,0,false,数据库已有 1 张非占位图（历史多轮审核+正式导入产物，URL 存活见执行日志）
+132,华硕 RT-AX88U Pro,华硕,路由器,rt ax88u pro,NO_QUALIFIED_IMAGE,0,0,0,false,检索无任何候选

@@ -1,0 +1,169 @@
+<view class="pd-page">
+  <!-- 加载中 -->
+  <gp-loading wx:if="{{state === 'loading'}}" text="加载商品中…" />
+
+  <!-- 不存在/已下架 -->
+  <gp-empty wx:elif="{{state === 'notfound'}}" text="产品不存在或已下架" />
+
+  <!-- 网络错误 -->
+  <gp-error wx:elif="{{state === 'error'}}" bind:retry="onRetry" />
+
+  <block wx:else>
+    <!-- ===== 图片区 ===== -->
+    <view class="image-card gp-card">
+      <view class="image-wrap">
+        <image
+          wx:if="{{displayUrl}}"
+          class="img"
+          src="{{displayUrl}}"
+          mode="aspectFit"
+          binderror="onImgError"
+        />
+        <gp-no-image wx:else size="{{96}}" />
+        <text wx:if="{{displayUrl && seriesRef}}" class="badge-series">系列参考图</text>
+      </view>
+      <view class="attr-row" bindtap="onTapImageAttribution">
+        <text class="attr-text">ⓘ 图片来源与许可</text>
+      </view>
+    </view>
+
+    <!-- ===== 基础信息 ===== -->
+    <view class="info-card gp-card">
+      <text class="name">{{product.name}}</text>
+      <view class="meta">
+        <text class="meta-tag">{{product.brandName}}</text>
+        <text class="meta-tag meta-tag-dim">{{product.categoryName}}</text>
+        <text wx:for="{{product.tags}}" wx:key="*this" class="meta-tag meta-tag-value">{{item}}</text>
+      </view>
+      <text class="desc">{{product.description}}</text>
+
+      <!-- 评分（null → 数据不足，不伪造） -->
+      <view class="scores">
+        <view class="score-box score-value">
+          <text wx:if="{{valueMissing}}" class="score-num score-dim">—</text>
+          <text wx:else class="score-num score-value-num">{{product.valueScore}}</text>
+          <text class="score-label">{{valueMissing ? '性价比 数据不足' : '性价比评分'}}</text>
+        </view>
+        <view class="score-box">
+          <text wx:if="{{ratingMissing}}" class="score-num score-dim">—</text>
+          <text wx:else class="score-num">{{product.userRating}}</text>
+          <text class="score-label">{{ratingMissing ? '用户评分 数据不足' : '用户评分'}}</text>
+        </view>
+        <view class="score-box">
+          <text wx:if="{{perfMissing}}" class="score-num score-dim">—</text>
+          <text wx:else class="score-num">{{product.performanceScore}}</text>
+          <text class="score-label">{{perfMissing ? '性能分 数据不足' : '性能分'}}</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- ===== 多平台比价（系统模拟报价） ===== -->
+    <view class="price-card gp-card">
+      <view class="card-header">
+        <text class="card-title">多平台比价</text>
+        <text wx:if="{{hasPrices}}" class="lowest-tag">全网最低 {{lowestPlatformName}}</text>
+      </view>
+      <view class="data-hint-row">
+        <text class="gp-data-hint">{{priceHint}}</text>
+      </view>
+
+      <gp-empty wx:if="{{!hasPrices}}" text="暂无价格信息" />
+      <block wx:else>
+        <view class="price-table">
+          <view class="pt-head">
+            <text class="pt-platform">平台</text>
+            <text class="pt-price">价格</text>
+            <text class="pt-shop">店铺</text>
+          </view>
+          <view
+            wx:for="{{priceRows}}"
+            wx:key="platformName"
+            class="pt-row {{item.isLowest ? 'pt-row-lowest' : ''}}"
+          >
+            <text class="pt-platform">{{item.platformName}}</text>
+            <text class="pt-price">¥{{item.priceText}}</text>
+            <text class="pt-shop">{{item.shopName}}</text>
+          </view>
+        </view>
+        <view wx:if="{{saveAmountText !== '0.00' && saveAmountText !== '—'}}" class="save-line">
+          相比最高价节省 ¥{{saveAmountText}}
+        </view>
+      </block>
+
+      <!-- 历史价格 -->
+      <view class="history-block">
+        <view wx:if="{{historyState === 'ready'}}" class="history-stats">
+          <view wx:for="{{historyStats}}" wx:key="label" class="hs-item">
+            <text class="hs-label">{{item.label}}</text>
+            <text class="hs-value {{item.highlight ? 'hs-drop' : ''}}">{{item.value}}</text>
+          </view>
+        </view>
+        <canvas
+          wx:if="{{historyState === 'ready'}}"
+          id="price-chart"
+          type="2d"
+          class="chart"
+          bindtouchstart="onChartTouch"
+          bindtouchmove="onChartTouch"
+        />
+        <gp-empty
+          wx:if="{{historyState === 'empty'}}"
+          text="暂无历史价格数据"
+          subText="系统未记录该商品的价格走势"
+        />
+        <view class="data-hint-row">
+          <text class="gp-data-hint">历史价格为系统模拟数据，仅用于功能演示</text>
+        </view>
+      </view>
+
+      <!-- 操作 -->
+      <view class="actions">
+        <button class="action-btn {{favorited ? 'action-btn-on' : ''}}" bindtap="onToggleFavorite">
+          {{favorited ? '已收藏' : '收藏'}}
+        </button>
+        <button class="action-btn action-primary" bindtap="onAddCompare">
+          {{inCompare ? '已在对比' : '加入对比'}}
+        </button>
+      </view>
+    </view>
+
+    <!-- ===== 核心参数（可信度三态） ===== -->
+    <view class="spec-card gp-card">
+      <view class="card-header">
+        <text class="card-title">核心参数</text>
+      </view>
+      <gp-empty wx:if="{{!hasSpecs}}" text="暂无参数数据" />
+      <block wx:else>
+        <view class="spec-row" wx:for="{{specRows}}" wx:key="label">
+          <text class="spec-label">{{item.label}}</text>
+          <view class="spec-value-wrap">
+            <text class="spec-value">{{item.value}}</text>
+            <text class="vs-tag vs-{{item.trust}}">{{item.trustLabel}}</text>
+          </view>
+        </view>
+        <view class="spec-summary gp-data-hint">{{specSummary}}</view>
+      </block>
+    </view>
+
+    <!-- ===== 用户评价（详情内嵌最新 10 条） ===== -->
+    <view class="review-card gp-card">
+      <view class="card-header">
+        <text class="card-title">用户评价</text>
+        <text class="more-link" bindtap="onGoReviews">全部评价 ›</text>
+      </view>
+      <gp-empty wx:if="{{reviews.length === 0}}" text="暂无评价" />
+      <block wx:else>
+        <view class="review-item" wx:for="{{reviews}}" wx:key="id">
+          <view class="review-head">
+            <text class="review-user">{{item.nickname}}</text>
+            <text class="review-star">{{item.star}} ★</text>
+            <text class="review-time">{{item.createdAt}}</text>
+          </view>
+          <text class="review-content">{{item.content}}</text>
+        </view>
+      </block>
+    </view>
+
+    <view class="footer-hint gp-data-hint">当前价格与历史价格均为系统模拟报价，非实时电商价格</view>
+  </block>
+</view>

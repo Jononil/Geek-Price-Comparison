@@ -1,0 +1,90 @@
+<view class="pl-page">
+  <!-- 排序条 -->
+  <scroll-view class="sort-bar" scroll-x enable-flex>
+    <view
+      wx:for="{{sortOptions}}"
+      wx:key="value"
+      class="sort-item {{sort === item.value ? 'sort-active' : ''}}"
+      data-value="{{item.value}}"
+      bindtap="onSortTap"
+    >{{item.label}}</view>
+  </scroll-view>
+
+  <!-- 筛选入口 -->
+  <view class="filter-row">
+    <view class="filter-btn {{filterSummary ? 'filter-btn-active' : ''}}" bindtap="onOpenPanel">
+      筛选{{filterSummary ? '（' + filterSummary + '）' : ''}} ▾
+    </view>
+    <text class="result-info">共找到 <text class="result-num">{{total}}</text> 款商品</text>
+  </view>
+
+  <!-- 主体 -->
+  <view class="body">
+    <gp-loading wx:if="{{state === 'loading'}}" text="加载商品中…" />
+    <gp-error wx:elif="{{state === 'error'}}" bind:retry="onRetry" />
+    <gp-empty wx:elif="{{products.length === 0}}" text="没有找到相关产品" subText="换个关键词或调整筛选条件试试" />
+    <block wx:else>
+      <view class="product-grid">
+        <view class="product-col" wx:for="{{products}}" wx:key="id">
+          <gp-product-card product="{{item}}" />
+        </view>
+      </view>
+      <view class="load-more">
+        <gp-loading wx:if="{{loadingMore}}" text="加载中…" />
+        <text wx:elif="{{!hasMore}}" class="no-more">— 没有更多了 —</text>
+      </view>
+    </block>
+  </view>
+
+  <!-- 筛选面板 -->
+  <view wx:if="{{panel.show}}" class="panel-mask" bindtap="onClosePanel">
+    <view class="panel" catchtap="onBlockTouchMove">
+      <view class="panel-title">筛选</view>
+
+      <scroll-view class="panel-scroll" scroll-y>
+        <!-- 分类 -->
+        <view class="panel-group">
+          <text class="panel-group-title">商品分类</text>
+          <view class="chip-wrap">
+            <view
+              wx:for="{{panel.categories}}"
+              wx:key="id"
+              class="chip {{panel.draftCategoryId === item.id ? 'chip-active' : ''}}"
+              data-id="{{item.id}}"
+              bindtap="onPickCategory"
+            >{{item.name}}</view>
+          </view>
+        </view>
+
+        <!-- 品牌 -->
+        <view class="panel-group">
+          <text class="panel-group-title">品牌</text>
+          <view class="chip-wrap">
+            <view
+              wx:for="{{panel.brands}}"
+              wx:key="id"
+              class="chip {{panel.draftBrandId === item.id ? 'chip-active' : ''}}"
+              data-id="{{item.id}}"
+              bindtap="onPickBrand"
+            >{{item.name}}</view>
+          </view>
+        </view>
+
+        <!-- 价格区间 -->
+        <view class="panel-group">
+          <text class="panel-group-title">价格区间（元，系统模拟报价）</text>
+          <view class="price-inputs">
+            <input class="price-input" type="digit" placeholder="最低价" value="{{panel.draftMinPrice}}" bindinput="onDraftMinPrice" adjust-position />
+            <text class="price-sep">—</text>
+            <input class="price-input" type="digit" placeholder="最高价" value="{{panel.draftMaxPrice}}" bindinput="onDraftMaxPrice" adjust-position />
+          </view>
+        </view>
+      </scroll-view>
+
+      <view class="panel-footer">
+        <button class="panel-btn panel-btn-ghost" size="mini" bindtap="onResetPanel">重置</button>
+        <button class="panel-btn panel-btn-primary" size="mini" bindtap="onApplyPanel">确定</button>
+      </view>
+    </view>
+  </view>
+</view>

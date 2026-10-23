@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/category/index",
+    "pages/product-list/index",
+    "pages/product-detail/index",
+    "pages/compare/index",
+    "pages/article-list/index",
+    "pages/article-detail/index",
+    "pages/reviews/index",
+    "pages/recommend/index",
+    "pages/rankings/index",
+    "pages/mine/index",
+    "pages/favorites/index",
+    "pages/history/index",
+    "pages/login/login",
+    "pages/register/index"
+  ],
+  "tabBar": {
+    "color": "#9ca3af",
+    "selectedColor": "#2563eb",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      { "pagePath": "pages/index/index", "text": "首页" },
+      { "pagePath": "pages/category/index", "text": "分类" },
+      { "pagePath": "pages/compare/index", "text": "对比" },
+      { "pagePath": "pages/article-list/index", "text": "测评" },
+      { "pagePath": "pages/mine/index", "text": "我的" }
+    ]
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#2563eb",
+    "navigationBarTitleText": "极客比价",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#f5f7fa",
+    "backgroundTextStyle": "dark"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {
+    "gp-loading": "/components/gp-loading/gp-loading",
+    "gp-empty": "/components/gp-empty/gp-empty",
+    "gp-error": "/components/gp-error/gp-error",
+    "gp-no-image": "/components/gp-no-image/gp-no-image"
+  }
+}

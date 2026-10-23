@@ -1,0 +1,3260 @@
+{
+ "inserted": {
+  "products": 48,
+  "images": 53,
+  "licenses": 53,
+  "prices": 141,
+  "history": 47,
+  "specs": 47,
+  "skipped": 20,
+  "rejected": 89
+ },
+ "log": [
+  {
+   "item": {
+    "name": "ThinkPad X1 Carbon Gen 11",
+    "brand": "联想",
+    "cat": "笔记本电脑",
+    "model": [
+     "thinkpad x1 carbon",
+     "x1 carbon"
+    ]
+   },
+   "result": "SKIP",
+   "why": "商品名已存在"
+  },
+  {
+   "item": {
+    "name": "Lenovo Legion 5 Pro",
+    "brand": "联想",
+    "cat": "笔记本电脑",
+    "model": [
+     "legion 5 pro"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 21,
+   "sample": [
+    {
+     "title": "A computational model for driver's cognitive state, visual perception and intermittent attention in a distracted car following task.pdf",
+     "why": "subject:screenshot"
+    },
+    {
+     "title": "Trier Sankt Paulin BW 12.jpg",
+     "why": "brand_missing:lenovo"
+    },
+    {
+     "title": "Pro shop American Legion Country Club Wayne Twp Mifflin Co PA.jpg",
+     "why": "subject:store,accessory"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Dell XPS 15",
+    "brand": "戴尔",
+    "cat": "笔记本电脑",
+    "model": [
+     "xps 15"
+    ]
+   },
+   "result": "SKIP",
+   "why": "商品名已存在"
+  },
+  {
+   "item": {
+    "name": "Dell Inspiron 15 3520",
+    "brand": "戴尔",
+    "cat": "笔记本电脑",
+    "model": [
+     "inspiron 15 3520",
+     "inspiron 15"
+    ]
+   },
+   "result": "OK",
+   "productId": 45498,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/DELL_Inspiron_15X.JPG/500px-DELL_Inspiron_15X.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC0",
+   "title": "DELL Inspiron 15X.JPG",
+   "via": "Dell inspiron 15 3520",
+   "brand": "戴尔",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "HP Envy 16",
+    "brand": "惠普",
+    "cat": "笔记本电脑",
+    "model": [
+     "envy 16"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 34,
+   "sample": [
+    {
+     "title": "HP Envy 23 BB jeh.jpg",
+     "why": "model_missing:envy 16"
+    },
+    {
+     "title": "William Garrett Whitney.jpeg",
+     "why": "subject:people"
+    },
+    {
+     "title": "Cristo de los Faroles de Bobadilla Estacion.jpg",
+     "why": "brand_missing:hp"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "HP ProBook 450 G8",
+    "brand": "惠普",
+    "cat": "笔记本电脑",
+    "model": [
+     "probook 450"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 1,
+   "sample": [
+    {
+     "title": "The law of charitable bequests, with an account of the Mortmain and charitable uses act, 1888. by Amherst D. Tyssen (IA lawofcharitableb00tyss).pdf",
+     "why": "brand_missing:hp"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "ASUS ZenBook 14",
+    "brand": "华硕",
+    "cat": "笔记本电脑",
+    "model": [
+     "zenbook 14"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 18,
+   "sample": [
+    {
+     "title": "Asus x21 ultrabook.jpg",
+     "why": "model_missing:zenbook 14"
+    },
+    {
+     "title": "ASUS Zenbook UX31E Ultrabook & Accessories.jpg",
+     "why": "model_missing:zenbook 14"
+    },
+    {
+     "title": "ASUS Zenbook UX305.jpg",
+     "why": "model_missing:zenbook 14"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "MSI Prestige 16",
+    "brand": "微星",
+    "cat": "笔记本电脑",
+    "model": [
+     "prestige 16"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 40,
+   "sample": [
+    {
+     "title": "Sue - Les Mystères du peuple, tome 16.djvu",
+     "why": "brand_missing:msi"
+    },
+    {
+     "title": "Address of President Taft at the banquet given in his honor by the Americus club (IA addressofpreside01taft).pdf",
+     "why": "brand_missing:msi"
+    },
+    {
+     "title": "Distinguished Americans (IA distinguishedame00herr).pdf",
+     "why": "brand_missing:msi"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "MacBook Air 15 M3",
+    "brand": "苹果",
+    "cat": "笔记本电脑",
+    "model": [
+     "macbook air 15"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 36,
+   "sample": [
+    {
+     "title": "Steve jobs Macbook Air.jpg",
+     "why": "brand_missing:apple"
+    },
+    {
+     "title": "Cable Connector Reference Chart.pdf",
+     "why": "subject:accessory"
+    },
+    {
+     "title": "Apple-modifklavoj.jpg",
+     "why": "model_missing:macbook air 15"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Acer Aspire 5 A515",
+    "brand": "宏碁",
+    "cat": "笔记本电脑",
+    "model": [
+     "aspire 5 a515",
+     "aspire 5"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 4,
+   "sample": [
+    {
+     "title": "Acer Aspire 5 (A515-44G) *360 degrees*.webm",
+     "why": "subject:screenshot,license_review_needed"
+    },
+    {
+     "title": "Acer Aspire A515-51.jpg",
+     "why": "model_missing:aspire 5 a515|aspire 5"
+    },
+    {
+     "title": "Democracy and nationalism in education; syllabus and readings for a course in history of education from the French revolution to the present time (IA democracynationa00reis).pdf",
+     "why": "brand_missing:acer"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Acer Predator Helios 300",
+    "brand": "宏碁",
+    "cat": "笔记本电脑",
+    "model": [
+     "predator helios 300",
+     "helios 300"
+    ]
+   },
+   "result": "SKIP",
+   "why": "商品名已存在"
+  },
+  {
+   "item": {
+    "name": "Lenovo IdeaPad 5",
+    "brand": "联想",
+    "cat": "笔记本电脑",
+    "model": [
+     "ideapad 5"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 17,
+   "sample": [
+    {
+     "title": "2008 Taipei IT Month Day2 Lenovo Ideapad S10.jpg",
+     "why": "model_missing:ideapad 5"
+    },
+    {
+     "title": "Lenovo IdeaPad Y510p 5.jpg",
+     "why": "model_missing:ideapad 5"
+    },
+    {
+     "title": "Lenovo IdeaPad U160.jpg",
+     "why": "model_missing:ideapad 5"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Dell P2422H",
+    "brand": "戴尔",
+    "cat": "显示器",
+    "model": [
+     "p2422h"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 0,
+   "sample": []
+  },
+  {
+   "item": {
+    "name": "LG 27GP850-B",
+    "brand": "LG",
+    "cat": "显示器",
+    "model": [
+     "27gp850"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 0,
+   "sample": []
+  },
+  {
+   "item": {
+    "name": "Samsung ViewFinity S6",
+    "brand": "三星",
+    "cat": "显示器",
+    "model": [
+     "viewfinity s6",
+     "viewfinity"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 0,
+   "sample": []
+  },
+  {
+   "item": {
+    "name": "AOC 24G2",
+    "brand": "AOC",
+    "cat": "显示器",
+    "model": [
+     "24g2"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 10,
+   "sample": [
+    {
+     "title": "The London Gazette 19387.djvu",
+     "why": "brand_missing:aoc"
+    },
+    {
+     "title": "Monitorul Oficial al României 1878-08-31, nr. 192.pdf",
+     "why": "brand_missing:aoc"
+    },
+    {
+     "title": "Charity Hospital Report 1853 (IA CharityHospitalReport1853).pdf",
+     "why": "brand_missing:aoc"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "BenQ EX2710",
+    "brand": "明基",
+    "cat": "显示器",
+    "model": [
+     "ex2710"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 0,
+   "sample": []
+  },
+  {
+   "item": {
+    "name": "ASUS VG249Q1A",
+    "brand": "华硕",
+    "cat": "显示器",
+    "model": [
+     "vg249q1a"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 0,
+   "sample": []
+  },
+  {
+   "item": {
+    "name": "LG 32UN880",
+    "brand": "LG",
+    "cat": "显示器",
+    "model": [
+     "32un880"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 0,
+   "sample": []
+  },
+  {
+   "item": {
+    "name": "Samsung 870 EVO 1TB",
+    "brand": "三星",
+    "cat": "固态硬盘",
+    "model": [
+     "870 evo"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 21,
+   "sample": [
+    {
+     "title": "Mediawiki based Raspberry Pi Kiosk for a museum.pdf",
+     "why": "brand_missing:samsung"
+    },
+    {
+     "title": "Monitorul Oficial al României. Partea 1 1948-06-05, nr. 129.pdf",
+     "why": "brand_missing:samsung"
+    },
+    {
+     "title": "Andrea da Barberino - Guerino detto il Meschino, 1841.djvu",
+     "why": "brand_missing:samsung"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Samsung 980 PRO 1TB",
+    "brand": "三星",
+    "cat": "固态硬盘",
+    "model": [
+     "980 pro"
+    ]
+   },
+   "result": "SKIP",
+   "why": "商品名已存在"
+  },
+  {
+   "item": {
+    "name": "WD Black SN770",
+    "brand": "西数",
+    "cat": "固态硬盘",
+    "model": [
+     "sn770"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 20,
+   "sample": [
+    {
+     "title": "Hfb-scene.jpg",
+     "why": "brand_missing:western digital"
+    },
+    {
+     "title": "Waddell Creek Beach, Highway Route 1 (7664253310).jpg",
+     "why": "brand_missing:western digital"
+    },
+    {
+     "title": "The Lagoon, Beach Highway... 24th and Phila. Ave... Ocean City, Md (86784).jpg",
+     "why": "brand_missing:western digital"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Crucial P5 Plus",
+    "brand": "英睿达",
+    "cat": "固态硬盘",
+    "model": [
+     "p5 plus"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 40,
+   "sample": [
+    {
+     "title": "PhysRevC.99.025204.pdf",
+     "why": "subject:screenshot"
+    },
+    {
+     "title": "9071 Nuclear Weapons Comprehensive Test Ban Treaty (IA 9071NuclearWeaponsComprehensiveTestBanTreaty-crs).pdf",
+     "why": "brand_missing:crucial"
+    },
+    {
+     "title": "U.S. NONPROLIFERATION STRATEGY- POLICIES AND TECHNICAL CAPABILITIES (IA gov.gpo.fdsys.CHRG-109hhrg28785).pdf",
+     "why": "brand_missing:crucial"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Kingston NV2 1TB",
+    "brand": "金士顿",
+    "cat": "固态硬盘",
+    "model": [
+     "nv2"
+    ]
+   },
+   "result": "OK",
+   "productId": 45499,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/2023_Dysk_SSD_Kingston_NV2_2TB.jpg/500px-2023_Dysk_SSD_Kingston_NV2_2TB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 4.0",
+   "title": "2023 Dysk SSD Kingston NV2 2TB.jpg",
+   "via": "Kingston nv2",
+   "brand": "金士顿",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "dbName": "金士顿 KC3000 1TB",
+    "model": [
+     "kc3000"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 1,
+   "sample": [
+    {
+     "title": "I9 14900K - ASUS TUF GAMING RTX4090 24G - LIAN LI 216 - INVADERPC.webm",
+     "why": "subject:screenshot,license_review_needed,accessory,internal_part"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Intel 670p SSD",
+    "brand": "Intel",
+    "cat": "固态硬盘",
+    "model": [
+     "670p"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 21,
+   "sample": [
+    {
+     "title": "Epicteti Enchiridium una cum Cebetis Thebani tabula Graec. & Lat. Cum notis Wolfii, Casauboni, Caselii & aliorum- Abrahamus Berkelius textum recensuit (IA epictetienridiumuna2ed).pdf",
+     "why": "subject:accessory"
+    },
+    {
+     "title": "Magnus670.jpg",
+     "why": "subject:screenshot"
+    },
+    {
+     "title": "4990010048040 - Bedanta-Darshan, N.A., 670p, Religion, bengali (1912).pdf",
+     "why": "brand_missing:intel"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Sony WH-1000XM4",
+    "brand": "索尼",
+    "cat": "耳机",
+    "model": [
+     "wh-1000xm4",
+     "1000xm4"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 1,
+   "sample": [
+    {
+     "title": "A virtual reality study investigating the train illusion.pdf",
+     "why": "subject:screenshot"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Bose QuietComfort 45",
+    "brand": "Bose",
+    "cat": "耳机",
+    "model": [
+     "quietcomfort 45",
+     "qc45"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 1,
+   "sample": [
+    {
+     "title": "Bose QuietComfort Ultra Earbuds - 1.jpg",
+     "why": "model_missing:quietcomfort 45|qc45"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Sennheiser MOMENTUM 4",
+    "dbName": "森海塞尔 Momentum 4",
+    "model": [
+     "momentum 4"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 40,
+   "sample": [
+    {
+     "title": "Attraction - Secrets of Gravity.pdf",
+     "why": "model_missing:momentum 4"
+    },
+    {
+     "title": "Stochastic Normalisations as Bayesian Learning.pdf",
+     "why": "model_missing:momentum 4"
+    },
+    {
+     "title": "DEPARTMENT OF TRANSPORTATION AND RELATED AGENCIES APPROPRIATIONS FOR 2002 (IA gov.gpo.fdsys.CHRG-107hhrg77252).pdf",
+     "why": "model_missing:momentum 4"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Sony WF-1000XM4",
+    "brand": "索尼",
+    "cat": "耳机",
+    "model": [
+     "wf-1000xm4"
+    ]
+   },
+   "result": "SKIP",
+   "why": "商品名已存在"
+  },
+  {
+   "item": {
+    "name": "Sennheiser HD 600",
+    "brand": "森海塞尔",
+    "cat": "耳机",
+    "model": [
+     "hd 600"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 23,
+   "sample": [
+    {
+     "title": "Hd600 klein.jpg",
+     "why": "brand_missing:sennheiser"
+    },
+    {
+     "title": "Balsom recording at Abbey Road, London 2013.jpg",
+     "why": "subject:people"
+    },
+    {
+     "title": "Alison Balsom recording at Abbey Road, London 2013.jpg",
+     "why": "brand_missing:sennheiser"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Corsair K95 RGB Platinum",
+    "brand": "海盗船",
+    "cat": "键盘",
+    "model": [
+     "k95"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 20,
+   "sample": [
+    {
+     "title": "Grandville, Kreuzzug 5, 1834, K95.jpg",
+     "why": "brand_missing:corsair"
+    },
+    {
+     "title": "Mozart K95 Incipit.png",
+     "why": "subject:screenshot"
+    },
+    {
+     "title": "HMS Dianthus damage from ramming U-boat IWM A 11949.jpg",
+     "why": "brand_missing:corsair"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Corsair K55 RGB",
+    "brand": "海盗船",
+    "cat": "键盘",
+    "model": [
+     "k55"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 21,
+   "sample": [
+    {
+     "title": "Mechanical Keyboard.jpg",
+     "why": "brand_missing:corsair"
+    },
+    {
+     "title": "JRW Shinkansen Series 100 K55.jpg",
+     "why": "brand_missing:corsair"
+    },
+    {
+     "title": "JRW Shinkansen Series 100 K55 sets 122-5055.jpg",
+     "why": "brand_missing:corsair"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Razer Huntsman V2",
+    "brand": "雷蛇",
+    "cat": "键盘",
+    "model": [
+     "huntsman v2",
+     "huntsman"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 2,
+   "sample": [
+    {
+     "title": "Semi-annual wholesale trade list of the Shenandoah Nursery (IA CAT31299896).pdf",
+     "why": "subject:accessory"
+    },
+    {
+     "title": "The Poetical Works, in 10 Vols., (Vol. VI) Marmion (IA dli.granth.35725).pdf",
+     "why": "brand_missing:razer"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Logitech G413",
+    "brand": "罗技",
+    "cat": "键盘",
+    "model": [
+     "g413"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 18,
+   "sample": [
+    {
+     "title": "Philoctetes Hermonax Louvre G413.jpg",
+     "why": "subject:people"
+    },
+    {
+     "title": "BJ Blommers G413.png",
+     "why": "subject:people"
+    },
+    {
+     "title": "Minidoka Relocation Center, Hunt, Idaho. Looking down the rows of barracks westward from block 44. . . . - NARA - 539533.tif",
+     "why": "brand_missing:logitech"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Razer Cynosa V2",
+    "brand": "雷蛇",
+    "cat": "键盘",
+    "model": [
+     "cynosa"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 0,
+   "sample": []
+  },
+  {
+   "item": {
+    "name": "Cherry G80-3000",
+    "brand": "樱桃",
+    "cat": "键盘",
+    "model": [
+     "g80-3000",
+     "g80 3000"
+    ]
+   },
+   "result": "SKIP",
+   "why": "商品名已存在"
+  },
+  {
+   "item": {
+    "name": "Keychron K8 Pro",
+    "brand": "Keychron",
+    "cat": "键盘",
+    "model": [
+     "k8 pro",
+     "k8"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 18,
+   "sample": [
+    {
+     "title": "ASUS PB278Q (PXL 20250914 223256075).jpg",
+     "why": "subject:screenshot"
+    },
+    {
+     "title": "Kubernetes.png",
+     "why": "subject:logo,diagram"
+    },
+    {
+     "title": "K8 logo.png",
+     "why": "subject:logo"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Logitech G502 Hero",
+    "brand": "罗技",
+    "cat": "鼠标",
+    "model": [
+     "g502"
+    ]
+   },
+   "result": "SKIP",
+   "why": "商品名已存在"
+  },
+  {
+   "item": {
+    "name": "Logitech MX Anywhere 3",
+    "brand": "罗技",
+    "cat": "鼠标",
+    "model": [
+     "mx anywhere 3",
+     "mx anywhere"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 20,
+   "sample": [
+    {
+     "title": "Logi MX Anywhare 3 Mouse.jpg",
+     "why": "brand_missing:logitech"
+    },
+    {
+     "title": "ArbordeTuleOaxaca MX.jpg",
+     "why": "brand_missing:logitech"
+    },
+    {
+     "title": "Monte Alban West Side Platform.jpg",
+     "why": "brand_missing:logitech"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Razer Viper Mini",
+    "brand": "雷蛇",
+    "cat": "鼠标",
+    "model": [
+     "viper mini"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 10,
+   "sample": [
+    {
+     "title": "Epoca 1886-01-17, nr. 048.pdf",
+     "why": "brand_missing:razer"
+    },
+    {
+     "title": "The cure of old age, and preservation of youth (IA cureofoldagepres0102baco).pdf",
+     "why": "brand_missing:razer"
+    },
+    {
+     "title": "Shakespeare's tragedy of Pericles; (IA tragedyofpericle00shak).pdf",
+     "why": "brand_missing:razer"
+    }
+   ]
+  },
+  {
+   "item": {
+    "dbName": "雷柏 VT9",
+    "model": [
+     "vt9"
+    ]
+   },
+   "result": "OK",
+   "productId": 69,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Leve%C3%A4kaistatie_VT9_Aura.jpg/500px-Leve%C3%A4kaistatie_VT9_Aura.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 2.5",
+   "title": "Leveäkaistatie VT9 Aura.jpg",
+   "via": "vt9",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "Microsoft Pro IntelliMouse",
+    "brand": "微软",
+    "cat": "鼠标",
+    "model": [
+     "intellimouse"
+    ]
+   },
+   "result": "OK",
+   "productId": 45500,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/5_Tastenmaus_Microsoft_IntelliMouse_Optical_Black.jpg/500px-5_Tastenmaus_Microsoft_IntelliMouse_Optical_Black.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 2.5",
+   "title": "5 Tastenmaus Microsoft IntelliMouse Optical Black.jpg",
+   "via": "Microsoft intellimouse",
+   "brand": "微软",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "TP-Link Archer C6",
+    "brand": "TP-Link",
+    "cat": "路由器",
+    "model": [
+     "archer c6"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 25,
+   "sample": [
+    {
+     "title": "Field books - 1969-1979 (IA fieldbooks1969100wooda).pdf",
+     "why": "brand_missing:tp link"
+    },
+    {
+     "title": "A treatise on the law of damages - embracing an elementary exposition of the law and also its application to particular subjects of contract and tort (IA cu31924018793608).pdf",
+     "why": "subject:packaging"
+    },
+    {
+     "title": "Lloyd's Register of Shipping 1811 Underwriters.pdf",
+     "why": "brand_missing:tp link"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "ASUS RT-AX55",
+    "brand": "华硕",
+    "cat": "路由器",
+    "model": [
+     "rt-ax55"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 0,
+   "sample": []
+  },
+  {
+   "item": {
+    "name": "TP-Link Deco M5",
+    "brand": "TP-Link",
+    "cat": "路由器",
+    "model": [
+     "deco m5"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 22,
+   "sample": [
+    {
+     "title": "De morbo gallico - a treatise of the French disease, publish'd above 200 years past (IA demorbogallicotr00hutt).pdf",
+     "why": "brand_missing:tp link"
+    },
+    {
+     "title": "Nouvelle méthode pour corriger la distance de la lune aux astres de toutes les causes qui peuvent l'altérer 1831 (IA nouvellemethode00manc).pdf",
+     "why": "brand_missing:tp link"
+    },
+    {
+     "title": "Monitorul Oficial al României 1882-12-19, nr. 214.pdf",
+     "why": "brand_missing:tp link"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Sony A7 III",
+    "brand": "索尼",
+    "cat": "相机",
+    "model": [
+     "a7 iii",
+     "alpha 7 iii",
+     "ilce-7m3"
+    ]
+   },
+   "result": "SKIP",
+   "why": "商品名已存在"
+  },
+  {
+   "item": {
+    "name": "Fujifilm X-S10",
+    "brand": "富士",
+    "cat": "相机",
+    "model": [
+     "x-s10",
+     "xs10"
+    ]
+   },
+   "result": "SKIP",
+   "why": "商品名已存在"
+  },
+  {
+   "item": {
+    "name": "Nikon Z50",
+    "brand": "尼康",
+    "cat": "相机",
+    "model": [
+     "z50"
+    ]
+   },
+   "result": "SKIP",
+   "why": "商品名已存在"
+  },
+  {
+   "item": {
+    "name": "Panasonic Lumix G7",
+    "brand": "松下",
+    "cat": "相机",
+    "model": [
+     "lumix g7",
+     "g7"
+    ]
+   },
+   "result": "SKIP",
+   "why": "商品名已存在"
+  },
+  {
+   "item": {
+    "name": "AMD Ryzen 5 3600",
+    "brand": "AMD",
+    "cat": "CPU",
+    "model": [
+     "ryzen 5 3600",
+     "5 3600"
+    ]
+   },
+   "result": "SKIP",
+   "why": "商品名已存在"
+  },
+  {
+   "item": {
+    "name": "AMD Ryzen 7 5800X",
+    "brand": "AMD",
+    "cat": "CPU",
+    "model": [
+     "5800x"
+    ]
+   },
+   "result": "SKIP",
+   "why": "商品名已存在"
+  },
+  {
+   "item": {
+    "name": "Intel Core i5-11400",
+    "brand": "Intel",
+    "cat": "CPU",
+    "model": [
+     "i5-11400",
+     "11400"
+    ]
+   },
+   "result": "SKIP",
+   "why": "商品名已存在"
+  },
+  {
+   "item": {
+    "name": "Intel Core i7-12700K",
+    "brand": "Intel",
+    "cat": "CPU",
+    "model": [
+     "i7-12700k",
+     "12700k"
+    ]
+   },
+   "result": "SKIP",
+   "why": "商品名已存在"
+  },
+  {
+   "item": {
+    "name": "Corsair Vengeance RGB Pro 32GB",
+    "brand": "海盗船",
+    "cat": "内存",
+    "model": [
+     "vengeance rgb pro"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 12,
+   "sample": [
+    {
+     "title": "This GPU is the future of Gaming! (RTX 4080 Super - Ryzen 7 7800X3D) Timelapse PC build.webm",
+     "why": "subject:store,screenshot,license_review_needed,accessory,internal_part"
+    },
+    {
+     "title": "INSANE open-air Custom Loop Water System ft. Corsair (RTX 4090 - Ryzen 9 7950X3D).webm",
+     "why": "subject:store,screenshot,license_review_needed,accessory,internal_part"
+    },
+    {
+     "title": "Elocution made easy - containing rules and selections for declamation and reading, with figures illustrative of gesture and vocal gymnastics (IA elocutionmadeeas00clag).pdf",
+     "why": "brand_missing:corsair"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "G.Skill Trident Z Neo 32GB",
+    "brand": "芝奇",
+    "cat": "内存",
+    "model": [
+     "trident z neo",
+     "trident z"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 25,
+   "sample": [
+    {
+     "title": "Majolica and fayence- Italian, Sicilian, Majorcan, Hispano-Moresque and Persian (IA cu31924031222817).pdf",
+     "why": "subject:packaging"
+    },
+    {
+     "title": "Catalogue of coins of all countries - part III of the great collection formed at Vicksburgh, Miss. (10-25-1888) (IA catalogueofcoins00wood 43).pdf",
+     "why": "brand_missing:g skill"
+    },
+    {
+     "title": "Catalogue of the collection of coins and numismatic library, belonging to D. Strasser ... (01-11-1884) (IA catalogueofcolle00hase 10).pdf",
+     "why": "brand_missing:g skill"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "ADATA XPG Lancer 32GB",
+    "brand": "威刚",
+    "cat": "内存",
+    "model": [
+     "lancer"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 22,
+   "sample": [
+    {
+     "title": "Epoca 1886-03-13, nr. 094.pdf",
+     "why": "brand_missing:adata"
+    },
+    {
+     "title": "Epoca 1887-04-24, nr. 423.pdf",
+     "why": "brand_missing:adata"
+    },
+    {
+     "title": "20180512 B-1B Lancer Dyess AFB Air Show 2018 60.jpg",
+     "why": "brand_missing:adata"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Dell OptiPlex 7090",
+    "brand": "戴尔",
+    "cat": "台式电脑",
+    "model": [
+     "optiplex 7090",
+     "optiplex"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 0,
+   "sample": []
+  },
+  {
+   "item": {
+    "name": "HP ProDesk 400 G7",
+    "brand": "惠普",
+    "cat": "台式电脑",
+    "model": [
+     "prodesk 400",
+     "prodesk"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 1,
+   "sample": [
+    {
+     "title": "Causal evidence for the role of the sensory visual cortex in visual short-term memory maintenance.pdf",
+     "why": "subject:screenshot"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Lenovo ThinkCentre M720q",
+    "brand": "联想",
+    "cat": "台式电脑",
+    "model": [
+     "thinkcentre m720",
+     "thinkcentre"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 0,
+   "sample": []
+  },
+  {
+   "item": {
+    "name": "Samsung Galaxy S23",
+    "brand": "三星",
+    "cat": "手机",
+    "model": [
+     "galaxy s23"
+    ]
+   },
+   "result": "SKIP",
+   "why": "商品名已存在"
+  },
+  {
+   "item": {
+    "name": "Samsung Galaxy S22 Ultra",
+    "brand": "三星",
+    "cat": "手机",
+    "model": [
+     "s22 ultra",
+     "galaxy s22 ultra"
+    ]
+   },
+   "result": "SKIP",
+   "why": "商品名已存在"
+  },
+  {
+   "item": {
+    "name": "iPhone 14 Pro",
+    "brand": "苹果",
+    "cat": "手机",
+    "model": [
+     "iphone 14 pro"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 42,
+   "sample": [
+    {
+     "title": "IPhone 13 Pro wordmark.svg",
+     "why": "subject:logo"
+    },
+    {
+     "title": "Apple iPhone 13 Pro.jpg",
+     "why": "model_missing:iphone 14 pro"
+    },
+    {
+     "title": "IPhone 14 Pro vector.svg",
+     "why": "subject:logo"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "iPhone SE (3rd generation)",
+    "brand": "苹果",
+    "cat": "手机",
+    "model": [
+     "iphone se"
+    ]
+   },
+   "result": "SKIP",
+   "why": "商品名已存在"
+  },
+  {
+   "item": {
+    "dbName": "索尼 PS5",
+    "model": [
+     "playstation 5",
+     "ps5"
+    ]
+   },
+   "result": "OK",
+   "productId": 90,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Immagine_Playstation_5.jpg/500px-Immagine_Playstation_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 4.0",
+   "title": "Immagine Playstation 5.jpg",
+   "via": "playstation 5",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "Samsung Galaxy Watch 5",
+    "brand": "三星",
+    "cat": "智能手表",
+    "model": [
+     "galaxy watch 5",
+     "watch 5"
+    ]
+   },
+   "result": "SKIP",
+   "why": "商品名已存在"
+  },
+  {
+   "item": {
+    "name": "Apple Watch SE",
+    "brand": "苹果",
+    "cat": "智能手表",
+    "model": [
+     "watch se",
+     "apple watch se"
+    ]
+   },
+   "result": "OK",
+   "productId": 45501,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Apple_Watch_SE_2_%28GPS_%2B_Cellular%2C_40mm%2C_Midnight%29_with_Anchor_Blue_Sport_Loop.jpg/500px-Apple_Watch_SE_2_%28GPS_%2B_Cellular%2C_40mm%2C_Midnight%29_with_Anchor_Blue_Sport_Loop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC0",
+   "title": "Apple Watch SE 2 (GPS + Cellular, 40mm, Midnight) with Anchor Blue Sport Loop.jpg",
+   "via": "Apple watch se",
+   "brand": "苹果",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "dbName": "苹果 AirPods Pro 2",
+    "model": [
+     "airpods pro 2",
+     "airpods pro (2nd"
+    ]
+   },
+   "result": "OK",
+   "productId": 49,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/AirPods_Pro_2.jpg/500px-AirPods_Pro_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 4.0",
+   "title": "AirPods Pro 2.jpg",
+   "via": "airpods pro 2",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "dbName": "森海塞尔 Momentum 4",
+    "model": [
+     "momentum 4"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 40,
+   "sample": [
+    {
+     "title": "Attraction - Secrets of Gravity.pdf",
+     "why": "model_missing:momentum 4"
+    },
+    {
+     "title": "Stochastic Normalisations as Bayesian Learning.pdf",
+     "why": "model_missing:momentum 4"
+    },
+    {
+     "title": "DEPARTMENT OF TRANSPORTATION AND RELATED AGENCIES APPROPRIATIONS FOR 2002 (IA gov.gpo.fdsys.CHRG-107hhrg77252).pdf",
+     "why": "model_missing:momentum 4"
+    }
+   ]
+  },
+  {
+   "item": {
+    "dbName": "铁三角 ATH-M50x",
+    "model": [
+     "ath-m50x"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 0,
+   "sample": []
+  },
+  {
+   "item": {
+    "dbName": "海盗船 K70",
+    "model": [
+     "k70"
+    ]
+   },
+   "result": "OK",
+   "productId": 64,
+   "image": "https://upload.wikimedia.org/wikipedia/commons/2/2f/VW_K70.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "license": "CC BY-SA 3.0",
+   "title": "VW K70.jpg",
+   "via": "k70",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "dbName": "索尼 PS5",
+    "model": [
+     "playstation 5",
+     "ps5"
+    ]
+   },
+   "result": "SKIP",
+   "why": "已有合格图"
+  },
+  {
+   "item": {
+    "dbName": "Steam Deck OLED",
+    "model": [
+     "steam deck oled"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 20,
+   "sample": [
+    {
+     "title": "SDO in payload fairing.jpg",
+     "why": "model_missing:steam deck oled"
+    },
+    {
+     "title": "SDO Launch and Deployment.ogv",
+     "why": "model_missing:steam deck oled"
+    },
+    {
+     "title": "August 2010 CME SDO Multi-Wavelength.jpg",
+     "why": "model_missing:steam deck oled"
+    }
+   ]
+  },
+  {
+   "item": {
+    "dbName": "芝奇幻光戟 32GB",
+    "model": [
+     "trident z rgb",
+     "trident z"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 20,
+   "sample": [
+    {
+     "title": "EUR 2019-225.pdf",
+     "why": "model_missing:trident z rgb|trident z"
+    },
+    {
+     "title": "Gigabyte RTX 4090 Gaming OC UNBOXING MOUNT GPU HOLDER.webm",
+     "why": "subject:packaging,comparison,screenshot,license_review_needed,people,accessory,internal_part"
+    },
+    {
+     "title": "OJ L No. 39 of 2012 - CS Czech.pdf",
+     "why": "model_missing:trident z rgb|trident z"
+    }
+   ]
+  },
+  {
+   "item": {
+    "dbName": "海盗船复仇者 32GB",
+    "model": [
+     "vengeance lpx"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 5,
+   "sample": [
+    {
+     "title": "ATX computer case - left - 2018-05-18.jpg",
+     "why": "subject:packaging,people,accessory,internal_part"
+    },
+    {
+     "title": "Luciani Somnium, Charon, Piscator et De luctu (IA lucianisomniumch00luci).pdf",
+     "why": "model_missing:vengeance lpx"
+    },
+    {
+     "title": "Sermons preach'd upon several occasions (IA sermonspreachdup00wilk).pdf",
+     "why": "model_missing:vengeance lpx"
+    }
+   ]
+  },
+  {
+   "item": {
+    "dbName": "英睿达 32GB",
+    "model": [
+     "ballistix max",
+     "ballistix"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 0,
+   "sample": []
+  },
+  {
+   "item": {
+    "dbName": "华硕 RT-AX86U Pro",
+    "model": [
+     "rt-ax86u pro",
+     "rt-ax86u"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 0,
+   "sample": []
+  },
+  {
+   "item": {
+    "dbName": "华硕 RT-AX88U Pro",
+    "model": [
+     "rt-ax88u pro",
+     "rt-ax88u"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 0,
+   "sample": []
+  },
+  {
+   "item": {
+    "dbName": "铠侠 RC20 1TB",
+    "model": [
+     "rc20",
+     "exceria g2"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 20,
+   "sample": [
+    {
+     "title": "JohnGortonWW21941.jpg",
+     "why": "model_missing:rc20|exceria g2"
+    },
+    {
+     "title": "John Gorton 1969.jpg",
+     "why": "model_missing:rc20|exceria g2"
+    },
+    {
+     "title": "John Gorton, Fred White, René Maheu.jpg",
+     "why": "model_missing:rc20|exceria g2"
+    }
+   ]
+  },
+  {
+   "item": {
+    "dbName": "RTX 4090",
+    "model": [
+     "rtx 4090"
+    ]
+   },
+   "result": "OK",
+   "productId": 98,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Asus_Strix_RTX_4090.jpg/500px-Asus_Strix_RTX_4090.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 4.0",
+   "title": "Asus Strix RTX 4090.jpg",
+   "via": "rtx 4090",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "dbName": "MacBook Pro 14",
+    "model": [
+     "macbook pro 14"
+    ]
+   },
+   "result": "OK",
+   "productId": 24,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/M3_Macbook_Pro_14_inch_Space_Grey_model.jpg/500px-M3_Macbook_Pro_14_inch_Space_Grey_model.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 4.0",
+   "title": "M3 Macbook Pro 14 inch Space Grey model.jpg",
+   "via": "macbook pro 14",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "ThinkPad T480",
+    "brand": "联想",
+    "cat": "笔记本电脑",
+    "model": [
+     "thinkpad t480",
+     "t480"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 8,
+   "sample": [
+    {
+     "title": "Lenovo csa01.jpg",
+     "why": "model_missing:thinkpad t480|t480"
+    },
+    {
+     "title": "ThinkPad T480.jpg",
+     "why": "brand_missing:lenovo"
+    },
+    {
+     "title": "ThinkPad T480 and T470s.jpg",
+     "why": "subject:comparison"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "ThinkPad X220",
+    "brand": "联想",
+    "cat": "笔记本电脑",
+    "model": [
+     "thinkpad x220",
+     "x220"
+    ]
+   },
+   "result": "OK",
+   "productId": 45502,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Left_side_ports_Lenovo_ThinkPad_X220.jpg/500px-Left_side_ports_Lenovo_ThinkPad_X220.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 4.0",
+   "title": "Left side ports Lenovo ThinkPad X220.jpg",
+   "via": "Lenovo thinkpad x220",
+   "brand": "联想",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "ThinkPad T430",
+    "brand": "联想",
+    "cat": "笔记本电脑",
+    "model": [
+     "t430"
+    ]
+   },
+   "result": "OK",
+   "productId": 45503,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Lenovo_ThinkPad_T430_UEFI_BIOS_1.16_Startup_Interrupt_Menu.jpg/500px-Lenovo_ThinkPad_T430_UEFI_BIOS_1.16_Startup_Interrupt_Menu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 4.0",
+   "title": "Lenovo ThinkPad T430 UEFI BIOS 1.16 Startup Interrupt Menu.jpg",
+   "via": "Lenovo t430",
+   "brand": "联想",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "Dell Latitude 7490",
+    "brand": "戴尔",
+    "cat": "笔记本电脑",
+    "model": [
+     "latitude 7490"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 20,
+   "sample": [
+    {
+     "title": "Dell Latitude 7490 running Ubuntu Cinnamon 23.10.jpg",
+     "why": "subject:screenshot"
+    },
+    {
+     "title": "State guide to Medicaid cost containment (IA stateguidetomedi00spit).pdf",
+     "why": "brand_missing:dell"
+    },
+    {
+     "title": "State guide to Medicaid cost containment (IA stateguidetomedi00spit 0).pdf",
+     "why": "brand_missing:dell"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Dell Latitude E6430",
+    "brand": "戴尔",
+    "cat": "笔记本电脑",
+    "model": [
+     "e6430"
+    ]
+   },
+   "result": "OK",
+   "productId": 45504,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Dell_Latitude_e6430_atg_sides_%2826032994216%29.jpg/500px-Dell_Latitude_e6430_atg_sides_%2826032994216%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY 2.0",
+   "title": "Dell Latitude e6430 atg sides (26032994216).jpg",
+   "via": "Dell e6430",
+   "brand": "戴尔",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "HP EliteBook 840 G3",
+    "brand": "惠普",
+    "cat": "笔记本电脑",
+    "model": [
+     "elitebook 840"
+    ]
+   },
+   "result": "OK",
+   "productId": 45505,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/HP_EliteBook_840_G4.png/500px-HP_EliteBook_840_G4.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 4.0",
+   "title": "HP EliteBook 840 G4.png",
+   "via": "HP elitebook 840",
+   "brand": "惠普",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "MacBook Air M1",
+    "brand": "苹果",
+    "cat": "笔记本电脑",
+    "model": [
+     "macbook air (m1",
+     "macbook air m1"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 18,
+   "sample": [
+    {
+     "title": "Multiprime Blum-Blum-Shub pseudorandom number generator (IA multiprimeblumbl1094550483).pdf",
+     "why": "subject:comparison"
+    },
+    {
+     "title": "MacBook Air M1.png",
+     "why": "brand_missing:apple"
+    },
+    {
+     "title": "Strike package-target pairing real-time optimization for Airborne Battlespace Command and Control (IA strikepackagetar109455184).pdf",
+     "why": "brand_missing:apple"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Acer Aspire One D255",
+    "brand": "宏碁",
+    "cat": "笔记本电脑",
+    "model": [
+     "aspire one"
+    ]
+   },
+   "result": "OK",
+   "productId": 45506,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Acer_Aspire_One_D250.jpg/500px-Acer_Aspire_One_D250.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 2.0",
+   "title": "Acer Aspire One D250.jpg",
+   "via": "Acer aspire one",
+   "brand": "宏碁",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "ASUS ZenBook UX31A",
+    "brand": "华硕",
+    "cat": "笔记本电脑",
+    "model": [
+     "ux31a",
+     "zenbook ux31"
+    ]
+   },
+   "result": "OK",
+   "productId": 45507,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Asus_UX31A_lid.JPG/500px-Asus_UX31A_lid.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 3.0",
+   "title": "Asus UX31A lid.JPG",
+   "via": "ASUS ux31a",
+   "brand": "华硕",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "ASUS ZenBook UX305",
+    "brand": "华硕",
+    "cat": "笔记本电脑",
+    "model": [
+     "ux305"
+    ]
+   },
+   "result": "OK",
+   "productId": 45508,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/ASUS_Zenbook_UX305.jpg/500px-ASUS_Zenbook_UX305.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 4.0",
+   "title": "ASUS Zenbook UX305.jpg",
+   "via": "ASUS ux305",
+   "brand": "华硕",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "Dell U2415",
+    "brand": "戴尔",
+    "cat": "显示器",
+    "model": [
+     "u2415"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 3,
+   "sample": [
+    {
+     "title": "T430-three-displays-and-dock-4337.jpg",
+     "why": "subject:accessory"
+    },
+    {
+     "title": "U2415.svg",
+     "why": "subject:logo,accessory"
+    },
+    {
+     "title": "GNU Unifont - U+2415.svg",
+     "why": "subject:logo"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Dell U2412M",
+    "brand": "戴尔",
+    "cat": "显示器",
+    "model": [
+     "u2412m"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 0,
+   "sample": []
+  },
+  {
+   "item": {
+    "name": "ASUS PG279Q",
+    "brand": "华硕",
+    "cat": "显示器",
+    "model": [
+     "pg279q"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 0,
+   "sample": []
+  },
+  {
+   "item": {
+    "name": "BenQ EW3270U",
+    "brand": "明基",
+    "cat": "显示器",
+    "model": [
+     "ew3270u"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 0,
+   "sample": []
+  },
+  {
+   "item": {
+    "name": "LG 27UK850",
+    "brand": "LG",
+    "cat": "显示器",
+    "model": [
+     "27uk850"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 0,
+   "sample": []
+  },
+  {
+   "item": {
+    "name": "Nikon D3500",
+    "brand": "尼康",
+    "cat": "相机",
+    "model": [
+     "d3500"
+    ]
+   },
+   "result": "OK",
+   "productId": 45509,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Nikon_D3500_28_Nov_2018a.jpg/500px-Nikon_D3500_28_Nov_2018a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 4.0",
+   "title": "Nikon D3500 28 Nov 2018a.jpg",
+   "via": "Nikon d3500",
+   "brand": "尼康",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "Nikon D3300",
+    "brand": "尼康",
+    "cat": "相机",
+    "model": [
+     "d3300"
+    ]
+   },
+   "result": "OK",
+   "productId": 45510,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Nikon_D3300_and_parts_2014_CP%2B.jpg/500px-Nikon_D3300_and_parts_2014_CP%2B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 3.0",
+   "title": "Nikon D3300 and parts 2014 CP+.jpg",
+   "via": "Nikon d3300",
+   "brand": "尼康",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "Nikon D5300",
+    "brand": "尼康",
+    "cat": "相机",
+    "model": [
+     "d5300"
+    ]
+   },
+   "result": "OK",
+   "productId": 45511,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Nikon_d5300_up.jpg/500px-Nikon_d5300_up.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 3.0",
+   "title": "Nikon d5300 up.jpg",
+   "via": "Nikon d5300",
+   "brand": "尼康",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "Nikon D7100",
+    "brand": "尼康",
+    "cat": "相机",
+    "model": [
+     "d7100"
+    ]
+   },
+   "result": "OK",
+   "productId": 45512,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Nikon_D7100_DSC7310EC.jpg/500px-Nikon_D7100_DSC7310EC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 3.0",
+   "title": "Nikon D7100 DSC7310EC.jpg",
+   "via": "Nikon d7100",
+   "brand": "尼康",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "Nikon D7200",
+    "brand": "尼康",
+    "cat": "相机",
+    "model": [
+     "d7200"
+    ]
+   },
+   "result": "OK",
+   "productId": 45513,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Nikon_D7200_1_2017-02-23.jpg/500px-Nikon_D7200_1_2017-02-23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 4.0",
+   "title": "Nikon D7200 1 2017-02-23.jpg",
+   "via": "Nikon d7200",
+   "brand": "尼康",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "Nikon D500",
+    "brand": "尼康",
+    "cat": "相机",
+    "model": [
+     "nikon d500"
+    ]
+   },
+   "result": "OK",
+   "productId": 45514,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Nikon_D500_front_2016_Nikon_Museum.jpg/500px-Nikon_D500_front_2016_Nikon_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 4.0",
+   "title": "Nikon D500 front 2016 Nikon Museum.jpg",
+   "via": "Nikon nikon d500",
+   "brand": "尼康",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "Canon EOS 250D",
+    "brand": "佳能",
+    "cat": "相机",
+    "model": [
+     "eos 250d"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 22,
+   "sample": [
+    {
+     "title": "HK MKE 旺角東 Mong Kok East 新世紀廣場 MOKO Grand Century Place One office 佳能 Canon Camera products 體驗館 Showroom December 2021 SS2 20.jpg",
+     "why": "model_missing:eos 250d"
+    },
+    {
+     "title": "HK MKE 旺角東 Mong Kok East 新世紀廣場 MOKO Grand Century Place One office 佳能 Canon Camera products 體驗館 Showroom December 2021 SS2 21.jpg",
+     "why": "model_missing:eos 250d"
+    },
+    {
+     "title": "Canon EOS Kiss X10 11 May 2019b.jpg",
+     "why": "brand_missing:佳能"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Canon EOS 200D",
+    "brand": "佳能",
+    "cat": "相机",
+    "model": [
+     "eos 200d"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 20,
+   "sample": [
+    {
+     "title": "Canon EOS Digital Rebel SL2 - front view.jpg",
+     "why": "brand_missing:佳能"
+    },
+    {
+     "title": "Canon EOS 200D 6454.jpg",
+     "why": "brand_missing:佳能"
+    },
+    {
+     "title": "Canon EOS 200D 6455.jpg",
+     "why": "brand_missing:佳能"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Canon EOS 80D",
+    "brand": "佳能",
+    "cat": "相机",
+    "model": [
+     "eos 80d"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 20,
+   "sample": [
+    {
+     "title": "Canon 80D 1.jpg",
+     "why": "brand_missing:佳能"
+    },
+    {
+     "title": "Canon 80D-2.jpg",
+     "why": "brand_missing:佳能"
+    },
+    {
+     "title": "Canon EOS 80D 1.JPG",
+     "why": "brand_missing:佳能"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Canon EOS 700D",
+    "brand": "佳能",
+    "cat": "相机",
+    "model": [
+     "eos 700d"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 23,
+   "sample": [
+    {
+     "title": "Canon EOS 700D 18-55 Kit.jpg",
+     "why": "brand_missing:佳能"
+    },
+    {
+     "title": "700D Front.jpg",
+     "why": "brand_missing:佳能"
+    },
+    {
+     "title": "MJH 1203.jpg",
+     "why": "brand_missing:佳能"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Canon EOS 1300D",
+    "brand": "佳能",
+    "cat": "相机",
+    "model": [
+     "eos 1300d"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 21,
+   "sample": [
+    {
+     "title": "Canon 1300D.jpg",
+     "why": "brand_missing:佳能"
+    },
+    {
+     "title": "Police booth and gate piers, Woodside 2.jpg",
+     "why": "subject:store"
+    },
+    {
+     "title": "Toxteth library 201712.jpg",
+     "why": "brand_missing:佳能"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Canon EOS M50",
+    "brand": "佳能",
+    "cat": "相机",
+    "model": [
+     "eos m50"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 29,
+   "sample": [
+    {
+     "title": "Canon Eos Kiss M 29 mar 2018d.jpg",
+     "why": "brand_missing:佳能"
+    },
+    {
+     "title": "2018 04 EOS M50 IMG 4621b.jpg",
+     "why": "brand_missing:佳能"
+    },
+    {
+     "title": "2018 04 EOS M50 IMG 4626b.jpg",
+     "why": "brand_missing:佳能"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Sony A6000",
+    "brand": "索尼",
+    "cat": "相机",
+    "model": [
+     "a6000",
+     "ilce-6000"
+    ]
+   },
+   "result": "OK",
+   "productId": 45515,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Sony_Alpha_ILCE-6000_APS-C-frame_camera_with_body_cap.jpeg/500px-Sony_Alpha_ILCE-6000_APS-C-frame_camera_with_body_cap.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 3.0",
+   "title": "Sony Alpha ILCE-6000 APS-C-frame camera with body cap.jpeg",
+   "via": "Sony a6000",
+   "brand": "索尼",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "Sony A6400",
+    "brand": "索尼",
+    "cat": "相机",
+    "model": [
+     "a6400",
+     "ilce-6400"
+    ]
+   },
+   "result": "OK",
+   "productId": 45516,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Sony_ILCE-6400_27_Feb_2019c.jpg/500px-Sony_ILCE-6400_27_Feb_2019c.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 4.0",
+   "title": "Sony ILCE-6400 27 Feb 2019c.jpg",
+   "via": "Sony a6400",
+   "brand": "索尼",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "Fujifilm X-T30",
+    "brand": "富士",
+    "cat": "相机",
+    "model": [
+     "x-t30",
+     "xt-30"
+    ]
+   },
+   "result": "OK",
+   "productId": 45517,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Fujifilm_X-T30_27_Mar_2019b.jpg/500px-Fujifilm_X-T30_27_Mar_2019b.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 4.0",
+   "title": "Fujifilm X-T30 27 Mar 2019b.jpg",
+   "via": "Fujifilm x-t30",
+   "brand": "富士",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "Fujifilm X100F",
+    "brand": "富士",
+    "cat": "相机",
+    "model": [
+     "x100f"
+    ]
+   },
+   "result": "OK",
+   "productId": 45518,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Fujifilm_X100F.jpg/500px-Fujifilm_X100F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 4.0",
+   "title": "Fujifilm X100F.jpg",
+   "via": "Fujifilm x100f",
+   "brand": "富士",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "Panasonic LX100",
+    "brand": "松下",
+    "cat": "相机",
+    "model": [
+     "lx100",
+     "dmc-lx100"
+    ]
+   },
+   "result": "OK",
+   "productId": 45519,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Panasonic_DMC-LX100_-_panoramio.jpg/500px-Panasonic_DMC-LX100_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY 3.0",
+   "title": "Panasonic DMC-LX100 - panoramio.jpg",
+   "via": "Panasonic lx100",
+   "brand": "松下",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "Panasonic G85",
+    "brand": "松下",
+    "cat": "相机",
+    "model": [
+     "g85",
+     "dmc-g85"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 40,
+   "sample": [
+    {
+     "title": "Panasonic Lumix DMC-G80.jpg",
+     "why": "model_missing:g85|dmc g85"
+    },
+    {
+     "title": "EVF Panasonic Lumix DMC-G80.jpg",
+     "why": "model_missing:g85|dmc g85"
+    },
+    {
+     "title": "Test shot for Panasonic G80 for explaining EVF.jpg",
+     "why": "model_missing:g85|dmc g85"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Canon PowerShot G7 X",
+    "brand": "佳能",
+    "cat": "相机",
+    "model": [
+     "g7 x",
+     "g7x"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 40,
+   "sample": [
+    {
+     "title": "文淵閣四庫全書 0537冊.djvu",
+     "why": "brand_missing:佳能"
+    },
+    {
+     "title": "光緒香山縣志(十四).djvu",
+     "why": "brand_missing:佳能"
+    },
+    {
+     "title": "粟香三筆(二).djvu",
+     "why": "brand_missing:佳能"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Sennheiser HD 599",
+    "brand": "森海塞尔",
+    "cat": "耳机",
+    "model": [
+     "hd 599"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 21,
+   "sample": [
+    {
+     "title": "The SNARC effect is associated with worse mathematical intelligence and poorer time estimation.pdf",
+     "why": "subject:screenshot"
+    },
+    {
+     "title": "Bob.svg",
+     "why": "subject:logo,people"
+    },
+    {
+     "title": "Autoretrat de Pelegrí Clavé.jpg",
+     "why": "subject:people"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Sennheiser HD 518",
+    "brand": "森海塞尔",
+    "cat": "耳机",
+    "model": [
+     "hd 518"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 20,
+   "sample": [
+    {
+     "title": "Sanyo kanko P-RU638BB fuzizyuu HD-I.jpg",
+     "why": "brand_missing:sennheiser"
+    },
+    {
+     "title": "Woodlawn Avenue South, 516-518, Elm Heights HD.jpg",
+     "why": "brand_missing:sennheiser"
+    },
+    {
+     "title": "Park Avenue South, 518, Elm Heights HD.jpg",
+     "why": "brand_missing:sennheiser"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Sennheiser HD 650",
+    "brand": "森海塞尔",
+    "cat": "耳机",
+    "model": [
+     "hd 650"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 20,
+   "sample": [
+    {
+     "title": "Sennheiser HD650.jpg",
+     "why": "model_missing:hd 650"
+    },
+    {
+     "title": "Sennheiser HD650 headphones.jpg",
+     "why": "model_missing:hd 650"
+    },
+    {
+     "title": "Keinopaa-ja-iso-kaiuton.jpg",
+     "why": "brand_missing:sennheiser"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Sennheiser HD 25",
+    "brand": "森海塞尔",
+    "cat": "耳机",
+    "model": [
+     "hd 25"
+    ]
+   },
+   "result": "OK",
+   "productId": 45520,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Numark_Omni_Control_%2B_Sennheiser_HD-25-1_II_%2B_Behringer_MS40.jpg/500px-Numark_Omni_Control_%2B_Sennheiser_HD-25-1_II_%2B_Behringer_MS40.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 2.0",
+   "title": "Numark Omni Control + Sennheiser HD-25-1 II + Behringer MS40.jpg",
+   "via": "Sennheiser hd 25",
+   "brand": "森海塞尔",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "Sony MDR-7506",
+    "brand": "索尼",
+    "cat": "耳机",
+    "model": [
+     "7506"
+    ]
+   },
+   "result": "OK",
+   "productId": 45521,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Sony_MDR-7506_headphones.jpg/500px-Sony_MDR-7506_headphones.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 4.0",
+   "title": "Sony MDR-7506 headphones.jpg",
+   "via": "Sony 7506",
+   "brand": "索尼",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "Bose QuietComfort 25",
+    "brand": "Bose",
+    "cat": "耳机",
+    "model": [
+     "quietcomfort 25",
+     "qc25"
+    ]
+   },
+   "result": "OK",
+   "productId": 45522,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Bose_QuietComfort_25_Acoustic_Noise_Cancelling_Headphones.jpg/500px-Bose_QuietComfort_25_Acoustic_Noise_Cancelling_Headphones.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 3.0",
+   "title": "Bose QuietComfort 25 Acoustic Noise Cancelling Headphones.jpg",
+   "via": "Bose quietcomfort 25",
+   "brand": "Bose",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "Corsair K65 RGB",
+    "brand": "海盗船",
+    "cat": "键盘",
+    "model": [
+     "k65"
+    ]
+   },
+   "result": "OK",
+   "productId": 45523,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Corsair_K65_1_2017-01-01.jpg/500px-Corsair_K65_1_2017-01-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 4.0",
+   "title": "Corsair K65 1 2017-01-01.jpg",
+   "via": "Corsair k65",
+   "brand": "海盗船",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "Razer BlackWidow Ultimate",
+    "brand": "雷蛇",
+    "cat": "键盘",
+    "model": [
+     "blackwidow ultimate"
+    ]
+   },
+   "result": "OK",
+   "productId": 45524,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Razer_BlackWidow_Ultimate_2014_Elite_Mechanical_Gaming_Keyboard.jpg/500px-Razer_BlackWidow_Ultimate_2014_Elite_Mechanical_Gaming_Keyboard.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY 2.0",
+   "title": "Razer BlackWidow Ultimate 2014 Elite Mechanical Gaming Keyboard.jpg",
+   "via": "Razer blackwidow ultimate",
+   "brand": "雷蛇",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "Logitech MX Master",
+    "brand": "罗技",
+    "cat": "鼠标",
+    "model": [
+     "mx master"
+    ]
+   },
+   "result": "OK",
+   "productId": 45525,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/2017_Mysz_komputerowa_Logitech_MX_Master.jpg/500px-2017_Mysz_komputerowa_Logitech_MX_Master.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 4.0",
+   "title": "2017 Mysz komputerowa Logitech MX Master.jpg",
+   "via": "Logitech mx master",
+   "brand": "罗技",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "Logitech M510",
+    "brand": "罗技",
+    "cat": "鼠标",
+    "model": [
+     "m510"
+    ]
+   },
+   "result": "OK",
+   "productId": 45526,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Logitech_M510_mouse_HS_DSC_2753.jpg/500px-Logitech_M510_mouse_HS_DSC_2753.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY 4.0",
+   "title": "Logitech M510 mouse HS DSC 2753.jpg",
+   "via": "Logitech m510",
+   "brand": "罗技",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "Logitech G403",
+    "brand": "罗技",
+    "cat": "鼠标",
+    "model": [
+     "g403"
+    ]
+   },
+   "result": "OK",
+   "productId": 45527,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Logitech_G403_1_2017-01-01.jpg/500px-Logitech_G403_1_2017-01-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 4.0",
+   "title": "Logitech G403 1 2017-01-01.jpg",
+   "via": "Logitech g403",
+   "brand": "罗技",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "Razer DeathAdder Elite",
+    "brand": "雷蛇",
+    "cat": "鼠标",
+    "model": [
+     "deathadder elite",
+     "deathadder"
+    ]
+   },
+   "result": "OK",
+   "productId": 45528,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Razer_DeathAdder_Elite-back_oblique-ar_16to10-fs_PNr%C2%B00464.jpg/500px-Razer_DeathAdder_Elite-back_oblique-ar_16to10-fs_PNr%C2%B00464.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 3.0 at",
+   "title": "Razer DeathAdder Elite-back oblique-ar 16to10-fs PNr°0464.jpg",
+   "via": "deathadder elite",
+   "brand": "雷蛇",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "TP-Link Archer C7",
+    "brand": "TP-Link",
+    "cat": "路由器",
+    "model": [
+     "archer c7"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 30,
+   "sample": [
+    {
+     "title": "Field books - 1969-1979 (IA fieldbooks1969100wooda).pdf",
+     "why": "brand_missing:tp link"
+    },
+    {
+     "title": "Kottabos (IA kottabos02tyrriala).pdf",
+     "why": "brand_missing:tp link"
+    },
+    {
+     "title": "Pine needles (serial) (IA pineneedlesseria1955nort).pdf",
+     "why": "subject:people"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "TP-Link TL-WR841N",
+    "brand": "TP-Link",
+    "cat": "路由器",
+    "model": [
+     "wr841n"
+    ]
+   },
+   "result": "OK",
+   "productId": 45529,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/TP-Link_TL-WR841N-2920.jpg/500px-TP-Link_TL-WR841N-2920.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 4.0",
+   "title": "TP-Link TL-WR841N-2920.jpg",
+   "via": "TP-Link wr841n",
+   "brand": "TP-Link",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "ASUS RT-AC68U",
+    "brand": "华硕",
+    "cat": "路由器",
+    "model": [
+     "rt-ac68u"
+    ]
+   },
+   "result": "OK",
+   "productId": 45530,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/ASUS_RT-AC86U_%26_RT-AC68U_20190418.jpg/500px-ASUS_RT-AC86U_%26_RT-AC68U_20190418.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 2.0",
+   "title": "ASUS RT-AC86U & RT-AC68U 20190418.jpg",
+   "via": "ASUS rt-ac68u",
+   "brand": "华硕",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "ASUS RT-N66U",
+    "brand": "华硕",
+    "cat": "路由器",
+    "model": [
+     "rt-n66u"
+    ]
+   },
+   "result": "OK",
+   "productId": 45531,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/ASUS_RT-N66U_sample_20131118.jpg/500px-ASUS_RT-N66U_sample_20131118.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 3.0",
+   "title": "ASUS RT-N66U sample 20131118.jpg",
+   "via": "ASUS rt-n66u",
+   "brand": "华硕",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "iPhone X",
+    "brand": "苹果",
+    "cat": "手机",
+    "model": [
+     "iphone x"
+    ]
+   },
+   "result": "OK",
+   "productId": 45532,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Apple_iPhone_X_-_front_%288121%29.jpg/500px-Apple_iPhone_X_-_front_%288121%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 4.0",
+   "title": "Apple iPhone X - front (8121).jpg",
+   "via": "Apple iphone x",
+   "brand": "苹果",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "iPhone XR",
+    "brand": "苹果",
+    "cat": "手机",
+    "model": [
+     "iphone xr"
+    ]
+   },
+   "result": "OK",
+   "productId": 45533,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Mapillary_%28hasienda%29_2024-05-31_08H40M41S000_%28421975484079689_at_XC7Fveblk0w1LTDtyKxSmr_with_Apple_iPhone_XR%29.jpg/500px-Mapillary_%28hasienda%29_2024-05-31_08H40M41S000_%28421975484079689_at_XC7Fveblk0w1LTDtyKxSmr_with_Apple_iPhone_XR%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 4.0",
+   "title": "Mapillary (hasienda) 2024-05-31 08H40M41S000 (421975484079689 at XC7Fveblk0w1LTDtyKxSmr with Apple iPhone XR).jpg",
+   "via": "Apple iphone xr",
+   "brand": "苹果",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "iPhone 11",
+    "brand": "苹果",
+    "cat": "手机",
+    "model": [
+     "iphone 11"
+    ]
+   },
+   "result": "OK",
+   "productId": 45534,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Apple_iPhone_11_-_Tischkante.jpg/500px-Apple_iPhone_11_-_Tischkante.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 4.0",
+   "title": "Apple iPhone 11 - Tischkante.jpg",
+   "via": "Apple iphone 11",
+   "brand": "苹果",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "iPhone 12",
+    "brand": "苹果",
+    "cat": "手机",
+    "model": [
+     "iphone 12"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 49,
+   "sample": [
+    {
+     "title": "Apple-iphone-smartphone-fruits (23699680083).jpg",
+     "why": "model_missing:iphone 12"
+    },
+    {
+     "title": "Apple-iphone-smartphone-technology-1 (24218252052).jpg",
+     "why": "model_missing:iphone 12"
+    },
+    {
+     "title": "IPhone 12 wordmark.svg",
+     "why": "subject:logo"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "iPhone 13",
+    "brand": "苹果",
+    "cat": "手机",
+    "model": [
+     "iphone 13"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 42,
+   "sample": [
+    {
+     "title": "IPhone 13 Pro wordmark.svg",
+     "why": "subject:logo"
+    },
+    {
+     "title": "IPhone 13 Pro vector.svg",
+     "why": "subject:logo"
+    },
+    {
+     "title": "Apple iPhone 13 Pro on MacBook Pro 03.jpg",
+     "why": "variant_extra:pro"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "iPhone 14",
+    "brand": "苹果",
+    "cat": "手机",
+    "model": [
+     "iphone 14"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 45,
+   "sample": [
+    {
+     "title": "IPhone 14 Pro vector.svg",
+     "why": "subject:logo"
+    },
+    {
+     "title": "IPhone 14 Pro wordmark.svg",
+     "why": "subject:logo"
+    },
+    {
+     "title": "IPhone 14 Pro Max wordmark.svg",
+     "why": "subject:logo"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Samsung Galaxy S8",
+    "brand": "三星",
+    "cat": "手机",
+    "model": [
+     "galaxy s8"
+    ]
+   },
+   "result": "OK",
+   "productId": 45535,
+   "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/Samsung_Galaxy_S8.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "license": "CC BY-SA 3.0",
+   "title": "Samsung Galaxy S8.png",
+   "via": "Samsung galaxy s8",
+   "brand": "三星",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "Samsung Galaxy S9",
+    "brand": "三星",
+    "cat": "手机",
+    "model": [
+     "galaxy s9"
+    ]
+   },
+   "result": "OK",
+   "productId": 45536,
+   "image": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Samsung_Galaxy_S9.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "license": "CC BY 3.0",
+   "title": "Samsung Galaxy S9.png",
+   "via": "Samsung galaxy s9",
+   "brand": "三星",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "Samsung Galaxy S10",
+    "brand": "三星",
+    "cat": "手机",
+    "model": [
+     "galaxy s10"
+    ]
+   },
+   "result": "OK",
+   "productId": 45537,
+   "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Samsung_Galaxy_S10%2B.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "license": "CC BY-SA 4.0",
+   "title": "Samsung Galaxy S10+.png",
+   "via": "Samsung galaxy s10",
+   "brand": "三星",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "Samsung Galaxy Note8",
+    "brand": "三星",
+    "cat": "手机",
+    "model": [
+     "galaxy note8"
+    ]
+   },
+   "result": "ERROR",
+   "why": "图片插入失败"
+  },
+  {
+   "item": {
+    "name": "Xiaomi Mi 9",
+    "brand": "小米",
+    "cat": "手机",
+    "model": [
+     "mi 9"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 57,
+   "sample": [
+    {
+     "title": "南宋 米友仁 雲山圖 卷-Cloudy Mountains MET DP212993 4 CRD.jpg",
+     "why": "subject:people"
+    },
+    {
+     "title": "南宋 米友仁 雲山圖 卷-Cloudy Mountains MET DP212989.jpg",
+     "why": "subject:people"
+    },
+    {
+     "title": "南宋 米友仁 雲山圖 卷-Cloudy Mountains MET DP212993.jpg",
+     "why": "subject:people"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Huawei P30 Pro",
+    "brand": "华为",
+    "cat": "手机",
+    "model": [
+     "p30 pro"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 20,
+   "sample": [
+    {
+     "title": "Huawei P30 Pro Rückseite.jpg",
+     "why": "brand_missing:华为"
+    },
+    {
+     "title": "Huawei P30 Pro camera .jpg",
+     "why": "brand_missing:华为"
+    },
+    {
+     "title": "Huawei P30 Pro- by-RaBoe 01.jpg",
+     "why": "brand_missing:华为"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Huawei Mate 20 Pro",
+    "brand": "华为",
+    "cat": "手机",
+    "model": [
+     "mate 20 pro"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 36,
+   "sample": [
+    {
+     "title": "Huawei Store (original shot with Huawei Mate 20 Pro).jpg",
+     "why": "subject:store"
+    },
+    {
+     "title": "Desktop Ubuntu MATE 20.04.png",
+     "why": "subject:screenshot"
+    },
+    {
+     "title": "Linux Mint 20 MATE eng.png",
+     "why": "subject:screenshot"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Sony PlayStation 4",
+    "brand": "索尼",
+    "cat": "游戏机",
+    "model": [
+     "playstation 4"
+    ]
+   },
+   "result": "OK",
+   "productId": 45539,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Sony_PlayStation_4_Slim.jpg/500px-Sony_PlayStation_4_Slim.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 4.0",
+   "title": "Sony PlayStation 4 Slim.jpg",
+   "via": "Sony playstation 4",
+   "brand": "索尼",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "Sony PlayStation 3",
+    "brand": "索尼",
+    "cat": "游戏机",
+    "model": [
+     "playstation 3"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 31,
+   "sample": [
+    {
+     "title": "Gamescom 2009 - PS3 (5202).jpg",
+     "why": "subject:store"
+    },
+    {
+     "title": "PlayStation 3 logo (2009).svg",
+     "why": "subject:logo"
+    },
+    {
+     "title": "Sony-PlayStation-PS3-Slim-Console-BR.jpg",
+     "why": "model_missing:playstation 3"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Nintendo 3DS XL",
+    "brand": "任天堂",
+    "cat": "游戏机",
+    "model": [
+     "3ds xl"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 20,
+   "sample": [
+    {
+     "title": "Nintendo-3DS-XL-angled.jpg",
+     "why": "brand_missing:任天堂"
+    },
+    {
+     "title": "New-3DS-XL-Black.jpg",
+     "why": "brand_missing:任天堂"
+    },
+    {
+     "title": "Nintendo-3DS-XL-angled.png",
+     "why": "brand_missing:任天堂"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Nintendo Wii U",
+    "brand": "任天堂",
+    "cat": "游戏机",
+    "model": [
+     "wii u"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 22,
+   "sample": [
+    {
+     "title": "Wii U console illustration.svg",
+     "why": "subject:logo"
+    },
+    {
+     "title": "Wii U Console and Gamepad.jpg",
+     "why": "brand_missing:任天堂"
+    },
+    {
+     "title": "Wii U Console and Gamepad.png",
+     "why": "brand_missing:任天堂"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Apple Watch Series 4",
+    "brand": "苹果",
+    "cat": "智能手表",
+    "model": [
+     "watch series 4"
+    ]
+   },
+   "result": "OK",
+   "productId": 45540,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Apple_Watch_Series_4_40mm_space_gray_Aluminum.jpg/500px-Apple_Watch_Series_4_40mm_space_gray_Aluminum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 4.0",
+   "title": "Apple Watch Series 4 40mm space gray Aluminum.jpg",
+   "via": "Apple watch series 4",
+   "brand": "苹果",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "Garmin Forerunner 235",
+    "brand": "佳明",
+    "cat": "智能手表",
+    "model": [
+     "forerunner 235"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 20,
+   "sample": [
+    {
+     "title": "Garmin Forerunner 235.jpg",
+     "why": "brand_missing:佳明"
+    },
+    {
+     "title": "Garmin Forerunner 235 20160315.jpg",
+     "why": "brand_missing:佳明"
+    },
+    {
+     "title": "Evaluation of the maximum allowable cost (MAC) for drugs program (IA evaluationofmaxi00leea).pdf",
+     "why": "brand_missing:佳明"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Samsung 850 EVO 1TB",
+    "brand": "三星",
+    "cat": "固态硬盘",
+    "model": [
+     "850 evo"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 22,
+   "sample": [
+    {
+     "title": "Dllu skylake computer.jpg",
+     "why": "subject:accessory,internal_part"
+    },
+    {
+     "title": "Design and deployment of Mini-Argus systems for rapid coastal imaging - USACE-p266001coll1-8898.pdf",
+     "why": "brand_missing:samsung"
+    },
+    {
+     "title": "2026-04-18 Lenovo Y50-Unterseite HOF5975-HDR RAW-Export.png",
+     "why": "brand_missing:samsung"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Samsung 860 EVO 1TB",
+    "brand": "三星",
+    "cat": "固态硬盘",
+    "model": [
+     "860 evo"
+    ]
+   },
+   "result": "OK",
+   "productId": 45541,
+   "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/SAMSUNG_860_EVO_500GB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "license": "CC0",
+   "title": "SAMSUNG 860 EVO 500GB.jpg",
+   "via": "Samsung 860 evo",
+   "brand": "三星",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "Crucial MX500 1TB",
+    "brand": "英睿达",
+    "cat": "固态硬盘",
+    "model": [
+     "mx500"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 20,
+   "sample": [
+    {
+     "title": "CT1000MX500SSD1 rear 20210220.jpg",
+     "why": "brand_missing:crucial"
+    },
+    {
+     "title": "BurgSternbergaussen.JPG",
+     "why": "brand_missing:crucial"
+    },
+    {
+     "title": "Ponti.JPG",
+     "why": "brand_missing:crucial"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Kingston A400 480GB",
+    "brand": "金士顿",
+    "cat": "固态硬盘",
+    "model": [
+     "a400"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 25,
+   "sample": [
+    {
+     "title": "The GLA Roads Designation Order 2000 (UKSI 2000-1117).pdf",
+     "why": "brand_missing:kingston"
+    },
+    {
+     "title": "The GLA Roads Designation Order 2000 (UKSI 2000-1117 qp).pdf",
+     "why": "brand_missing:kingston"
+    },
+    {
+     "title": "The London Priority Route Order 1992 (UKSI 1992-1372).pdf",
+     "why": "brand_missing:kingston"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "WD Blue SN550",
+    "brand": "西数",
+    "cat": "固态硬盘",
+    "model": [
+     "sn550"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 20,
+   "sample": [
+    {
+     "title": "Calopteryx splendens.jpg",
+     "why": "brand_missing:western digital"
+    },
+    {
+     "title": "STS-116 spacewalk 1.jpg",
+     "why": "subject:people"
+    },
+    {
+     "title": "CoucheSoleilSaintGilles.jpeg",
+     "why": "subject:people"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "G.Skill Ripjaws V 16GB",
+    "brand": "芝奇",
+    "cat": "内存",
+    "model": [
+     "ripjaws v"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 3,
+   "sample": [
+    {
+     "title": "ATX computer case.jpg",
+     "why": "subject:accessory,internal_part"
+    },
+    {
+     "title": "Thinkcomputers-podcast33 (IA thinkcomputers-podcast33).mp3",
+     "why": "subject:screenshot,license_review_needed"
+    },
+    {
+     "title": "I7 13700KF -MSI GAMING X TRIO White RTX4070Ti - Fractal North White - TimeLapse Build - INVADERPC.webm",
+     "why": "subject:screenshot,license_review_needed,accessory,internal_part"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Kingston HyperX Fury 16GB",
+    "brand": "金士顿",
+    "cat": "内存",
+    "model": [
+     "hyperx fury"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 6,
+   "sample": [
+    {
+     "title": "2018 Komputer PC 04.jpg",
+     "why": "subject:accessory"
+    },
+    {
+     "title": "HyperX Fury 4gb DDR3.jpg",
+     "why": "subject:internal_part"
+    },
+    {
+     "title": "HX318C10FB-8 rear 20160503.jpg",
+     "why": "brand_missing:kingston"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Intel Core i7-4790K",
+    "brand": "Intel",
+    "cat": "CPU",
+    "model": [
+     "4790k"
+    ]
+   },
+   "result": "OK",
+   "productId": 45542,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Intel_Core_i7_4790K_IMG_9589.jpg/500px-Intel_Core_i7_4790K_IMG_9589.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 3.0",
+   "title": "Intel Core i7 4790K IMG 9589.jpg",
+   "via": "Intel 4790k",
+   "brand": "Intel",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "Intel Core i7-7700K",
+    "brand": "Intel",
+    "cat": "CPU",
+    "model": [
+     "7700k"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 19,
+   "sample": [
+    {
+     "title": "JJonak - Experience Tranquility.webm",
+     "why": "subject:screenshot"
+    },
+    {
+     "title": "7600K and 7700K vs 6600K and 6700K (Paul's Hardware) 01.png",
+     "why": "subject:comparison,screenshot,license_review_needed"
+    },
+    {
+     "title": "7600K and 7700K vs 6600K and 6700K (Paul's Hardware) 02.png",
+     "why": "subject:comparison,screenshot,license_review_needed"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "Intel Core i9-9900K",
+    "brand": "Intel",
+    "cat": "CPU",
+    "model": [
+     "9900k"
+    ]
+   },
+   "result": "OK",
+   "productId": 45543,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Intel_i9-9900K.jpg/500px-Intel_i9-9900K.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 4.0",
+   "title": "Intel i9-9900K.jpg",
+   "via": "Intel 9900k",
+   "brand": "Intel",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "AMD Ryzen 5 2600",
+    "brand": "AMD",
+    "cat": "CPU",
+    "model": [
+     "ryzen 5 2600"
+    ]
+   },
+   "result": "OK",
+   "productId": 45544,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/AMD_Ryzen_5_2600_%2839851733273%29.jpg/500px-AMD_Ryzen_5_2600_%2839851733273%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC0",
+   "title": "AMD Ryzen 5 2600 (39851733273).jpg",
+   "via": "AMD ryzen 5 2600",
+   "brand": "AMD",
+   "matchType": "EXACT"
+  },
+  {
+   "item": {
+    "name": "AMD Ryzen 7 2700X",
+    "brand": "AMD",
+    "cat": "CPU",
+    "model": [
+     "2700x"
+    ]
+   },
+   "result": "NO_PASS",
+   "pool": 18,
+   "sample": [
+    {
+     "title": "Operational risk as a problematic triad- risk, resource security, business continuity.pdf",
+     "why": "brand_missing:amd"
+    },
+    {
+     "title": "Dicraeosauridae Scale.svg",
+     "why": "subject:comparison,logo,people,diagram"
+    },
+    {
+     "title": "ATX computer case.jpg",
+     "why": "subject:accessory,internal_part"
+    }
+   ]
+  },
+  {
+   "item": {
+    "name": "AMD Ryzen 9 3900X",
+    "brand": "AMD",
+    "cat": "CPU",
+    "model": [
+     "3900x"
+    ]
+   },
+   "result": "OK",
+   "productId": 45545,
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/AMD_Ryzen_9_3900X_-_ISO_Back.jpg/500px-AMD_Ryzen_9_3900X_-_ISO_Back.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 4.0",
+   "title": "AMD Ryzen 9 3900X - ISO Back.jpg",
+   "via": "AMD 3900x",
+   "brand": "AMD",
+   "matchType": "EXACT"
+  }
+ ]
+}

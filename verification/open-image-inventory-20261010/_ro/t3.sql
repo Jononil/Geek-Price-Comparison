@@ -1,0 +1,1 @@
+SELECT column_name, column_type, is_nullable, column_key, column_default, extra FROM information_schema.columns WHERE table_schema='geek_price' AND table_name='product_images' ORDER BY ordinal_position;

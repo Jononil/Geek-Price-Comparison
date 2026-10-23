@@ -1,0 +1,1 @@
+SELECT id, product_id, url, sort FROM product_images WHERE url NOT LIKE '%placehold.co%' ORDER BY product_id, sort;

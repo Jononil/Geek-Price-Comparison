@@ -1,0 +1,132 @@
+1	iPhone 16 Pro	1	1
+2	iPhone 15	1	1
+3	华为 Mate 60 Pro	2	1
+4	华为 Pura 70 Pro	2	1
+5	小米 14 Ultra	3	1
+6	小米 14	3	1
+7	OPPO Find X7 Ultra	4	1
+8	vivo X100 Ultra	5	1
+9	一加 12	8	1
+10	荣耀 Magic 6 Pro	6	1
+11	三星 Galaxy S24	7	1
+12	Redmi K70 至尊版	3	1
+13	iPad Pro M4	1	2
+14	iPad Air M2	1	2
+15	华为 MatePad Pro	2	2
+16	小米平板 7 Pro	3	2
+17	联想小新 Pad Pro	9	2
+18	三星 Galaxy Tab S9	7	2
+19	vivo Pad 3 Pro	5	2
+20	OPPO Pad 3	4	2
+21	联想拯救者 Y9000P	9	3
+22	联想小新 Pro 16	9	3
+23	MacBook Air M3	1	3
+24	MacBook Pro 14	1	3
+25	华硕天选 5 Pro	10	3
+26	戴尔 XPS 13	11	3
+27	惠普暗影精灵 10	12	3
+28	ThinkBook 14+	9	3
+29	华为 MateBook 14	2	3
+30	微星绝影 14	21	3
+31	荣耀 MagicBook Pro	6	3
+32	机械革命翼龙 15 Pro	52	3
+33	联想拯救者刃 9000K	9	4
+34	惠普暗影精灵台式机	12	4
+35	戴尔 XPS 台式机	11	4
+36	微星海皇戟	21	4
+37	华硕玩家国度	10	4
+38	联想天逸 510	9	4
+39	LG 27GP95RP	29	5
+40	三星玄龙骑士 G7	7	5
+41	戴尔 U2723QE	11	5
+42	华硕 TUF VG27AQ	10	5
+43	小米 27 4K	3	5
+44	AOC 27 4K	30	5
+45	明基 PD2705U	41	5
+46	泰坦军团 P27A6V	42	5
+47	索尼 WH-1000XM5	13	6
+48	Bose QC Ultra	14	6
+49	苹果 AirPods Pro 2	1	6
+50	森海塞尔 Momentum 4	15	6
+51	漫步者 NeoBuds Pro	24	6
+52	华为 FreeBuds Pro 3	2	6
+53	小米 Buds 4 Pro	3	6
+54	三星 Galaxy Buds 2 Pro	7	6
+55	水月雨 Starfield 2	43	6
+56	铁三角 ATH-M50x	44	6
+57	Keychron Q1 Pro	31	7
+58	罗技 MX Keys	16	7
+59	雷蛇黑寡妇 V4	17	7
+60	达尔优 A98	56	7
+61	珂芝 K75	57	7
+62	樱桃 MX 3.0S	45	7
+63	狼蛛 F87	46	7
+64	海盗船 K70	37	7
+65	罗技 G Pro X Superlight 2	16	8
+66	雷蛇毒蝰 V3 Pro	17	8
+67	罗技 MX Master 3S	16	8
+68	达尔优 A950	56	8
+69	雷柏 VT9	58	8
+70	卓威 EC2-CW	47	8
+71	多彩 M800	48	8
+72	海盗船 Sabre	37	8
+73	索尼 A7 IV	13	9
+74	佳能 R6 Mark II	26	9
+75	尼康 Z6 III	27	9
+76	富士 X-T5	59	9
+77	大疆 Pocket 3	25	9
+78	索尼 ZV-E10	13	9
+79	佳能 EOS R50	26	9
+80	松下 S5 II	49	9
+81	苹果 Watch Series 9	1	10
+82	华为 Watch GT 4	2	10
+83	小米 Watch S3	3	10
+84	三星 Galaxy Watch 6	7	10
+85	佳明 Forerunner 265	50	10
+86	OPPO Watch 4 Pro	4	10
+87	华为 Watch Ultimate	2	10
+88	苹果 Watch Ultra 2	1	10
+89	任天堂 Switch OLED	28	11
+90	索尼 PS5	13	11
+91	微软 Xbox Series X	51	11
+92	Steam Deck OLED	60	11
+93	任天堂 Switch Lite	28	11
+94	ROG Ally	10	11
+95	RTX 4070 Ti Super	18	12
+96	RTX 4070 Super	18	12
+97	RTX 4080 Super	18	12
+98	RTX 4090	18	12
+99	RX 7800 XT	19	12
+100	RX 7900 XTX	19	12
+101	RTX 4060 Ti	18	12
+102	RX 7600	19	12
+103	七彩虹 RTX 4070	22	12
+104	微星 RTX 4060	21	12
+105	i7-14700K	20	13
+106	i5-14600K	20	13
+107	i9-14900K	20	13
+108	锐龙 7 7800X3D	19	13
+109	锐龙 5 7600	19	13
+110	锐龙 9 7950X	19	13
+111	i5-12400F	20	13
+112	锐龙 7 7700	19	13
+113	致态 TiPlus7100 2TB	23	14
+114	三星 990 Pro 2TB	7	14
+115	西数 SN850X 2TB	33	14
+116	铠侠 RC20 1TB	34	14
+117	致态 TiPlus5000 1TB	23	14
+118	金士顿 KC3000 1TB	35	14
+119	海康威视 C2000 Pro	54	14
+120	宏碁掠夺者 GM7	53	14
+121	芝奇幻光戟 32GB	36	15
+122	金士顿骇客神条 32GB	35	15
+123	海盗船复仇者 32GB	37	15
+124	威刚 XPG 32GB	38	15
+125	英睿达 32GB	39	15
+126	光威 32GB	40	15
+127	华硕 RT-AX86U Pro	10	16
+128	小米 AX9000	3	16
+129	TP-Link XDR6080	32	16
+130	华为 AX3 Pro	2	16
+131	中兴 AX5400 Pro	55	16
+132	华硕 RT-AX88U Pro	10	16

@@ -1,0 +1,1 @@
+SELECT id FROM product_image_license WHERE image_id=53845;

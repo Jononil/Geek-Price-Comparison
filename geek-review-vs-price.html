@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>数码产品测评与比价 · 方法论与实践</title>
+<style>
+  :root{
+    --bg:#f6f5f2; --paper:#fffefb; --ink:#1c1b19; --muted:#6f6a62;
+    --line:#e6e2d8; --brand:#334155; --indigo:#4f46e5; --indigo-soft:#eef2ff;
+    --teal:#0f766e; --teal-soft:#ecfdf5; --amber:#b45309; --amber-soft:#fffbeb;
+    --purple:#7c3aed; --purple-soft:#f5f3ff;
+    --shadow:0 1px 2px rgba(28,27,25,.05), 0 10px 28px -16px rgba(28,27,25,.28);
+    --r:14px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter','PingFang SC','Hiragino Sans GB','Microsoft YaHei',system-ui,sans-serif;
+    background:var(--bg);color:var(--ink);line-height:1.68;-webkit-font-smoothing:antialiased;
+    background-image:radial-gradient(rgba(28,27,25,.045) 1px, transparent 1px);
+    background-size:22px 22px;
+  }
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 26px}
+
+  /* top */
+  .topbar{
+    position:sticky;top:0;z-index:40;background:rgba(246,245,242,.86);
+    backdrop-filter:blur(10px);border-bottom:1px solid var(--line)
+  }
+  .topbar .wrap{display:flex;align-items:center;gap:18px;height:58px}
+  .logo{display:flex;align-items:center;gap:9px;font-weight:800;font-size:14.5px;letter-spacing:-.01em}
+  .logo .dot{
+    width:25px;height:25px;border-radius:7px;display:grid;place-items:center;
+    background:var(--ink);color:#fff;font-size:12px;font-weight:800
+  }
+  .logo small{display:block;font-weight:600;color:var(--muted);font-size:10px;letter-spacing:.16em;text-transform:uppercase}
+  .nav{display:flex;gap:2px;margin-left:auto;font-size:13px}
+  .nav a{color:var(--muted);padding:6px 11px;border-radius:8px;font-weight:500;white-space:nowrap}
+  .nav a:hover{background:#efece4;color:var(--ink)}
+
+  /* hero */
+  .hero{padding:62px 0 46px;border-bottom:1px solid var(--line)}
+  .hero .kicker{
+    display:inline-flex;align-items:center;gap:8px;font-size:11.5px;font-weight:700;
+    letter-spacing:.16em;text-transform:uppercase;color:var(--indigo);
+    background:var(--indigo-soft);border:1px solid #dfe3ff;padding:5px 12px;border-radius:999px
+  }
+  .hero h1{
+    font-size:clamp(30px,4.6vw,50px);line-height:1.12;letter-spacing:-.03em;
+    font-weight:800;margin:20px 0 14px
+  }
+  .hero h1 span{
+    background:linear-gradient(transparent 62%, #fde68a 62%, #fde68a 88%, transparent 88%);
+    padding:0 2px
+  }
+  .hero .lede{max-width:660px;color:#4a453d;font-size:15.5px}
+  .hero .meta{margin-top:18px;display:flex;flex-wrap:wrap;gap:18px;font-size:12.5px;color:var(--muted)}
+  .hero .meta b{color:var(--ink);font-weight:700}
+
+  .theses{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:32px}
+  .thesis{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px;box-shadow:var(--shadow)}
+  .thesis .n{font-size:11px;font-weight:800;letter-spacing:.14em;color:var(--muted)}
+  .thesis h3{font-size:15px;margin:8px 0 6px;letter-spacing:-.01em}
+  .thesis p{font-size:13px;color:var(--muted);line-height:1.6}
+
+  /* sections */
+  section{padding:54px 0;border-bottom:1px solid var(--line)}
+  .sec-head{margin-bottom:24px}
+  .sec-head .num{
+    display:inline-block;font-size:12px;font-weight:800;letter-spacing:.16em;
+    color:var(--muted);margin-bottom:8px;font-variant-numeric:tabular-nums
+  }
+  .sec-head h2{font-size:clamp(21px,2.6vw,27px);letter-spacing:-.025em;font-weight:800;line-height:1.25}
+  .sec-head .desc{font-size:13.8px;color:var(--muted);margin-top:8px;max-width:720px}
+
+  /* chain */
+  .chain{display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:var(--paper);
+    border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow)}
+  .step{padding:22px 20px;border-right:1px solid var(--line);position:relative}
+  .step:last-child{border-right:none}
+  .step::before{
+    content:attr(data-i);position:absolute;top:14px;right:16px;font-size:30px;font-weight:800;
+    color:#f0ece2;letter-spacing:-.04em;line-height:1
+  }
+  .step .tag{
+    display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+    padding:3px 8px;border-radius:6px;background:var(--indigo-soft);color:var(--indigo);margin-bottom:10px
+  }
+  .step h3{font-size:14.5px;margin-bottom:6px}
+  .step p{font-size:12.6px;color:var(--muted);line-height:1.6}
+  .step .src{margin-top:10px;font-size:11.5px;color:var(--teal);font-weight:700}
+
+  /* tables */
+  table{width:100%;border-collapse:collapse;background:var(--paper);border:1px solid var(--line);
+    border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);font-size:13px}
+  thead th{
+    text-align:left;padding:12px 14px;background:#f3f1ea;font-size:11.5px;letter-spacing:.08em;
+    text-transform:uppercase;color:#57534a;font-weight:800;border-bottom:1px solid var(--line)
+  }
+  tbody td{padding:12px 14px;border-bottom:1px solid #f1eee6;vertical-align:top;color:#3f3a33}
+  tbody tr:last-child td{border-bottom:none}
+  tbody tr:hover{background:#fbfaf6}
+  td b{color:var(--ink)}
+  .w{font-variant-numeric:tabular-nums;font-weight:700;color:var(--indigo)}
+  .pill{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;
+    background:var(--teal-soft);color:var(--teal);border:1px solid #c7f0e3}
+  .pill.amber{background:var(--amber-soft);color:var(--amber);border-color:#fde68a}
+  .pill.purple{background:var(--purple-soft);color:var(--purple);border-color:#ddd6fe}
+
+  /* price bars */
+  .price-bars{display:flex;flex-direction:column;gap:12px;margin-top:22px}
+  .pb{display:grid;grid-template-columns:190px 1fr 96px;align-items:center;gap:14px;font-size:12.8px}
+  .pb .lab{color:#4a453d;font-weight:600}
+  .pb .track{height:26px;background:#f1eee6;border-radius:7px;overflow:hidden}
+  .pb .fill{height:100%;border-radius:7px;transition:width .7s cubic-bezier(.2,.8,.2,1)}
+  .pb .val{text-align:right;font-weight:800;font-variant-numeric:tabular-nums;color:var(--ink)}
+
+  /* scorer */
+  .scorer{display:grid;grid-template-columns:340px 1fr;gap:18px;align-items:start}
+  .panel{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);
+    padding:22px;box-shadow:var(--shadow)}
+  .panel h3{font-size:14.5px;margin-bottom:4px}
+  .panel .sub{font-size:12px;color:var(--muted);margin-bottom:16px}
+  .slider{margin-bottom:13px}
+  .slider .row{display:flex;justify-content:space-between;font-size:12.5px;margin-bottom:5px}
+  .slider .row b{font-variant-numeric:tabular-nums;color:var(--indigo);font-weight:800}
+  input[type=range]{
+    -webkit-appearance:none;appearance:none;width:100%;height:5px;border-radius:99px;
+    background:#e8e4da;outline:none
+  }
+  input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance:none;width:16px;height:16px;border-radius:50%;background:var(--indigo);
+    border:2.5px solid #fff;box-shadow:0 1px 4px rgba(79,70,229,.5);cursor:pointer
+  }
+  input[type=range]::-moz-range-thumb{
+    width:16px;height:16px;border-radius:50%;background:var(--indigo);
+    border:2.5px solid #fff;cursor:pointer
+  }
+  .presets{display:flex;gap:7px;flex-wrap:wrap;margin-top:14px}
+  .preset{
+    font-family:inherit;font-size:11.5px;font-weight:700;padding:6px 11px;border-radius:8px;
+    border:1px solid var(--line);background:#faf9f5;color:#57534a;cursor:pointer
+  }
+  .preset:hover{border-color:#c7c2b4;color:var(--ink)}
+
+  .rank{display:flex;flex-direction:column;gap:10px}
+  .rrow{
+    background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 16px;
+    box-shadow:var(--shadow);transition:transform .3s ease, border-color .2s
+  }
+  .rrow.top{border-color:#c7d2fe;background:linear-gradient(180deg,#fbfbff,#fffefb)}
+  .rrow .head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .rrow .rank-n{
+    font-size:11px;font-weight:800;color:#fff;background:var(--ink);width:20px;height:20px;
+    border-radius:6px;display:grid;place-items:center;flex:none
+  }
+  .rrow.top .rank-n{background:var(--indigo)}
+  .rrow .name{font-weight:700;font-size:14px}
+  .rrow .price{margin-left:auto;font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+  .rrow .nums{display:flex;gap:18px;margin-top:9px;font-size:12px;color:var(--muted);align-items:center}
+  .rrow .nums b{color:var(--ink);font-variant-numeric:tabular-nums}
+  .rrow .mbar{flex:1;height:8px;background:#f1eee6;border-radius:99px;overflow:hidden;min-width:80px}
+  .rrow .mbar i{display:block;height:100%;border-radius:99px;
+    background:linear-gradient(90deg,#4f46e5,#0f766e);transition:width .5s ease}
+  .insight{
+    margin-top:14px;background:var(--amber-soft);border:1px solid #fde68a;border-radius:10px;
+    padding:12px 14px;font-size:12.6px;color:#7c4a03;line-height:1.6
+  }
+  .insight b{color:#92400e}
+
+  .board-head{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+  .board-lab{font-size:11.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .seg{display:inline-flex;background:#efece4;border-radius:9px;padding:3px;gap:2px}
+  .seg-btn{
+    font-family:inherit;font-size:12.3px;font-weight:700;padding:6px 13px;border:none;border-radius:7px;
+    background:transparent;color:#6f6a62;cursor:pointer;transition:.15s
+  }
+  .seg-btn.on{background:var(--paper);color:var(--ink);box-shadow:0 1px 3px rgba(28,27,25,.14)}
+  .board-hint{margin-left:auto;font-size:12px;color:var(--muted)}
+
+  /* reliability */
+  .rel{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+  .rel-card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px;box-shadow:var(--shadow)}
+  .rel-card .lvl{font-size:10.5px;font-weight:800;letter-spacing:.1em;color:#fff;padding:3px 8px;border-radius:6px;display:inline-block}
+  .rel-card h4{font-size:13.5px;margin:10px 0 6px}
+  .rel-card p{font-size:12.2px;color:var(--muted);line-height:1.6}
+  .l1{background:#15803d} .l2{background:#0f766e} .l3{background:#b45309} .l4{background:#b91c1c}
+
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .list{display:flex;flex-direction:column;gap:11px;margin-top:4px}
+  .list li{list-style:none;display:grid;grid-template-columns:18px 1fr;gap:10px;font-size:13px;color:#3f3a33}
+  .list li::before{content:"—";color:#b8b0a0;font-weight:800}
+  .list li b{color:var(--ink)}
+
+  /* sources */
+  .srcs{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
+  .src{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:13px 15px;font-size:12.6px;display:flex;flex-direction:column;gap:3px;transition:.15s}
+  .src:hover{border-color:#c7c2b4;transform:translateY(-1px)}
+  .src b{font-size:13px;color:var(--ink)}
+  .src span{color:var(--muted);font-size:11.5px}
+
+  .disclaimer{
+    margin-top:20px;font-size:12.2px;color:var(--muted);line-height:1.75;
+    border-left:3px solid #d6d0c2;padding-left:14px
+  }
+
+  footer{padding:28px 0 44px;font-size:12.3px;color:var(--muted)}
+  footer .wrap{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+  footer b{color:#3f3a33}
+
+  @media (max-width:920px){
+    .chain,.rel,.theses,.scorer,.two{grid-template-columns:1fr}
+    .step{border-right:none;border-bottom:1px solid var(--line)}
+    .step:last-child{border-bottom:none}
+    .nav{display:none}
+  }
+  @media (max-width:560px){
+    .pb{grid-template-columns:1fr;gap:5px}
+    .pb .val{text-align:left}
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <div class="logo">
+      <span class="dot">测</span>
+      <span>极客比价<small>Review &amp; Price</small></span>
+    </div>
+    <nav class="nav">
+      <a href="#chain">评测链</a>
+      <a href="#dims">维度体系</a>
+      <a href="#compare">平台比价</a>
+      <a href="#scorer">性价比引擎</a>
+      <a href="#trust">可信度</a>
+      <a href="#sources">来源</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="kicker">课题 · 数码产品测评与比价</div>
+    <h1>测评说的是「它好不好」，<br>比价问的是「<span>此刻值不值</span>」</h1>
+    <p class="lede">
+      前者依赖可复现的测试数据，后者依赖可追溯的价格历史。把两者接起来的那个量，叫性价比——
+      而性价比从来不是一个固定排名，它随权重和时点变化。这一页把整条链路拆开：数据从哪来、怎么打分、价差从哪来、结论为什么会翻。
+    </p>
+    <div class="meta">
+      <span>资料快照 <b>2026-10-23</b></span>
+      <span>案例机型 <b>4 款中端机</b></span>
+      <span>数据口径 <b>公开测评 + 电商报价</b></span>
+    </div>
+
+    <div class="theses">
+      <div class="thesis">
+        <div class="n">命题 01</div>
+        <h3>测评必须可量化</h3>
+        <p>「手感好」「很流畅」无法比较。只有帧率曲线、降噪 dB、亮度 nits 这类指标，才能跨机型对齐。</p>
+      </div>
+      <div class="thesis">
+        <div class="n">命题 02</div>
+        <h3>价格必须可追溯</h3>
+        <p>标价、活动价、券后价、到手价是四个数。只报一个数的比价，本质是广告。</p>
+      </div>
+      <div class="thesis">
+        <div class="n">命题 03</div>
+        <h3>性价比 = 性能 ÷ 价格，但不是唯一排序</h3>
+        <p>性价比高的机器，未必适合你。权重一变，榜单立刻翻转——这才是需要「个性化推荐」的原因。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+  <!-- 01 -->
+  <section id="chain">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="num">01 / 评测链</div>
+        <h2>一次靠谱的选机，要走完四步</h2>
+        <p class="desc">
+          没有任何单一平台能给出完整答案。参数、实测、口碑、价格分属四种不同的信息形态，
+          各自有明确的强项与盲区。
+        </p>
+      </div>
+
+      <div class="chain">
+        <div class="step" data-i="1">
+          <span class="tag">参数</span>
+          <h3>查规格是否达标</h3>
+          <p>先筛硬门槛：SoC 型号、内存规格、屏幕分辨率与调光、电池容量、充电功率、防水等级。</p>
+          <div class="src">GSMArena · 机型库最全</div>
+        </div>
+        <div class="step" data-i="2">
+          <span class="tag">实测</span>
+          <h3>看数据而非形容词</h3>
+          <p>帧率曲线、机身温度、降噪分贝、屏幕峰值亮度、充电曲线——可重复验证的才算证据。</p>
+          <div class="src">DXOMARK · 小白测评 · 科技美学</div>
+        </div>
+        <div class="step" data-i="3">
+          <span class="tag">口碑</span>
+          <h3>验证长期体验</h3>
+          <p>首发评测看不到三个月后的系统卡顿、续航衰减、售后响应。真实机主的吐槽在这里。</p>
+          <div class="src">酷安 · 品牌社区</div>
+        </div>
+        <div class="step" data-i="4">
+          <span class="tag">价格</span>
+          <h3>确认此刻买不亏</h3>
+          <p>看当前到手价与历史最低价的差，判断是真促销还是先涨后降。</p>
+          <div class="src">中关村在线 · 慢慢买</div>
+        </div>
+      </div>
+
+      <div class="insight" style="margin-top:18px">
+        <b>编辑部归纳的四步路径：</b>GSMArena 查参数 → DXOMARK 看影像与续航评分 → 酷安刷真实用户反馈 → 最后用中关村在线比价格。
+        前三步回答「好不好」，第四步回答「值不值」。顺序颠倒，就容易被促销话术牵着走。
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 -->
+  <section id="dims">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="num">02 / 维度体系</div>
+        <h2>六维打分表：把主观感受翻译成数字</h2>
+        <p class="desc">
+          不同品类的维度不同,但方法论一致——每个维度必须绑定一个「能被测出来的指标」和一个「能看到数据的地方」。
+          下表以中端手机为例。
+        </p>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th style="width:14%">维度</th>
+            <th style="width:12%">默认权重</th>
+            <th style="width:38%">可量化指标</th>
+            <th style="width:22%">数据来源</th>
+            <th style="width:14%">主观性</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>性能</b></td>
+            <td class="w">25%</td>
+            <td>安兔兔/GeekBench 跑分、<b>游戏平均帧率与掉帧率</b>、机身最高温度</td>
+            <td>B 站实测、ZOL 评测室</td>
+            <td><span class="pill">低</span></td>
+          </tr>
+          <tr>
+            <td><b>影像</b></td>
+            <td class="w">20%</td>
+            <td>主摄传感器尺寸、光圈、长焦倍率、DXOMARK 影像分</td>
+            <td>DXOMARK、实拍样张</td>
+            <td><span class="pill amber">中</span></td>
+          </tr>
+          <tr>
+            <td><b>屏幕</b></td>
+            <td class="w">15%</td>
+            <td>分辨率、刷新率、<b>峰值亮度 nits</b>、PWM 调光频率</td>
+            <td>GSMArena、厂商参数页</td>
+            <td><span class="pill">低</span></td>
+          </tr>
+          <tr>
+            <td><b>续航</b></td>
+            <td class="w">20%</td>
+            <td>电池容量、<b>连续视频/游戏时长</b>、充满所需分钟数</td>
+            <td>B 站续航榜、官方 DOU</td>
+            <td><span class="pill">低</span></td>
+          </tr>
+          <tr>
+            <td><b>做工与耐用</b></td>
+            <td class="w">10%</td>
+            <td>中框材质、重量厚度、IP 防护等级、军标测试</td>
+            <td>拆解视频、参数页</td>
+            <td><span class="pill amber">中</span></td>
+          </tr>
+          <tr>
+            <td><b>系统与生态</b></td>
+            <td class="w">10%</td>
+            <td>系统版本更新承诺年限、广告推送强度、跨设备协同</td>
+            <td>酷安长测、社区反馈</td>
+            <td><span class="pill purple">高</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="disclaimer">
+        权重不是常数。学生党会把性能与续航拉高，摄影爱好者会把影像权重翻倍，长辈机则应该把系统简洁度提到前两位——
+        这正是下一节那个可调引擎要演示的事情。
+      </p>
+    </div>
+  </section>
+
+  <!-- 03 -->
+  <section id="compare">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="num">03 / 平台比价</div>
+        <h2>价差不是运气，是两套完全不同的让利结构</h2>
+        <p class="desc">
+          同一台机器在不同平台差出几百块，原因通常不在「谁更良心」，而在优惠是<b>叠加式</b>还是<b>直降式</b>。
+        </p>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th style="width:16%">平台</th>
+            <th style="width:26%">让利模式</th>
+            <th style="width:20%">决策成本</th>
+            <th style="width:20%">隐性成本</th>
+            <th style="width:18%">适合谁</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>京东自营</b></td>
+            <td>红包 → 品类券 → 以旧换新 → 国补，<b>五重叠加</b></td>
+            <td>高：要研究券包与顺序</td>
+            <td>低：正品、物流快、30 天价保</td>
+            <td>怕麻烦、要售后的人</td>
+          </tr>
+          <tr>
+            <td><b>拼多多百亿补贴</b></td>
+            <td><b>单品直降</b>，页面价即补贴价</td>
+            <td>低：不用领券凑单</td>
+            <td>中：库存波动大，售后网点少</td>
+            <td>不需要以旧换新的人</td>
+          </tr>
+          <tr>
+            <td><b>天猫官旗</b></td>
+            <td>预售锁价 + 跨店满减（每满 200 减 30）</td>
+            <td>中：要蹲尾款节点</td>
+            <td>中：热门配色易断货</td>
+            <td>有 88VIP、愿等的人</td>
+          </tr>
+          <tr>
+            <td><b>第三方店铺</b></td>
+            <td>裸低价，常不含票</td>
+            <td>低</td>
+            <td><b>高</b>：保修、翻新、国补不可用</td>
+            <td>懂行、接受风险的人</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 style="font-size:15px;margin:30px 0 6px">案例：一台旗舰的价格梯队</h3>
+      <p style="font-size:13px;color:var(--muted);margin-bottom:6px">
+        以小米 17 Pro Max 为例（2026 年 9 月口径），同一台机器存在三档「真实价格」：
+      </p>
+
+      <div class="price-bars">
+        <div class="pb">
+          <span class="lab">官方定价（高配）</span>
+          <div class="track"><div class="fill" style="width:100%;background:linear-gradient(90deg,#475569,#64748b)"></div></div>
+          <span class="val">¥6,999</span>
+        </div>
+        <div class="pb">
+          <span class="lab">国补后到手</span>
+          <div class="track"><div class="fill" style="width:78.6%;background:linear-gradient(90deg,#4f46e5,#6366f1)"></div></div>
+          <span class="val">¥5,499</span>
+        </div>
+        <div class="pb">
+          <span class="lab">第三方渠道最低</span>
+          <div class="track"><div class="fill" style="width:75.6%;background:linear-gradient(90deg,#0f766e,#14b8a6)"></div></div>
+          <span class="val">¥5,299</span>
+        </div>
+      </div>
+
+      <div class="insight">
+        <b>看这 1700 元差在哪：</b>官方价 → 国补价 的 1500 元差，来自政策；国补价 → 第三方价的 200 元，
+        来自渠道让利，同时牺牲了发票、官方保修与补贴资格。所以「最低价」三个字必须带上后缀：
+        <b>带票、可国补、官方保修的最低价</b>，才是可以横向比较的价格。
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 -->
+  <section id="scorer">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="num">04 / 性价比引擎</div>
+        <h2>两套排序，两种结论</h2>
+        <p class="desc">
+          下面是 4 款 2000 元档机型的六维打分（编辑基于公开参数与实测数据给出，非官方评分）。
+          综合得分 = Σ(权重 × 维度分)；性价比指数 = 综合得分 ÷ 价格（千元）。
+          拖权重、切排序，看这两块榜单各自怎么动。
+        </p>
+      </div>
+
+      <div class="scorer">
+        <div class="panel">
+          <h3>权重配置</h3>
+          <p class="sub">总和不要求为 100，系统会自动归一化</p>
+          <div id="sliders"></div>
+          <div class="presets">
+            <button class="preset" data-preset="balanced">均衡</button>
+            <button class="preset" data-preset="gamer">游戏党</button>
+            <button class="preset" data-preset="photo">摄影党</button>
+            <button class="preset" data-preset="student">学生党</button>
+          </div>
+        </div>
+
+        <div>
+          <div class="board-head">
+            <span class="board-lab">排序依据</span>
+            <div class="seg" id="seg">
+              <button class="seg-btn on" data-sort="score">综合得分</button>
+              <button class="seg-btn" data-sort="value">性价比指数</button>
+            </div>
+            <span class="board-hint" id="boardHint"></span>
+          </div>
+          <div class="rank" id="rank"></div>
+          <div class="insight" id="insight"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 -->
+  <section id="trust">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="num">05 / 可信度</div>
+        <h2>同样是「测评」，证据等级差四档</h2>
+        <p class="desc">判断一条评测值不值得信，看它有没有原始数据，而不是看它有多少播放量。</p>
+      </div>
+
+      <div class="rel">
+        <div class="rel-card">
+          <span class="lvl l1">A 级</span>
+          <h4>自购机 + 公开数据</h4>
+          <p>自费购买量产机，公布完整测试方法与原始曲线，可被复现。可信度最高。</p>
+        </div>
+        <div class="rel-card">
+          <span class="lvl l2">B 级</span>
+          <h4>送测机 + 部分数据</h4>
+          <p>厂商提供样机，但给出了帧率、温度等实测值。注意样机可能与量产机存在差异。</p>
+        </div>
+        <div class="rel-card">
+          <span class="lvl l3">C 级</span>
+          <h4>长期用户反馈</h4>
+          <p>酷安/社区里用了三个月以上的真实机主。样本零散但最贴近日常，尤其适合验证系统与续航。</p>
+        </div>
+        <div class="rel-card">
+          <span class="lvl l4">D 级</span>
+          <h4>参数复述</h4>
+          <p>把官网参数改写一遍，没有任何实测。读起来很专业，信息增量为零。</p>
+        </div>
+      </div>
+
+      <div class="two" style="margin-top:22px">
+        <div class="panel">
+          <h3>测评侧的四类偏差</h3>
+          <p class="sub">读评测时要主动打折</p>
+          <ul class="list">
+            <li><div><b>样机偏差</b>：送测机常经过挑选，量产批次可能缩水。</div></li>
+            <li><div><b>首发偏差</b>：首周体验最好，三个月后才是真实状态。</div></li>
+            <li><div><b>场景偏差</b>：恒温实验室的帧率，不代表夏天户外开黑。</div></li>
+            <li><div><b>幸存者偏差</b>：只有出问题的人才会发帖，口碑分布天然偏负。</div></li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h3>比价侧的四类陷阱</h3>
+          <p class="sub">下单前逐条对一遍</p>
+          <ul class="list">
+            <li><div><b>先涨后降</b>：大促前调高标价，折后仍高于平日价。</div></li>
+            <li><div><b>伪低价</b>：无票、非国行、不参与国补，省下的钱在保修期吐回去。</div></li>
+            <li><div><b>补贴不可叠加</b>：多件合并付款会让国补失效。</div></li>
+            <li><div><b>价格时效性</b>：一周前的报价没有任何参考价值，比价必须带时间戳。</div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 -->
+  <section id="sources">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="num">06 / 来源</div>
+        <h2>本页数据从哪里来</h2>
+        <p class="desc">全部为公开页面，可逐条复核。外部内容仅作资料使用。</p>
+      </div>
+      <div class="srcs" id="srcs"></div>
+
+      <p class="disclaimer">
+        <b>口径说明：</b>六维打分为编辑基于公开参数与第三方实测给出的相对评分（0–100），用于演示加权逻辑，不代表任何机构结论；
+        机型价格为检索时的公开报价，随平台活动实时变动。性价比指数的公式被刻意做得简单透明，
+        便于验证——真实系统里还应引入评分人数、价格波动率、库存状态等修正项。
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>极客比价 GeekPrice</b><span>·</span>
+    <span>数码产品测评聚合与比价系统</span>
+    <span style="margin-left:auto">2026-10-23 · 单页离线可用</span>
+  </div>
+</footer>
+
+<script>
+/* ================= 数据 ================= */
+const DIMS = [
+  { key:'perf',  name:'性能', w:25 },
+  { key:'cam',   name:'影像', w:20 },
+  { key:'scr',   name:'屏幕', w:15 },
+  { key:'batt',  name:'续航', w:20 },
+  { key:'build', name:'做工', w:10 },
+  { key:'os',    name:'系统', w:10 }
+];
+
+const PHONES = [
+  {
+    name:'iQOO Z11 Turbo', price:2399,
+    s:{ perf:88, cam:82, scr:80, batt:84, build:78, os:76 },
+    note:'双芯 + 2 亿像素，最均衡的一台'
+  },
+  {
+    name:'一加 Turbo 6', price:2097,
+    s:{ perf:84, cam:72, scr:82, batt:92, build:80, os:78 },
+    note:'9000mAh + 27W 反充，续航最强'
+  },
+  {
+    name:'REDMI Turbo 5 Max', price:2199,
+    s:{ perf:86, cam:70, scr:85, batt:95, build:82, os:80 },
+    note:'屏幕亮度与防护最强，影像最弱'
+  },
+  {
+    name:'真我 Neo8', price:2399,
+    s:{ perf:87, cam:86, scr:84, batt:86, build:76, os:74 },
+    note:'潜望长焦，影像党首选'
+  }
+];
+
+const PRESETS = {
+  balanced:{ perf:25, cam:20, scr:15, batt:20, build:10, os:10 },
+  gamer:   { perf:40, cam:5,  scr:20, batt:15, build:10, os:10 },
+  photo:   { perf:15, cam:40, scr:20, batt:10, build:5,  os:10 },
+  student: { perf:20, cam:10, scr:10, batt:30, build:10, os:20 }
+};
+
+const SOURCES = [
+  { t:'新浪：2026 年靠谱手机评测渠道全指南', d:'2026-10-15 · 国内/海外/社区三类测评资源与四步选机路径', u:'https://www.sina.cn/gc/article/nivhtum8153779.html' },
+  { t:'DXOMARK 智能手机排行榜', d:'影像/屏幕/音频/续航独立评分，公开测试流程', u:'https://www.dxomark.com/smartphones/' },
+  { t:'GSMArena 机型参数库', d:'规格最全，用户评分体系透明', u:'https://www.gsmarena.com/' },
+  { t:'中关村在线：京东与拼多多手机比价全攻略', d:'2026-10-21 · 叠加式 vs 直降式两种让利结构、隐性成本对比', u:'https://pad.zol.com.cn/1263/12630788.html' },
+  { t:'ZOL：2026 年超高性价比手机怎么选', d:'2026-02-21 · 四款中端机参数与售价来源', u:'https://mobile.zol.com.cn/1133/11331412.html' },
+  { t:'汉斯出版社：手机性价比分析——基于因子分析与聚类分析', d:'从多指标抽取因子、计算综合评分，再结合价格构造性价比统计量', u:'https://www.hanspub.org/journal/paperinformation?paperID=56758' },
+  { t:'百度百科：性价比值', d:'性价比 = 性能 / 价格 的基础定义与衍生指标', u:'https://baike.baidu.com/item/性价比值/10952997' },
+  { t:'慢慢买：历史价格查询', d:'识别「先涨后降」，查商品历史最低价', u:'https://tool.manmanbuy.com/HistoryLowest.aspx' },
+  { t:'小米 17 Pro Max 各版本售价与优惠解析', d:'2026-09 口径：官方价 / 国补后 / 第三方渠道三档价格', u:'https://kuku.baidu.com/landing/tscp_doc/17f822aadb4689086e7f29de8a27c91f' }
+];
+
+/* ================= 权重面板 ================= */
+const weights = { ...PRESETS.balanced };
+const slidersEl = document.getElementById('sliders');
+
+slidersEl.innerHTML = DIMS.map(d => `
+  <div class="slider">
+    <div class="row"><span>${d.name}</span><b id="w-${d.key}">${weights[d.key]}%</b></div>
+    <input type="range" min="0" max="40" step="1" value="${weights[d.key]}" data-key="${d.key}" aria-label="${d.name}权重">
+  </div>
+`).join('');
+
+slidersEl.addEventListener('input', e => {
+  const key = e.target.dataset.key;
+  if (!key) return;
+  weights[key] = +e.target.value;
+  document.getElementById('w-' + key).textContent = weights[key] + '%';
+  render();
+});
+
+document.querySelectorAll('.preset').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const p = PRESETS[btn.dataset.preset];
+    Object.assign(weights, p);
+    DIMS.forEach(d => {
+      const input = slidersEl.querySelector(`input[data-key="${d.key}"]`);
+      input.value = weights[d.key];
+      document.getElementById('w-' + d.key).textContent = weights[d.key] + '%';
+    });
+    render();
+  });
+});
+
+/* ================= 计算与渲染 ================= */
+const fmt = n => '¥' + Math.round(n).toLocaleString('en-US');
+let sortBy = 'score';
+
+function compute(){
+  const sum = DIMS.reduce((a, d) => a + (weights[d.key] || 0), 0);
+  return PHONES.map(p => {
+    let score = 0;
+    if (sum > 0) DIMS.forEach(d => { score += (weights[d.key] || 0) / sum * p.s[d.key]; });
+    const value = score / (p.price / 1000);   // 性价比指数：每千元买到的综合分
+    return { ...p, score, value };
+  });
+}
+
+function render(){
+  const all = compute();
+  const maxScore = Math.max(1, ...all.map(r => r.score));
+  const maxValue = Math.max(1, ...all.map(r => r.value));
+
+  const byScore = all.slice().sort((a, b) => b.score - a.score);
+  const byValue = all.slice().sort((a, b) => b.value - a.value);
+  const rows = sortBy === 'score' ? byScore : byValue;
+  const max = sortBy === 'score' ? maxScore : maxValue;
+
+  document.getElementById('rank').innerHTML = rows.map((r, i) => {
+    const metric = sortBy === 'score' ? r.score : r.value;
+    const shown  = sortBy === 'score' ? r.score.toFixed(1) : (r.value / maxValue * 100).toFixed(0);
+    const other  = sortBy === 'score'
+      ? `性价比 ${(r.value / maxValue * 100).toFixed(0)}`
+      : `综合 ${r.score.toFixed(1)}`;
+    return `
+    <div class="rrow${i === 0 ? ' top' : ''}">
+      <div class="head">
+        <span class="rank-n">${i + 1}</span>
+        <span class="name">${r.name}</span>
+        <span class="price">${fmt(r.price)} · ${r.note}</span>
+      </div>
+      <div class="nums">
+        <span>${sortBy === 'score' ? '综合' : '性价比'} <b>${shown}</b></span>
+        <span>${other}</span>
+        <div class="mbar"><i style="width:${(metric / max * 100).toFixed(1)}%"></i></div>
+      </div>
+    </div>`;
+  }).join('');
+
+  const s1 = byScore[0], v1 = byValue[0];
+  const moved = byScore.map((r, i) => ({ name: r.name, from: i + 1, to: byValue.findIndex(x => x.name === r.name) + 1 }))
+                      .filter(x => x.from !== x.to)
+                      .sort((a, b) => Math.abs(b.to - b.from) - Math.abs(a.to - a.from))[0];
+
+  document.getElementById('boardHint').textContent = sortBy === 'score'
+    ? '综合得分第一：' + s1.name
+    : '性价比第一：' + v1.name;
+
+  let text = `综合得分榜第一是 <b>${s1.name}</b>（${s1.score.toFixed(1)} 分），性价比榜第一是 <b>${v1.name}</b>（¥${v1.price}，` +
+             `每千元 ${v1.value.toFixed(1)} 分）。`;
+  if (s1.name === v1.name) {
+    text += ` 当前权重下两者重合，说明「更强」与「更值」暂时同向。`;
+  } else {
+    text += ` 两者不一致：<b>${s1.name}</b> 更强但更贵（¥${s1.price}），价格作为分母把它拉了下来。`;
+  }
+  if (moved) {
+    text += ` 切换排序后名次变化最大的是 <b>${moved.name}</b>：综合分第 ${moved.from} → 性价比第 ${moved.to}。`;
+  }
+  text += ` <br><b>结论：</b>「综合分」回答“它有多强”，会随权重剧烈翻转；「性价比」回答“这个价买它亏不亏”，因为有价格做分母，在这组数据里反而更稳。做推荐时两者都要给，只给一个都是误导。`;
+
+  document.getElementById('insight').innerHTML = text;
+}
+
+document.getElementById('seg').addEventListener('click', e => {
+  const b = e.target.closest('.seg-btn');
+  if (!b) return;
+  document.querySelectorAll('.seg-btn').forEach(x => x.classList.toggle('on', x === b));
+  sortBy = b.dataset.sort;
+  render();
+});
+
+/* ================= 来源 ================= */
+document.getElementById('srcs').innerHTML = SOURCES.map(s => `
+  <a class="src" href="${s.u}" target="_blank" rel="noopener">
+    <b>${s.t}</b><span>${s.d}</span>
+  </a>
+`).join('');
+
+render();
+</script>
+</body>
+</html>

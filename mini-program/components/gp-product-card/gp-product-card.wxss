@@ -1,0 +1,152 @@
+.card {
+  background: #ffffff;
+  border: 1rpx solid #e5e7eb;
+  border-radius: 16rpx;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.image-wrap {
+  position: relative;
+  height: 320rpx;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img {
+  width: 100%;
+  height: 100%;
+}
+.badge {
+  position: absolute;
+  left: 12rpx;
+  bottom: 12rpx;
+  z-index: 2;
+  font-size: 20rpx;
+  line-height: 1;
+  padding: 8rpx 14rpx;
+  border-radius: 10rpx;
+  white-space: nowrap;
+}
+.badge-series {
+  background: rgba(255, 247, 237, 0.94);
+  color: #c2410c;
+  border: 1rpx solid #fed7aa;
+  font-weight: 600;
+}
+.tags {
+  position: absolute;
+  left: 12rpx;
+  top: 12rpx;
+  display: flex;
+  gap: 8rpx;
+  z-index: 2;
+}
+.tag {
+  font-size: 20rpx;
+  padding: 4rpx 14rpx;
+  border-radius: 8rpx;
+}
+.tag-value {
+  background: #ecfdf5;
+  color: #10b981;
+}
+.tag-discount {
+  background: #fff7ed;
+  color: #f97316;
+}
+.info-btn {
+  position: absolute;
+  right: 12rpx;
+  bottom: 12rpx;
+  z-index: 3;
+  width: 44rpx;
+  height: 44rpx;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  color: #64748b;
+  font-size: 24rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2rpx 6rpx rgba(0, 0, 0, 0.12);
+}
+.info {
+  padding: 20rpx 24rpx 8rpx;
+  flex: 1;
+}
+.name {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #1f2937;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.brand {
+  display: block;
+  font-size: 22rpx;
+  color: #9ca3af;
+  margin-top: 8rpx;
+}
+.meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14rpx;
+  font-size: 22rpx;
+}
+.value {
+  color: #10b981;
+  font-weight: 600;
+}
+.value-dim {
+  color: #9ca3af;
+}
+.rating {
+  color: #6b7280;
+}
+.price-row {
+  margin-top: 12rpx;
+  display: flex;
+  align-items: baseline;
+  gap: 10rpx;
+}
+.price-label {
+  font-size: 22rpx;
+  color: #9ca3af;
+}
+.data-hint {
+  font-size: 18rpx;
+  color: #cbd5e1;
+}
+.price {
+  font-size: 34rpx;
+  font-weight: 700;
+  color: #f97316;
+}
+.actions {
+  padding: 16rpx 24rpx 20rpx;
+  display: flex;
+  gap: 16rpx;
+}
+.act-btn {
+  flex: 1;
+  margin: 0;
+  font-size: 24rpx;
+  background: #ffffff;
+  color: #2563eb;
+  border: 1rpx solid #2563eb;
+  border-radius: 12rpx;
+  line-height: 2.2;
+}
+.act-btn-on {
+  color: #9ca3af;
+  border-color: #e5e7eb;
+}
+.act-btn-primary {
+  background: #2563eb;
+  color: #ffffff;
+}

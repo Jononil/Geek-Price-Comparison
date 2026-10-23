@@ -1,0 +1,24 @@
+<view class="cat-page">
+  <view class="all-entry gp-card" bindtap="onGoAll">
+    <text class="all-name">全部商品</text>
+    <text class="all-arrow">›</text>
+  </view>
+
+  <gp-loading wx:if="{{state === 'loading'}}" text="加载分类中…" />
+  <gp-error wx:elif="{{state === 'error'}}" bind:retry="onRetry" />
+  <gp-empty wx:elif="{{categories.length === 0}}" text="暂无分类" />
+
+  <view wx:else class="cat-grid">
+    <view
+      class="cat-item"
+      wx:for="{{categories}}"
+      wx:key="id"
+      data-id="{{item.id}}"
+      data-name="{{item.name}}"
+      bindtap="onGoCategory"
+    >
+      <text class="cat-name">{{item.name}}</text>
+      <text class="cat-arrow">›</text>
+    </view>
+  </view>
+</view>

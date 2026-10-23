@@ -1,0 +1,1 @@
+SELECT product_id, url, sort FROM product_images ORDER BY product_id, sort;

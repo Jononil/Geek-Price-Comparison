@@ -1,0 +1,1 @@
+INSERT INTO product_specs (product_id, spec_key, spec_label, spec_value, sort) VALUES (45545, 'socket', '接口', 'AM5/LGA1700', 1),(45545, 'cores', '核心', '6核12线程', 2),(45545, 'base', '基础频率', '3.6GHz', 3),(45545, 'tdp', 'TDP', '65W', 4),(45545, 'arch', '架构', 'Zen4/Alder Lake', 5)

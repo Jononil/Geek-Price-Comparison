@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "商品对比",
+  "usingComponents": {
+    "gp-product-card": "/components/gp-product-card/gp-product-card"
+  }
+}

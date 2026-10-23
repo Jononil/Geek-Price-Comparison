@@ -1,0 +1,13 @@
+{
+  "name": "geek-price-mini",
+  "version": "1.0.0",
+  "description": "极客比价微信小程序（原生 WXML/WXSS/TypeScript）",
+  "private": true,
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "miniprogram-api-typings": "^4.0.5",
+    "typescript": "^5.6.3"
+  }
+}

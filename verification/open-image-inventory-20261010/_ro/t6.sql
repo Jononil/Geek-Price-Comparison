@@ -1,0 +1,1 @@
+SELECT url, COUNT(*) c FROM product_images GROUP BY url HAVING c>1;

@@ -1,0 +1,24 @@
+# ============================================================
+# 演示环境配置（Spring Profile: demo）
+# ------------------------------------------------------------
+# 用途：毕业设计演示/答辩环境。演示库为人工审核的纯净数据集，
+#       阻止一切 Mock 同步写入（定时 + 手动全平台 + 手动单平台），
+#       防止 Mock 数据污染演示数据。
+#
+# 启动方式（任选其一）：
+#   java -jar geek-price-backend.jar --spring.profiles.active=demo
+#   SPRING_PROFILES_ACTIVE=demo java -jar geek-price-backend.jar
+#   Maven：mvn spring-boot:run "-Dspring-boot.run.profiles=demo"
+#
+# 说明：
+# - mock-enabled=false：后端在服务层拦截所有 Mock 数据源同步，
+#   定时任务直接跳过；手动同步接口返回明确错误（403 + 提示信息），
+#   不伪装成功。如确需在演示环境手动同步，显式改为 true 即可解锁
+#   （后端强制校验，不依赖前端隐藏按钮）。
+# - 开发环境（默认无 profile）不受影响：enabled/mock-enabled 均保持 true。
+# ============================================================
+
+product:
+  sync:
+    enabled: false        # 关闭每日 03:00 自动全平台同步
+    mock-enabled: false   # 阻止所有 Mock 同步写入（定时与手动接口一并拦截）

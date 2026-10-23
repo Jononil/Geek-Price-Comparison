@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>极客比价 - 数码硬件智能比价与决策</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-fixed": "#00174b", "on-primary": "#ffffff", "on-secondary-container": "#5c2400", "primary-container": "#2563eb", "outline-variant": "#c3c6d7", "secondary-fixed": "#ffdbca", "on-error-container": "#93000a", "on-background": "#121c2a", "on-error": "#ffffff", "primary-fixed-dim": "#b4c5ff", "error": "#ba1a1a", "on-primary-fixed-variant": "#003ea8", "background": "#f8f9ff", "secondary": "#9d4300", "error-container": "#ffdad6", "on-secondary-fixed-variant": "#783200", "on-primary-container": "#eeefff", "tertiary-fixed": "#6ffbbe", "on-surface": "#121c2a", "surface-bright": "#f8f9ff", "on-secondary": "#ffffff", "surface-container-lowest": "#ffffff", "surface-container": "#e6eeff", "surface-container-highest": "#d9e3f6", "on-tertiary-fixed-variant": "#005236", "tertiary-container": "#007d55", "surface": "#f8f9ff", "secondary-container": "#fd761a", "surface-dim": "#d0dbed", "surface-variant": "#d9e3f6", "on-secondary-fixed": "#341100", "tertiary": "#006242", "surface-container-low": "#eff4ff", "inverse-primary": "#b4c5ff", "secondary-fixed-dim": "#ffb690", "surface-container-high": "#dee9fc", "primary": "#004ac6", "surface-tint": "#0053db", "on-tertiary-container": "#bdffdb", "primary-fixed": "#dbe1ff", "on-surface-variant": "#434655", "on-tertiary-fixed": "#002113", "inverse-surface": "#27313f", "inverse-on-surface": "#eaf1ff", "tertiary-fixed-dim": "#4edea3", "outline": "#737686", "on-tertiary": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-mobile": "1rem", "gutter-mobile": "0.75rem", "margin-desktop": "2rem", "unit-sm": "0.75rem", "unit-xs": "0.5rem", "unit-xl": "2rem", "unit-lg": "1.5rem", "unit-2xl": "3rem", "gutter-desktop": "1.5rem", "unit-2xs": "0.25rem", "unit-md": "1rem" }, "fontFamily": { "headline-lg": [ "Inter" ], "tag-label": [ "Inter" ], "label-numeric-md": [ "JetBrains Mono" ], "display-hero-mobile": [ "Inter" ], "display-hero": [ "Inter" ], "label-numeric-lg": [ "JetBrains Mono" ], "label-numeric-sm": [ "JetBrains Mono" ], "headline-md": [ "Inter" ], "headline-sm": [ "Inter" ], "body-sm": [ "Inter" ], "body-md": [ "Inter" ], "body-lg": [ "Inter" ] }, "fontSize": { "headline-lg": [ "24px", { "lineHeight": "32px", "fontWeight": "600" } ], "tag-label": [ "11px", { "lineHeight": "14px", "fontWeight": "500" } ], "label-numeric-md": [ "16px", { "lineHeight": "20px", "fontWeight": "600" } ], "display-hero-mobile": [ "28px", { "lineHeight": "36px", "fontWeight": "700" } ], "display-hero": [ "36px", { "lineHeight": "44px", "fontWeight": "700" } ], "label-numeric-lg": [ "24px", { "lineHeight": "28px", "fontWeight": "700" } ], "label-numeric-sm": [ "12px", { "lineHeight": "16px", "fontWeight": "500" } ], "headline-md": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ], "headline-sm": [ "16px", { "lineHeight": "24px", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ], "body-md": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "body-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ] } } } }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-[1440px] mx-auto px-margin-desktop flex items-center justify-between gap-gutter-desktop"><div class="flex items-center gap-unit-xl shrink-0"><div class="flex items-center gap-unit-sm"><img alt="极客比价 Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAi32u4yrB8yOiWgVnFvcM4e4SahBbt9KtIAhxTQQUiE6N4S8iNZ43hW_PZlls0r0aG75OF3kKnvh5qT1RCM89f-aW8xTYDH03wK3LHlfkeXgDyLL_HXQlxhjSAgkUq3djDporNRpOwY_yjLCUuKPA_6PwjCMVYPabEgnN_RmTOkLskO5NhzvSh8mQuYi3aydCpwGeRFwix0xftVP_rrIwAfIIzYb8pQoRjllNh8z3FhAst7U2k31hM6g"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">极客比价</span><span class="font-tag-label text-tag-label text-on-surface-variant leading-tight">数码硬件智能比价与决策</span></div></div><nav class="hidden xl:flex items-center gap-unit-xs" data-active-classes="bg-primary-container text-on-primary-container rounded-lg font-semibold"><a class="px-unit-sm py-unit-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg font-body-md text-body-md" data-path="home" href="#">首页</a><a aria-current="page" class="px-unit-sm py-unit-xs transition-colors bg-primary-container text-on-primary-container rounded-lg font-semibold" data-path="products-search" href="#">找产品</a><a class="px-unit-sm py-unit-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg font-body-md text-body-md" data-path="compare" href="#">产品对比</a><a class="px-unit-sm py-unit-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg font-body-md text-body-md" data-path="reviews" href="#">测评</a><a class="px-unit-sm py-unit-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg font-body-md text-body-md" data-path="rankings" href="#">排行榜</a></nav></div><div class="flex-1 max-w-xl mx-unit-md"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-unit-sm text-outline pointer-events-none text-[20px]">search</span><input class="w-full h-10 pl-10 pr-12 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" placeholder="搜索手机、笔记本、显卡、数码好物..." type="text"/><button class="absolute right-1 top-1 bottom-1 px-unit-xs bg-primary-container text-on-primary-container hover:bg-primary transition-colors rounded-lg flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[18px]">arrow_forward</span></button></div></div><div class="flex items-center gap-unit-md shrink-0"><button class="relative p-unit-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-secondary-container"></span></button><a class="flex items-center gap-unit-2xs px-unit-sm py-unit-xs rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-body-sm text-body-sm font-medium" data-path="compare" href="#"><span class="material-symbols-outlined text-primary-container text-[18px]">balance</span><span>对比</span><span class="font-label-numeric-sm text-label-numeric-sm px-unit-2xs rounded bg-surface-container-highest text-primary font-bold">3</span></a><div class="flex items-center gap-unit-2xs pl-unit-xs cursor-pointer group"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2xVl2CqawJHv3XS8k2dGGIfqMFBqK2mB4TMDW0mM0t0OZTnp22YYbfJV93VtllG7pU0twzPwr_SxuEGPLb7_LGiVKgR7Qi8Z1RChPGUVXOGdb8SVUlOpTCElxhxPVyAAsKprY44QSPooCzbG9S8F_E6CJESxYOVCJIHOLaVNUQFEBqAK4-CPMf3Isw-eF_rUdugJoEctUBXgb5ei7IbzWLD9-FNwNoh3PlWBMCe8_IwyH5K-e_a15dA"/><span class="material-symbols-outlined text-outline group-hover:text-on-surface transition-colors text-[18px]">expand_more</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Breadcrumb & Quick Actions Bar -->
+<section class="max-w-[1440px] w-full mx-auto px-margin-mobile md:px-margin-desktop py-unit-sm flex flex-wrap items-center justify-between gap-unit-xs">
+<nav class="flex items-center gap-unit-xs font-body-sm text-body-sm text-on-surface-variant flex-wrap">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">home</span>
+<span>首页</span>
+</a>
+<span class="text-outline-variant font-label-numeric-sm">/</span>
+<a class="hover:text-primary transition-colors" href="#">手机数码</a>
+<span class="text-outline-variant font-label-numeric-sm">/</span>
+<a class="hover:text-primary transition-colors" href="#">智能手机</a>
+<span class="text-outline-variant font-label-numeric-sm">/</span>
+<span class="text-on-surface font-medium truncate max-w-[240px] md:max-w-none">Apple iPhone 16 Pro</span>
+</nav>
+<div class="flex items-center gap-unit-sm">
+<span class="inline-flex items-center gap-1 font-tag-label text-tag-label bg-surface-container-low px-unit-xs py-unit-2xs rounded text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>
+        数据最后抓取: 6分钟前
+      </span>
+<button class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1 font-body-sm text-body-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span class="hidden sm:inline">分享商品</span>
+</button>
+</div>
+</section>
+<!-- 3-Column Core Overview Grid Section -->
+<section class="max-w-[1440px] w-full mx-auto px-margin-mobile md:px-margin-desktop pb-unit-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+<!-- Left Column: Image Gallery (~380px -> 3.5 cols on desktop) -->
+<div class="lg:col-span-4 flex flex-col gap-unit-md">
+<div class="relative bg-surface-container-lowest rounded-xl p-unit-md shadow-sm overflow-hidden group">
+<div class="absolute top-unit-md left-unit-md z-10 flex flex-col gap-unit-2xs">
+<span class="inline-flex items-center gap-1 px-unit-xs py-unit-2xs rounded bg-surface-container-highest/90 backdrop-blur font-tag-label text-tag-label text-primary font-semibold">
+<span class="material-symbols-outlined text-[14px]">360</span>
+              360° 全景视图
+            </span>
+<span class="inline-flex items-center px-unit-xs py-unit-2xs rounded bg-secondary-fixed text-on-secondary-fixed font-tag-label text-tag-label font-bold">
+              原色钛金属
+            </span>
+</div>
+<button class="absolute top-unit-md right-unit-md z-10 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">fullscreen</span>
+</button>
+<!-- Main Product Visual Viewport -->
+<div class="w-full aspect-[4/4.2] flex items-center justify-center relative overflow-hidden rounded-lg bg-surface-container-low">
+<img class="w-full h-full object-contain p-unit-md transition-transform duration-300 group-hover:scale-105" data-alt="Close up commercial studio photography of Apple iPhone 16 Pro Natural Titanium with fine brushed titanium frame texture, refined metallic finish, subtle soft blue-tinted studio reflection on pure neutral minimal background, razor sharp detail" id="mainProductImage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLY9P2EG2q99wZgEIXKymlWc8pZV5Qn-OENEkw5qYqSJY_Bk6IVQPJtvBhX92_VZw4kKhl342b_SZAj1x6Co9CSxfjemkjtBYgxc19aR74szAm8kJbk5UZlkqu28PQe9wlKNXt3sc6WsAzJ9nvZx5E_eeWGHE746N9QHGqo-VMXMr6gF_A3KRXt68r9DhLEQl_5doftaShDb_YzSe0OYYS19_5zOEe0Xgi7ZJIaxDNSFWN8yqT49UepA"/>
+</div>
+<!-- Thumbnails Selector -->
+<div class="grid grid-cols-4 gap-unit-xs mt-unit-md">
+<button class="gallery-thumb active rounded-lg p-unit-2xs bg-surface-container-high transition-all shadow-sm ring-2 ring-primary-container" onclick="switchGallery(0)" type="button">
+<div class="w-full aspect-square rounded overflow-hidden bg-surface-container-low flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Front view of iPhone 16 Pro Natural Titanium showing dynamic island edge to edge OLED screen in studio lighting with high tech wallpaper" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOV0cjLCJ14MVsaHVUDA-wJVlljdMnLY1XwNJkuuo6PlUn29e8M5o6SO7FXOSpqOZgwB1Jl0GY63vHe6DOseHNCKL3BxsHyF2573UnVqI8zichm5h7oThGoumBVpcSlCg-IL4yjcqUN64CTnUm-7snXOVFWeD73LB6mK_O_1RUzMu8um6L_t6gnMDP19es6mWF2PnqWqPWQUx2drmv7n1MyuFzq9CqSAP7WfK34WSRDwfJQMP5Py28cA"/>
+</div>
+</button>
+<button class="gallery-thumb rounded-lg p-unit-2xs bg-surface-container-lowest hover:bg-surface-container-low transition-all shadow-sm" onclick="switchGallery(1)" type="button">
+<div class="w-full aspect-square rounded overflow-hidden bg-surface-container-low flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Back angled view of iPhone 16 Pro showing triple camera sapphire lens setup and natural titanium frosted back glass" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO-Z14RvA2K3zbiE9HqUNf4n23t-CAJyfmwfbLFk8v--0n72tcii0pB_R68tr0hxGusYItN_BMmPRJYTUJHIB7IjOS-xay9MdfBVMSIZLFt_i38vcRSA-sbAoUUJCzB2XduX9SD9D3tLjO3A1yn6OS5pWK7EdS2zKR7V1Pvm_5BR9zkUgP5OUa55biVDuBye4db-botkNjqyU_Jxm8KGq7aSDrQKzS8peg7IsHN-Yf07g9MLpF5DZKNA"/>
+</div>
+</button>
+<button class="gallery-thumb rounded-lg p-unit-2xs bg-surface-container-lowest hover:bg-surface-container-low transition-all shadow-sm" onclick="switchGallery(2)" type="button">
+<div class="w-full aspect-square rounded overflow-hidden bg-surface-container-low flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Macro detail shot of iPhone 16 Pro side chassis revealing the innovative flush sapphire touch camera control button and titanium bevel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaEfYIOhtY825JGc9q3CI3lmiHjVe6q_BYp0f60UprNQBqXJnyMWEYdI4THVB2xV31F1AtAxcF1IG9oBOHHhXHQBNhQpNCMJKKVKxYZUvDeIPKbNrMUOiO8jsbY3WJp5CGvBn02ryFX4_JtWA4eLYQNSC6MdCPaWH2-_nQEuHCFqOnrIANAZ8yhKQjyQXn_hMx2ClOu-vpYD23J8ROlPIg3epzuDrKBlBD_2wBB9HuKJ_-uJ-LYXoU_Q"/>
+</div>
+</button>
+<button class="gallery-thumb rounded-lg p-unit-2xs bg-surface-container-lowest hover:bg-surface-container-low transition-all shadow-sm" onclick="switchGallery(3)" type="button">
+<div class="w-full aspect-square rounded overflow-hidden bg-surface-container-low flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Top-down perspective of iPhone 16 Pro retail package unboxing with braided USB-C cable and certification documentation on clean slate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0UXKNyH1s8JHSqgY8d0ueBvyFjFy5b8nnRP6L0boOM11B1My3sPLKEl6A01EOOasu3VMZpwBmHA9COo7qRgaGTA403cHdDycdJTBP5Ga3b8yF-MJgko5xlZMsr9Pgc9kwZ6374ti-FcYGt1x7N9l8wRR84rhJuzq8AjfVE3f8O_A3R5oUOndVLJTuTo2TObFQD9gyIxcM2uN2-M4f6yv2QyBzL6vcCc3cEzZnJ-W1NEoedaEM7A_q3g"/>
+</div>
+</button>
+</div>
+</div>
+<!-- Quick Spec Radar Pill Banner -->
+<div class="bg-surface-container-lowest rounded-xl p-unit-md shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-unit-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface">正品保真溯源</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">聚合官方授权通路，支持SN码验真</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</div>
+</div>
+<!-- Middle Column: Specs & Verdict (~460px -> 4.5 cols on desktop) -->
+<div class="lg:col-span-5 flex flex-col gap-unit-md">
+<div class="bg-surface-container-lowest rounded-xl p-unit-lg shadow-sm flex flex-col gap-unit-md">
+<!-- Category Badges -->
+<div class="flex flex-wrap items-center gap-unit-xs">
+<span class="px-unit-xs py-unit-2xs rounded bg-secondary-fixed text-on-secondary-fixed font-tag-label text-tag-label font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">local_fire_department</span>热门爆款
+            </span>
+<span class="px-unit-xs py-unit-2xs rounded bg-error-container text-on-error-container font-tag-label text-tag-label font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">trending_down</span>近期降价
+            </span>
+<span class="px-unit-xs py-unit-2xs rounded bg-surface-container text-primary font-tag-label text-tag-label font-semibold">
+              编辑推荐
+            </span>
+<span class="px-unit-xs py-unit-2xs rounded bg-surface-container-high text-on-surface-variant font-tag-label text-tag-label">
+              自营正品
+            </span>
+</div>
+<!-- Title & Model -->
+<div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-bold">Apple iPhone 16 Pro 256GB 原色钛金属</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">国行全网通 5G / A3294 / 支持双卡双待 / 新一代超瓷晶面板</p>
+</div>
+<!-- Dual Score Badges Section -->
+<div class="grid grid-cols-2 gap-unit-sm">
+<div class="bg-surface-container-low rounded-lg p-unit-sm flex items-center justify-between">
+<div>
+<span class="font-tag-label text-tag-label text-on-surface-variant block">极客综合评定</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold leading-tight">9.3 <span class="font-body-sm text-body-sm font-normal text-outline">/ 10</span></span>
+</div>
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-label-numeric-sm text-label-numeric-sm font-bold">
+                A+
+              </div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-unit-sm flex items-center justify-between">
+<div>
+<span class="font-tag-label text-tag-label text-on-surface-variant block">实时性价比分</span>
+<div class="flex items-baseline gap-1">
+<span class="font-label-numeric-lg text-label-numeric-lg text-tertiary-container font-bold">88</span>
+<span class="font-tag-label text-tag-label text-tertiary-container font-medium">极力推荐</span>
+</div>
+</div>
+<div class="w-9 h-9 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">thumb_up</span>
+</div>
+</div>
+</div>
+<!-- AI Summary Callout Card -->
+<div class="rounded-xl p-unit-md bg-surface-container-low relative overflow-hidden shadow-sm">
+<div class="absolute -right-8 -top-8 w-28 h-28 bg-primary-container/10 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-center gap-unit-xs mb-unit-xs">
+<span class="inline-flex items-center gap-1 px-unit-xs py-unit-2xs rounded-full bg-primary-container text-on-primary-container font-tag-label text-tag-label font-semibold">
+<span class="material-symbols-outlined text-[12px]">auto_awesome</span>
+                AI 智能决策摘要
+              </span>
+<span class="font-tag-label text-tag-label text-outline">基于 1,420+ 篇多维实测与 30 天电商价盘</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+              搭载 <strong class="font-semibold text-primary">A18 Pro 芯片</strong>，配备新一代 4800 万像素超广角与 5 倍潜望长焦，新增相机控制按键。续航较上一代提升约 15%，目前拼多多百亿补贴与京东自营价差达 <strong class="font-semibold text-secondary-container">800 元</strong>，适合 iPhone 13/14 用户升级。
+            </p>
+</div>
+<!-- Core Hardware Specifications Mini Table -->
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-unit-xs flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary-container text-[18px]">memory</span>
+              核心规格参数对标
+            </div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-unit-xs bg-surface-container-low p-unit-sm rounded-lg text-body-sm">
+<div class="flex flex-col">
+<span class="text-on-surface-variant font-tag-label text-tag-label">处理器 SoC</span>
+<span class="font-semibold text-on-surface">A18 Pro (3nm 工艺)</span>
+</div>
+<div class="flex flex-col">
+<span class="text-on-surface-variant font-tag-label text-tag-label">屏幕规格</span>
+<span class="font-semibold text-on-surface">6.3" XDR 120Hz ProMotion</span>
+</div>
+<div class="flex flex-col">
+<span class="text-on-surface-variant font-tag-label text-tag-label">影像三摄模组</span>
+<span class="font-semibold text-on-surface">48MP 主摄+48MP广角+5X长焦</span>
+</div>
+<div class="flex flex-col">
+<span class="text-on-surface-variant font-tag-label text-tag-label">运存 / 闪存</span>
+<span class="font-semibold text-on-surface">8GB LPDDR5X / 256GB</span>
+</div>
+<div class="flex flex-col">
+<span class="text-on-surface-variant font-tag-label text-tag-label">电池额定容量</span>
+<span class="font-semibold text-on-surface">3582mAh (视频27h)</span>
+</div>
+<div class="flex flex-col">
+<span class="text-on-surface-variant font-tag-label text-tag-label">接口标准</span>
+<span class="font-semibold text-on-surface">USB-C 3.0 (10Gbps)</span>
+</div>
+</div>
+</div>
+<!-- Pros & Cons List -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-unit-md pt-unit-xs">
+<!-- Pros -->
+<div class="space-y-unit-xs">
+<div class="font-tag-label text-tag-label text-tertiary-container font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">add_circle</span>
+                主要优势 (PROS)
+              </div>
+<div class="space-y-unit-2xs">
+<div class="flex items-start gap-1.5 text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-tertiary-container text-[16px] shrink-0 mt-0.5">check_circle</span>
+<span>A18 Pro 峰值性能与能效极其出色</span>
+</div>
+<div class="flex items-start gap-1.5 text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-tertiary-container text-[16px] shrink-0 mt-0.5">check_circle</span>
+<span>4K 120fps 杜比视界视频录制标杆</span>
+</div>
+<div class="flex items-start gap-1.5 text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-tertiary-container text-[16px] shrink-0 mt-0.5">check_circle</span>
+<span>屏幕边框进一步收窄，质感一流</span>
+</div>
+</div>
+</div>
+<!-- Cons -->
+<div class="space-y-unit-xs">
+<div class="font-tag-label text-tag-label text-secondary-container font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">warning</span>
+                购买考量 (CONS)
+              </div>
+<div class="space-y-unit-2xs">
+<div class="flex items-start gap-1.5 text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary-container text-[16px] shrink-0 mt-0.5">info</span>
+<span>快充仍维持在 27W 左右，充电速度偏慢</span>
+</div>
+<div class="flex items-start gap-1.5 text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary-container text-[16px] shrink-0 mt-0.5">info</span>
+<span>相机控制按键日常容易误触，学习成本较高</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Sticky Price & Historical Analysis Card (~360px -> 4 cols on desktop) -->
+<div class="lg:col-span-3 flex flex-col gap-unit-md sticky top-20">
+<!-- Lowest Price Highlight Hero Card -->
+<div class="bg-surface-container-lowest rounded-xl p-unit-lg shadow-sm relative overflow-hidden">
+<div class="flex items-center justify-between mb-unit-xs">
+<span class="px-unit-xs py-unit-2xs rounded bg-secondary-fixed text-on-secondary-fixed font-tag-label text-tag-label font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">price_check</span>
+              全网最低现货
+            </span>
+<span class="font-tag-label text-tag-label text-tertiary-container font-medium">官方原价省 ¥800</span>
+</div>
+<div class="flex items-baseline gap-1 my-unit-xs">
+<span class="font-headline-sm text-headline-sm text-secondary-container font-bold">¥</span>
+<span class="font-label-numeric-lg text-[32px] text-secondary-container font-bold leading-none">7,199</span>
+<span class="font-body-sm text-body-sm text-outline line-through ml-2">¥7,999</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-unit-md">拼多多百亿补贴 · 官方正品认证</p>
+<!-- Vendor Realtime Comparison Table -->
+<div class="space-y-unit-xs mb-unit-md">
+<!-- Row 1: PDD Lowest -->
+<div class="p-unit-xs rounded-lg bg-surface-container-low flex items-center justify-between transition-colors hover:bg-surface-container">
+<div class="flex flex-col min-w-0 pr-2">
+<div class="flex items-center gap-1">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface truncate">拼多多百亿补贴</span>
+<span class="px-1 py-0.2 rounded text-[10px] bg-secondary-fixed text-on-secondary-fixed font-bold shrink-0">史低</span>
+</div>
+<span class="font-tag-label text-tag-label text-on-surface-variant truncate">顺丰包邮 · 现货速发</span>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="font-label-numeric-md text-label-numeric-md text-secondary-container font-bold">¥7,199</span>
+<button class="px-unit-xs py-1 rounded bg-secondary-container text-on-secondary font-body-sm text-body-sm font-medium hover:opacity-90 transition-opacity" type="button">直达</button>
+</div>
+</div>
+<!-- Row 2: Douyin -->
+<div class="p-unit-xs rounded-lg bg-surface-container-lowest flex items-center justify-between transition-colors hover:bg-surface-container-low">
+<div class="flex flex-col min-w-0 pr-2">
+<div class="flex items-center gap-1">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface truncate">抖音电商超值购</span>
+</div>
+<span class="font-tag-label text-tag-label text-on-surface-variant truncate">限量满减大额补贴券</span>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="font-label-numeric-md text-label-numeric-md text-on-surface font-semibold">¥7,299</span>
+<button class="px-unit-xs py-1 rounded bg-surface-container-high text-on-surface font-body-sm text-body-sm hover:bg-surface-container-highest transition-colors" type="button">直达</button>
+</div>
+</div>
+<!-- Row 3: JD -->
+<div class="p-unit-xs rounded-lg bg-surface-container-lowest flex items-center justify-between transition-colors hover:bg-surface-container-low">
+<div class="flex flex-col min-w-0 pr-2">
+<div class="flex items-center gap-1">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface truncate">京东自营旗舰店</span>
+</div>
+<span class="font-tag-label text-tag-label text-on-surface-variant truncate">赠1年碎屏保 · 次日达</span>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="font-label-numeric-md text-label-numeric-md text-on-surface font-semibold">¥7,499</span>
+<button class="px-unit-xs py-1 rounded bg-surface-container-high text-on-surface font-body-sm text-body-sm hover:bg-surface-container-highest transition-colors" type="button">直达</button>
+</div>
+</div>
+<!-- Row 4: Apple Store Official -->
+<div class="p-unit-xs rounded-lg bg-surface-container-lowest flex items-center justify-between transition-colors hover:bg-surface-container-low">
+<div class="flex flex-col min-w-0 pr-2">
+<div class="flex items-center gap-1">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface truncate">天猫 Apple 官方</span>
+</div>
+<span class="font-tag-label text-tag-label text-on-surface-variant truncate">12期免息 · 官方原封</span>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="font-label-numeric-md text-label-numeric-md text-on-surface font-semibold">¥7,999</span>
+<button class="px-unit-xs py-1 rounded bg-surface-container-high text-on-surface font-body-sm text-body-sm hover:bg-surface-container-highest transition-colors" type="button">直达</button>
+</div>
+</div>
+</div>
+<!-- CTAs Area -->
+<div class="flex flex-col gap-unit-xs">
+<button class="w-full h-11 rounded-lg bg-primary-container text-on-primary font-headline-sm text-headline-sm font-semibold hover:bg-primary transition-all flex items-center justify-center gap-2 shadow-sm active:scale-[0.99]" type="button">
+<span class="material-symbols-outlined text-[20px]">balance</span>
+              加入参数对比栏
+            </button>
+<button class="w-full h-10 rounded-lg bg-surface-container text-on-surface font-body-md text-body-md font-medium hover:bg-surface-container-high transition-colors flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary-container">notifications_active</span>
+              降价提醒与关注 (目标价 ¥6,999)
+            </button>
+</div>
+</div>
+<!-- Interactive 90-Day Historical Price Trend Card -->
+<div class="bg-surface-container-lowest rounded-xl p-unit-md shadow-sm">
+<div class="flex items-center justify-between mb-unit-xs">
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-primary-container text-[18px]">show_chart</span>
+              90天全网价格走势
+            </div>
+<span class="font-tag-label text-tag-label text-tertiary-container bg-surface-container px-unit-xs py-0.5 rounded">近30天降 ¥300</span>
+</div>
+<!-- Key Historical Stats -->
+<div class="grid grid-cols-3 gap-unit-2xs text-center py-unit-xs bg-surface-container-low rounded-lg mb-unit-sm">
+<div>
+<span class="font-tag-label text-tag-label text-outline block">当前最低</span>
+<span class="font-label-numeric-sm text-label-numeric-sm font-bold text-secondary-container">¥7,199</span>
+</div>
+<div>
+<span class="font-tag-label text-tag-label text-outline block">历史最低</span>
+<span class="font-label-numeric-sm text-label-numeric-sm font-bold text-tertiary-container">¥7,099</span>
+</div>
+<div>
+<span class="font-tag-label text-tag-label text-outline block">官方首发</span>
+<span class="font-label-numeric-sm text-label-numeric-sm font-bold text-on-surface">¥7,999</span>
+</div>
+</div>
+<!-- Inline SVG Price Trend Chart -->
+<div class="relative w-full h-32 pt-2">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 320 100">
+<defs>
+<lineargradient id="priceGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#2563eb" stop-opacity="0.25"></stop>
+<stop offset="100%" stop-color="#2563eb" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Grid horizontal guide lines -->
+<line stroke="#d9e3f6" stroke-dasharray="3 3" stroke-width="1" x1="0" x2="320" y1="15" y2="15"></line>
+<line stroke="#d9e3f6" stroke-dasharray="3 3" stroke-width="1" x1="0" x2="320" y1="50" y2="50"></line>
+<line stroke="#d9e3f6" stroke-dasharray="3 3" stroke-width="1" x1="0" x2="320" y1="85" y2="85"></line>
+<!-- Gradient fill under curve -->
+<path d="M0,20 L35,20 L70,30 L110,32 L150,48 L190,52 L230,58 L270,72 L320,70 L320,100 L0,100 Z" fill="url(#priceGradient)"></path>
+<!-- Sparkline path -->
+<path d="M0,20 L35,20 L70,30 L110,32 L150,48 L190,52 L230,58 L270,72 L320,70" fill="none" stroke="#2563eb" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Lowest Point Indicator Dot -->
+<circle cx="270" cy="72" fill="#007d55" r="4"></circle>
+<!-- Current Point Indicator Dot -->
+<circle cx="320" cy="70" fill="#fd761a" r="4.5"></circle>
+</svg>
+<div class="flex justify-between font-label-numeric-sm text-[11px] text-outline mt-1">
+<span>90天前(发布日)</span>
+<span>双十一狂欢 (¥7,099)</span>
+<span>今日</span>
+</div>
+</div>
+<p class="font-tag-label text-tag-label text-outline mt-unit-xs">系统已开启24小时高频抓取，价格触及 ¥7,000 时将自动推送通知。</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom Detailed Tab Content Area -->
+<section class="max-w-[1440px] w-full mx-auto px-margin-mobile md:px-margin-desktop pb-unit-2xl">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<!-- Interactive Tab Bar -->
+<div class="flex items-center border-b border-transparent bg-surface-container-low px-unit-md gap-unit-xs overflow-x-auto">
+<button class="tab-btn active px-unit-lg py-unit-md font-headline-sm text-headline-sm font-semibold text-primary-container border-b-2 border-primary-container transition-all whitespace-nowrap" onclick="switchTab(0)" type="button">
+          专业测评 (4篇)
+        </button>
+<button class="tab-btn px-unit-lg py-unit-md font-headline-sm text-headline-sm font-medium text-on-surface-variant hover:text-on-surface transition-all whitespace-nowrap" onclick="switchTab(1)" type="button">
+          多平台比价明细
+        </button>
+<button class="tab-btn px-unit-lg py-unit-md font-headline-sm text-headline-sm font-medium text-on-surface-variant hover:text-on-surface transition-all whitespace-nowrap" onclick="switchTab(2)" type="button">
+          用户真实口碑 (98%好评)
+        </button>
+<button class="tab-btn px-unit-lg py-unit-md font-headline-sm text-headline-sm font-medium text-on-surface-variant hover:text-on-surface transition-all whitespace-nowrap" onclick="switchTab(3)" type="button">
+          同价位相似机型推荐
+        </button>
+</div>
+<!-- Tab 0: Professional In-depth Reviews -->
+<div class="tab-panel p-unit-lg block" id="tab-content-0">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter-desktop">
+<!-- Review Card 1 -->
+<article class="p-unit-md rounded-xl bg-surface-container-low flex flex-col justify-between hover:bg-surface-container transition-all">
+<div class="space-y-unit-xs">
+<div class="flex items-center justify-between">
+<span class="font-tag-label text-tag-label text-primary bg-surface-container-highest px-unit-xs py-0.5 rounded font-bold">极客硬件实验室 · 深度评测</span>
+<span class="font-tag-label text-tag-label text-outline">发布于 3天前</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+                iPhone 16 Pro 深度实测：A18 Pro 是不是史上最强能效移动芯片？
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed">
+                在 Geekbench 6 实测中，A18 Pro 单核得分突破 3400 分，多核达 8600 分。更引人注目的是其在《原神》极高画质须弥城跑图 30 分钟平均帧率 59.4 fps，整机功耗仅 4.1W，石墨烯散热贴片的加入有效延缓了降频发热，屏幕亮度坚挺不衰减。
+              </p>
+</div>
+<div class="flex items-center justify-between pt-unit-md">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-bold text-xs">G</div>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">主笔：老雷 (硬件架构师)</span>
+</div>
+<span class="font-tag-label text-tag-label text-primary font-semibold flex items-center">阅读全文 <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+</div>
+</article>
+<!-- Review Card 2 -->
+<article class="p-unit-md rounded-xl bg-surface-container-low flex flex-col justify-between hover:bg-surface-container transition-all">
+<div class="space-y-unit-xs">
+<div class="flex items-center justify-between">
+<span class="font-tag-label text-tag-label text-tertiary-container bg-surface-container-highest px-unit-xs py-0.5 rounded font-bold">影像工作室 · 样张横评</span>
+<span class="font-tag-label text-tag-label text-outline">发布于 1周前</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+                全新的相机控制按键与 4K 120fps 杜比视界：创作者的口袋利器？
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed">
+                4K 120fps 慢动作拍摄搭配全新的音频混音功能，令 iPhone 16 Pro 继续在移动视频录制领域占据统治地位。相机控制按键在横屏双手握持拍摄时十分舒适，能轻按呼出曝光与景深调节，但在单手抓拍时位置略显靠下，需数天习惯。
+              </p>
+</div>
+<div class="flex items-center justify-between pt-unit-md">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary flex items-center justify-center font-bold text-xs">V</div>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">影像测评室 · 姜姜</span>
+</div>
+<span class="font-tag-label text-tag-label text-primary font-semibold flex items-center">阅读全文 <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+</div>
+</article>
+<!-- Review Card 3 -->
+<article class="p-unit-md rounded-xl bg-surface-container-low flex flex-col justify-between hover:bg-surface-container transition-all">
+<div class="space-y-unit-xs">
+<div class="flex items-center justify-between">
+<span class="font-tag-label text-tag-label text-on-surface-variant bg-surface-container-highest px-unit-xs py-0.5 rounded font-bold">续航与充电压力测</span>
+<span class="font-tag-label text-tag-label text-outline">发布于 2周前</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+                五小时重度续航实测模型：小屏旗舰的续航逆袭？
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed">
+                经过包括 1 小时 4K 视频摄录、1 小时 120Hz 社交刷推、1 小时高负载游戏及日常微信通话的 5 小时重度测试，iPhone 16 Pro 最终剩余电量 38%，相较 15 Pro 多出 14% 盈余。然而有线充电峰值在 27.5W 徘徊，从 0 充至 100% 耗时约 78 分钟。
+              </p>
+</div>
+<div class="flex items-center justify-between pt-unit-md">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-bold text-xs">P</div>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">极客续航数据库</span>
+</div>
+<span class="font-tag-label text-tag-label text-primary font-semibold flex items-center">阅读全文 <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+</div>
+</article>
+<!-- Review Card 4 -->
+<article class="p-unit-md rounded-xl bg-surface-container-low flex flex-col justify-between hover:bg-surface-container transition-all">
+<div class="space-y-unit-xs">
+<div class="flex items-center justify-between">
+<span class="font-tag-label text-tag-label text-primary bg-surface-container-highest px-unit-xs py-0.5 rounded font-bold">老机型升级决策</span>
+<span class="font-tag-label text-tag-label text-outline">发布于 3周前</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+                iPhone 13 Pro / 14 Pro / 15 Pro 用户买不买？换机收益精准量化
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed">
+                对 13/14 系列老用户而言，USB-C 10Gbps、五倍光学潜望长焦、更轻盈的原色钛金属边框和跨越两代的散热改善均带来巨大的体验飞跃；而 15 Pro 用户在当前差价下升级边际效益有限，可安心等待明年产品周期。
+              </p>
+</div>
+<div class="flex items-center justify-between pt-unit-md">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-xs">A</div>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">数码理智派消费专栏</span>
+</div>
+<span class="font-tag-label text-tag-label text-primary font-semibold flex items-center">阅读全文 <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+</div>
+</article>
+</div>
+</div>
+<!-- Tab 1: Multi-Platform Full Price Breakdown -->
+<div class="tab-panel p-unit-lg hidden" id="tab-content-1">
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant">
+<th class="py-unit-sm px-unit-md font-semibold">电商平台</th>
+<th class="py-unit-sm px-unit-md font-semibold">商户类型</th>
+<th class="py-unit-sm px-unit-md font-semibold">版本与容量</th>
+<th class="py-unit-sm px-unit-md font-semibold">优惠权益</th>
+<th class="py-unit-sm px-unit-md font-semibold text-right">实时到手价</th>
+<th class="py-unit-sm px-unit-md font-semibold text-center">操作</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-lowest">
+<td class="py-unit-sm px-unit-md font-semibold flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+                  拼多多
+                </td>
+<td class="py-unit-sm px-unit-md">百亿补贴自营认证</td>
+<td class="py-unit-sm px-unit-md">国行 256GB 原色钛</td>
+<td class="py-unit-sm px-unit-md text-on-surface-variant">平台补贴立减 ¥800，顺丰包邮</td>
+<td class="py-unit-sm px-unit-md text-right font-label-numeric-md font-bold text-secondary-container">¥7,199</td>
+<td class="py-unit-sm px-unit-md text-center">
+<a class="px-unit-sm py-1 rounded bg-secondary-container text-on-secondary font-medium hover:opacity-90 inline-block" href="#">直达购买</a>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-unit-sm px-unit-md font-semibold flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-on-surface"></span>
+                  抖音电商
+                </td>
+<td class="py-unit-sm px-unit-md">超值购正品商家</td>
+<td class="py-unit-sm px-unit-md">国行 256GB 原色钛</td>
+<td class="py-unit-sm px-unit-md text-on-surface-variant">领券立减 ¥700</td>
+<td class="py-unit-sm px-unit-md text-right font-label-numeric-md font-bold text-on-surface">¥7,299</td>
+<td class="py-unit-sm px-unit-md text-center">
+<a class="px-unit-sm py-1 rounded bg-surface-container text-on-surface font-medium hover:bg-surface-container-high inline-block" href="#">直达购买</a>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-unit-sm px-unit-md font-semibold flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+                  京东商城
+                </td>
+<td class="py-unit-sm px-unit-md">Apple 产品京东自营旗舰店</td>
+<td class="py-unit-sm px-unit-md">国行 256GB 原色钛</td>
+<td class="py-unit-sm px-unit-md text-on-surface-variant">Plus 会员减 ¥500，赠1年碎屏险</td>
+<td class="py-unit-sm px-unit-md text-right font-label-numeric-md font-bold text-on-surface">¥7,499</td>
+<td class="py-unit-sm px-unit-md text-center">
+<a class="px-unit-sm py-1 rounded bg-surface-container text-on-surface font-medium hover:bg-surface-container-high inline-block" href="#">直达购买</a>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-unit-sm px-unit-md font-semibold flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+                  天猫商城
+                </td>
+<td class="py-unit-sm px-unit-md">Apple Store 官方旗舰店</td>
+<td class="py-unit-sm px-unit-md">国行 256GB 原色钛</td>
+<td class="py-unit-sm px-unit-md text-on-surface-variant">享 12 期免息分期，赠官方清洁布</td>
+<td class="py-unit-sm px-unit-md text-right font-label-numeric-md font-bold text-on-surface">¥7,999</td>
+<td class="py-unit-sm px-unit-md text-center">
+<a class="px-unit-sm py-1 rounded bg-surface-container text-on-surface font-medium hover:bg-surface-container-high inline-block" href="#">直达购买</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Tab 2: User Real Sentiment -->
+<div class="tab-panel p-unit-lg hidden" id="tab-content-2">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-desktop">
+<div class="bg-surface-container-low p-unit-md rounded-xl flex flex-col justify-center items-center text-center">
+<span class="font-tag-label text-tag-label text-on-surface-variant mb-1">全网好评度</span>
+<div class="font-label-numeric-lg text-[44px] text-tertiary-container font-bold leading-none">98.2%</div>
+<span class="font-body-sm text-body-sm text-outline mt-2">基于 12,980 条买家评价清洗分析</span>
+</div>
+<div class="md:col-span-2 space-y-unit-xs">
+<div class="bg-surface-container-low p-unit-sm rounded-lg flex items-start gap-unit-sm">
+<span class="material-symbols-outlined text-tertiary-container text-[20px]">thumb_up</span>
+<div>
+<div class="font-headline-sm text-body-md font-semibold text-on-surface">“屏幕边框缩窄非常明显，手感极其细腻”</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">从 13 Pro 换过来，机身轻量化的钛金属感知明显，日常握持小拇指压力大减。120Hz 高刷跟手度一如既往流畅。</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-unit-sm rounded-lg flex items-start gap-unit-sm">
+<span class="material-symbols-outlined text-tertiary-container text-[20px]">thumb_up</span>
+<div>
+<div class="font-headline-sm text-body-md font-semibold text-on-surface">“5倍长焦非常实用，演唱会抓拍清晰”</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">终于不用买大号 Pro Max 就能独享 5 倍长焦了，画质纯净，杜比视界拍日常猫咪毛发层次分明。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Tab 3: Similar Model Recommendations -->
+<div class="tab-panel p-unit-lg hidden" id="tab-content-3">
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-unit-md">
+          同价位高性价比竞品横向推荐
+        </div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-desktop">
+<!-- Recommendation 1: vivo X100 Ultra -->
+<div class="bg-surface-container-low rounded-xl p-unit-md flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="w-full aspect-[4/3] rounded-lg bg-surface-container-lowest mb-unit-sm overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-contain p-2" data-alt="High tech photo of vivo X100 Ultra smartphone in titanium grey showcasing massive Zeiss APO 200MP camera ring in sleek minimal environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8bA6jBxAKIf6IGJ6omu7aTaueUZzmtLvQfN6Kc-T-CLmWdFiUnRe0x_L3ih7nu0Cm2YF0-OHa85UzZf5WulZwimq2ow0v1zP4yd-6bxL7RvXOKhVmPrP53lDwNX85331nhKVjx97-xfy24QC-ipDNIDXTXbrJ5sBpomD8xw-zkKCYRk_YJ68LAKgHEMBqsumx_9eWZnoqsBTjBZ8mtfI5YFTU15nbSD9SV2U6mXC29OoaKwuYbUFRug"/>
+</div>
+<span class="px-unit-xs py-0.5 rounded bg-surface-container text-on-surface-variant font-tag-label text-tag-label">影像灭霸 · 2亿长焦</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-1">vivo X100 Ultra 256GB</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">骁龙 8 Gen 3 / 蔡司 APO 2亿长焦 / 5500mAh 蓝海电池</p>
+</div>
+<div class="mt-unit-md pt-unit-sm border-t border-surface-container flex items-center justify-between">
+<div>
+<span class="font-tag-label text-tag-label text-outline block">当前平台低价</span>
+<span class="font-label-numeric-md text-label-numeric-md font-bold text-secondary-container">¥5,899</span>
+</div>
+<button class="px-unit-sm py-1.5 rounded bg-surface-container-highest text-primary font-body-sm text-body-sm font-semibold hover:bg-primary-container hover:text-on-primary transition-colors" type="button">对标参数</button>
+</div>
+</div>
+<!-- Recommendation 2: 小米 14 Ultra -->
+<div class="bg-surface-container-low rounded-xl p-unit-md flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="w-full aspect-[4/3] rounded-lg bg-surface-container-lowest mb-unit-sm overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-contain p-2" data-alt="Clean product picture of Xiaomi 14 Ultra white ceramic back with circular Leica quad camera setup on neutral studio tabletop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcHXgdhGY0_7pBikSitYBP20c3O_euhzklZkj2IfIUdmAqUkb2hkrSkb_LY2X_DUU5mbkSiGg4yInQ6FgHtA9PLxnADVVIUwP1sQsvei9lg4Ha2nZuSQ-u5xEg4MMcX6c1sxclIySs8wUtyArtudoJwKUHDMKluO03g54-VWP9tguVg7yierfcA3EE52UpG1gsJS4vhMgp0-eemzSOLNWZdjxORhiJF8HHNZpVoHjLEeVvvXSHl4YmHQ"/>
+</div>
+<span class="px-unit-xs py-0.5 rounded bg-surface-container text-on-surface-variant font-tag-label text-tag-label">徕卡全焦段四摄</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-1">小米 14 Ultra 256GB</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">一英寸无级可变光圈 / 双长焦模组 / 双向卫星通信</p>
+</div>
+<div class="mt-unit-md pt-unit-sm border-t border-surface-container flex items-center justify-between">
+<div>
+<span class="font-tag-label text-tag-label text-outline block">当前平台低价</span>
+<span class="font-label-numeric-md text-label-numeric-md font-bold text-secondary-container">¥5,599</span>
+</div>
+<button class="px-unit-sm py-1.5 rounded bg-surface-container-highest text-primary font-body-sm text-body-sm font-semibold hover:bg-primary-container hover:text-on-primary transition-colors" type="button">对标参数</button>
+</div>
+</div>
+<!-- Recommendation 3: 三星 Galaxy S24 Ultra -->
+<div class="bg-surface-container-low rounded-xl p-unit-md flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="w-full aspect-[4/3] rounded-lg bg-surface-container-lowest mb-unit-sm overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-contain p-2" data-alt="High quality studio shot of Samsung Galaxy S24 Ultra Titanium Grey with S Pen stylus standing vertically on sleek mirrored tech surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCajgs0fqG-OUD9MOUh3gjha3GZGKv5bfSNaVSRDJ7tKL2zIyhFGqEnT9eFBgh9O6DItC3qeaKdW6YE1jCGyI89Fib0JxBSqZM26Ul7GpI688XPLJQnibQIFssiU5lVRnYg0uYPBQZqZYvksWlSPwXLuWm7pQc8B-cmh34qaMWGJDo2zJJTKBvO2Doc5-j6jc-qencyPS885ffPGNyKUX6g17u7ojBnJMWymKO0zxGUFyOQQ1P5pUResw"/>
+</div>
+<span class="px-unit-xs py-0.5 rounded bg-surface-container text-on-surface-variant font-tag-label text-tag-label">安卓机皇 · S-Pen</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-1">三星 Galaxy S24 Ultra 256GB</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">纯平钛金属边框 / 2600nit 抗反射屏幕 / Galaxy AI</p>
+</div>
+<div class="mt-unit-md pt-unit-sm border-t border-surface-container flex items-center justify-between">
+<div>
+<span class="font-tag-label text-tag-label text-outline block">当前平台低价</span>
+<span class="font-label-numeric-md text-label-numeric-md font-bold text-secondary-container">¥7,499</span>
+</div>
+<button class="px-unit-sm py-1.5 rounded bg-surface-container-highest text-primary font-body-sm text-body-sm font-semibold hover:bg-primary-container hover:text-on-primary transition-colors" type="button">对标参数</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive JavaScript -->
+<script>
+    function switchTab(index) {
+      const buttons = document.querySelectorAll('.tab-btn');
+      const panels = document.querySelectorAll('.tab-panel');
+      
+      buttons.forEach((btn, i) => {
+        if (i === index) {
+          btn.classList.add('text-primary-container', 'border-b-2', 'border-primary-container', 'font-semibold');
+          btn.classList.remove('text-on-surface-variant', 'font-medium');
+        } else {
+          btn.classList.remove('text-primary-container', 'border-b-2', 'border-primary-container', 'font-semibold');
+          btn.classList.add('text-on-surface-variant', 'font-medium');
+        }
+      });
+
+      panels.forEach((panel, i) => {
+        if (i === index) {
+          panel.classList.remove('hidden');
+          panel.classList.add('block');
+        } else {
+          panel.classList.add('hidden');
+          panel.classList.remove('block');
+        }
+      });
+    }
+
+    function switchGallery(index) {
+      const thumbs = document.querySelectorAll('.gallery-thumb');
+      thumbs.forEach((t, i) => {
+        if (i === index) {
+          t.classList.add('ring-2', 'ring-primary-container', 'bg-surface-container-high');
+          t.classList.remove('bg-surface-container-lowest');
+        } else {
+          t.classList.remove('ring-2', 'ring-primary-container', 'bg-surface-container-high');
+          t.classList.add('bg-surface-container-lowest');
+        }
+      });
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_8px_rgba(0,0,0,0.02)] mt-unit-2xl"><div class="max-w-[1440px] mx-auto px-margin-desktop pt-unit-2xl pb-unit-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter-desktop mb-unit-2xl"><div class="lg:col-span-2 pr-unit-lg"><div class="flex items-center gap-unit-sm mb-unit-md"><img alt="极客比价 Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAi32u4yrB8yOiWgVnFvcM4e4SahBbt9KtIAhxTQQUiE6N4S8iNZ43hW_PZlls0r0aG75OF3kKnvh5qT1RCM89f-aW8xTYDH03wK3LHlfkeXgDyLL_HXQlxhjSAgkUq3djDporNRpOwY_yjLCUuKPA_6PwjCMVYPabEgnN_RmTOkLskO5NhzvSh8mQuYi3aydCpwGeRFwix0xftVP_rrIwAfIIzYb8pQoRjllNh8z3FhAst7U2k31hM6g"/><span class="font-headline-sm text-headline-sm text-on-surface font-bold">极客比价</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mb-unit-md leading-relaxed">面向硬核科技玩家与理性数码消费者的智能比价工具平台。提供全网实时价格走势监控、历史史低记录跟踪、硬件规格横向参数对标与性价比算法分析。</p><div class="flex items-center gap-unit-xs"><span class="px-unit-xs py-unit-2xs rounded bg-surface-container-low font-tag-label text-tag-label text-on-surface-variant">实时抓取</span><span class="px-unit-xs py-unit-2xs rounded bg-surface-container-low font-tag-label text-tag-label text-on-surface-variant">无商业倾斜</span><span class="px-unit-xs py-unit-2xs rounded bg-surface-container-low font-tag-label text-tag-label text-on-surface-variant">史低预警</span></div></div><div><h4 class="font-headline-sm text-headline-sm text-on-surface mb-unit-md font-semibold">热门分类</h4><ul class="space-y-unit-xs"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">手机数码 (Smartphones)</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">电脑办公 (Laptops &amp; PC)</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">摄影影视 (Cameras &amp; Audio)</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">智能穿戴 (Wearables)</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">核心组件 (GPU &amp; CPU)</li></ul></div><div><h4 class="font-headline-sm text-headline-sm text-on-surface mb-unit-md font-semibold">实时数据源</h4><p class="font-body-sm text-body-sm text-on-surface-variant mb-unit-sm leading-relaxed">权威对接全网主流电商交易数据源，高频采集与智能清洗校验：</p><div class="space-y-unit-2xs"><div class="flex items-center gap-unit-xs font-body-sm text-body-sm text-on-surface-variant"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>京东自营 / 旗舰店数据源</div><div class="flex items-center gap-unit-xs font-body-sm text-body-sm text-on-surface-variant"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>天猫 / 淘宝官方正品渠道</div><div class="flex items-center gap-unit-xs font-body-sm text-body-sm text-on-surface-variant"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>拼多多百亿补贴查验中心</div><div class="flex items-center gap-unit-xs font-body-sm text-body-sm text-on-surface-variant"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>苏宁易购 / 品牌官方商城</div></div></div><div><h4 class="font-headline-sm text-headline-sm text-on-surface mb-unit-md font-semibold">极客社区</h4><ul class="space-y-unit-xs"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">硬件基准测试跑分榜</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">历史价格走势 API 开放</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">极客好价爆料频道</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">关于我们 &amp; 免责声明</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">反馈建议与开发者日志</li></ul></div></div><div class="pt-unit-lg flex flex-col md:flex-row items-center justify-between gap-unit-sm text-on-surface-variant"><div class="flex items-center gap-unit-md font-body-sm text-body-sm"><span>© 2024 极客比价 GeekPrice. 保留所有权利。</span><span class="hidden md:inline">|</span><span class="hidden md:inline">浙ICP备202409827号-1</span></div><div class="flex items-center gap-unit-lg font-tag-label text-tag-label"><span>数据刷新周期: 15分钟</span><span>服务器延迟: 28ms</span><span>隐私政策</span><span>服务条款</span></div></div></div></footer></body></html>

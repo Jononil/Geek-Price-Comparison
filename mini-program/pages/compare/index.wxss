@@ -1,0 +1,244 @@
+.cmp-page {
+  padding: 24rpx;
+  padding-bottom: calc(48rpx + env(safe-area-inset-bottom));
+}
+.go-btn {
+  margin-top: 16rpx;
+  padding: 0 48rpx;
+}
+
+/* ---- 工具栏 ---- */
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 24rpx;
+  margin-bottom: 20rpx;
+}
+.diff-toggle {
+  font-size: 24rpx;
+  color: #4b5563;
+  border: 1rpx solid #e5e7eb;
+  background: #ffffff;
+  padding: 8rpx 22rpx;
+  border-radius: 20rpx;
+}
+.diff-on {
+  color: #2563eb;
+  border-color: #2563eb;
+  background: #eff4ff;
+  font-weight: 600;
+}
+.tool-link {
+  font-size: 24rpx;
+  color: #2563eb;
+}
+.tool-danger {
+  color: #ef4444;
+  margin-left: auto;
+}
+
+/* ---- 概览横滑 ---- */
+.ov-scroll {
+  white-space: nowrap;
+  margin: 0 -24rpx 24rpx;
+  padding: 0 24rpx;
+}
+.ov-card {
+  display: inline-block;
+  width: 300rpx;
+  background: #ffffff;
+  border: 1rpx solid #e5e7eb;
+  border-radius: 16rpx;
+  padding: 20rpx;
+  margin-right: 16rpx;
+  vertical-align: top;
+  white-space: normal;
+}
+.ov-img-wrap {
+  position: relative;
+  height: 180rpx;
+  background: #f8fafc;
+  border-radius: 12rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ov-img {
+  width: 100%;
+  height: 100%;
+}
+.ov-name {
+  display: block;
+  font-size: 26rpx;
+  font-weight: 600;
+  margin-top: 14rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.ov-meta {
+  display: block;
+  font-size: 20rpx;
+  color: #9ca3af;
+  margin-top: 6rpx;
+}
+.ov-price {
+  display: block;
+  color: #f97316;
+  font-weight: 700;
+  font-size: 30rpx;
+  margin-top: 10rpx;
+}
+.ov-sim {
+  font-size: 18rpx;
+  color: #cbd5e1;
+  font-weight: 400;
+}
+.ov-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8rpx;
+  margin-top: 10rpx;
+}
+.ov-badge {
+  font-size: 20rpx;
+  padding: 4rpx 12rpx;
+  border-radius: 8rpx;
+}
+.ov-badge-value {
+  background: #ecfdf5;
+  color: #10b981;
+}
+.ov-badge-dim {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+.ov-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14rpx;
+  border-top: 1rpx solid #f1f5f9;
+  padding-top: 12rpx;
+}
+.ov-link {
+  font-size: 24rpx;
+  color: #2563eb;
+}
+.ov-link-danger {
+  color: #ef4444;
+}
+
+/* ---- 区块 ---- */
+.block {
+  margin-bottom: 24rpx;
+}
+.block-title {
+  font-size: 30rpx;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+  flex-wrap: wrap;
+}
+.sim-badge {
+  font-size: 18rpx;
+  color: #c2410c;
+  background: #fff7ed;
+  border: 1rpx solid #fed7aa;
+  padding: 4rpx 12rpx;
+  border-radius: 8rpx;
+  font-weight: 400;
+}
+
+/* ---- 表格 ---- */
+.table-scroll {
+  margin-top: 16rpx;
+  width: 100%;
+}
+.table {
+  border: 1rpx solid #f1f5f9;
+  border-radius: 12rpx;
+  overflow: hidden;
+}
+.tr {
+  display: flex;
+  border-bottom: 1rpx solid #f1f5f9;
+  min-height: 72rpx;
+  align-items: stretch;
+}
+.tr:last-child {
+  border-bottom: none;
+}
+.tr-head {
+  background: #f8fafc;
+  font-weight: 600;
+}
+.td {
+  padding: 16rpx 14rpx;
+  font-size: 22rpx;
+  display: flex;
+  align-items: center;
+  word-break: break-all;
+}
+.td-label {
+  width: 160rpx;
+  flex-shrink: 0;
+  color: #6b7280;
+  background: #fafafa;
+}
+.td-col {
+  width: 200rpx;
+  flex-shrink: 0;
+  color: #1f2937;
+}
+.td-dim {
+  color: #cbd5e1;
+}
+.td-group {
+  color: #374151;
+  font-weight: 600;
+  background: #f8fafc;
+  gap: 12rpx;
+}
+.tr-group {
+  background: #f8fafc;
+}
+.tr-group-warn {
+  background: #fffbf5;
+}
+.tr-template .td {
+  color: #9ca3af;
+}
+.td-empty {
+  color: #9ca3af;
+  justify-content: center;
+}
+.trust-tag {
+  font-size: 18rpx;
+  padding: 2rpx 10rpx;
+  border-radius: 6rpx;
+  background: #e0e7ff;
+  color: #4338ca;
+  font-weight: 400;
+}
+.trust-ok {
+  background: #d1fae5;
+  color: #065f46;
+}
+.trust-warn {
+  background: #fef3c7;
+  color: #92400e;
+}
+.legend {
+  margin-top: 12rpx;
+  font-size: 20rpx;
+  color: #9ca3af;
+}
+.trust-summary {
+  margin-top: 8rpx;
+  text-align: right;
+}
+.footer-hint {
+  text-align: center;
+  margin-top: 8rpx;
+}

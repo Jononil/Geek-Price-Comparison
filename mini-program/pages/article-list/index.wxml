@@ -1,0 +1,39 @@
+<view class="al-page">
+  <gp-loading wx:if="{{state === 'loading'}}" text="加载测评中…" />
+  <gp-error wx:elif="{{state === 'error'}}" bind:retry="onRetry" />
+  <gp-empty wx:elif="{{items.length === 0}}" text="暂无测评" />
+
+  <block wx:else>
+    <view
+      class="article-card"
+      wx:for="{{items}}"
+      wx:key="id"
+      data-id="{{item.id}}"
+      bindtap="onTapArticle"
+    >
+      <!-- 有封面才渲染图片；无封面用中性文字块（当前库全部无封面） -->
+      <view wx:if="{{item.hasCover}}" class="cover-wrap">
+        <image class="cover" src="{{item.cover}}" mode="aspectFill" lazy-load />
+      </view>
+      <view class="article-body">
+        <text class="title">{{item.title}}</text>
+        <text class="summary">{{item.summary}}</text>
+        <view class="meta">
+          <text class="meta-item">👤 {{item.author}}</text>
+          <text class="meta-item">👁 {{item.viewsText}}</text>
+          <text class="meta-item">👍 {{item.likesText}}</text>
+          <text class="score">评分 {{item.scoreText}}</text>
+        </view>
+        <view class="meta">
+          <text class="meta-dim">{{item.publishText}}</text>
+          <text wx:if="{{item.hasProduct}}" class="product-link">关联商品：{{item.productName}} ›</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="load-more">
+      <gp-loading wx:if="{{loadingMore}}" text="加载中…" />
+      <text wx:elif="{{!hasMore}}" class="no-more">— 没有更多了 —</text>
+    </view>
+  </block>
+</view>

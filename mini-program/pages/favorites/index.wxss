@@ -1,0 +1,86 @@
+.fav-page {
+  padding: 24rpx;
+  padding-bottom: calc(48rpx + env(safe-area-inset-bottom));
+}
+.fav-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+  padding: 20rpx;
+}
+.fi-main {
+  flex: 1;
+  display: flex;
+  min-width: 0;
+}
+.fi-img-wrap {
+  width: 140rpx;
+  height: 140rpx;
+  flex-shrink: 0;
+  background: #f8fafc;
+  border-radius: 12rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.fi-img {
+  width: 100%;
+  height: 100%;
+}
+.fi-info {
+  flex: 1;
+  margin-left: 20rpx;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8rpx;
+}
+.fi-name {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #1f2937;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.fi-meta {
+  font-size: 20rpx;
+  color: #9ca3af;
+}
+.fi-bottom {
+  display: flex;
+  align-items: baseline;
+  gap: 16rpx;
+}
+.fi-price {
+  color: #f97316;
+  font-weight: 700;
+  font-size: 30rpx;
+}
+.fi-value {
+  color: #10b981;
+  font-size: 20rpx;
+}
+.fi-value-dim {
+  color: #9ca3af;
+  font-size: 20rpx;
+}
+.fi-remove {
+  flex-shrink: 0;
+  font-size: 22rpx;
+  color: #ef4444;
+  padding: 12rpx 8rpx 12rpx 20rpx;
+  border-left: 1rpx solid #f1f5f9;
+  margin-left: 16rpx;
+}
+
+.load-more {
+  padding: 24rpx 0;
+}
+.no-more {
+  display: block;
+  text-align: center;
+  color: #cbd5e1;
+  font-size: 22rpx;
+}

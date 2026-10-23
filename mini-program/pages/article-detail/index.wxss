@@ -1,0 +1,138 @@
+.ad-page {
+  padding: 24rpx;
+  padding-bottom: calc(48rpx + env(safe-area-inset-bottom));
+}
+.title {
+  font-size: 40rpx;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 18rpx;
+  margin-top: 20rpx;
+  flex-wrap: wrap;
+}
+.meta-item {
+  font-size: 22rpx;
+  color: #9ca3af;
+}
+.like-btn {
+  margin-left: auto;
+  font-size: 24rpx;
+  color: #2563eb;
+  background: #eff4ff;
+  border: 1rpx solid #dbe4f5;
+  border-radius: 24rpx;
+  padding: 8rpx 24rpx;
+}
+.like-btn.liked {
+  color: #ffffff;
+  background: #2563eb;
+}
+
+/* 评分面板 */
+.score-panel {
+  display: flex;
+  align-items: center;
+  gap: 32rpx;
+  background: #f8fafc;
+  border-radius: 16rpx;
+  padding: 28rpx;
+  margin-top: 28rpx;
+}
+.score-main-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 10rpx;
+}
+.score-main {
+  font-size: 64rpx;
+  font-weight: 700;
+  color: #2563eb;
+}
+.score-unit {
+  font-size: 22rpx;
+  color: #6b7280;
+}
+.score-sub {
+  display: flex;
+  gap: 24rpx;
+  flex-wrap: wrap;
+}
+.ss-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rpx;
+}
+.ss-label {
+  font-size: 20rpx;
+  color: #9ca3af;
+}
+.ss-value {
+  font-size: 26rpx;
+  color: #374151;
+  font-weight: 600;
+}
+
+/* 优缺点 */
+.pros-cons {
+  display: flex;
+  gap: 16rpx;
+  margin-top: 24rpx;
+}
+.pc-box {
+  flex: 1;
+  border-radius: 16rpx;
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 10rpx;
+}
+.pc-pros {
+  background: #ecfdf5;
+}
+.pc-cons {
+  background: #fff7ed;
+}
+.pc-title {
+  font-size: 24rpx;
+  font-weight: 700;
+}
+.pc-pros .pc-title {
+  color: #10b981;
+}
+.pc-cons .pc-title {
+  color: #f97316;
+}
+.pc-text {
+  font-size: 24rpx;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* 正文 */
+.content-wrap {
+  margin-top: 28rpx;
+}
+.content {
+  font-size: 28rpx;
+  line-height: 1.8;
+  color: #374151;
+  word-break: break-all;
+}
+
+.product-entry {
+  margin-top: 28rpx;
+  padding: 20rpx;
+  text-align: center;
+  color: #2563eb;
+  font-size: 26rpx;
+  border-top: 1rpx solid #f1f5f9;
+}
+.footer-hint {
+  text-align: center;
+  margin-top: 24rpx;
+}

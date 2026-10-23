@@ -1,0 +1,4 @@
+id	bigint	NO	PRI	NULL	auto_increment
+product_id	bigint	NO	MUL	NULL	
+url	varchar(500)	NO		NULL	
+sort	int	NO		0	

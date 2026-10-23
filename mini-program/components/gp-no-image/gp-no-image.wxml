@@ -1,0 +1,7 @@
+<view class="gp-no-image">
+  <view class="icon-wrap" style="width: {{size}}rpx; height: {{size * 0.78}}rpx;">
+    <view class="pie-frame" style="width: {{size}}rpx; height: {{size * 0.64}}rpx;"></view>
+    <view class="pie-slash" style="height: {{size * 0.78}}rpx;"></view>
+  </view>
+  <text wx:if="{{text}}" class="text">{{text}}</text>
+</view>

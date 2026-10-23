@@ -1,0 +1,194 @@
+/* ============================================================
+   全局主题：白底 + 科技蓝（与 PC 用户端同一套视觉规范）
+   ------------------------------------------------------------
+   PC 端提取的设计规范（frontend/src 对照）：
+   - 主色 #2563eb / 背景 #f5f7fa / 卡片白底 + #e5e7eb 边框 + 10px 圆角
+   - 文字 #1f2937 / #6b7280 / #9ca3af（三级）
+   - 价格 #f97316、性价比 #10b981、危险 #ef4444
+   - 卡片内边距 24px、区块间距 16px、标签 11px/2px 8px/4px 圆角
+   - 数据提示 11px #9ca3af + 字距
+   移动端换算：1px = 2rpx，取整为移动端惯用值并统一分级：
+   - 卡片圆角 16rpx（8px，比 PC 略小更贴合手机）、按钮/输入 12rpx、标签 8rpx、胶囊 999rpx
+   - 按钮两档：默认 88rpx 高（表单/主 CTA）、小号 64rpx 高（卡片内操作）
+   ============================================================ */
+page {
+  /* ---- 颜色 ---- */
+  --gp-primary: #2563eb;
+  --gp-primary-light: #eff4ff;
+  --gp-primary-dark: #1d4ed8;
+
+  --gp-bg: #f5f7fa;        /* 页面背景（白底卡片式布局的底色） */
+  --gp-card-bg: #ffffff;   /* 卡片背景 = 纯白 */
+  --gp-border: #e5e7eb;
+  --gp-divider: #f1f5f9;   /* 卡片内分隔线（与 PC 一致） */
+
+  --gp-text-main: #1f2937; /* 主文字 */
+  --gp-text-sub: #6b7280;  /* 次要文字 */
+  --gp-text-dim: #9ca3af;  /* 弱化文字/占位 */
+
+  --gp-price: #f97316;     /* 价格（与 PC 端一致的橙色强调） */
+  --gp-value: #10b981;     /* 性价比评分 */
+  --gp-danger: #ef4444;
+  --gp-warning: #d97706;
+
+  /* ---- 字号（移动端分级） ---- */
+  --gp-font-xs: 20rpx;     /* 数据提示/角标（PC 11px） */
+  --gp-font-sm: 24rpx;     /* 次要正文/按钮小字 */
+  --gp-font-md: 28rpx;     /* 正文/按钮标准字（PC 14px） */
+  --gp-font-lg: 32rpx;     /* 卡片强调/区块标题（PC 16px） */
+  --gp-font-xl: 40rpx;     /* 页面主标题 */
+
+  /* ---- 圆角三级 ---- */
+  --gp-radius-sm: 8rpx;    /* 标签/角标（PC 4px） */
+  --gp-radius-md: 12rpx;   /* 按钮/输入框/子卡片 */
+  --gp-radius: 16rpx;      /* 卡片（PC 10px，移动端取 8px） */
+
+  /* ---- 间距 ---- */
+  --gp-page-pad: 24rpx;    /* 页面左右边距（全站统一） */
+  --gp-gap: 24rpx;         /* 卡片内边距/区块间距 */
+  --gp-gap-sm: 16rpx;      /* 卡片内小间距 */
+
+  /* ---- 控件尺寸 ---- */
+  --gp-btn-h: 88rpx;       /* 按钮默认高度（44px 触控标准） */
+  --gp-btn-h-sm: 64rpx;    /* 小号按钮高度（卡片内操作） */
+  --gp-input-h: 88rpx;     /* 单行输入框高度（全站统一） */
+
+  background-color: var(--gp-bg);
+  color: var(--gp-text-main);
+  font-size: var(--gp-font-md);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica,
+    'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+}
+
+/* ---- 通用按钮基线：去除小程序 button 默认样式 ---- */
+button {
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  line-height: inherit;
+  font-size: inherit;
+  box-sizing: border-box;
+}
+button::after {
+  border: none;
+}
+
+/* ---- 通用卡片（白底 + 1px 边框 + 16rpx 圆角 + 24rpx 内边距，对齐 PC） ---- */
+.gp-card {
+  background: var(--gp-card-bg);
+  border: 1rpx solid var(--gp-border);
+  border-radius: var(--gp-radius);
+  padding: var(--gp-gap);
+}
+
+/* ---- 通用区块标题（PC .section-title：700/#1f2937） ---- */
+.gp-section-title {
+  font-size: var(--gp-font-lg);
+  font-weight: 700;
+  color: var(--gp-text-main);
+}
+
+/* ============================================================
+   按钮规范（两档 + 主次样式，全站复用）
+   - 默认档：88rpx 高 / 28rpx 字 / 12rpx 圆角 —— 表单提交、页面主 CTA
+   - 小号档：.gp-btn-sm —— 64rpx 高 / 24rpx 字 —— 卡片内、行内操作
+   - 主按钮 .gp-btn-primary（实底蓝） / 次按钮 .gp-btn-ghost（描边蓝）
+   - 禁用态：加 btn-disabled 类（配合 disabled 属性）
+   ============================================================ */
+.gp-btn-primary,
+.gp-btn-ghost {
+  display: block;
+  height: var(--gp-btn-h);
+  line-height: var(--gp-btn-h); /* 固定高度 + 等高行高 = 垂直居中，杜绝尺寸漂移 */
+  font-size: var(--gp-font-md);
+  font-weight: 500;
+  border-radius: var(--gp-radius-md);
+  text-align: center;
+  padding: 0 40rpx;
+  box-sizing: border-box;
+}
+.gp-btn-primary {
+  background: var(--gp-primary);
+  color: #ffffff;
+}
+.gp-btn-ghost {
+  background: #ffffff;
+  color: var(--gp-primary);
+  border: 1rpx solid var(--gp-primary);
+}
+.gp-btn-primary.btn-disabled,
+.gp-btn-ghost.btn-disabled {
+  opacity: 0.5;
+}
+/* 小号按钮（覆盖高度/字号/横向内边距，主次样式不变） */
+.gp-btn-sm {
+  height: var(--gp-btn-h-sm);
+  line-height: var(--gp-btn-h-sm);
+  font-size: var(--gp-font-sm);
+  padding: 0 28rpx;
+}
+
+/* ---- 通用主按钮（保持旧类名兼容） ---- */
+.gp-btn-primary.btn-disabled {
+  opacity: 0.5;
+}
+
+/* ============================================================
+   标签规范（PC .tag：11px 字 / 4px 圆角；移动端 22rpx / 8rpx）
+   ============================================================ */
+.gp-tag {
+  display: inline-block;
+  font-size: 22rpx;
+  line-height: 1.4;
+  padding: 4rpx 16rpx;
+  border-radius: var(--gp-radius-sm);
+  white-space: nowrap;
+}
+.gp-tag-blue {
+  background: var(--gp-primary-light);
+  color: var(--gp-primary);
+}
+.gp-tag-green {
+  background: #ecfdf5;
+  color: #10b981;
+}
+.gp-tag-gray {
+  background: #f3f4f6;
+  color: var(--gp-text-sub);
+}
+.gp-tag-orange {
+  background: #fff7ed;
+  color: var(--gp-price);
+}
+/* 胶囊（开关/筛选态） */
+.gp-pill {
+  display: inline-block;
+  font-size: var(--gp-font-sm);
+  line-height: 1.5;
+  padding: 8rpx 24rpx;
+  border-radius: 999rpx;
+}
+
+/* ---- 价格文本 ---- */
+.gp-price {
+  color: var(--gp-price);
+  font-weight: 700;
+}
+
+/* ---- 数据来源提示（模拟价格/模板参数等真实性标注，PC .data-hint 同源） ---- */
+.gp-data-hint {
+  font-size: var(--gp-font-xs);
+  color: var(--gp-text-dim);
+  letter-spacing: 1rpx;
+}
+
+/* ---- 统一单行输入框（全站 88rpx 高 / 12rpx 圆角 / #fafafa 底） ---- */
+.gp-input {
+  height: var(--gp-input-h);
+  border: 1rpx solid var(--gp-border);
+  border-radius: var(--gp-radius-md);
+  padding: 0 28rpx;
+  font-size: var(--gp-font-md);
+  background: #fafafa;
+  box-sizing: border-box;
+}
