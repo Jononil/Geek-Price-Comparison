@@ -22,11 +22,36 @@
     "backgroundColor": "#ffffff",
     "borderStyle": "black",
     "list": [
-      { "pagePath": "pages/index/index", "text": "首页" },
-      { "pagePath": "pages/category/index", "text": "分类" },
-      { "pagePath": "pages/compare/index", "text": "对比" },
-      { "pagePath": "pages/article-list/index", "text": "测评" },
-      { "pagePath": "pages/mine/index", "text": "我的" }
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/tabbar/home-normal.png",
+        "selectedIconPath": "assets/tabbar/home-active.png"
+      },
+      {
+        "pagePath": "pages/category/index",
+        "text": "分类",
+        "iconPath": "assets/tabbar/category-normal.png",
+        "selectedIconPath": "assets/tabbar/category-active.png"
+      },
+      {
+        "pagePath": "pages/compare/index",
+        "text": "对比",
+        "iconPath": "assets/tabbar/compare-normal.png",
+        "selectedIconPath": "assets/tabbar/compare-active.png"
+      },
+      {
+        "pagePath": "pages/article-list/index",
+        "text": "测评",
+        "iconPath": "assets/tabbar/review-normal.png",
+        "selectedIconPath": "assets/tabbar/review-active.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath": "assets/tabbar/mine-normal.png",
+        "selectedIconPath": "assets/tabbar/mine-active.png"
+      }
     ]
   },
   "window": {
