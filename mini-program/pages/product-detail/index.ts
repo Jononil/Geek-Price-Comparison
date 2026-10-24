@@ -21,7 +21,7 @@ import type {
   Product,
   ProductSpec,
 } from '../../types'
-import { pickProductImage, isPlaceholderImage } from '../../utils/image'
+import { pickProductImage, isPlaceholderImage, toAbsoluteUrl } from '../../utils/image'
 import { formatPrice, isScoreMissing, formatDateTime, formatDateMMDD } from '../../utils/format'
 import { compareStore } from '../../store/compare'
 import { userStore } from '../../store/user'
@@ -76,6 +76,7 @@ Page({
 
     product: null as Product | null,
     displayUrl: '',
+    imgSrc: '',
     imgFailed: false,
 
     // 评分（null → 数据不足）
@@ -199,6 +200,7 @@ Page({
     this.setData({
       product: p,
       displayUrl,
+      imgSrc: toAbsoluteUrl(displayUrl),
       imgFailed: false,
       valueMissing: isScoreMissing(p.valueScore),
       perfMissing: isScoreMissing(p.performanceScore),

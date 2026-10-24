@@ -8,6 +8,8 @@
  * - 防御性排除 placehold.co 等占位服务地址（历史数据残留）。
  */
 
+import { getBaseURL } from '../config/env'
+
 const PLACEHOLDER_PATTERN = /placehold\.co|placekitten|dummyimage|via\.placeholder/i
 
 /** 判断 URL 是否为占位图 */
@@ -26,4 +28,15 @@ export function pickProductImage(images?: string[] | null): string {
   )
   const real = list.find((url) => !isPlaceholderImage(url))
   return real ?? ''
+}
+
+/**
+ * 后端下发的图片可能是站内相对路径（/products/p123.jpg）。
+ * 小程序里 <image src> 不会相对后端解析，必须补成绝对地址。
+ */
+export function toAbsoluteUrl(url?: string | null): string {
+  if (!url) return ''
+  if (/^https?:\/\//i.test(url)) return url
+  if (url.charAt(0) === '/') return getBaseURL() + url
+  return url
 }

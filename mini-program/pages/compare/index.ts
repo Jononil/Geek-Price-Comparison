@@ -13,7 +13,7 @@
 import { productApi } from '../../api/index'
 import { compareStore } from '../../store/compare'
 import { SPEC_GROUPS, type GroupDef } from '../../utils/specGroups'
-import { pickProductImage, isPlaceholderImage } from '../../utils/image'
+import { pickProductImage, isPlaceholderImage, toAbsoluteUrl } from '../../utils/image'
 import { formatPrice, isScoreMissing } from '../../utils/format'
 import type { Product, ProductSpec } from '../../types'
 
@@ -134,7 +134,7 @@ Page({
       shortName: p.name.length > 10 ? p.name.slice(0, 10) + '…' : p.name,
       brandName: p.brandName || '—',
       categoryName: p.categoryName || '—',
-      image: !isPlaceholderImage(url) ? url : '',
+      image: !isPlaceholderImage(url) ? toAbsoluteUrl(url) : '',
       priceText: formatPrice(p.currentPrice),
       valueText: isScoreMissing(p.valueScore) ? '数据不足' : String(p.valueScore),
       valueMissing: isScoreMissing(p.valueScore),

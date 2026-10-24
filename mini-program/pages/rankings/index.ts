@@ -7,7 +7,7 @@
  */
 import { productApi } from '../../api/index'
 import type { Product } from '../../types'
-import { pickProductImage, isPlaceholderImage } from '../../utils/image'
+import { pickProductImage, isPlaceholderImage, toAbsoluteUrl } from '../../utils/image'
 import { formatPrice, isScoreMissing } from '../../utils/format'
 
 const TABS = [
@@ -56,7 +56,7 @@ Page({
           rank: i + 1,
           name: p.name,
           brandCategory: `${p.brandName || '—'} · ${p.categoryName || '—'}`,
-          image: !isPlaceholderImage(url) ? url : '',
+          image: !isPlaceholderImage(url) ? toAbsoluteUrl(url) : '',
           valueText: isScoreMissing(p.valueScore) ? '数据不足' : String(p.valueScore),
           valueMissing: isScoreMissing(p.valueScore),
           priceText: formatPrice(p.currentPrice),

@@ -7,6 +7,7 @@
  * targetType：1=产品（跳商品详情）2=测评（后端返回 title/cover，跳测评详情）
  * 图片：后端对 targetType=1 已返回 qualifiedFirstImageUrl（null → 空态，不放占位图）。
  */
+import { toAbsoluteUrl } from '../../utils/image'
 import { favoriteApi } from '../../api/index'
 import type { FavoriteItem } from '../../types'
 import { formatPrice, isScoreMissing } from '../../utils/format'
@@ -32,7 +33,7 @@ function toItem(f: FavoriteItem): FavItem {
     targetType: f.targetType,
     targetId: f.targetId,
     name: f.name || '（已删除的内容）',
-    image: f.image || '',
+    image: toAbsoluteUrl(f.image),
     priceText: isProduct ? `¥${formatPrice(f.price)}` : '',
     valueText: isScoreMissing(f.valueScore) ? '数据不足' : String(f.valueScore),
     valueMissing: isScoreMissing(f.valueScore),

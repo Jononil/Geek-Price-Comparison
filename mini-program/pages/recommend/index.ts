@@ -6,7 +6,7 @@
  */
 import { recommendApi } from '../../api/index'
 import type { Recommendation } from '../../types'
-import { pickProductImage } from '../../utils/image'
+import { pickProductImage, toAbsoluteUrl } from '../../utils/image'
 import { formatPrice, isScoreMissing } from '../../utils/format'
 
 interface RecItem {
@@ -33,7 +33,7 @@ function toItem(r: Recommendation): RecItem {
   return {
     productId: r.productId,
     name: r.name,
-    image: pickProductImage(typeof r.image === 'string' ? [r.image] : []),
+    image: toAbsoluteUrl(pickProductImage(typeof r.image === 'string' ? [r.image] : [])),
     reason: r.reason || '',
     typeLabel: TYPE_LABELS[r.type] || '推荐',
     scoreText: r.score != null ? `${r.score}%` : '—',

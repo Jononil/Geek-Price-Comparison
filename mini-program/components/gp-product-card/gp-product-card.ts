@@ -9,7 +9,7 @@
  * - 点击图片上的 ⓘ 查看图片授权署名。
  */
 import type { Product } from '../../types'
-import { pickProductImage, isPlaceholderImage } from '../../utils/image'
+import { pickProductImage, isPlaceholderImage, toAbsoluteUrl } from '../../utils/image'
 import { formatPrice, isScoreMissing } from '../../utils/format'
 import { compareStore } from '../../store/compare'
 
@@ -35,7 +35,7 @@ Component({
       const url = pickProductImage(p.images)
       const tags = p.tags || []
       this.setData({
-        displayUrl: !isPlaceholderImage(url) ? url : '',
+        displayUrl: !isPlaceholderImage(url) ? toAbsoluteUrl(url) : '',
         failed: false,
         inCompare: compareStore.has(id),
         priceText: formatPrice(p.currentPrice),

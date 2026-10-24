@@ -6,6 +6,7 @@
  * - DELETE /api/history           清空全部（需登录）
  * 图片：后端返回 qualifiedFirstImageUrl（null → 空态）。
  */
+import { toAbsoluteUrl } from '../../utils/image'
 import { historyApi } from '../../api/index'
 import type { BrowseHistoryItem } from '../../types'
 import { formatPrice, isScoreMissing } from '../../utils/format'
@@ -26,7 +27,7 @@ function toItem(h: BrowseHistoryItem): HisItem {
     id: h.id,
     productId: h.productId,
     name: h.productName || '（已下架商品）',
-    image: h.image || '',
+    image: toAbsoluteUrl(h.image),
     priceText: `¥${formatPrice(h.price)}`,
     valueText: isScoreMissing(h.valueScore) ? '数据不足' : String(h.valueScore),
     valueMissing: isScoreMissing(h.valueScore),

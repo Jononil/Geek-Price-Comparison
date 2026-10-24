@@ -13,7 +13,7 @@
 import { categoryApi, productApi, recommendApi } from '../../api/index'
 import { compareStore } from '../../store/compare'
 import type { Category, Product, Recommendation } from '../../types'
-import { pickProductImage } from '../../utils/image'
+import { pickProductImage, toAbsoluteUrl } from '../../utils/image'
 import { formatPrice, isScoreMissing } from '../../utils/format'
 
 type ViewState = 'loading' | 'ready' | 'error'
@@ -96,7 +96,7 @@ Page({
       const recommendations: RecItem[] = list.map((r) => ({
         productId: r.productId,
         name: r.name,
-        image: pickProductImage(typeof r.image === 'string' ? [r.image] : []),
+        image: toAbsoluteUrl(pickProductImage(typeof r.image === 'string' ? [r.image] : [])),
         valueMissing: isScoreMissing(r.valueScore),
         valueScore: isScoreMissing(r.valueScore) ? '数据不足' : String(r.valueScore),
         priceText: formatPrice(r.price),

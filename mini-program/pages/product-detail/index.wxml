@@ -15,7 +15,7 @@
         <image
           wx:if="{{displayUrl}}"
           class="img"
-          src="{{displayUrl}}"
+          src="{{imgSrc}}"
           mode="aspectFill"
           binderror="onImgError"
         />
