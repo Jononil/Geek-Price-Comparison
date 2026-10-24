@@ -10,7 +10,6 @@
         <router-link to="/">首页</router-link>
         <router-link to="/products">找产品</router-link>
         <router-link to="/compare">产品对比</router-link>
-        <router-link to="/articles">测评</router-link>
         <router-link to="/rankings">排行榜</router-link>
         <router-link to="/value-lab">性价比实验室</router-link>
       </nav>

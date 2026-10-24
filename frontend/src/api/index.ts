@@ -43,9 +43,8 @@ export const priceApi = {
 }
 
 // ---------- 测评 ----------
+// 测评列表页已下线：文章只出现在产品详情页的「相关测评 / 同品类测评」区块
 export const articleApi = {
-  list: (params: Record<string, any>): Promise<PageResult<ReviewArticle>> =>
-    request.get('/articles', { params }),
   detail: (id: number): Promise<ReviewArticle> => request.get(`/articles/${id}`),
   like: (id: number) => request.post(`/articles/${id}/like`)
 }

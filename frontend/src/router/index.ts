@@ -10,7 +10,6 @@ const router = createRouter({
     { path: '/products', name: 'products', component: () => import('@/views/ProductListView.vue') },
     { path: '/products/:id', name: 'product-detail', component: () => import('@/views/ProductDetailView.vue') },
     { path: '/compare', name: 'compare', component: () => import('@/views/CompareView.vue') },
-    { path: '/articles', name: 'articles', component: () => import('@/views/ArticleListView.vue') },
     { path: '/articles/:id', name: 'article-detail', component: () => import('@/views/ArticleDetailView.vue') },
     { path: '/rankings', name: 'rankings', component: () => import('@/views/RankingView.vue') },
     { path: '/value-lab', name: 'value-lab', component: () => import('@/views/ValueLabView.vue') },
@@ -19,7 +18,9 @@ const router = createRouter({
     { path: '/register', name: 'register', component: () => import('@/views/RegisterView.vue') },
     { path: '/profile', name: 'profile', component: () => import('@/views/ProfileView.vue') },
     { path: '/profile/favorites', name: 'favorites', component: () => import('@/views/FavoritesView.vue') },
-    { path: '/profile/history', name: 'history', component: () => import('@/views/HistoryView.vue') }
+    { path: '/profile/history', name: 'history', component: () => import('@/views/HistoryView.vue') },
+    // 兜底：已下线的页面（如原测评列表 /articles）或错误地址统一回首页，避免白屏
+    { path: '/:pathMatch(.*)*', redirect: '/' }
   ]
 })
 
