@@ -86,13 +86,6 @@ export const recommendApi = {
 }
 
 export const articleApi = {
-  /**
-   * GET /api/articles → PageResult<ReviewArticle>（仅 status=1，publishTime 降序）
-   * 注意：productId 可为 null（当前库 32 篇全部为 null），cover 也可为 null。
-   */
-  list: (page = 1, pageSize = 10) =>
-    http.get<PageResult<ReviewArticle>>('/api/articles', { page, pageSize }),
-
   /** GET /api/articles/{id}（副作用：views+1） */
   detail: (id: number) => http.get<ReviewArticle>(`/api/articles/${id}`),
 

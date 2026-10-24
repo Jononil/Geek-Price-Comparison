@@ -144,6 +144,40 @@
       </block>
     </view>
 
+    <!-- ===== 相关测评（本商品专属，没有则同品类兜底） ===== -->
+    <view class="article-card gp-card">
+      <view class="card-header">
+        <text class="card-title">{{reviewFallback ? '同品类测评' : '相关测评'}}</text>
+        <text wx:if="{{reviewFallback && reviewArticles.length}}" class="fallback-hint">该商品暂无专属测评，以下为同类推荐</text>
+      </view>
+
+      <gp-empty
+        wx:if="{{reviewArticles.length === 0}}"
+        text="暂无相关测评"
+        subText="该品类还没有收录测评文章"
+      />
+      <block wx:else>
+        <view
+          class="article-item"
+          wx:for="{{reviewArticles}}"
+          wx:key="id"
+          data-id="{{item.id}}"
+          bindtap="onTapArticle"
+        >
+          <view class="article-main">
+            <text class="article-title">{{item.title}}</text>
+            <view class="article-meta">
+              <text class="article-source">{{item.author}}</text>
+              <text wx:if="{{item.dateText}}" class="article-date">{{item.dateText}}</text>
+              <text class="article-stat">{{item.views}} 阅读</text>
+              <text class="article-stat">{{item.likes}} 赞</text>
+            </view>
+          </view>
+          <text class="article-arrow">›</text>
+        </view>
+      </block>
+    </view>
+
     <!-- ===== 用户评价（详情内嵌最新 10 条） ===== -->
     <view class="review-card gp-card">
       <view class="card-header">

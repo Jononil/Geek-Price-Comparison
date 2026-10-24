@@ -5,7 +5,6 @@
     "pages/product-list/index",
     "pages/product-detail/index",
     "pages/compare/index",
-    "pages/article-list/index",
     "pages/article-detail/index",
     "pages/reviews/index",
     "pages/recommend/index",
@@ -39,12 +38,6 @@
         "text": "对比",
         "iconPath": "assets/tabbar/compare-normal.png",
         "selectedIconPath": "assets/tabbar/compare-active.png"
-      },
-      {
-        "pagePath": "pages/article-list/index",
-        "text": "测评",
-        "iconPath": "assets/tabbar/review-normal.png",
-        "selectedIconPath": "assets/tabbar/review-active.png"
       },
       {
         "pagePath": "pages/mine/index",

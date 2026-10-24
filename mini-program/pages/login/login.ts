@@ -53,7 +53,6 @@ Page({
           '/pages/index/index',
           '/pages/category/index',
           '/pages/compare/index',
-          '/pages/article-list/index',
           '/pages/mine/index',
         ]
         if (tabPages.indexOf(target) >= 0) {

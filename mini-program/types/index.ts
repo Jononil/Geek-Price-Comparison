@@ -116,6 +116,8 @@ export interface Product {
   imagesAttribution?: ImageAttribution[]
   reviews?: Review[]
   articles?: ReviewArticle[]
+  /** 同品类兜底测评（仅详情接口填充；本商品无专属测评时使用） */
+  relatedArticles?: ReviewArticle[]
 }
 
 export interface ProductPrice {

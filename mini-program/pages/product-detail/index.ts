@@ -104,6 +104,18 @@ Page({
     // 评价（来自详情接口的最新 10 条）
     reviews: [] as { id: number; nickname: string; star: number; content: string; createdAt: string }[],
 
+    // 测评：优先本商品的专属测评，没有则用同品类兜底（与 PC 详情页一致）
+    reviewArticles: [] as {
+      id: number
+      title: string
+      author: string
+      dateText: string
+      views: number
+      likes: number
+    }[],
+    reviewFallback: false,
+    reviewEmptyText: '该商品暂无测评',
+
     favorited: false,
     favSubmitting: false,
     inCompare: false,
@@ -197,6 +209,19 @@ Page({
       createdAt: rv.createdAt,
     }))
 
+    // 测评：本商品专属优先，没有则同品类兜底（与 PC 详情页同规则）
+    const ownArticles = p.articles || []
+    const fallbackArticles = p.relatedArticles || []
+    const picked = ownArticles.length ? ownArticles : fallbackArticles
+    const reviewArticles = picked.slice(0, 3).map((a) => ({
+      id: a.id,
+      title: a.title,
+      author: a.author || '极客比价',
+      dateText: (a.publishTime || '').slice(0, 10),
+      views: a.views || 0,
+      likes: a.likes || 0,
+    }))
+
     this.setData({
       product: p,
       displayUrl,
@@ -209,6 +234,9 @@ Page({
       specSummary,
       hasSpecs: specRows.length > 0,
       reviews,
+      reviewArticles,
+      reviewFallback: ownArticles.length === 0 && fallbackArticles.length > 0,
+      reviewEmptyText: fallbackArticles.length === 0 && ownArticles.length === 0 ? '该商品暂无测评' : '',
       inCompare: compareStore.has(p.id),
       favorited: false, // 后端无"是否已收藏"查询接口（接口缺口，见报告）
     })
@@ -523,5 +551,12 @@ Page({
     wx.navigateTo({
       url: `/pages/reviews/index?productId=${p.id}&productName=${encodeURIComponent(p.name)}`,
     })
+  },
+
+  /** 点击测评条目 → 测评详情页 */
+  onTapArticle(e: WechatMiniprogram.TouchEvent) {
+    const id = Number(e.currentTarget.dataset.id)
+    if (!id) return
+    wx.navigateTo({ url: `/pages/article-detail/index?id=${id}` })
   },
 })
