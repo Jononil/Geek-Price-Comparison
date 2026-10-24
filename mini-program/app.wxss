@@ -85,6 +85,8 @@ button::after {
 
 /* ---- 深色 Hero（首页/详情头部） ---- */
 .gp-hero {
+  /* 兜底：若多层渐变不被支持，至少保证深色底不出现白字白底 */
+  background: #0e1729;
   background:
     radial-gradient(560rpx 360rpx at 10% -20%, rgba(79, 70, 229, 0.55), rgba(79, 70, 229, 0)),
     radial-gradient(520rpx 340rpx at 92% 4%, rgba(8, 145, 178, 0.42), rgba(8, 145, 178, 0)),

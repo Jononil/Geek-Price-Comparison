@@ -8,19 +8,21 @@
   <gp-error wx:elif="{{state === 'error'}}" bind:retry="onRetry" />
   <gp-empty wx:elif="{{items.length === 0}}" text="暂无浏览记录" subText="浏览商品后会自动记录" />
 
-  <view wx:else class="his-item gp-card" wx:for="{{items}}" wx:key="id" data-id="{{item.productId}}" bindtap="onTapItem">
-    <view class="hi-img-wrap">
-      <image wx:if="{{item.image}}" class="hi-img" src="{{item.image}}" mode="aspectFit" lazy-load />
-      <gp-no-image wx:else size="{{48}}" text="" />
-    </view>
-    <view class="hi-info">
-      <text class="hi-name">{{item.name}}</text>
-      <text class="hi-time">{{item.timeText}}</text>
-      <view class="hi-bottom">
-        <text wx:if="{{item.valueMissing}}" class="hi-value-dim">性价比 数据不足</text>
-        <text wx:else class="hi-value">性价比 {{item.valueText}}</text>
-        <text class="hi-price">{{item.priceText}} <text class="hi-sim">(模拟)</text></text>
+  <block wx:else>
+    <view class="his-item gp-card" wx:for="{{items}}" wx:key="id" data-id="{{item.productId}}" bindtap="onTapItem">
+      <view class="hi-img-wrap">
+        <image wx:if="{{item.image}}" class="hi-img" src="{{item.image}}" mode="aspectFit" lazy-load />
+        <gp-no-image wx:else size="{{48}}" text="" />
+      </view>
+      <view class="hi-info">
+        <text class="hi-name">{{item.name}}</text>
+        <text class="hi-time">{{item.timeText}}</text>
+        <view class="hi-bottom">
+          <text wx:if="{{item.valueMissing}}" class="hi-value-dim">性价比 数据不足</text>
+          <text wx:else class="hi-value">性价比 {{item.valueText}}</text>
+          <text class="hi-price">{{item.priceText}} <text class="hi-sim">(模拟)</text></text>
+        </view>
       </view>
     </view>
-  </view>
+  </block>
 </view>
