@@ -18,7 +18,7 @@
           </div>
           <div class="lab-meta-item">
             <span class="k">维度</span>
-            <b>4 维试算</b>
+            <b>{{ currentDims.length }} 维试算</b>
           </div>
           <div class="lab-meta-item">
             <span class="k">权重和</span>
@@ -55,7 +55,7 @@
         <h3>权重配置</h3>
         <p class="sub">总和不要求为 100，系统自动归一化</p>
 
-        <div class="slider" v-for="d in DIMS" :key="d.key">
+        <div class="slider" v-for="d in currentDims" :key="d.key">
           <div class="row">
             <span>{{ d.name }}<em v-if="d.hint">{{ d.hint }}</em></span>
             <b class="gp-num">{{ weights[d.key] }}%</b>
@@ -73,7 +73,7 @@
 
         <div class="presets">
           <button
-            v-for="p in PRESETS"
+            v-for="p in currentPresets"
             :key="p.key"
             class="preset"
             :class="{ 'is-on': activePreset === p.key }"
@@ -84,13 +84,12 @@
         </div>
 
         <div class="caliber">
-          <b>口径说明</b>
+          <b>口径说明 · {{ currentCategoryName || '通用' }}</b>
           <ul>
-            <li>后端全局默认权重：性能 30 / 功能 20 / 口碑 20 / 价格 30 / 热度 0；</li>
-            <li>性能分取后端 <code>performanceScore</code>；口碑分 = 用户评分 × 20；热度分 = 热度 ÷ 100；</li>
-            <li>价格优势按「官方价 ÷ 当前最低价」近似，5 折以上接近满分，无折扣为 50 分；</li>
-            <li>「功能分」依赖后端参数条数，列表接口未下发，本页不参与试算；</li>
-            <li>缺失维度按后端规则剔除后重新归一化，因此试算分与正式分可能存在差异。</li>
+            <li>维度按品类定义（当前品类 <b>{{ currentDims.length }}</b> 个）：手机看影像/屏幕/续航，耳机看音质/降噪/佩戴，显卡看散热/能效……</li>
+            <li>「性能」取后端 <code>performanceScore</code>（真实字段）；该类目缺该字段时自动剔除并重新归一。</li>
+            <li>其余维度后端没有对应字段，按「价格档位 + 用户评分 + 稳定随机」生成相对分，<b>仅用于演示加权逻辑</b>，不代表真实评测结论。</li>
+            <li>同一产品同一维度的模拟分固定不变（用 productId + 维度 key 作哈希种子），刷新不会乱跳。</li>
           </ul>
         </div>
       </div>
@@ -157,83 +156,94 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, watch } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 import { categoryApi, productApi } from '@/api'
+import {
+  DIMENSION_SETS,
+  FALLBACK_DIMS,
+  PRESETS_BY_CATEGORY,
+  defaultPresets,
+  scoreDim,
+  type Dim,
+  type Preset
+} from '@/utils/valueDimensions'
 import type { Category, Product } from '@/types'
 
-/* ---------------- 维度定义 ---------------- */
-interface Dim {
-  key: 'perf' | 'rating' | 'heat' | 'price'
-  name: string
-  hint?: string
-}
-
-const DIMS: Dim[] = [
-  { key: 'perf', name: '性能', hint: '（缺数据则剔除）' },
-  { key: 'rating', name: '口碑', hint: '（用户评分）' },
-  { key: 'heat', name: '热度', hint: '（后端默认 0）' },
-  { key: 'price', name: '价格优势', hint: '（按折扣近似）' }
-]
-
-/** 第一个预设对齐后端全局默认：性能 30 / 功能 20 / 口碑 20 / 价格 30 / 热度 0
- *  （功能分列表接口未下发，本页不参与，故此处为去掉功能维后的等价配比） */
-const PRESETS = [
-  { key: 'default', name: '后端默认', w: { perf: 30, rating: 20, heat: 0, price: 30 } },
-  { key: 'power', name: '性能党', w: { perf: 50, rating: 15, heat: 10, price: 25 } },
-  { key: 'fame', name: '口碑党', w: { perf: 20, rating: 50, heat: 10, price: 20 } },
-  { key: 'bargain', name: '捡漏党', w: { perf: 20, rating: 20, heat: 10, price: 50 } }
-] as const
-
-type WeightKey = Dim['key']
-type Weights = Record<WeightKey, number>
-
 /* ---------------- 状态 ---------------- */
+const route = useRoute()
+const router = useRouter()
 const products = ref<Product[]>([])
 const categories = ref<Category[]>([])
 const loading = ref(true)
 const categoryId = ref(0)
 
-const weights = ref<Weights>({ ...PRESETS[0].w })
-const activePreset = ref<string>('default')
+/** 权重：key 为维度 key，值 0-40，由当前品类的维度集合决定 */
+const weights = ref<Record<string, number>>({})
+const activePreset = ref<string>('')
 const sortBy = ref<'score' | 'value'>('score')
 
-const weightSum = computed(() =>
-  DIMS.reduce((sum, d) => sum + (weights.value[d.key] || 0), 0)
+/* ---------------- 按品类切换维度 ---------------- */
+const currentCategoryName = computed(
+  () => categories.value.find((c) => c.id === categoryId.value)?.name ?? ''
 )
 
+/** 当前品类的维度集合；未收录品类走通用维度 */
+const currentDims = computed<Dim[]>(() => DIMENSION_SETS[currentCategoryName.value] ?? FALLBACK_DIMS)
+
+/** 当前品类的预设；没有专门定义时用「均衡 + 主维度优先」 */
+const currentPresets = computed<Preset[]>(
+  () => PRESETS_BY_CATEGORY[currentCategoryName.value] ?? defaultPresets(currentDims.value)
+)
+
+const weightSum = computed(() =>
+  currentDims.value.reduce((sum, d) => sum + (weights.value[d.key] || 0), 0)
+)
+
+/** 切品类后把权重重置为该品类第一个预设 */
+function resetWeights() {
+  const first = currentPresets.value[0]
+  weights.value = { ...(first?.w ?? {}) }
+  activePreset.value = first?.key ?? ''
+}
+
+// 品类变化 / 品类表加载完成时都要重置（首次渲染时 categories 还没到）
+watch([categoryId, () => categories.value.length], () => resetWeights(), { immediate: true })
+
 /* ---------------- 工具 ---------------- */
-const clamp = (n: number, lo = 0, hi = 100) => Math.max(lo, Math.min(hi, n))
-
-/** 四维归一化打分；缺失维度返回 null，与后端「剔除后重新归一」语义一致 */
-function dimsOf(p: Product) {
-  const perf = p.performanceScore == null ? null : clamp(Number(p.performanceScore))
-
-  const ratingRaw = p.userRating == null ? null : Number(p.userRating)
-  const rating = ratingRaw == null || Number.isNaN(ratingRaw) ? null : clamp(ratingRaw * 20)
-
-  const heatRaw = p.heat == null ? null : Number(p.heat)
-  const heat = heatRaw == null || Number.isNaN(heatRaw) ? null : clamp(Math.round(heatRaw / 100))
-
-  // 价格优势：官方价 / 当前价，1.0 折 → 50 分，0.5 折 → 100 分
-  const official = Number(p.officialPrice)
-  const current = Number(p.currentPrice)
-  let price: number | null = null
-  if (official > 0 && current > 0) {
-    price = clamp(Math.round(50 + (official / current - 1) * 100))
+/** 价格档位：当前品类内 0（最便宜）→ 1（最贵），用于生成模拟维度的基础分 */
+const priceTiers = computed<Record<number, number>>(() => {
+  const prices = products.value.map((p) => Number(p.currentPrice) || 0).filter((v) => v > 0)
+  const map: Record<number, number> = {}
+  if (!prices.length) return map
+  const min = Math.min(...prices)
+  const max = Math.max(...prices)
+  for (const p of products.value) {
+    const v = Number(p.currentPrice) || 0
+    map[p.id] = max === min ? 0.5 : (v - min) / (max - min)
   }
+  return map
+})
 
-  return { perf, rating, heat, price }
+/** 按当前品类的维度集合打分；real 维度缺数据返回 null */
+function dimsOf(p: Product): Record<string, number | null> {
+  const tier = priceTiers.value[p.id] ?? 0.5
+  const out: Record<string, number | null> = {}
+  for (const dim of currentDims.value) {
+    out[dim.key] = scoreDim(p, dim, tier)
+  }
+  return out
 }
 
 function computeRow(p: Product) {
   const dims = dimsOf(p)
 
-  // 与后端一致：只在「有数据的维度」上归一化，缺失维度剔除而不是按 0 计
+  // 只在「有数据的维度」上归一化，缺失维度剔除而不是按 0 计
   let weighted = 0
   let usedWeight = 0
   let used = 0
 
-  DIMS.forEach((d) => {
+  currentDims.value.forEach((d) => {
     const v = dims[d.key]
     if (v == null) return
     const w = weights.value[d.key] || 0
@@ -261,14 +271,14 @@ const maxScore = computed(() => Math.max(1, ...allRows.value.map((r) => r.score)
 const maxValue = computed(() => Math.max(1, ...allRows.value.map((r) => r.value)))
 
 /* ---------------- 交互 ---------------- */
-function onSlide(key: WeightKey, e: Event) {
+function onSlide(key: string, e: Event) {
   const val = Number((e.target as HTMLInputElement).value)
   weights.value = { ...weights.value, [key]: val }
   activePreset.value = ''
 }
 
 function applyPreset(key: string) {
-  const preset = PRESETS.find((p) => p.key === key)
+  const preset = currentPresets.value.find((p) => p.key === key)
   if (!preset) return
   weights.value = { ...preset.w }
   activePreset.value = key
@@ -277,6 +287,8 @@ function applyPreset(key: string) {
 function pickCategory(id: number) {
   if (categoryId.value === id) return
   categoryId.value = id
+  // 同步到 URL，便于分享/刷新后停在同一个品类
+  router.replace({ query: { ...route.query, categoryId: String(id) } })
   loadProducts()
 }
 
@@ -302,8 +314,12 @@ onMounted(async () => {
   } catch {
     categories.value = []
   }
-  // 默认落到第一个品类：跨品类比较价格没有意义
-  if (categories.value.length > 0 && categoryId.value === 0) {
+  // 支持 ?categoryId=6 直接进来；否则落到第一个品类（跨品类比价没有意义）
+  const fromUrl = Number(route.query.categoryId)
+  const valid = categories.value.some((c) => c.id === fromUrl)
+  if (valid) {
+    categoryId.value = fromUrl
+  } else if (categories.value.length > 0 && categoryId.value === 0) {
     categoryId.value = categories.value[0].id
   }
   await loadProducts()
