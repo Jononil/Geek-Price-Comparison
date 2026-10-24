@@ -6,7 +6,7 @@
   display: flex;
   background: #ffffff;
   border: 1rpx solid #e5e7eb;
-  border-radius: 16rpx;
+  border-radius: var(--gp-radius);
   overflow: hidden;
   margin-bottom: 20rpx;
 }
@@ -64,13 +64,13 @@
 .score {
   margin-left: auto;
   font-size: 22rpx;
-  color: #2563eb;
+  color: #4f46e5;
   font-weight: 600;
 }
 .product-link {
   margin-left: auto;
   font-size: 20rpx;
-  color: #2563eb;
+  color: #4f46e5;
 }
 .load-more {
   padding: 24rpx 0;

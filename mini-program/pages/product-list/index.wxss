@@ -17,9 +17,9 @@
   color: #6b7280;
 }
 .sort-active {
-  color: #2563eb;
+  color: #4f46e5;
   font-weight: 600;
-  border-bottom: 4rpx solid #2563eb;
+  border-bottom: 4rpx solid #4f46e5;
   box-sizing: border-box;
 }
 
@@ -39,15 +39,15 @@
   padding: 10rpx 20rpx;
 }
 .filter-btn-active {
-  color: #2563eb;
-  border-color: #2563eb;
+  color: #4f46e5;
+  border-color: #4f46e5;
 }
 .result-info {
   font-size: 24rpx;
   color: #6b7280;
 }
 .result-num {
-  color: #2563eb;
+  color: #4f46e5;
   font-weight: 700;
 }
 
@@ -125,9 +125,9 @@
   color: #1f2937;
 }
 .chip-active {
-  background: #eff4ff;
-  border-color: #2563eb;
-  color: #2563eb;
+  background: #eef2ff;
+  border-color: #4f46e5;
+  color: #4f46e5;
   font-weight: 600;
 }
 .price-inputs {
@@ -166,6 +166,6 @@
   border: 1rpx solid #e5e7eb;
 }
 .panel-btn-primary {
-  background: #2563eb;
+  background: #4f46e5;
   color: #ffffff;
 }

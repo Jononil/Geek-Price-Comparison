@@ -10,8 +10,8 @@
 .spinner {
   width: 48rpx;
   height: 48rpx;
-  border: 5rpx solid #dbe4f5;
-  border-top-color: #2563eb;
+  border: 5rpx solid #c7d2fe;
+  border-top-color: #4f46e5;
   border-radius: 50%;
   animation: gp-spin 0.9s linear infinite;
 }

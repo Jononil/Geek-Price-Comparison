@@ -54,12 +54,12 @@
   gap: 16rpx;
 }
 .fi-price {
-  color: #f97316;
+  color: #111827;
   font-weight: 700;
   font-size: 30rpx;
 }
 .fi-value {
-  color: #10b981;
+  color: #15803d;
   font-size: 20rpx;
 }
 .fi-value-dim {
@@ -69,7 +69,7 @@
 .fi-remove {
   flex-shrink: 0;
   font-size: 22rpx;
-  color: #ef4444;
+  color: #dc2626;
   padding: 12rpx 8rpx 12rpx 20rpx;
   border-left: 1rpx solid #f1f5f9;
   margin-left: 16rpx;

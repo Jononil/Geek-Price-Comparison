@@ -18,7 +18,7 @@
   ],
   "tabBar": {
     "color": "#9ca3af",
-    "selectedColor": "#2563eb",
+    "selectedColor": "#4f46e5",
     "backgroundColor": "#ffffff",
     "borderStyle": "black",
     "list": [
@@ -30,7 +30,7 @@
     ]
   },
   "window": {
-    "navigationBarBackgroundColor": "#2563eb",
+    "navigationBarBackgroundColor": "#0b1220",
     "navigationBarTitleText": "极客比价",
     "navigationBarTextStyle": "white",
     "backgroundColor": "#f5f7fa",

@@ -11,18 +11,18 @@
 .all-name {
   font-size: 30rpx;
   font-weight: 700;
-  color: #2563eb;
+  color: #4f46e5;
 }
 .all-arrow {
   font-size: 32rpx;
-  color: #2563eb;
+  color: #4f46e5;
 }
 .cat-grid {
   display: flex;
   flex-direction: column;
   background: #ffffff;
   border: 1rpx solid #e5e7eb;
-  border-radius: 16rpx;
+  border-radius: var(--gp-radius);
   overflow: hidden;
 }
 .cat-item {

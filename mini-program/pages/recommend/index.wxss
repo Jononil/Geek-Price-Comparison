@@ -45,7 +45,7 @@
   right: 12rpx;
   top: 12rpx;
   background: rgba(255, 255, 255, 0.92);
-  color: #2563eb;
+  color: #4f46e5;
   font-size: 20rpx;
   padding: 4rpx 14rpx;
   border-radius: 8rpx;
@@ -83,7 +83,7 @@
   padding-bottom: 8rpx;
 }
 .rc-price {
-  color: #f97316;
+  color: #111827;
   font-weight: 700;
   font-size: 28rpx;
 }
@@ -93,7 +93,7 @@
   font-weight: 400;
 }
 .rc-value {
-  color: #10b981;
+  color: #15803d;
   font-size: 20rpx;
   font-weight: 600;
 }

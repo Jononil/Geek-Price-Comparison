@@ -5,7 +5,7 @@
   align-items: center;
   padding: 160rpx 48rpx 60rpx;
   box-sizing: border-box;
-  background: linear-gradient(180deg, #eff4ff 0%, #f5f7fa 40%);
+  background: linear-gradient(180deg, #eef2ff 0%, #f5f7fa 40%);
 }
 .brand {
   display: flex;
@@ -17,7 +17,7 @@
 .brand-name {
   font-size: 52rpx;
   font-weight: 700;
-  color: #2563eb;
+  color: #4f46e5;
 }
 .brand-slogan {
   font-size: 24rpx;
@@ -39,7 +39,7 @@
 }
 .input:focus {
   background: #ffffff;
-  border-color: #2563eb;
+  border-color: #4f46e5;
 }
 .login-btn {
   margin-top: 8rpx;
@@ -48,7 +48,7 @@
   text-align: center;
   margin-top: 32rpx;
   font-size: 26rpx;
-  color: #2563eb;
+  color: #4f46e5;
 }
 .footer-hint {
   margin-top: auto;

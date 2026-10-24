@@ -14,7 +14,7 @@
 }
 .head-clear {
   font-size: 24rpx;
-  color: #ef4444;
+  color: #dc2626;
 }
 .his-item {
   display: flex;
@@ -61,7 +61,7 @@
   align-items: baseline;
 }
 .hi-value {
-  color: #10b981;
+  color: #15803d;
   font-size: 22rpx;
 }
 .hi-value-dim {
@@ -69,7 +69,7 @@
   font-size: 22rpx;
 }
 .hi-price {
-  color: #f97316;
+  color: #111827;
   font-weight: 700;
   font-size: 28rpx;
 }

@@ -22,7 +22,6 @@ import type {
   ProductSpec,
 } from '../../types'
 import { pickProductImage, isPlaceholderImage } from '../../utils/image'
-import { isSeriesReferenceImage, getSeriesReferenceReason } from '../../utils/seriesReference'
 import { formatPrice, isScoreMissing, formatDateTime, formatDateMMDD } from '../../utils/format'
 import { compareStore } from '../../store/compare'
 import { userStore } from '../../store/user'
@@ -78,8 +77,6 @@ Page({
     product: null as Product | null,
     displayUrl: '',
     imgFailed: false,
-    seriesRef: false,
-    seriesReason: '',
 
     // 评分（null → 数据不足）
     valueMissing: false,
@@ -162,7 +159,6 @@ Page({
   applyProduct(p: Product) {
     const url = pickProductImage(p.images)
     const displayUrl = !isPlaceholderImage(url) ? url : ''
-    const series = isSeriesReferenceImage(p.id, displayUrl)
 
     // 参数行：三态归一化（缺失视为 template=不可信）
     const specRows: SpecRow[] = (p.specs || []).map((s: ProductSpec) => {
@@ -204,8 +200,6 @@ Page({
       product: p,
       displayUrl,
       imgFailed: false,
-      seriesRef: series,
-      seriesReason: series ? getSeriesReferenceReason(p.id, displayUrl) || '' : '',
       valueMissing: isScoreMissing(p.valueScore),
       perfMissing: isScoreMissing(p.performanceScore),
       ratingMissing: isScoreMissing(p.userRating),

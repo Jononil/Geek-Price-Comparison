@@ -21,15 +21,15 @@
 .like-btn {
   margin-left: auto;
   font-size: 24rpx;
-  color: #2563eb;
-  background: #eff4ff;
-  border: 1rpx solid #dbe4f5;
+  color: #4f46e5;
+  background: #eef2ff;
+  border: 1rpx solid #c7d2fe;
   border-radius: 24rpx;
   padding: 8rpx 24rpx;
 }
 .like-btn.liked {
   color: #ffffff;
-  background: #2563eb;
+  background: #4f46e5;
 }
 
 /* 评分面板 */
@@ -38,7 +38,7 @@
   align-items: center;
   gap: 32rpx;
   background: #f8fafc;
-  border-radius: 16rpx;
+  border-radius: var(--gp-radius);
   padding: 28rpx;
   margin-top: 28rpx;
 }
@@ -50,7 +50,7 @@
 .score-main {
   font-size: 64rpx;
   font-weight: 700;
-  color: #2563eb;
+  color: #4f46e5;
 }
 .score-unit {
   font-size: 22rpx;
@@ -85,7 +85,7 @@
 }
 .pc-box {
   flex: 1;
-  border-radius: 16rpx;
+  border-radius: var(--gp-radius);
   padding: 20rpx;
   display: flex;
   flex-direction: column;
@@ -102,10 +102,10 @@
   font-weight: 700;
 }
 .pc-pros .pc-title {
-  color: #10b981;
+  color: #15803d;
 }
 .pc-cons .pc-title {
-  color: #f97316;
+  color: #111827;
 }
 .pc-text {
   font-size: 24rpx;
@@ -128,7 +128,7 @@
   margin-top: 28rpx;
   padding: 20rpx;
   text-align: center;
-  color: #2563eb;
+  color: #4f46e5;
   font-size: 26rpx;
   border-top: 1rpx solid #f1f5f9;
 }

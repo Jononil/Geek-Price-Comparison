@@ -1,41 +1,58 @@
 <view class="home">
-  <!-- 搜索入口 -->
-  <view class="search-bar">
-    <input
-      class="search-input"
-      placeholder="搜索手机、耳机、显卡、笔记本……"
-      confirm-type="search"
-      value="{{keyword}}"
-      bindinput="onKeywordInput"
-      bindconfirm="onSearch"
-    />
-    <view class="search-btn gp-btn-primary" bindtap="onSearch">智能比价</view>
+  <!-- 深色 Hero：与 PC 首页一致 -->
+  <view class="gp-hero hero">
+    <text class="gp-kicker">高性价比数码 · 测评聚合与比价</text>
+    <text class="gp-hero-title">先算清真实价格</text>
+    <text class="gp-hero-title">再谈性价比</text>
+    <text class="gp-hero-sub">聚合多平台报价、真实测评与用户评价，用五维加权评分给出可解释的结论</text>
+
+    <view class="search-bar">
+      <input
+        class="search-input"
+        placeholder="搜索手机、耳机、显卡、笔记本……"
+        placeholder-class="search-ph"
+        confirm-type="search"
+        value="{{keyword}}"
+        bindinput="onKeywordInput"
+        bindconfirm="onSearch"
+      />
+      <view class="search-btn" bindtap="onSearch">智能比价</view>
+    </view>
+
+    <view class="hero-caps">
+      <text class="cap">五维加权评分</text>
+      <text class="cap">多平台比价</text>
+      <text class="cap">历史价格曲线</text>
+    </view>
   </view>
 
   <!-- 对比入口 -->
   <view class="compare-entry" bindtap="onGoCompare">
-    <text>商品对比</text>
+    <text class="compare-title">商品对比</text>
     <text class="compare-count" wx:if="{{compareCount > 0}}">{{compareCount}} 个商品待对比</text>
+    <text class="compare-count" wx:else>跨品类不可对比，最多 4 款</text>
     <text class="compare-arrow">›</text>
   </view>
 
-  <!-- 热门分类 -->
-  <view class="section gp-card" wx:if="{{categories.length > 0}}">
-    <view class="section-title">热门分类</view>
-    <view class="category-grid">
-      <view
-        wx:for="{{categories}}"
-        wx:key="id"
-        class="category-item"
-        data-id="{{item.id}}"
-        data-name="{{item.name}}"
-        bindtap="onGoCategory"
-      >{{item.name}}</view>
-    </view>
+  <!-- 热门分类：胶囊横向滚动 -->
+  <view class="cats" wx:if="{{categories.length > 0}}">
+    <scroll-view scroll-x class="chip-scroll" show-scrollbar="{{false}}">
+      <view class="chip-row">
+        <view
+          wx:for="{{categories}}"
+          wx:key="id"
+          class="gp-chip"
+          data-id="{{item.id}}"
+          data-name="{{item.name}}"
+          bindtap="onGoCategory"
+        >{{item.name}}</view>
+      </view>
+    </scroll-view>
   </view>
 
   <!-- 高性价比严选 -->
-  <view class="section gp-card">
+  <view class="section">
+    <text class="gp-kicker">VALUE PICKS</text>
     <view class="title-row">
       <text class="section-title">高性价比严选</text>
       <text class="more" bindtap="onGoAllValue">查看全部 ›</text>
@@ -51,8 +68,11 @@
   </view>
 
   <!-- 为你推荐 -->
-  <view class="section gp-card">
-    <view class="section-title">为你推荐</view>
+  <view class="section">
+    <text class="gp-kicker">FOR YOU</text>
+    <view class="title-row">
+      <text class="section-title">为你推荐</text>
+    </view>
     <gp-loading wx:if="{{recState === 'loading'}}" />
     <gp-error wx:elif="{{recState === 'error'}}" bind:retry="onRetryRec" />
     <gp-empty wx:elif="{{recommendations.length === 0}}" text="暂无推荐" />
@@ -65,16 +85,18 @@
         bindtap="onGoDetail"
       >
         <view class="rec-img-wrap">
-          <image wx:if="{{item.image}}" class="rec-img" src="{{item.image}}" mode="aspectFit" lazy-load />
+          <image wx:if="{{item.image}}" class="rec-img" src="{{item.image}}" mode="aspectFill" lazy-load />
           <gp-no-image wx:else size="{{60}}" text="" />
           <text class="rec-type">{{item.typeLabel}}</text>
         </view>
-        <text class="rec-name">{{item.name}}</text>
-        <text class="rec-reason">💡 {{item.reason}}</text>
-        <view class="rec-footer">
-          <text class="rec-price">¥{{item.priceText}}</text>
-          <text wx:if="{{item.valueMissing}}" class="rec-value-dim">数据不足</text>
-          <text wx:else class="rec-value">性价比 {{item.valueScore}}</text>
+        <view class="rec-body">
+          <text class="rec-name">{{item.name}}</text>
+          <text class="rec-reason">{{item.reason}}</text>
+          <view class="rec-footer">
+            <text class="rec-price">¥{{item.priceText}}</text>
+            <text wx:if="{{item.valueMissing}}" class="rec-value-dim">数据不足</text>
+            <text wx:else class="rec-value">性价比 {{item.valueScore}}</text>
+          </view>
         </view>
       </view>
     </view>

@@ -10,7 +10,6 @@
  */
 import type { Product } from '../../types'
 import { pickProductImage, isPlaceholderImage } from '../../utils/image'
-import { isSeriesReferenceImage, getSeriesReferenceReason } from '../../utils/seriesReference'
 import { formatPrice, isScoreMissing } from '../../utils/format'
 import { compareStore } from '../../store/compare'
 
@@ -22,8 +21,6 @@ Component({
   data: {
     displayUrl: '',        // '' 表示无合格图 → 空态
     failed: false,         // 图片加载失败（永久切空态）
-    seriesRef: false,      // 系列参考图标识
-    seriesReason: '',
     inCompare: false,
     priceText: '',
     valueMissing: false,
@@ -36,13 +33,10 @@ Component({
       if (!id) return
       const p = this.data.product as unknown as Product
       const url = pickProductImage(p.images)
-      const series = isSeriesReferenceImage(id, url)
       const tags = p.tags || []
       this.setData({
         displayUrl: !isPlaceholderImage(url) ? url : '',
         failed: false,
-        seriesRef: series,
-        seriesReason: series ? getSeriesReferenceReason(id, url) || '' : '',
         inCompare: compareStore.has(id),
         priceText: formatPrice(p.currentPrice),
         valueMissing: isScoreMissing(p.valueScore),

@@ -16,11 +16,10 @@
           wx:if="{{displayUrl}}"
           class="img"
           src="{{displayUrl}}"
-          mode="aspectFit"
+          mode="aspectFill"
           binderror="onImgError"
         />
         <gp-no-image wx:else size="{{96}}" />
-        <text wx:if="{{displayUrl && seriesRef}}" class="badge-series">系列参考图</text>
       </view>
       <view class="attr-row" bindtap="onTapImageAttribution">
         <text class="attr-text">ⓘ 图片来源与许可</text>
